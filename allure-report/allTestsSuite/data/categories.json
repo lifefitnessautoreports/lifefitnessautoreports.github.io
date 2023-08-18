@@ -1,0 +1,894 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "2 expectations failed.\nExpected status code <200> but was <500>.\n\nExpected status line a string containing \"OK\" doesn't match actual status line \"HTTP/1.1 500 Internal Server Error\".\n",
+      "children" : [ {
+        "name" : "Check users grid sorting by lastLogged asc",
+        "uid" : "4d15f39adaf4bc68",
+        "parentUid" : "d9881e119c22fa6bf579a52c991264c3",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692371816150,
+          "stop" : 1692371826517,
+          "duration" : 10367
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d9881e119c22fa6bf579a52c991264c3"
+    }, {
+      "name" : "2 expectations failed.\nExpected status code <200> but was <400>.\n\nExpected status line a string containing \"OK\" doesn't match actual status line \"HTTP/1.1 400 Bad Request\".\n",
+      "children" : [ {
+        "name" : "Check users grid sorting by lastLogged desc",
+        "uid" : "25153da0a5ffc770",
+        "parentUid" : "d60ae615585723b91c946f2aecf98314",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692371816843,
+          "stop" : 1692371926788,
+          "duration" : 109945
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d60ae615585723b91c946f2aecf98314"
+    }, {
+      "name" : "2 expectations failed.\nExpected status code <400> but was <200>.\n\nExpected status line a string containing \"Bad Request\" doesn't match actual status line \"HTTP/1.1 200 OK\".\n",
+      "children" : [ {
+        "name" : "Check that email field does not allow empty string",
+        "uid" : "8b28933e4a201dba",
+        "parentUid" : "34e927a5d1c06b72158bbab8292845c8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692371855064,
+          "stop" : 1692371859508,
+          "duration" : 4444
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that email field does not allow less than 5 chars",
+        "uid" : "25c3596aea3f7640",
+        "parentUid" : "34e927a5d1c06b72158bbab8292845c8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692371856075,
+          "stop" : 1692371860195,
+          "duration" : 4120
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that email field does not allow more than 50 chars",
+        "uid" : "5884a36c0211bf67",
+        "parentUid" : "34e927a5d1c06b72158bbab8292845c8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692371863763,
+          "stop" : 1692371867950,
+          "duration" : 4187
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that email field does not allow special chars",
+        "uid" : "1a257ec82251d81c",
+        "parentUid" : "34e927a5d1c06b72158bbab8292845c8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692371864469,
+          "stop" : 1692371869466,
+          "duration" : 4997
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that email field is mandatory",
+        "uid" : "46435ee4dcd88f4d",
+        "parentUid" : "34e927a5d1c06b72158bbab8292845c8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692371872389,
+          "stop" : 1692371876800,
+          "duration" : 4411
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that Admin can not GET /users/{userId}/supplementary-permissions for Technical user",
+        "uid" : "e22f3767efc9ba7f",
+        "parentUid" : "34e927a5d1c06b72158bbab8292845c8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692372103170,
+          "stop" : 1692372103307,
+          "duration" : 137
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that Admin can not PUT /users/details for Technical user",
+        "uid" : "c864c0ac87cb2b4",
+        "parentUid" : "34e927a5d1c06b72158bbab8292845c8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692372106613,
+          "stop" : 1692372114063,
+          "duration" : 7450
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that Admin can not PUT /api/v1/users/{userId}/roles for Technical user",
+        "uid" : "3085016ca20095d",
+        "parentUid" : "34e927a5d1c06b72158bbab8292845c8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692372115170,
+          "stop" : 1692372115891,
+          "duration" : 721
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that Admin can not PUT /users/{userId}/supplementary-permissions for Technical user",
+        "uid" : "660f2abd7596a9dd",
+        "parentUid" : "34e927a5d1c06b72158bbab8292845c8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692372116389,
+          "stop" : 1692372116596,
+          "duration" : 207
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "34e927a5d1c06b72158bbab8292845c8"
+    }, {
+      "name" : "Error title is incorrect expected [FORBIDDEN] but found [BAD_REQUEST]",
+      "children" : [ {
+        "name" : "Check that user can't be activated with another user token",
+        "uid" : "dfee821a16719fe1",
+        "parentUid" : "228eb57ad9738af827688898f53d5131",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692371884916,
+          "stop" : 1692371888452,
+          "duration" : 3536
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "228eb57ad9738af827688898f53d5131"
+    }, {
+      "name" : "Facility does not contain user expected [true] but found [false]",
+      "children" : [ {
+        "name" : "Check that facility can be created",
+        "uid" : "44ca210322f01e15",
+        "parentUid" : "8f5fc485174833123d64042adfd20113",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692371886825,
+          "stop" : 1692371887309,
+          "duration" : 484
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8f5fc485174833123d64042adfd20113"
+    }, {
+      "name" : "2 expectations failed.\nExpected status code <200> but was <401>.\n\nExpected status line a string containing \"OK\" doesn't match actual status line \"HTTP/1.1 401 Unauthorized\".\n",
+      "children" : [ {
+        "name" : "Check that user can be approved with camel case email",
+        "uid" : "f1dc4d9810e97f73",
+        "parentUid" : "0b984c5531e52c6619a81a7badebbadf",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692371918528,
+          "stop" : 1692371921233,
+          "duration" : 2705
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can be approved with lower case email",
+        "uid" : "2eb60e2a419ff098",
+        "parentUid" : "0b984c5531e52c6619a81a7badebbadf",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692371918977,
+          "stop" : 1692371921745,
+          "duration" : 2768
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can be approved with multi domain email",
+        "uid" : "11d36259e30fbbca",
+        "parentUid" : "0b984c5531e52c6619a81a7badebbadf",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692371919843,
+          "stop" : 1692371922502,
+          "duration" : 2659
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can be approved with upper case email",
+        "uid" : "12dc59ea24565c27",
+        "parentUid" : "0b984c5531e52c6619a81a7badebbadf",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692371923918,
+          "stop" : 1692371926662,
+          "duration" : 2744
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that when user is approved first name can't be changed",
+        "uid" : "2fd2f30fac4d797d",
+        "parentUid" : "0b984c5531e52c6619a81a7badebbadf",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692371927550,
+          "stop" : 1692371930699,
+          "duration" : 3149
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that when user is approved last name can't be changed",
+        "uid" : "4622f955ff708ca3",
+        "parentUid" : "0b984c5531e52c6619a81a7badebbadf",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692371929395,
+          "stop" : 1692371933377,
+          "duration" : 3982
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can be denied with lower case email",
+        "uid" : "26b7f4c28caf652e",
+        "parentUid" : "0b984c5531e52c6619a81a7badebbadf",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692371936616,
+          "stop" : 1692371942187,
+          "duration" : 5571
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can be denied with multi domain email",
+        "uid" : "90f106efc12702b6",
+        "parentUid" : "0b984c5531e52c6619a81a7badebbadf",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692371937553,
+          "stop" : 1692371941387,
+          "duration" : 3834
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can be denied with upper case email",
+        "uid" : "6a1233ccad73dada",
+        "parentUid" : "0b984c5531e52c6619a81a7badebbadf",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692371939196,
+          "stop" : 1692371943039,
+          "duration" : 3843
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can be denied with camel case email",
+        "uid" : "29729db005883cf0",
+        "parentUid" : "0b984c5531e52c6619a81a7badebbadf",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692371940101,
+          "stop" : 1692371943858,
+          "duration" : 3757
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "0b984c5531e52c6619a81a7badebbadf"
+    }, {
+      "name" : "2 expectations failed.\nExpected status code <400> but was <401>.\n\nExpected status line a string containing \"Bad Request\" doesn't match actual status line \"HTTP/1.1 401 Unauthorized\".\n",
+      "children" : [ {
+        "name" : "Check that user can't be approved to different facility where approver is not admin",
+        "uid" : "155d1762657469c2",
+        "parentUid" : "daf919f1b42e785e458d15d0b300d52c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692371924444,
+          "stop" : 1692371927348,
+          "duration" : 2904
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can't be approved to non existent facility",
+        "uid" : "6c46760083055133",
+        "parentUid" : "daf919f1b42e785e458d15d0b300d52c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692371925381,
+          "stop" : 1692371928181,
+          "duration" : 2800
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that denying user with non attached facility",
+        "uid" : "7b3e295e6146545c",
+        "parentUid" : "daf919f1b42e785e458d15d0b300d52c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692371930517,
+          "stop" : 1692371933781,
+          "duration" : 3264
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that denying user with non existing facility",
+        "uid" : "37d1f63cb141bd17",
+        "parentUid" : "daf919f1b42e785e458d15d0b300d52c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692371931851,
+          "stop" : 1692371935620,
+          "duration" : 3769
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that denying user with several facilities, one attached other is not",
+        "uid" : "db05657a0e8c753a",
+        "parentUid" : "daf919f1b42e785e458d15d0b300d52c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692371934683,
+          "stop" : 1692371938340,
+          "duration" : 3657
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can't be denied with email as empty string",
+        "uid" : "22f5aa5080b9553",
+        "parentUid" : "daf919f1b42e785e458d15d0b300d52c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692371941791,
+          "stop" : 1692371944877,
+          "duration" : 3086
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can't be denied with empty list facilityIds",
+        "uid" : "431cbdb8ffe8406b",
+        "parentUid" : "daf919f1b42e785e458d15d0b300d52c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692371944493,
+          "stop" : 1692371947560,
+          "duration" : 3067
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can't be denied with empty string facilityIds",
+        "uid" : "4c5a309a6e387a07",
+        "parentUid" : "daf919f1b42e785e458d15d0b300d52c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692371945853,
+          "stop" : 1692371948627,
+          "duration" : 2774
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can't be denied without an email",
+        "uid" : "2629b6add560ad30",
+        "parentUid" : "daf919f1b42e785e458d15d0b300d52c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692371946286,
+          "stop" : 1692371949067,
+          "duration" : 2781
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can't be denied without facility id",
+        "uid" : "f3f7d9bc70f2cdc3",
+        "parentUid" : "daf919f1b42e785e458d15d0b300d52c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692371946712,
+          "stop" : 1692371950017,
+          "duration" : 3305
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "daf919f1b42e785e458d15d0b300d52c"
+    }, {
+      "name" : "2 expectations failed.\nExpected status code <201> but was <401>.\n\nExpected status line a string containing \"Created\" doesn't match actual status line \"HTTP/1.1 401 Unauthorized\".\n",
+      "children" : [ {
+        "name" : "Check that user can be validated with camel case email",
+        "uid" : "8cd8649de5431fe8",
+        "parentUid" : "945f012085cdadf52b84c775da834659",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692371947181,
+          "stop" : 1692371949515,
+          "duration" : 2334
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "945f012085cdadf52b84c775da834659"
+    }, {
+      "name" : "Status code is incorrect expected [403] but found [200]",
+      "children" : [ {
+        "name" : "Check sending invitation with non admin user",
+        "uid" : "914b2d567a2ee75e",
+        "parentUid" : "b046d7689c3a2d108fa37edb77e7bc6e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692371968195,
+          "stop" : 1692371976860,
+          "duration" : 8665
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b046d7689c3a2d108fa37edb77e7bc6e"
+    }, {
+      "name" : "Error details are incorrect expected [Admin user - test@lifefitness.comis not part of facility with ID - 33233] but found [Admin user - autotestuser@lifefitness.comis not part of facility with ID - 33233]",
+      "children" : [ {
+        "name" : "Check that user from another facility can't be updated",
+        "uid" : "8172ad8220e2eae6",
+        "parentUid" : "a761cb033b3cb9afc397975989f29e36",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692372091442,
+          "stop" : 1692372095808,
+          "duration" : 4366
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a761cb033b3cb9afc397975989f29e36"
+    }, {
+      "name" : "2 expectations failed.\nExpected status code <404> but was <400>.\n\nExpected status line a string containing \"Not Found\" doesn't match actual status line \"HTTP/1.1 400 Bad Request\".\n",
+      "children" : [ {
+        "name" : "Check that Admin can not GET /users for Technical user",
+        "uid" : "79caaf9ceab41c95",
+        "parentUid" : "071421b325510357a5b76d1f9e9ade71",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692372103720,
+          "stop" : 1692372104025,
+          "duration" : 305
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "071421b325510357a5b76d1f9e9ade71"
+    }, {
+      "name" : "2 expectations failed.\nExpected status code <200> but was <504>.\n\nExpected status line a string containing \"OK\" doesn't match actual status line \"HTTP/1.1 504 Gateway Timeout\".\n",
+      "children" : [ {
+        "name" : "Check that EncodedPassword field was updated and new password works after update",
+        "uid" : "734c00214c1c0bac",
+        "parentUid" : "49e67eb5c503839b059777cd534850c6",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692372158102,
+          "stop" : 1692372280184,
+          "duration" : 122082
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that preferred language code field is optional",
+        "uid" : "a1294069437e4db8",
+        "parentUid" : "49e67eb5c503839b059777cd534850c6",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692372162239,
+          "stop" : 1692372284569,
+          "duration" : 122330
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that users profile can be updated",
+        "uid" : "dd96d2ec704f7e7f",
+        "parentUid" : "49e67eb5c503839b059777cd534850c6",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692372164997,
+          "stop" : 1692372287998,
+          "duration" : 123001
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that preferredUnit field is optional",
+        "uid" : "eb4ab0ed2ced491f",
+        "parentUid" : "49e67eb5c503839b059777cd534850c6",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692372164997,
+          "stop" : 1692372287152,
+          "duration" : 122155
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "49e67eb5c503839b059777cd534850c6"
+    }, {
+      "name" : "2 expectations failed.\nExpected status code <400> but was <403>.\n\nExpected status line a string containing \"Bad Request\" doesn't match actual status line \"HTTP/1.1 403 Forbidden\".\n",
+      "children" : [ {
+        "name" : "Check updating password when user does not exists in Firebase",
+        "uid" : "9ddbc5e19dc9c1e6",
+        "parentUid" : "dee556afbd28c8fcfd02774cd9d51ba1",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692372171632,
+          "stop" : 1692372172590,
+          "duration" : 958
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check updating password when user does not exists in IDP",
+        "uid" : "7ceff570b8d6fa87",
+        "parentUid" : "dee556afbd28c8fcfd02774cd9d51ba1",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692372172740,
+          "stop" : 1692372172835,
+          "duration" : 95
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "dee556afbd28c8fcfd02774cd9d51ba1"
+    }, {
+      "name" : "Error details are incorrect expected [Invalid request content.] but found [null]",
+      "children" : [ {
+        "name" : "Check updating password with email as empty string",
+        "uid" : "a12f7fa524f54c60",
+        "parentUid" : "86d8ef17aa35dddf4129c28c566731b6",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692372280284,
+          "stop" : 1692372280336,
+          "duration" : 52
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check updating password with email as null",
+        "uid" : "2b694151c60c187",
+        "parentUid" : "86d8ef17aa35dddf4129c28c566731b6",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692372280417,
+          "stop" : 1692372280467,
+          "duration" : 50
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check updating password with empty body",
+        "uid" : "b02068d51f1bfd09",
+        "parentUid" : "86d8ef17aa35dddf4129c28c566731b6",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692372280549,
+          "stop" : 1692372280599,
+          "duration" : 50
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "86d8ef17aa35dddf4129c28c566731b6"
+    }, {
+      "name" : "Error title is incorrect expected [EncodedPassword can't be empty] but found [Bad Request]",
+      "children" : [ {
+        "name" : "Check updating password with password as empty string",
+        "uid" : "2399b289d9dab52f",
+        "parentUid" : "af90910e7e11193dab33db894af36817",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692372290811,
+          "stop" : 1692372297597,
+          "duration" : 6786
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check updating password with password as null",
+        "uid" : "6173b8af9cbc0b09",
+        "parentUid" : "af90910e7e11193dab33db894af36817",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692372292391,
+          "stop" : 1692372300906,
+          "duration" : 8515
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "af90910e7e11193dab33db894af36817"
+    }, {
+      "name" : "Error title is incorrect expected [true] but found [false]",
+      "children" : [ {
+        "name" : "Check updating password with token as empty string",
+        "uid" : "caf3b823f09291f8",
+        "parentUid" : "1e0bb721316f5b53c0815c055a0db94b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692372292721,
+          "stop" : 1692372292770,
+          "duration" : 49
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check login attempt status with empty email and isLoginSuccess",
+        "uid" : "677bbad40d6a105",
+        "parentUid" : "1e0bb721316f5b53c0815c055a0db94b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692372300039,
+          "stop" : 1692372300090,
+          "duration" : 51
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check login attempt status with empty string email",
+        "uid" : "8d83e68e8c91411e",
+        "parentUid" : "1e0bb721316f5b53c0815c055a0db94b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692372300184,
+          "stop" : 1692372300237,
+          "duration" : 53
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "1e0bb721316f5b53c0815c055a0db94b"
+    }, {
+      "name" : "Error title is incorrect expected [Token can't be empty] but found [Bad Request]",
+      "children" : [ {
+        "name" : "Check updating password with token as null",
+        "uid" : "86c038a5fd4ef5e5",
+        "parentUid" : "54273960cca2ba17cdc3a37fb7a87b4f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692372292859,
+          "stop" : 1692372292911,
+          "duration" : 52
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "54273960cca2ba17cdc3a37fb7a87b4f"
+    }, {
+      "name" : "Error title is incorrect expected [Invalid email format] but found [Bad Request]",
+      "children" : [ {
+        "name" : "Check login attempt status with email less than 5 chars",
+        "uid" : "5ec35de3fdd175d5",
+        "parentUid" : "baec1fad3019d9b7a5e40252390aa3d6",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692372299765,
+          "stop" : 1692372299818,
+          "duration" : 53
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check login attempt status with email more than 50 chars",
+        "uid" : "6fdfc33857023c05",
+        "parentUid" : "baec1fad3019d9b7a5e40252390aa3d6",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692372299905,
+          "stop" : 1692372299955,
+          "duration" : 50
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check login attempt status with invalid chars email",
+        "uid" : "59ae9f12de51193b",
+        "parentUid" : "baec1fad3019d9b7a5e40252390aa3d6",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692372300327,
+          "stop" : 1692372300379,
+          "duration" : 52
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check login attempt status with null email",
+        "uid" : "263a664297104506",
+        "parentUid" : "baec1fad3019d9b7a5e40252390aa3d6",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692372300804,
+          "stop" : 1692372300859,
+          "duration" : 55
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "baec1fad3019d9b7a5e40252390aa3d6"
+    }, {
+      "name" : "2 expectations failed.\nExpected status code <201> but was <504>.\n\nExpected status line a string containing \"Created\" doesn't match actual status line \"HTTP/1.1 504 Gateway Timeout\".\n",
+      "children" : [ {
+        "name" : "Check updating password with camel case email",
+        "uid" : "d0cbe6e469a7a898",
+        "parentUid" : "a727d07fc69853f2c6dea8ddddc67107",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692372304848,
+          "stop" : 1692372430452,
+          "duration" : 125604
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a727d07fc69853f2c6dea8ddddc67107"
+    }, {
+      "name" : "2 expectations failed.\nExpected status code <201> but was <400>.\n\nExpected status line a string containing \"Created\" doesn't match actual status line \"HTTP/1.1 400 Bad Request\".\n",
+      "children" : [ {
+        "name" : "Check updating password with lower case email",
+        "uid" : "f4e2c2887c880f27",
+        "parentUid" : "21d73e2d4275634b13545a87d63008c6",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692372406605,
+          "stop" : 1692372407235,
+          "duration" : 630
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check updating password with upper case email",
+        "uid" : "5a0938c44df837d0",
+        "parentUid" : "21d73e2d4275634b13545a87d63008c6",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692372420989,
+          "stop" : 1692372421598,
+          "duration" : 609
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "21d73e2d4275634b13545a87d63008c6"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  }, {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Could not get message.",
+      "children" : [ {
+        "name" : "Check that invitation can be resent again",
+        "uid" : "775551da00fc07be",
+        "parentUid" : "b874a5740e04697d04400ada0a3a9da1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692371997008,
+          "stop" : 1692372035990,
+          "duration" : 38982
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b874a5740e04697d04400ada0a3a9da1"
+    }, {
+      "name" : "Unable to delete user from idp",
+      "children" : [ {
+        "name" : "Check that user can not be deleted from IDP without api key",
+        "uid" : "17c84f9a6604e263",
+        "parentUid" : "cc6713bd458b81cf1bf4bea66ac03223",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692372141184,
+          "stop" : 1692372141239,
+          "duration" : 55
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "cc6713bd458b81cf1bf4bea66ac03223"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

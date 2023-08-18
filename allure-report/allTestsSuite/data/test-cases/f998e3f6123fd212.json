@@ -1,0 +1,149 @@
+{
+  "uid" : "f998e3f6123fd212",
+  "name" : "Check that invitation can be resent again",
+  "fullName" : "com.lifefitness.qa.api.core.controllers.user.postinvitation.PostInvitationTest.checkThatInvitationCanBeResentAgain",
+  "historyId" : "545295cffc6a8be946f400f2ff8ee871",
+  "time" : {
+    "start" : 1692171190195,
+    "stop" : 1692171243658,
+    "duration" : 53463
+  },
+  "status" : "broken",
+  "statusMessage" : "Could not get message.",
+  "statusTrace" : "java.lang.RuntimeException: Could not get message.\n\tat com.lifefitness.qa.utils.email.EmailUtils.getMessageAndDeleteEmail(EmailUtils.java:185)\n\tat com.lifefitness.qa.api.core.controllers.user.postinvitation.PostInvitationTest.checkThatInvitationCanBeResentAgain(PostInvitationTest.java:80)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\n\tat org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)\n\tat org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)\n\tat org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)\n\tat org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)\n\tat org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)\n\tat org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)\n\tat org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)\n\tat org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)\n\tat java.base/java.lang.Thread.run(Thread.java:833)\nCaused by: javax.mail.MessagingException: Message wasn't found!\n\tat com.lifefitness.qa.utils.email.EmailUtils.getMessageAndDeleteEmail(EmailUtils.java:163)\n\t... 16 more\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "executeBeforeTestSuite",
+    "time" : {
+      "start" : 1692170913439,
+      "stop" : 1692170913822,
+      "duration" : 383
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "addTestLog",
+    "time" : {
+      "start" : 1692171569979,
+      "stop" : 1692171569980,
+      "duration" : 1
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "onCarinaAfterMethod",
+    "time" : {
+      "start" : 1692171243660,
+      "stop" : 1692171243660,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "deleteAllEmails",
+    "time" : {
+      "start" : 1692171570287,
+      "stop" : 1692171571616,
+      "duration" : 1329
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.lifefitness.qa.api.core.controllers.user.postinvitation.PostInvitationTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.lifefitness.qa.api.core.controllers.user.postinvitation.PostInvitationTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "checkThatInvitationCanBeResentAgain"
+  }, {
+    "name" : "parentSuite",
+    "value" : "LifeFitness Backend Auto Tests"
+  }, {
+    "name" : "suite",
+    "value" : "LifeFitness Backend Auto Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.lifefitness.qa.api.core.controllers.user.postinvitation.PostInvitationTest"
+  }, {
+    "name" : "host",
+    "value" : "87880fe0-54d0-4227-a4c6-82e7513bdd63-clvwc"
+  }, {
+    "name" : "thread",
+    "value" : "302@87880fe0-54d0-4227-a4c6-82e7513bdd63-clvwc.TestNG-test=LifeFitness Backend Auto Tests-1(21)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "owner",
+    "value" : "Dmitry Parkhomenko"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "HPB-6916",
+    "url" : "https://lfagile.atlassian.net/browse/HPB-6916",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "owner" : "Dmitry Parkhomenko",
+    "retries" : [ {
+      "uid" : "ad41a27e95cf7c61",
+      "status" : "skipped",
+      "statusDetails" : "Could not get message.",
+      "time" : {
+        "start" : 1692171140930,
+        "stop" : 1692171190192,
+        "duration" : 49262
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "f998e3f6123fd212.json",
+  "parameterValues" : [ ]
+}
