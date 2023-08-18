@@ -1,0 +1,30 @@
+[2023-08-17 07:33:27] [24] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-17 07:33:27] [24] [INFO] TEST [LifeFitness Backend Auto Tests - checkSendingInvitationWithoutAccessToken] STARTED at [07:33:27 2023-08-17]
+[2023-08-17 07:33:27] [24] [INFO] Sending invitation
+[2023-08-17 07:33:27] [24] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/10/invitation
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	userId=10
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer 
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 401 Unauthorized
+X-Goog-IAP-Generated-Response: true
+Date: Thu, 17 Aug 2023 07:33:27 GMT
+Content-Type: text/html
+Server: Google Frontend
+Content-Length: 34
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+<html>
+  <body>Invalid GCIP ID token: empty token</body>
+</html>
+
+[2023-08-17 07:33:27] [24] [INFO] Asserting that status code is correct
+[2023-08-17 07:33:27] [24] [INFO] TEST [LifeFitness Backend Auto Tests - checkSendingInvitationWithoutAccessToken] PASSED at [07:33:27 2023-08-17]
