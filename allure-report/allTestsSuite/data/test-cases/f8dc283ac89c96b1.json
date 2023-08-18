@@ -1,0 +1,129 @@
+{
+  "uid" : "f8dc283ac89c96b1",
+  "name" : "Check that user can not be deleted from IDP without api key",
+  "fullName" : "com.lifefitness.qa.api.utils.controllers.idpuser.deleteidpuser.DeleteIdpUserTest.checkThatUserCantBeDeletedFromIdpWithoutApiKey",
+  "historyId" : "b6bd14bfb24a03e851e6b4a8239c1fc0",
+  "time" : {
+    "start" : 1692085195019,
+    "stop" : 1692085195166,
+    "duration" : 147
+  },
+  "status" : "skipped",
+  "statusMessage" : "Unable to delete user from idp",
+  "statusTrace" : "java.lang.RuntimeException: Unable to delete user from idp\n\tat com.lifefitness.qa.api.systemutilscontrollers.deleteidpuser.DeleteIdpUserHelper.deleteIdpUserExpectFailureError(DeleteIdpUserHelper.java:23)\n\tat com.lifefitness.qa.api.utils.controllers.idpuser.deleteidpuser.DeleteIdpUserTest.checkThatUserCantBeDeletedFromIdpWithoutApiKey(DeleteIdpUserTest.java:140)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\n\tat org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)\n\tat org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)\n\tat org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)\n\tat org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)\n\tat org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)\n\tat org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)\n\tat org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)\n\tat org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)\n\tat java.base/java.lang.Thread.run(Thread.java:833)\nCaused by: com.fasterxml.jackson.databind.exc.MismatchedInputException: No content to map due to end-of-input\n at [Source: (String)\"\"; line: 1, column: 0]\n\tat com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:59)\n\tat com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4821)\n\tat com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4723)\n\tat com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3677)\n\tat com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3645)\n\tat com.lifefitness.qa.api.systemutilscontrollers.deleteidpuser.DeleteIdpUserHelper.deleteIdpUserExpectFailureError(DeleteIdpUserHelper.java:21)\n\t... 16 more\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "executeBeforeTestSuite",
+    "time" : {
+      "start" : 1692084501447,
+      "stop" : 1692084501889,
+      "duration" : 442
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "addTestLog",
+    "time" : {
+      "start" : 1692085386465,
+      "stop" : 1692085386466,
+      "duration" : 1
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "onCarinaAfterMethod",
+    "time" : {
+      "start" : 1692085195167,
+      "stop" : 1692085195167,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "deleteAllEmails",
+    "time" : {
+      "start" : 1692085386641,
+      "stop" : 1692085388577,
+      "duration" : 1936
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.lifefitness.qa.api.utils.controllers.idpuser.deleteidpuser.DeleteIdpUserTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.lifefitness.qa.api.utils.controllers.idpuser.deleteidpuser.DeleteIdpUserTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "checkThatUserCantBeDeletedFromIdpWithoutApiKey"
+  }, {
+    "name" : "parentSuite",
+    "value" : "LifeFitness Backend Auto Tests"
+  }, {
+    "name" : "suite",
+    "value" : "LifeFitness Backend Auto Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.lifefitness.qa.api.utils.controllers.idpuser.deleteidpuser.DeleteIdpUserTest"
+  }, {
+    "name" : "host",
+    "value" : "791fe439-8e38-47b2-92e4-e2c6ef6fa5af-rr7ph"
+  }, {
+    "name" : "thread",
+    "value" : "299@791fe439-8e38-47b2-92e4-e2c6ef6fa5af-rr7ph.TestNG-test=LifeFitness Backend Auto Tests-1(21)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "owner",
+    "value" : "Valeria Sorokina"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f8dc283ac89c96b1.json",
+  "parameterValues" : [ ]
+}
