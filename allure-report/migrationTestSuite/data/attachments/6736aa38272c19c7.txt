@@ -1,0 +1,306 @@
+[2023-08-17 08:31:37] [22] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-17 08:31:37] [22] [INFO] TEST [Migration Backend Auto Tests - checkThatUserCanBeRegisteredWithCamelCaseEmail] STARTED at [08:31:37 2023-08-17]
+[2023-08-17 08:31:37] [22] [INFO] Setting default registration body values
+[2023-08-17 08:31:37] [22] [INFO] Base properties loaded: api/core/controllers/user/postregistration/registration.properties
+[2023-08-17 08:31:37] [22] [INFO] Get country code except embargoed ones
+[2023-08-17 08:31:37] [22] [INFO] Waiting for 0.1 sec to cool Core Backend off
+[2023-08-17 08:31:37] [22] [INFO] Registering user with lifeFitnessPostman+13316589@gmail.com email
+[2023-08-17 08:31:38] [22] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/registration
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoidGVzdFVzZXIiLCJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MjI2MTA2MywidXNlcl9pZCI6IlZqTHhsb2xYUG5lNDc0RDZjZjVVNHNubFNUbDIiLCJzdWIiOiJWakx4bG9sWFBuZTQ3NEQ2Y2Y1VTRzbmxTVGwyIiwiaWF0IjoxNjkyMjYxMDYzLCJleHAiOjE2OTIyNjQ2NjMsImVtYWlsIjoidGVzdEBsaWZlZml0bmVzcy5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJ0ZXN0QGxpZmVmaXRuZXNzLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.IbDEqS8P405ZojS7GCg9v9UgOKu28nAKAbnsIcnXsQIVJuTYyddmU_VqMzCI3R32u8CpsKLsYMoWtciZS_zFQ_G7V5OEvenAQ1yT8_AYV9Xwe8rMlEhuCA8AK_aS4isTNeq1vl2ujb0bCjIO8-O7i35Dy7YotY-L2AzYWneeXY7-dEALmwzOEev_qqHY1II4OvwAq0fJLnttHLQRngtfYlmVy44oH-rmNquS8TszYPPhYw6jhDex9f6lJtd0rXqEh-aZXPpj5GdQvOk2GXmb2AjjbCvM0AA1VKAab46wBhYPRJ_4sGJqC0hoZYeMOFUnkFbymioeFU1pHcY6k4g98w
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "user": {
+        "id": 0,
+        "firstName": "German",
+        "lastName": "Ullrich",
+        "email": "lifeFitnessPostman+13316589@gmail.com",
+        "preferredUnit": "METRICS",
+        "preferredLanguageCode": "",
+        "phoneNumber": "",
+        "officePhoneNumber": "",
+        "imageUrl": "",
+        "imageKey": "",
+        "thumbnailUrl": "",
+        "thumbnailKey": "",
+        "isAllowedMarketingEmails": null,
+        "isAllowedFeedbackProviding": null,
+        "useTerms": null
+    },
+    "facility": {
+        "id": 0,
+        "legacyId": 0,
+        "ipAddress": "",
+        "facilityGroupId": 0,
+        "name": "Klocko, Ebert and Jaskolski",
+        "facilityTypeId": 0,
+        "address": {
+            "placeId": "08e40076-3597-47b6-9216-20c9cadf7c51",
+            "primaryStreet": "6314 Crooks Tunnel",
+            "secondaryStreet": "Suite 792",
+            "city": "Adamburgh",
+            "region": "",
+            "zipCode": "223610",
+            "state": "",
+            "countryCode": "ME",
+            "latitude": "30.6279",
+            "longitude": "22.7323",
+            "country": "string",
+            "formatAddress": "string",
+            "rawData": "string"
+        },
+        "contactNumber": "4070128740",
+        "timezone": "",
+        "openTime": "10:00 AM",
+        "closeTime": "6:00 PM",
+        "isOpen24Hours": true
+    }
+}
+HTTP/1.1 201 Created
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: afc11b74625ec76f1cb267f1be300cd0
+Date: Thu, 17 Aug 2023 08:31:38 GMT
+Server: Google Frontend
+Content-Length: 990
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "user": {
+        "id": 42113,
+        "firstName": "German",
+        "lastName": "Ullrich",
+        "email": "lifefitnesspostman+13316589@gmail.com",
+        "preferredUnit": "METRICS",
+        "preferredLanguageCode": "en-US",
+        "phoneNumber": "",
+        "officePhoneNumber": "",
+        "profilePicUrl": null,
+        "imageKey": "",
+        "isEnabled": true,
+        "isAllowedMarketingEmails": true,
+        "isAllowedFeedbackProviding": true,
+        "useTerms": true,
+        "encodedPassword": null,
+        "status": "ACTIVE",
+        "roleIds": [
+            2
+        ]
+    },
+    "facility": {
+        "id": 31126,
+        "legacyId": 0,
+        "ipAddress": "",
+        "facilityGroupId": null,
+        "name": "Klocko, Ebert and Jaskolski",
+        "facilityTypeId": null,
+        "address": {
+            "id": 31150,
+            "placeId": "08e40076-3597-47b6-9216-20c9cadf7c51",
+            "primaryStreet": "6314 Crooks Tunnel",
+            "secondaryStreet": "Suite 792",
+            "city": "Adamburgh",
+            "region": "EMEA",
+            "zipCode": "223610",
+            "state": "",
+            "countryCode": "ME",
+            "latitude": 30.6279,
+            "longitude": 22.7323,
+            "country": "string",
+            "formatAddress": "string",
+            "rawData": "string"
+        },
+        "contactNumber": "4070128740",
+        "timezone": "Africa/Tripoli (GMT+2:00)",
+        "openTime": "10:00 AM",
+        "closeTime": "6:00 PM",
+        "isOpen24Hours": true
+    }
+}
+
+[2023-08-17 08:31:39] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-17 08:31:39] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-17 08:31:40] [22] [INFO] Welcome German, Congratulations on registering for Halo Facility. To finish your account setup, please click the button below to verify your email address. Verify Email Address Thanks, Halo Facility ©
+[2023-08-17 08:31:40] [22] [INFO] Asserting that email message is correct after registration
+[2023-08-17 08:31:40] [22] [INFO] Asserting that email button link is correct
+[2023-08-17 08:31:40] [22] [INFO] Get supplementary permissions by id
+[2023-08-17 08:31:40] [22] [INFO] Getting Halo Core dev base URL
+[2023-08-17 08:31:40] [22] [INFO] Request method:	GET
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/42113/supplementary-permissions
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	userId=42113
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoidGVzdFVzZXIiLCJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MjI2MTA2MywidXNlcl9pZCI6IlZqTHhsb2xYUG5lNDc0RDZjZjVVNHNubFNUbDIiLCJzdWIiOiJWakx4bG9sWFBuZTQ3NEQ2Y2Y1VTRzbmxTVGwyIiwiaWF0IjoxNjkyMjYxMDYzLCJleHAiOjE2OTIyNjQ2NjMsImVtYWlsIjoidGVzdEBsaWZlZml0bmVzcy5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJ0ZXN0QGxpZmVmaXRuZXNzLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.IbDEqS8P405ZojS7GCg9v9UgOKu28nAKAbnsIcnXsQIVJuTYyddmU_VqMzCI3R32u8CpsKLsYMoWtciZS_zFQ_G7V5OEvenAQ1yT8_AYV9Xwe8rMlEhuCA8AK_aS4isTNeq1vl2ujb0bCjIO8-O7i35Dy7YotY-L2AzYWneeXY7-dEALmwzOEev_qqHY1II4OvwAq0fJLnttHLQRngtfYlmVy44oH-rmNquS8TszYPPhYw6jhDex9f6lJtd0rXqEh-aZXPpj5GdQvOk2GXmb2AjjbCvM0AA1VKAab46wBhYPRJ_4sGJqC0hoZYeMOFUnkFbymioeFU1pHcY6k4g98w
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 200 OK
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+Transfer-Encoding: chunked
+Date: Thu, 17 Aug 2023 08:31:40 GMT
+Server: Google Frontend
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+[
+    {
+        "id": 1,
+        "name": "Add/Edit Users"
+    },
+    {
+        "id": 3,
+        "name": "Premium"
+    },
+    {
+        "id": 4,
+        "name": "Feature Flags"
+    },
+    {
+        "id": 2,
+        "name": "Add/Edit Facilities"
+    }
+]
+
+[2023-08-17 08:31:40] [22] [INFO] Asserting that correct supplementary permissions are returned
+[2023-08-17 08:31:40] [22] [INFO] Checking that supplementary permission with ID=1 corresponds to Add/Edit Users
+[2023-08-17 08:31:40] [22] [INFO] Checking that supplementary permission with ID=3 corresponds to Premium
+[2023-08-17 08:31:40] [22] [INFO] Checking that supplementary permission with ID=4 corresponds to Feature Flags
+[2023-08-17 08:31:40] [22] [INFO] Checking that supplementary permission with ID=2 corresponds to Add/Edit Facilities
+[2023-08-17 08:31:40] [22] [INFO] Get user roles by id
+[2023-08-17 08:31:40] [22] [INFO] Getting Halo Core dev base URL
+[2023-08-17 08:31:41] [22] [INFO] Request method:	GET
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/42113/roles
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	userId=42113
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoidGVzdFVzZXIiLCJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MjI2MTA2MywidXNlcl9pZCI6IlZqTHhsb2xYUG5lNDc0RDZjZjVVNHNubFNUbDIiLCJzdWIiOiJWakx4bG9sWFBuZTQ3NEQ2Y2Y1VTRzbmxTVGwyIiwiaWF0IjoxNjkyMjYxMDYzLCJleHAiOjE2OTIyNjQ2NjMsImVtYWlsIjoidGVzdEBsaWZlZml0bmVzcy5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJ0ZXN0QGxpZmVmaXRuZXNzLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.IbDEqS8P405ZojS7GCg9v9UgOKu28nAKAbnsIcnXsQIVJuTYyddmU_VqMzCI3R32u8CpsKLsYMoWtciZS_zFQ_G7V5OEvenAQ1yT8_AYV9Xwe8rMlEhuCA8AK_aS4isTNeq1vl2ujb0bCjIO8-O7i35Dy7YotY-L2AzYWneeXY7-dEALmwzOEev_qqHY1II4OvwAq0fJLnttHLQRngtfYlmVy44oH-rmNquS8TszYPPhYw6jhDex9f6lJtd0rXqEh-aZXPpj5GdQvOk2GXmb2AjjbCvM0AA1VKAab46wBhYPRJ_4sGJqC0hoZYeMOFUnkFbymioeFU1pHcY6k4g98w
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 200 OK
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+Transfer-Encoding: chunked
+Date: Thu, 17 Aug 2023 08:31:41 GMT
+Server: Google Frontend
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+[
+    {
+        "id": 2,
+        "name": "Admin",
+        "permissions": [
+            {
+                "id": 1,
+                "name": "View Equipment Details",
+                "category": "Manage Equipment"
+            },
+            {
+                "id": 2,
+                "name": "Manage Equipment",
+                "category": "Manage Equipment"
+            },
+            {
+                "id": 3,
+                "name": "Perform Software Upgrades",
+                "category": "Manage Equipment"
+            },
+            {
+                "id": 4,
+                "name": "Create & Publish Goal Workouts",
+                "category": "Consoles"
+            },
+            {
+                "id": 5,
+                "name": "Publish Announcement",
+                "category": "Consoles"
+            },
+            {
+                "id": 6,
+                "name": "Manage TV",
+                "category": "Consoles"
+            },
+            {
+                "id": 7,
+                "name": "Manage Apps & Web",
+                "category": "Consoles"
+            },
+            {
+                "id": 8,
+                "name": "Settings",
+                "category": "Consoles"
+            },
+            {
+                "id": 9,
+                "name": "Publish Attract Screens",
+                "category": "Content"
+            },
+            {
+                "id": 10,
+                "name": "Enable Content Libraries",
+                "category": "Content"
+            },
+            {
+                "id": 11,
+                "name": "My Videos",
+                "category": "Content"
+            },
+            {
+                "id": 12,
+                "name": "Branding & Metadata",
+                "category": "Content"
+            },
+            {
+                "id": 13,
+                "name": "Create Service Tickets",
+                "category": "Service"
+            }
+        ]
+    }
+]
+
+[2023-08-17 08:31:41] [22] [INFO] Asserting that user roles are correct for registered user
+[2023-08-17 08:31:41] [22] [INFO] Getting User Role Model for Admin role
+[2023-08-17 08:31:41] [22] [INFO] Checking that Admin user role has correct id, name and permissions
+[2023-08-17 08:31:41] [22] [INFO] ================================================================================================
+[2023-08-17 08:31:41] [22] [INFO] User email that was registered - [lifefitnesspostman+13316589@gmail.com]
+[2023-08-17 08:31:41] [22] [INFO] ================================================================================================
+[2023-08-17 08:31:41] [22] [INFO] TEST [Migration Backend Auto Tests - checkThatUserCanBeRegisteredWithCamelCaseEmail] PASSED at [08:31:41 2023-08-17]
