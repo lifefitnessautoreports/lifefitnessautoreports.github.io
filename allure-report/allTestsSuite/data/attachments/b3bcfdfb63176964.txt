@@ -1,0 +1,373 @@
+[2023-08-18 02:52:40] [24] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-18 02:52:40] [24] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatUserCantBeUpdatedToNonExistentFacility] STARTED at [14:52:40 2023-08-18]
+[2023-08-18 02:52:44] [24] [INFO] Setting default registration body values
+[2023-08-18 02:52:44] [24] [INFO] Base properties loaded: api/core/controllers/user/postregistration/registration.properties
+[2023-08-18 02:52:44] [24] [INFO] Get country code except embargoed ones
+[2023-08-18 02:52:44] [24] [INFO] Waiting for 0.1 sec to cool Core Backend off
+[2023-08-18 02:52:44] [24] [INFO] Registering user with lifeFitnessPostman+18781378@gmail.com email
+[2023-08-18 02:52:45] [24] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/registration
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MjM2Nzg5MywidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyMzY3ODkzLCJleHAiOjE2OTIzNzE0OTMsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJhdXRvdGVzdHVzZXJAbGlmZWZpdG5lc3MuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.AneDUAvM6tLEKyiyLck7t5frm3syH4q5vCFBCiaDFqqWejt_xNmm2u9l5nwSluumb7Qg_z4B9lo7bx6WtAtfiR2mFms4TjPINUDrzXDjo6tHgd5rFgcClkOnf0YTg6DnryfHkswxzrQejlbc653HlIXpMYhDJ_m429w69eWgRs109fwA3RiyCVsauPsNWyISwAlptvXuVh-AgjnzQKSSmha064fzl8fC96D6PXEPWXKp5pB-iR-19eX-CDUo_jCJRV27oDlIZOKam6FFKjryOv27tc3wPE3TpAay7yAJpb3pwY1kApDMnWQkZ_s5HoflT9IJpKwSvAwk8CxcQ1fKPw
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "user": {
+        "id": 0,
+        "firstName": "Jeneva",
+        "lastName": "Rippin",
+        "email": "lifeFitnessPostman+18781378@gmail.com",
+        "preferredUnit": "METRICS",
+        "preferredLanguageCode": "",
+        "phoneNumber": "",
+        "officePhoneNumber": "",
+        "imageUrl": "",
+        "imageKey": "",
+        "thumbnailUrl": "",
+        "thumbnailKey": "",
+        "isAllowedMarketingEmails": null,
+        "isAllowedFeedbackProviding": null,
+        "useTerms": null
+    },
+    "facility": {
+        "id": 0,
+        "legacyId": 0,
+        "ipAddress": "",
+        "facilityGroupId": 0,
+        "name": "Schinner-VonRueden",
+        "facilityTypeId": 0,
+        "address": {
+            "placeId": "fa216c72-557d-431d-bf62-cefdc0a5a3ce",
+            "primaryStreet": "675 Marquardt Stravenue",
+            "secondaryStreet": "Suite 012",
+            "city": "West Elvin",
+            "region": "",
+            "zipCode": "223610",
+            "state": "",
+            "countryCode": "GS",
+            "latitude": "30.6279",
+            "longitude": "22.7323",
+            "country": "string",
+            "formatAddress": "string",
+            "rawData": "string"
+        },
+        "contactNumber": "3310127276",
+        "timezone": "",
+        "openTime": "10:00 AM",
+        "closeTime": "6:00 PM",
+        "isOpen24Hours": true
+    }
+}
+HTTP/1.1 201 Created
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: 2738515b3b44943b8774a406e41f99a3
+Date: Fri, 18 Aug 2023 14:52:45 GMT
+Server: Google Frontend
+Content-Length: 995
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "user": {
+        "id": 43485,
+        "firstName": "Jeneva",
+        "lastName": "Rippin",
+        "email": "lifefitnesspostman+18781378@gmail.com",
+        "preferredUnit": "METRICS",
+        "preferredLanguageCode": "en-US",
+        "phoneNumber": "",
+        "officePhoneNumber": "",
+        "profilePicUrl": null,
+        "imageKey": "",
+        "isEnabled": true,
+        "isAllowedMarketingEmails": true,
+        "isAllowedFeedbackProviding": true,
+        "useTerms": true,
+        "encodedPassword": null,
+        "status": "ACTIVE",
+        "roleIds": [
+            2
+        ]
+    },
+    "facility": {
+        "id": 32474,
+        "legacyId": 0,
+        "ipAddress": "",
+        "facilityGroupId": null,
+        "name": "Schinner-VonRueden",
+        "facilityTypeId": null,
+        "address": {
+            "id": 32498,
+            "placeId": "fa216c72-557d-431d-bf62-cefdc0a5a3ce",
+            "primaryStreet": "675 Marquardt Stravenue",
+            "secondaryStreet": "Suite 012",
+            "city": "West Elvin",
+            "region": "Not Specified",
+            "zipCode": "223610",
+            "state": "",
+            "countryCode": "GS",
+            "latitude": 30.6279,
+            "longitude": 22.7323,
+            "country": "string",
+            "formatAddress": "string",
+            "rawData": "string"
+        },
+        "contactNumber": "3310127276",
+        "timezone": "Africa/Tripoli (GMT+2:00)",
+        "openTime": "10:00 AM",
+        "closeTime": "6:00 PM",
+        "isOpen24Hours": true
+    }
+}
+
+[2023-08-18 02:52:45] [24] [INFO] Waiting for 0.1 sec before IDP cooling off
+[2023-08-18 02:52:45] [24] [INFO] Setting default IDP sign up body values
+[2023-08-18 02:52:45] [24] [INFO] Setting up IDP method to SIGN_UP
+[2023-08-18 02:52:45] [24] [INFO] Base properties loaded: api/identityplatform/idp.properties
+[2023-08-18 02:52:45] [24] [INFO] Sending PostSignUp IDP method to get access token
+[2023-08-18 02:52:46] [24] [INFO] Request method:	POST
+Request URI:	https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyDuJaUYc3JtGHvbdX_7b-Nav25lXPmzuN0
+Request params:	<none>
+Query params:	key=AIzaSyDuJaUYc3JtGHvbdX_7b-Nav25lXPmzuN0
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "returnSecureToken": true,
+    "email": "lifefitnesspostman+18781378@gmail.com",
+    "password": "lifefitnesspostman+18781378@gmail.com"
+}
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Date: Fri, 18 Aug 2023 14:52:46 GMT
+Content-Type: application/json; charset=UTF-8
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+Content-Encoding: gzip
+Server: ESF
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+{
+    "kind": "identitytoolkit#SignupNewUserResponse",
+    "idToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MjM3MDM2NiwidXNlcl9pZCI6InVSclRVQ0ZuM3ZXSWtRQU15U0ZtMHQxYm5qcTEiLCJzdWIiOiJ1UnJUVUNGbjN2V0lrUUFNeVNGbTB0MWJuanExIiwiaWF0IjoxNjkyMzcwMzY2LCJleHAiOjE2OTIzNzM5NjYsImVtYWlsIjoibGlmZWZpdG5lc3Nwb3N0bWFuKzE4NzgxMzc4QGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJsaWZlZml0bmVzc3Bvc3RtYW4rMTg3ODEzNzhAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.a-UiUnchJL-TW8pqi2zGEOEtW5nBrJWH0ShO0PwfL_M3hz_CYd01XPzQ4X1Yfq5DeN_3FdnwwtJZb7q_oZCpwCr8qhulITZBcuxlp6fe6VB6Uxq7uPxtkTLo0TNDP9Feau8L04P94DDIrsiXydNt-87NURZDoogg2L7vMWe3f2ogN1Duf2qG2GU15ki6jkbmFQ70ULVSuojOaFLZv11_-Khv7UvDaA1lkCRGV0jkfe42_bqfzpj5VeLubTKq6wtAdIqducOd92XPkeMb2t0Cn9B9uQl3abqUu2dmo6SLvVJ_dWrKfGme8ZS6DooxUc3dGDfbaUbxd43xzG0cBsv77w",
+    "email": "lifefitnesspostman+18781378@gmail.com",
+    "refreshToken": "AMf-vBwDhqkhBovBmmPB_JxWcbkoTedKvDoqswhlOVlIpQ3tC-by0_6Xx7pS-mZmKh-MzXVtiFedS_t6Hq7ZqqKv3kJRfjtW_dTO5IlAB_Mlxd1QreGkOPu9MCE7CcHbFQSyNAiSHrnrNjs_NAYfI1ji1jBgXP1XGOulhyTZCz-WayU3d8k6X3-bb-rXF1pZWVvhdEC4P3iuiB9upN-I3JXBRQDG8ibYRA",
+    "expiresIn": "3600",
+    "localId": "uRrTUCFn3vWIkQAMySFm0t1bnjq1"
+}
+
+[2023-08-18 02:52:46] [24] [INFO] Waiting for 0.1 sec before IDP cooling off
+[2023-08-18 02:52:46] [24] [INFO] Setting default IDP sign up body values
+[2023-08-18 02:52:46] [24] [INFO] Setting up IDP method to SIGN_IN_WITH_PASSWORD
+[2023-08-18 02:52:46] [24] [INFO] Base properties loaded: api/identityplatform/idp.properties
+[2023-08-18 02:52:46] [24] [INFO] Sending PostSignInWithPassword IDP method to get access token
+[2023-08-18 02:52:46] [24] [INFO] Request method:	POST
+Request URI:	https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyDuJaUYc3JtGHvbdX_7b-Nav25lXPmzuN0
+Request params:	<none>
+Query params:	key=AIzaSyDuJaUYc3JtGHvbdX_7b-Nav25lXPmzuN0
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "returnSecureToken": true,
+    "email": "lifefitnesspostman+18781378@gmail.com",
+    "password": "lifefitnesspostman+18781378@gmail.com"
+}
+HTTP/1.1 200 OK
+Date: Fri, 18 Aug 2023 14:52:46 GMT
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Content-Type: application/json; charset=UTF-8
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+Content-Encoding: gzip
+Server: ESF
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+{
+    "kind": "identitytoolkit#VerifyPasswordResponse",
+    "localId": "uRrTUCFn3vWIkQAMySFm0t1bnjq1",
+    "email": "lifefitnesspostman+18781378@gmail.com",
+    "displayName": "",
+    "idToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MjM3MDM2NiwidXNlcl9pZCI6InVSclRVQ0ZuM3ZXSWtRQU15U0ZtMHQxYm5qcTEiLCJzdWIiOiJ1UnJUVUNGbjN2V0lrUUFNeVNGbTB0MWJuanExIiwiaWF0IjoxNjkyMzcwMzY2LCJleHAiOjE2OTIzNzM5NjYsImVtYWlsIjoibGlmZWZpdG5lc3Nwb3N0bWFuKzE4NzgxMzc4QGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJsaWZlZml0bmVzc3Bvc3RtYW4rMTg3ODEzNzhAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.a-UiUnchJL-TW8pqi2zGEOEtW5nBrJWH0ShO0PwfL_M3hz_CYd01XPzQ4X1Yfq5DeN_3FdnwwtJZb7q_oZCpwCr8qhulITZBcuxlp6fe6VB6Uxq7uPxtkTLo0TNDP9Feau8L04P94DDIrsiXydNt-87NURZDoogg2L7vMWe3f2ogN1Duf2qG2GU15ki6jkbmFQ70ULVSuojOaFLZv11_-Khv7UvDaA1lkCRGV0jkfe42_bqfzpj5VeLubTKq6wtAdIqducOd92XPkeMb2t0Cn9B9uQl3abqUu2dmo6SLvVJ_dWrKfGme8ZS6DooxUc3dGDfbaUbxd43xzG0cBsv77w",
+    "registered": true,
+    "refreshToken": "AMf-vBzLI8LetnnBSOeOx89C-vts2XVpgGFgJ89_-4WOpvMrcnzAbqd1OesB-UatvB4m_JPiM_5c3iQ-XkRmqj-9scuUbJ1jFNTw3j_2ZayRNrFLEp5qVvUe-r16WrVsJhH3jcu0jcOus0RdRejOCYo4jxHsPjtZllWc9og0NiIMgCh41W_sw6qBul9dDyO8mTlqd4YQtLYuSkE3uqFBgONEcIzeA2u0Fg",
+    "expiresIn": "3600"
+}
+
+[2023-08-18 02:52:47] [24] [INFO] Setting default add user body values
+[2023-08-18 02:52:47] [24] [INFO] Base properties loaded: api/core/controllers/user/postuser/create_user.properties
+[2023-08-18 02:52:47] [24] [INFO] Waiting for 0.1 sec before Core Backend cooling off
+[2023-08-18 02:52:47] [24] [INFO] Creating user expecting success
+[2023-08-18 02:52:48] [24] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MjM3MDM2NiwidXNlcl9pZCI6InVSclRVQ0ZuM3ZXSWtRQU15U0ZtMHQxYm5qcTEiLCJzdWIiOiJ1UnJUVUNGbjN2V0lrUUFNeVNGbTB0MWJuanExIiwiaWF0IjoxNjkyMzcwMzY2LCJleHAiOjE2OTIzNzM5NjYsImVtYWlsIjoibGlmZWZpdG5lc3Nwb3N0bWFuKzE4NzgxMzc4QGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJsaWZlZml0bmVzc3Bvc3RtYW4rMTg3ODEzNzhAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.a-UiUnchJL-TW8pqi2zGEOEtW5nBrJWH0ShO0PwfL_M3hz_CYd01XPzQ4X1Yfq5DeN_3FdnwwtJZb7q_oZCpwCr8qhulITZBcuxlp6fe6VB6Uxq7uPxtkTLo0TNDP9Feau8L04P94DDIrsiXydNt-87NURZDoogg2L7vMWe3f2ogN1Duf2qG2GU15ki6jkbmFQ70ULVSuojOaFLZv11_-Khv7UvDaA1lkCRGV0jkfe42_bqfzpj5VeLubTKq6wtAdIqducOd92XPkeMb2t0Cn9B9uQl3abqUu2dmo6SLvVJ_dWrKfGme8ZS6DooxUc3dGDfbaUbxd43xzG0cBsv77w
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "id": 1,
+    "firstName": "Shalanda",
+    "lastName": "Toy",
+    "email": "lifeFitnessPostman+57683936@gmail.com",
+    "roleIds": [
+        2,
+        3,
+        4
+    ],
+    "supplementaryPermissionIds": [
+        1,
+        2,
+        3,
+        4
+    ],
+    "facilityIds": [
+        32474
+    ],
+    "profilePicUrl": ""
+}
+HTTP/1.1 201 Created
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: b5c6d2adba2a94261a355a92ade3d8ea
+Date: Fri, 18 Aug 2023 14:52:48 GMT
+Server: Google Frontend
+Content-Length: 399
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "id": 43492,
+    "firstName": "Shalanda",
+    "lastName": "Toy",
+    "email": "lifefitnesspostman+57683936@gmail.com",
+    "preferredUnit": "METRICS",
+    "preferredLanguageCode": "en-US",
+    "phoneNumber": null,
+    "officePhoneNumber": null,
+    "profilePicUrl": null,
+    "imageKey": null,
+    "isEnabled": false,
+    "isAllowedMarketingEmails": true,
+    "isAllowedFeedbackProviding": true,
+    "useTerms": true,
+    "encodedPassword": null,
+    "status": "PENDING",
+    "roleIds": [
+        3,
+        4,
+        2
+    ]
+}
+
+[2023-08-18 02:52:48] [24] [INFO] Setting default update user body values
+[2023-08-18 02:52:48] [24] [INFO] Base properties loaded: api/core/controllers/user/putuserdetails/update_user_details.properties
+[2023-08-18 02:52:48] [24] [INFO] Updating user expecting error response code
+[2023-08-18 02:52:48] [24] [INFO] Request method:	PUT
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/details
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MjM3MDM2NiwidXNlcl9pZCI6InVSclRVQ0ZuM3ZXSWtRQU15U0ZtMHQxYm5qcTEiLCJzdWIiOiJ1UnJUVUNGbjN2V0lrUUFNeVNGbTB0MWJuanExIiwiaWF0IjoxNjkyMzcwMzY2LCJleHAiOjE2OTIzNzM5NjYsImVtYWlsIjoibGlmZWZpdG5lc3Nwb3N0bWFuKzE4NzgxMzc4QGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJsaWZlZml0bmVzc3Bvc3RtYW4rMTg3ODEzNzhAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.a-UiUnchJL-TW8pqi2zGEOEtW5nBrJWH0ShO0PwfL_M3hz_CYd01XPzQ4X1Yfq5DeN_3FdnwwtJZb7q_oZCpwCr8qhulITZBcuxlp6fe6VB6Uxq7uPxtkTLo0TNDP9Feau8L04P94DDIrsiXydNt-87NURZDoogg2L7vMWe3f2ogN1Duf2qG2GU15ki6jkbmFQ70ULVSuojOaFLZv11_-Khv7UvDaA1lkCRGV0jkfe42_bqfzpj5VeLubTKq6wtAdIqducOd92XPkeMb2t0Cn9B9uQl3abqUu2dmo6SLvVJ_dWrKfGme8ZS6DooxUc3dGDfbaUbxd43xzG0cBsv77w
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "id": 1,
+    "firstName": "UPDATED_NAME",
+    "lastName": "UPDATED_LAST_NAME",
+    "email": "lifefitnesspostman+57683936@gmail.com",
+    "roleIds": [
+        2,
+        3,
+        4
+    ],
+    "supplementaryPermissionIds": [
+        1,
+        2,
+        3,
+        4
+    ],
+    "facilityIds": [
+        100000
+    ],
+    "profilePicUrl": ""
+}
+HTTP/1.1 400 Bad Request
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: 26cd8b7bb66b88725d02de306c9c0c43
+Date: Fri, 18 Aug 2023 14:52:48 GMT
+Server: Google Frontend
+Content-Length: 123
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "timestamp": "2023-08-18T14:52:48.671654159",
+    "errorCode": null,
+    "title": "Facility does not exist",
+    "details": null,
+    "path": null
+}
+
+[2023-08-18 02:52:48] [24] [INFO] Assert that user was not created and error title is correct
+[2023-08-18 02:52:48] [24] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatUserCantBeUpdatedToNonExistentFacility] PASSED at [14:52:48 2023-08-18]

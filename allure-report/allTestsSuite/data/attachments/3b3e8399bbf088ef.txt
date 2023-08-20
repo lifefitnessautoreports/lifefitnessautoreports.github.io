@@ -1,0 +1,156 @@
+[2023-08-18 03:15:40] [22] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-18 03:15:40] [22] [INFO] TEST [LifeFitness Backend Auto Tests - checkFormatAddressWithMoreThanThreeHundredChars] STARTED at [15:15:40 2023-08-18]
+[2023-08-18 03:15:40] [22] [INFO] Creating new facility
+[2023-08-18 03:15:40] [22] [INFO] Setting default add facility body values
+[2023-08-18 03:15:40] [22] [INFO] Base properties loaded: api/core/controllers/user/postfacility/post_facility.properties
+[2023-08-18 03:15:40] [22] [INFO] Get country code except embargoed ones
+[2023-08-18 03:15:40] [22] [INFO] Create facility expecting success
+[2023-08-18 03:15:42] [22] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/facilities
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MjM3MTczNiwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyMzcxNzM2LCJleHAiOjE2OTIzNzUzMzYsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.AzF-wt5XW252jZw1QT9ZwYrj7xCRCYpn4ZFNv9864HZ4fUWpKU-lQaoz_XgvtlYsuHqNdAlAx8d9qLGA9rU7k1x1vqPYC-8fIt12VNHbOAV-RUsJmQxIJfjSHtF2CXQkFtfk0cJfJifyLNGZWTTrL2r34sxQoSTVTck1wAqKBK6m-nu5xpPFyW5tAjBtLAU27kNUdu4l9SPyNJyMGxXiZmc4QCgjk7ot7YVDmsM-3IfiZ4Wk0w11nw1CkywoQr8jsq9vahq9iaLwEw8rzbcIPfwMcdhd0tXtzL97pb00Sw-VJM4Q_BNmy15X1NUPdEi1XPZ1-zENIQyLy1JYLokmSg
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "name": "Heaney Inc",
+    "facilityGroupId": 0,
+    "facilityTypeId": 0,
+    "address": {
+        "placeId": "7ef4c064-335d-4967-9413-5e5c1cbb8275",
+        "primaryStreet": "17449 Jacobson Flats",
+        "secondaryStreet": "Apt. 033",
+        "city": "East Maudie",
+        "state": "",
+        "countryCode": "MR",
+        "latitude": "30.6279",
+        "longitude": "22.7323",
+        "country": "string",
+        "formatAddress": "asd"
+    },
+    "contactNumber": "2590829782",
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": true,
+    "timezone": ""
+}
+HTTP/1.1 201 Created
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: a3ea439ac47da9262108c4ac213d5a28
+Date: Fri, 18 Aug 2023 15:15:42 GMT
+Server: Google Frontend
+Content-Length: 561
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "id": 32889,
+    "legacyId": null,
+    "ipAddress": null,
+    "facilityGroupId": null,
+    "name": "Heaney Inc",
+    "facilityTypeId": null,
+    "address": {
+        "id": 32913,
+        "placeId": "7ef4c064-335d-4967-9413-5e5c1cbb8275",
+        "primaryStreet": "17449 Jacobson Flats",
+        "secondaryStreet": "Apt. 033",
+        "city": "East Maudie",
+        "region": "EMEA",
+        "zipCode": null,
+        "state": "",
+        "countryCode": "MR",
+        "latitude": 30.6279,
+        "longitude": 22.7323,
+        "country": "string",
+        "formatAddress": "asd",
+        "rawData": null
+    },
+    "contactNumber": "2590829782",
+    "timezone": "Africa/Tripoli (GMT+2:00)",
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": false
+}
+
+[2023-08-18 03:15:42] [22] [INFO] Updating facility with formatAddress with more than 300 chars
+[2023-08-18 03:15:42] [22] [INFO] Setting default update facility body values
+[2023-08-18 03:15:42] [22] [INFO] Base properties loaded: api/core/controllers/facility/putfacility/put_facility.properties
+[2023-08-18 03:15:42] [22] [INFO] Get country code except embargoed ones
+[2023-08-18 03:15:42] [22] [INFO] Updating facility expecting error response code
+[2023-08-18 03:15:44] [22] [INFO] Request method:	PUT
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/facilities
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MjM3MTczNiwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyMzcxNzM2LCJleHAiOjE2OTIzNzUzMzYsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.AzF-wt5XW252jZw1QT9ZwYrj7xCRCYpn4ZFNv9864HZ4fUWpKU-lQaoz_XgvtlYsuHqNdAlAx8d9qLGA9rU7k1x1vqPYC-8fIt12VNHbOAV-RUsJmQxIJfjSHtF2CXQkFtfk0cJfJifyLNGZWTTrL2r34sxQoSTVTck1wAqKBK6m-nu5xpPFyW5tAjBtLAU27kNUdu4l9SPyNJyMGxXiZmc4QCgjk7ot7YVDmsM-3IfiZ4Wk0w11nw1CkywoQr8jsq9vahq9iaLwEw8rzbcIPfwMcdhd0tXtzL97pb00Sw-VJM4Q_BNmy15X1NUPdEi1XPZ1-zENIQyLy1JYLokmSg
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "id": "32889",
+    "name": "Schmidt-Spencer",
+    "facilityGroupId": 0,
+    "facilityTypeId": 5,
+    "address": {
+        "placeId": "31e5e2f8-c01f-4b20-af72-884e9e09bc4f",
+        "primaryStreet": "20605 Larson Alley",
+        "secondaryStreet": "Apt. 479",
+        "city": "Port Nicolasmouth",
+        "zipCode": "",
+        "state": "",
+        "countryCode": "ID",
+        "latitude": "30.6279",
+        "longitude": "22.7323",
+        "country": "string",
+        "formatAddress": "5660083784932698053729248755118310216195907489914509957224041797773871658465497703169539951652828883739638188014535700441296936688705225226251495424451197521330358549574844828264357552714503729519418172260419045270483137408800735717935673730289092281085104765352271465080769968580802705543937633435098"
+    },
+    "contactNumber": "3656609552",
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": true,
+    "timezone": ""
+}
+HTTP/1.1 400 Bad Request
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: 877868ac7b7226eb9953917067193f76
+Date: Fri, 18 Aug 2023 15:15:44 GMT
+Server: Google Frontend
+Content-Length: 148
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "timestamp": "2023-08-18T15:15:44.333106601",
+    "errorCode": null,
+    "title": "Formatted address maximum size is 300 characters",
+    "details": null,
+    "path": null
+}
+
+[2023-08-18 03:15:44] [22] [INFO] Asserting that format address is mandatory
+[2023-08-18 03:15:44] [22] [INFO] TEST [LifeFitness Backend Auto Tests - checkFormatAddressWithMoreThanThreeHundredChars] PASSED at [15:15:44 2023-08-18]

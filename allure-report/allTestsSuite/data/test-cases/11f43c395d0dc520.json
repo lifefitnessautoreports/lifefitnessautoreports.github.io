@@ -1,0 +1,153 @@
+{
+  "uid" : "11f43c395d0dc520",
+  "name" : "Check that Admin can not GET /users/{userId}/supplementary-permissions for Technical user",
+  "fullName" : "com.lifefitness.qa.api.utils.controllers.idpuser.getidptoken.GetTokenTest.checkThatAdminCanNotGetSupplementaryPermissionsForTechnicalUser",
+  "historyId" : "c775d962c88c6f31820ea30141d0836",
+  "time" : {
+    "start" : 1692085102402,
+    "stop" : 1692085102558,
+    "duration" : 156
+  },
+  "status" : "failed",
+  "statusMessage" : "2 expectations failed.\nExpected status code <400> but was <200>.\n\nExpected status line a string containing \"Bad Request\" doesn't match actual status line \"HTTP/1.1 200 OK\".\n",
+  "statusTrace" : "java.lang.AssertionError: 2 expectations failed.\nExpected status code <400> but was <200>.\n\nExpected status line a string containing \"Bad Request\" doesn't match actual status line \"HTTP/1.1 200 OK\".\n\n\tat java.base/jdk.internal.reflect.GeneratedConstructorAccessor112.newInstance(Unknown Source)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\n\tat io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1656)\n\tat jdk.internal.reflect.GeneratedMethodAccessor81.invoke(Unknown Source)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1029)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:816)\n\tat groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)\n\tat org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)\n\tat org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)\n\tat io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1661)\n\tat jdk.internal.reflect.GeneratedMethodAccessor80.invoke(Unknown Source)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1029)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:816)\n\tat groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)\n\tat org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)\n\tat org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)\n\tat io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:171)\n\tat io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)\n\tat com.zebrunner.carina.api.http.HttpClient.send(HttpClient.java:37)\n\tat com.zebrunner.carina.api.AbstractApiMethod.callAPI(AbstractApiMethod.java:301)\n\tat com.zebrunner.carina.api.AbstractApiMethodV2.callAPI(AbstractApiMethodV2.java:189)\n\tat com.zebrunner.carina.api.AbstractApiMethod.callAPI(AbstractApiMethod.java:279)\n\tat com.zebrunner.carina.api.AbstractApiMethodV2.callAPI(AbstractApiMethodV2.java:181)\n\tat com.lifefitness.qa.api.corecontrollers.user.getsupplementarypermissionsbyuserid.GetSupplementaryPermissionsByIdHelper.getSupplementaryPermissionsByIdExpectFailure(GetSupplementaryPermissionsByIdHelper.java:43)\n\tat com.lifefitness.qa.api.utils.controllers.idpuser.getidptoken.GetTokenTest.checkThatAdminCanNotGetSupplementaryPermissionsForTechnicalUser(GetTokenTest.java:196)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\n\tat org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)\n\tat org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)\n\tat org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)\n\tat org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)\n\tat org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)\n\tat org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)\n\tat org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)\n\tat org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)\n\tat java.base/java.lang.Thread.run(Thread.java:833)\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "executeBeforeTestSuite",
+    "time" : {
+      "start" : 1692084501447,
+      "stop" : 1692084501889,
+      "duration" : 442
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "onCarinaAfterMethod",
+    "time" : {
+      "start" : 1692085102560,
+      "stop" : 1692085102560,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "addTestLog",
+    "time" : {
+      "start" : 1692085386465,
+      "stop" : 1692085386466,
+      "duration" : 1
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "deleteAllEmails",
+    "time" : {
+      "start" : 1692085386641,
+      "stop" : 1692085388577,
+      "duration" : 1936
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.lifefitness.qa.api.utils.controllers.idpuser.getidptoken.GetTokenTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.lifefitness.qa.api.utils.controllers.idpuser.getidptoken.GetTokenTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "checkThatAdminCanNotGetSupplementaryPermissionsForTechnicalUser"
+  }, {
+    "name" : "parentSuite",
+    "value" : "LifeFitness Backend Auto Tests"
+  }, {
+    "name" : "suite",
+    "value" : "LifeFitness Backend Auto Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.lifefitness.qa.api.utils.controllers.idpuser.getidptoken.GetTokenTest"
+  }, {
+    "name" : "host",
+    "value" : "791fe439-8e38-47b2-92e4-e2c6ef6fa5af-rr7ph"
+  }, {
+    "name" : "thread",
+    "value" : "299@791fe439-8e38-47b2-92e4-e2c6ef6fa5af-rr7ph.TestNG-test=LifeFitness Backend Auto Tests-1(21)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "owner",
+    "value" : "Valeria Sorokina"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "HPB-6881",
+    "url" : "https://lfagile.atlassian.net/browse/HPB-6881",
+    "type" : "issue"
+  }, {
+    "name" : "HPB-7323",
+    "url" : "https://lfagile.atlassian.net/browse/HPB-7323",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "owner" : "Valeria Sorokina",
+    "retries" : [ {
+      "uid" : "73fce3bdaa90f525",
+      "status" : "skipped",
+      "statusDetails" : "2 expectations failed.\nExpected status code <400> but was <200>.\n\nExpected status line a string containing \"Bad Request\" doesn't match actual status line \"HTTP/1.1 200 OK\".\n",
+      "time" : {
+        "start" : 1692085102201,
+        "stop" : 1692085102399,
+        "duration" : 198
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "11f43c395d0dc520.json",
+  "parameterValues" : [ ]
+}

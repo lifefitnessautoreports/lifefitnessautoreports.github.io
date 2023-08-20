@@ -1,0 +1,90 @@
+[2023-08-19 07:30:50] [23] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-19 07:30:50] [23] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatGBCountryCodeReturnsEMEARegion] STARTED at [07:30:50 2023-08-19]
+[2023-08-19 07:30:50] [23] [INFO] Creating facility with GB country expecting success
+[2023-08-19 07:30:50] [23] [INFO] Setting default add facility body values
+[2023-08-19 07:30:50] [23] [INFO] Base properties loaded: api/core/controllers/user/postfacility/post_facility.properties
+[2023-08-19 07:30:50] [23] [INFO] Get country code except embargoed ones
+[2023-08-19 07:30:50] [23] [INFO] Create facility expecting success
+[2023-08-19 07:30:51] [23] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/facilities
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MjQzMDA5OCwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyNDMwMDk4LCJleHAiOjE2OTI0MzM2OTgsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.El3B0WaarZd8LKMdU8wos9BWubz4WJ1zPv7-YkisMlkdvomY5bBZJGfiaIg2PYeAM2Zu-r-Lm-iwUsZr3cUBK4_K-yF7cKGcnwlCr-4zohfE4L4RLtqUJJiS8uH9znWuOodkrweIW76C-CYVHBGe98F113t4kz6B9lvakoVf9Iq6SrO8zHgHW0D6T6L4-febEcUkL4EDLBvOwRlSYraB2nMmRSkaaEN9hhBZ2sy20F7VCLE45yJNnZ-Mfim1sal3Ux2NboUAboiqhkS1jALd3B949n3BQ8ZTrQg8PQqVI4NsschInqdhhraLLPvNdsMzhbYvC9IsQ40SKE3gR1TENw
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "name": "Kertzmann LLC",
+    "facilityGroupId": 0,
+    "facilityTypeId": 0,
+    "address": {
+        "placeId": "d5fb4f0a-96a1-4e43-a6e4-bbbf1ad29c06",
+        "primaryStreet": "6252 Napoleon Roads",
+        "secondaryStreet": "Apt. 350",
+        "city": "New Abraham",
+        "state": "",
+        "countryCode": "GB",
+        "latitude": "30.6279",
+        "longitude": "22.7323",
+        "country": "string",
+        "formatAddress": "asd"
+    },
+    "contactNumber": "1554803864",
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": true,
+    "timezone": ""
+}
+HTTP/1.1 201 Created
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: 72a1fc591bdac5e7948bd010d0be69f4
+Date: Sat, 19 Aug 2023 07:30:51 GMT
+Server: Google Frontend
+Content-Length: 563
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "id": 34156,
+    "legacyId": null,
+    "ipAddress": null,
+    "facilityGroupId": null,
+    "name": "Kertzmann LLC",
+    "facilityTypeId": null,
+    "address": {
+        "id": 34180,
+        "placeId": "d5fb4f0a-96a1-4e43-a6e4-bbbf1ad29c06",
+        "primaryStreet": "6252 Napoleon Roads",
+        "secondaryStreet": "Apt. 350",
+        "city": "New Abraham",
+        "region": "EMEA",
+        "zipCode": null,
+        "state": "",
+        "countryCode": "GB",
+        "latitude": 30.6279,
+        "longitude": 22.7323,
+        "country": "string",
+        "formatAddress": "asd",
+        "rawData": null
+    },
+    "contactNumber": "1554803864",
+    "timezone": "Africa/Tripoli (GMT+2:00)",
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": false
+}
+
+[2023-08-19 07:30:51] [23] [INFO] Asserting that GB country code returns EMEA region
+[2023-08-19 07:30:51] [23] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatGBCountryCodeReturnsEMEARegion] PASSED at [07:30:51 2023-08-19]

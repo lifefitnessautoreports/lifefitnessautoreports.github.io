@@ -1,0 +1,228 @@
+[2023-08-17 07:34:07] [24] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-17 07:34:07] [24] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatUserCantBeRegisteredWithExistingEmail] STARTED at [07:34:07 2023-08-17]
+[2023-08-17 07:34:07] [24] [INFO] Setting default registration body values
+[2023-08-17 07:34:07] [24] [INFO] Base properties loaded: api/core/controllers/user/postregistration/registration.properties
+[2023-08-17 07:34:07] [24] [INFO] Get country code except embargoed ones
+[2023-08-17 07:34:07] [24] [INFO] Setting first user email to upper case
+[2023-08-17 07:34:07] [24] [INFO] Waiting for 0.1 sec to cool Core Backend off
+[2023-08-17 07:34:07] [24] [INFO] Registering user with lifeFitnessPostman+07702355@gmail.com email
+[2023-08-17 07:34:08] [24] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/registration
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoidGVzdFVzZXIiLCJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MjI1NzMwNSwidXNlcl9pZCI6IlZqTHhsb2xYUG5lNDc0RDZjZjVVNHNubFNUbDIiLCJzdWIiOiJWakx4bG9sWFBuZTQ3NEQ2Y2Y1VTRzbmxTVGwyIiwiaWF0IjoxNjkyMjU3MzA1LCJleHAiOjE2OTIyNjA5MDUsImVtYWlsIjoidGVzdEBsaWZlZml0bmVzcy5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJ0ZXN0QGxpZmVmaXRuZXNzLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.Trm8Nbvjek8OyA8qgOhLsl-P4VtZ7ZVc8_yQx_Wli10EaX3bk2gmuTGB3FBRdEiIOIBHuJDkMqMUq-A6BBWtCHd4Qz3HLHiRJanpzHT4x6xWg7i_763qVWab9lOCMrkRKwfitYjJQA5c550BH9VWfBhYlcR3j0baVWuHd2SPrpcEjSZFjBbyks5i5edP5-5cXu8aKyk3Z0CLO3Vs2nsmZwT0fjqB4L0jGZdQpJAZWxbYiVfw8lObjMUIZIOtZsD2kZH9zStwRkUqI7fWwdonQuMwrQU7kVbEWXNrDFjtSbPmnF-HPiUM4uHkFcZju4gHUfEnKT7c84IdMLvgFFtbpw
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "user": {
+        "id": 0,
+        "firstName": "Mason",
+        "lastName": "Corwin",
+        "email": "lifeFitnessPostman+07702355@gmail.com",
+        "preferredUnit": "METRICS",
+        "preferredLanguageCode": "",
+        "phoneNumber": "",
+        "officePhoneNumber": "",
+        "imageUrl": "",
+        "imageKey": "",
+        "thumbnailUrl": "",
+        "thumbnailKey": "",
+        "isAllowedMarketingEmails": null,
+        "isAllowedFeedbackProviding": null,
+        "useTerms": null
+    },
+    "facility": {
+        "id": 0,
+        "legacyId": 0,
+        "ipAddress": "",
+        "facilityGroupId": 0,
+        "name": "Cremin-Turcotte",
+        "facilityTypeId": 0,
+        "address": {
+            "placeId": "464a3ba9-964e-4031-beec-a13ac247eca1",
+            "primaryStreet": "018 Runolfsdottir Garden",
+            "secondaryStreet": "Suite 925",
+            "city": "Schambergerbury",
+            "region": "",
+            "zipCode": "223610",
+            "state": "",
+            "countryCode": "AX",
+            "latitude": "30.6279",
+            "longitude": "22.7323",
+            "country": "string",
+            "formatAddress": "string",
+            "rawData": "string"
+        },
+        "contactNumber": "3535824349",
+        "timezone": "",
+        "openTime": "10:00 AM",
+        "closeTime": "6:00 PM",
+        "isOpen24Hours": true
+    }
+}
+HTTP/1.1 201 Created
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: 24639df71d1eab04ad568e6736a17320
+Date: Thu, 17 Aug 2023 07:34:08 GMT
+Server: Google Frontend
+Content-Length: 997
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "user": {
+        "id": 41964,
+        "firstName": "Mason",
+        "lastName": "Corwin",
+        "email": "lifefitnesspostman+07702355@gmail.com",
+        "preferredUnit": "METRICS",
+        "preferredLanguageCode": "en-US",
+        "phoneNumber": "",
+        "officePhoneNumber": "",
+        "profilePicUrl": null,
+        "imageKey": "",
+        "isEnabled": true,
+        "isAllowedMarketingEmails": true,
+        "isAllowedFeedbackProviding": true,
+        "useTerms": true,
+        "encodedPassword": null,
+        "status": "ACTIVE",
+        "roleIds": [
+            2
+        ]
+    },
+    "facility": {
+        "id": 31009,
+        "legacyId": 0,
+        "ipAddress": "",
+        "facilityGroupId": null,
+        "name": "Cremin-Turcotte",
+        "facilityTypeId": null,
+        "address": {
+            "id": 31033,
+            "placeId": "464a3ba9-964e-4031-beec-a13ac247eca1",
+            "primaryStreet": "018 Runolfsdottir Garden",
+            "secondaryStreet": "Suite 925",
+            "city": "Schambergerbury",
+            "region": "Not Specified",
+            "zipCode": "223610",
+            "state": "",
+            "countryCode": "AX",
+            "latitude": 30.6279,
+            "longitude": 22.7323,
+            "country": "string",
+            "formatAddress": "string",
+            "rawData": "string"
+        },
+        "contactNumber": "3535824349",
+        "timezone": "Africa/Tripoli (GMT+2:00)",
+        "openTime": "10:00 AM",
+        "closeTime": "6:00 PM",
+        "isOpen24Hours": true
+    }
+}
+
+[2023-08-17 07:34:08] [24] [INFO] Setting default registration body values
+[2023-08-17 07:34:08] [24] [INFO] Base properties loaded: api/core/controllers/user/postregistration/registration.properties
+[2023-08-17 07:34:08] [24] [INFO] Get country code except embargoed ones
+[2023-08-17 07:34:08] [24] [INFO] Setting second user email to upper case
+[2023-08-17 07:34:09] [24] [INFO] Registering user expecting error response code
+[2023-08-17 07:34:09] [24] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/registration
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoidGVzdFVzZXIiLCJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MjI1NzMwNSwidXNlcl9pZCI6IlZqTHhsb2xYUG5lNDc0RDZjZjVVNHNubFNUbDIiLCJzdWIiOiJWakx4bG9sWFBuZTQ3NEQ2Y2Y1VTRzbmxTVGwyIiwiaWF0IjoxNjkyMjU3MzA1LCJleHAiOjE2OTIyNjA5MDUsImVtYWlsIjoidGVzdEBsaWZlZml0bmVzcy5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJ0ZXN0QGxpZmVmaXRuZXNzLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.Trm8Nbvjek8OyA8qgOhLsl-P4VtZ7ZVc8_yQx_Wli10EaX3bk2gmuTGB3FBRdEiIOIBHuJDkMqMUq-A6BBWtCHd4Qz3HLHiRJanpzHT4x6xWg7i_763qVWab9lOCMrkRKwfitYjJQA5c550BH9VWfBhYlcR3j0baVWuHd2SPrpcEjSZFjBbyks5i5edP5-5cXu8aKyk3Z0CLO3Vs2nsmZwT0fjqB4L0jGZdQpJAZWxbYiVfw8lObjMUIZIOtZsD2kZH9zStwRkUqI7fWwdonQuMwrQU7kVbEWXNrDFjtSbPmnF-HPiUM4uHkFcZju4gHUfEnKT7c84IdMLvgFFtbpw
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "user": {
+        "id": 0,
+        "firstName": "Cruz",
+        "lastName": "Bogisich",
+        "email": "lifeFitnessPostman+07702355@gmail.com",
+        "preferredUnit": "METRICS",
+        "preferredLanguageCode": "",
+        "phoneNumber": "",
+        "officePhoneNumber": "",
+        "imageUrl": "",
+        "imageKey": "",
+        "thumbnailUrl": "",
+        "thumbnailKey": "",
+        "isAllowedMarketingEmails": null,
+        "isAllowedFeedbackProviding": null,
+        "useTerms": null
+    },
+    "facility": {
+        "id": 0,
+        "legacyId": 0,
+        "ipAddress": "",
+        "facilityGroupId": 0,
+        "name": "Beier-Sauer",
+        "facilityTypeId": 0,
+        "address": {
+            "placeId": "e9c9ac7a-9580-4b5b-824f-7a027fd28bf3",
+            "primaryStreet": "188 Bart Circles",
+            "secondaryStreet": "Apt. 623",
+            "city": "Huelstad",
+            "region": "",
+            "zipCode": "223610",
+            "state": "",
+            "countryCode": "JP",
+            "latitude": "30.6279",
+            "longitude": "22.7323",
+            "country": "string",
+            "formatAddress": "string",
+            "rawData": "string"
+        },
+        "contactNumber": "0040708686",
+        "timezone": "",
+        "openTime": "10:00 AM",
+        "closeTime": "6:00 PM",
+        "isOpen24Hours": true
+    }
+}
+HTTP/1.1 400 Bad Request
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: e0109389748faed3e00233346906306e
+Date: Thu, 17 Aug 2023 07:34:09 GMT
+Server: Google Frontend
+Content-Length: 125
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "timestamp": "2023-08-17T07:34:09.388665221",
+    "errorCode": null,
+    "title": "User email already exists",
+    "details": null,
+    "path": null
+}
+
+[2023-08-17 07:34:09] [24] [INFO] Asserting that existing email can't be registered twice
+[2023-08-17 07:34:09] [24] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatUserCantBeRegisteredWithExistingEmail] PASSED at [07:34:09 2023-08-17]
