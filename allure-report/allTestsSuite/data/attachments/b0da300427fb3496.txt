@@ -1,0 +1,68 @@
+[2023-08-18 03:18:03] [24] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-18 03:18:03] [24] [INFO] TEST [LifeFitness Backend Auto Tests - checkCityWithMoreThanEightyFiveChars] STARTED at [15:18:03 2023-08-18]
+[2023-08-18 03:18:03] [24] [INFO] Creating facility with city with more than 85 chars expecting failure
+[2023-08-18 03:18:03] [24] [INFO] Setting default add facility body values
+[2023-08-18 03:18:03] [24] [INFO] Base properties loaded: api/core/controllers/user/postfacility/post_facility.properties
+[2023-08-18 03:18:03] [24] [INFO] Get country code except embargoed ones
+[2023-08-18 03:18:03] [24] [INFO] Creating facility expecting failure
+[2023-08-18 03:18:03] [24] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/facilities
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MjM3MTczNiwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyMzcxNzM2LCJleHAiOjE2OTIzNzUzMzYsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.AzF-wt5XW252jZw1QT9ZwYrj7xCRCYpn4ZFNv9864HZ4fUWpKU-lQaoz_XgvtlYsuHqNdAlAx8d9qLGA9rU7k1x1vqPYC-8fIt12VNHbOAV-RUsJmQxIJfjSHtF2CXQkFtfk0cJfJifyLNGZWTTrL2r34sxQoSTVTck1wAqKBK6m-nu5xpPFyW5tAjBtLAU27kNUdu4l9SPyNJyMGxXiZmc4QCgjk7ot7YVDmsM-3IfiZ4Wk0w11nw1CkywoQr8jsq9vahq9iaLwEw8rzbcIPfwMcdhd0tXtzL97pb00Sw-VJM4Q_BNmy15X1NUPdEi1XPZ1-zENIQyLy1JYLokmSg
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "name": "Tillman, Tillman and Dare",
+    "facilityGroupId": 0,
+    "facilityTypeId": 0,
+    "address": {
+        "placeId": "dc475096-0870-4043-88de-ca6b459c69c5",
+        "primaryStreet": "4219 Schuppe Bypass",
+        "secondaryStreet": "Apt. 718",
+        "city": "44400875288073018043361190881570261662627618663502321259763090446623412680479643693333",
+        "state": "",
+        "countryCode": "HK",
+        "latitude": "30.6279",
+        "longitude": "22.7323",
+        "country": "string",
+        "formatAddress": "asd"
+    },
+    "contactNumber": "8703344207",
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": true,
+    "timezone": ""
+}
+HTTP/1.1 400 Bad Request
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: 9e570c7496fa9a0d65a8037cd87bce30
+Date: Fri, 18 Aug 2023 15:18:03 GMT
+Server: Google Frontend
+Content-Length: 134
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "timestamp": "2023-08-18T15:18:03.166790617",
+    "errorCode": null,
+    "title": "City maximum size is 85 characters",
+    "details": null,
+    "path": null
+}
+
+[2023-08-18 03:18:03] [24] [INFO] Asserting that city can't be more than 85 chars
+[2023-08-18 03:18:03] [24] [INFO] TEST [LifeFitness Backend Auto Tests - checkCityWithMoreThanEightyFiveChars] PASSED at [15:18:03 2023-08-18]

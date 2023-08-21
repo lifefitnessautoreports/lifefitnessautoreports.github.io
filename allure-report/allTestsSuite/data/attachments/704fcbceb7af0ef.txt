@@ -1,0 +1,452 @@
+[2023-08-20 07:28:16] [23] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-20 07:28:16] [23] [INFO] TEST [LifeFitness Backend Auto Tests - checkGettingFacilitiesByUserIdTest] STARTED at [07:28:16 2023-08-20]
+[2023-08-20 07:28:16] [23] [INFO] Setting default registration body values
+[2023-08-20 07:28:16] [23] [INFO] Getting Halo Core dev base URL
+[2023-08-20 07:28:16] [23] [INFO] Base properties loaded: api/core/controllers/user/postregistration/registration.properties
+[2023-08-20 07:28:16] [23] [INFO] Get country code except embargoed ones
+[2023-08-20 07:28:16] [23] [INFO] Waiting for 0.1 sec to cool Core Backend off
+[2023-08-20 07:28:16] [23] [INFO] Registering user with lifeFitnessPostman+63816490@gmail.com email
+[2023-08-20 07:28:18] [23] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/registration
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MjUxNjQ5NiwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyNTE2NDk2LCJleHAiOjE2OTI1MjAwOTYsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.kflmTElUIR-bNGkHYoaY5SUmQ9QwnS0KXsA97n74M40K2n5J_QK0wt-3GVCT3oR0ptc7YTzECPPRG2o1rT9rRrz7wDMtETgJP1W-0AvvqPcxl0p9jtxr7G6Dygw3WYsiRILYfQHvQyO1Agt_RXXoHmHZcdMC1Dxg1QTbHSYvWMqwlaSRtetqKqkuQvpKeecC3QXXcDASmfF3rGTpGs6vxxLkgFCuNIuSsnRXLg_cvQm4PJfr67RNNR4EMisbgg4wsUfcT41eVNvcrnGsGFGeWrt5jI-gGinGIgAyyXKEaqCDdG22_k1nXWwC7OnG4MedeT6YWJ8VcdFDjOfClnUYKg
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "user": {
+        "id": 0,
+        "firstName": "Donovan",
+        "lastName": "Bernier",
+        "email": "lifeFitnessPostman+63816490@gmail.com",
+        "preferredUnit": "METRICS",
+        "preferredLanguageCode": "",
+        "phoneNumber": "",
+        "officePhoneNumber": "",
+        "imageUrl": "",
+        "imageKey": "",
+        "thumbnailUrl": "",
+        "thumbnailKey": "",
+        "isAllowedMarketingEmails": null,
+        "isAllowedFeedbackProviding": null,
+        "useTerms": null
+    },
+    "facility": {
+        "id": 0,
+        "legacyId": 0,
+        "ipAddress": "",
+        "facilityGroupId": 0,
+        "name": "Bogan Inc",
+        "facilityTypeId": 0,
+        "address": {
+            "placeId": "67412634-72fc-4336-8819-63d1922deed6",
+            "primaryStreet": "6135 Schmidt Shoal",
+            "secondaryStreet": "Apt. 949",
+            "city": "Schowalterchester",
+            "region": "",
+            "zipCode": "223610",
+            "state": "",
+            "countryCode": "MA",
+            "latitude": "30.6279",
+            "longitude": "22.7323",
+            "country": "string",
+            "formatAddress": "string",
+            "rawData": "string"
+        },
+        "contactNumber": "5918336291",
+        "timezone": "",
+        "openTime": "10:00 AM",
+        "closeTime": "6:00 PM",
+        "isOpen24Hours": true
+    }
+}
+HTTP/1.1 201 Created
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: 1d60cef11697bc07ce38aedcd2271750
+Date: Sun, 20 Aug 2023 07:28:18 GMT
+Server: Google Frontend
+Content-Length: 980
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "user": {
+        "id": 45709,
+        "firstName": "Donovan",
+        "lastName": "Bernier",
+        "email": "lifefitnesspostman+63816490@gmail.com",
+        "preferredUnit": "METRICS",
+        "preferredLanguageCode": "en-US",
+        "phoneNumber": "",
+        "officePhoneNumber": "",
+        "profilePicUrl": null,
+        "imageKey": "",
+        "isEnabled": true,
+        "isAllowedMarketingEmails": true,
+        "isAllowedFeedbackProviding": true,
+        "useTerms": true,
+        "encodedPassword": null,
+        "status": "ACTIVE",
+        "roleIds": [
+            2
+        ]
+    },
+    "facility": {
+        "id": 34372,
+        "legacyId": 0,
+        "ipAddress": "",
+        "facilityGroupId": null,
+        "name": "Bogan Inc",
+        "facilityTypeId": null,
+        "address": {
+            "id": 34396,
+            "placeId": "67412634-72fc-4336-8819-63d1922deed6",
+            "primaryStreet": "6135 Schmidt Shoal",
+            "secondaryStreet": "Apt. 949",
+            "city": "Schowalterchester",
+            "region": "EMEA",
+            "zipCode": "223610",
+            "state": "",
+            "countryCode": "MA",
+            "latitude": 30.6279,
+            "longitude": 22.7323,
+            "country": "string",
+            "formatAddress": "string",
+            "rawData": "string"
+        },
+        "contactNumber": "5918336291",
+        "timezone": "Africa/Tripoli (GMT+2:00)",
+        "openTime": "10:00 AM",
+        "closeTime": "6:00 PM",
+        "isOpen24Hours": true
+    }
+}
+
+[2023-08-20 07:28:18] [23] [INFO] Setting default registration body values
+[2023-08-20 07:28:18] [23] [INFO] Base properties loaded: api/core/controllers/user/postregistration/registration.properties
+[2023-08-20 07:28:18] [23] [INFO] Get country code except embargoed ones
+[2023-08-20 07:28:18] [23] [INFO] Waiting for 0.1 sec to cool Core Backend off
+[2023-08-20 07:28:18] [23] [INFO] Registering user with lifeFitnessPostman+17122986@gmail.com email
+[2023-08-20 07:28:20] [23] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/registration
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MjUxNjQ5NiwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyNTE2NDk2LCJleHAiOjE2OTI1MjAwOTYsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.kflmTElUIR-bNGkHYoaY5SUmQ9QwnS0KXsA97n74M40K2n5J_QK0wt-3GVCT3oR0ptc7YTzECPPRG2o1rT9rRrz7wDMtETgJP1W-0AvvqPcxl0p9jtxr7G6Dygw3WYsiRILYfQHvQyO1Agt_RXXoHmHZcdMC1Dxg1QTbHSYvWMqwlaSRtetqKqkuQvpKeecC3QXXcDASmfF3rGTpGs6vxxLkgFCuNIuSsnRXLg_cvQm4PJfr67RNNR4EMisbgg4wsUfcT41eVNvcrnGsGFGeWrt5jI-gGinGIgAyyXKEaqCDdG22_k1nXWwC7OnG4MedeT6YWJ8VcdFDjOfClnUYKg
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "user": {
+        "id": 0,
+        "firstName": "Joey",
+        "lastName": "Swift",
+        "email": "lifeFitnessPostman+17122986@gmail.com",
+        "preferredUnit": "METRICS",
+        "preferredLanguageCode": "",
+        "phoneNumber": "",
+        "officePhoneNumber": "",
+        "imageUrl": "",
+        "imageKey": "",
+        "thumbnailUrl": "",
+        "thumbnailKey": "",
+        "isAllowedMarketingEmails": null,
+        "isAllowedFeedbackProviding": null,
+        "useTerms": null
+    },
+    "facility": {
+        "id": 0,
+        "legacyId": 0,
+        "ipAddress": "",
+        "facilityGroupId": 0,
+        "name": "Treutel and Sons",
+        "facilityTypeId": 0,
+        "address": {
+            "placeId": "fea876eb-3221-4cf5-af3c-89059fbf86f4",
+            "primaryStreet": "9433 Schroeder Courts",
+            "secondaryStreet": "Suite 044",
+            "city": "Sherlytown",
+            "region": "",
+            "zipCode": "223610",
+            "state": "",
+            "countryCode": "PW",
+            "latitude": "30.6279",
+            "longitude": "22.7323",
+            "country": "string",
+            "formatAddress": "string",
+            "rawData": "string"
+        },
+        "contactNumber": "8718886090",
+        "timezone": "",
+        "openTime": "10:00 AM",
+        "closeTime": "6:00 PM",
+        "isOpen24Hours": true
+    }
+}
+HTTP/1.1 201 Created
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: d58d371104544dcb7ff85861815b7fb5
+Date: Sun, 20 Aug 2023 07:28:20 GMT
+Server: Google Frontend
+Content-Length: 979
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "user": {
+        "id": 45712,
+        "firstName": "Joey",
+        "lastName": "Swift",
+        "email": "lifefitnesspostman+17122986@gmail.com",
+        "preferredUnit": "METRICS",
+        "preferredLanguageCode": "en-US",
+        "phoneNumber": "",
+        "officePhoneNumber": "",
+        "profilePicUrl": null,
+        "imageKey": "",
+        "isEnabled": true,
+        "isAllowedMarketingEmails": true,
+        "isAllowedFeedbackProviding": true,
+        "useTerms": true,
+        "encodedPassword": null,
+        "status": "ACTIVE",
+        "roleIds": [
+            2
+        ]
+    },
+    "facility": {
+        "id": 34376,
+        "legacyId": 0,
+        "ipAddress": "",
+        "facilityGroupId": null,
+        "name": "Treutel and Sons",
+        "facilityTypeId": null,
+        "address": {
+            "id": 34400,
+            "placeId": "fea876eb-3221-4cf5-af3c-89059fbf86f4",
+            "primaryStreet": "9433 Schroeder Courts",
+            "secondaryStreet": "Suite 044",
+            "city": "Sherlytown",
+            "region": "APAC",
+            "zipCode": "223610",
+            "state": "",
+            "countryCode": "PW",
+            "latitude": 30.6279,
+            "longitude": 22.7323,
+            "country": "string",
+            "formatAddress": "string",
+            "rawData": "string"
+        },
+        "contactNumber": "8718886090",
+        "timezone": "Africa/Tripoli (GMT+2:00)",
+        "openTime": "10:00 AM",
+        "closeTime": "6:00 PM",
+        "isOpen24Hours": true
+    }
+}
+
+[2023-08-20 07:28:20] [23] [INFO] Getting Halo Core dev base URL
+[2023-08-20 07:28:20] [23] [INFO] Attaching user to existing facility expecting success
+[2023-08-20 07:28:20] [23] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/45712/facilities/34372
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	userId=45712
+				facilityId=34372
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MjUxNjQ5NiwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyNTE2NDk2LCJleHAiOjE2OTI1MjAwOTYsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.kflmTElUIR-bNGkHYoaY5SUmQ9QwnS0KXsA97n74M40K2n5J_QK0wt-3GVCT3oR0ptc7YTzECPPRG2o1rT9rRrz7wDMtETgJP1W-0AvvqPcxl0p9jtxr7G6Dygw3WYsiRILYfQHvQyO1Agt_RXXoHmHZcdMC1Dxg1QTbHSYvWMqwlaSRtetqKqkuQvpKeecC3QXXcDASmfF3rGTpGs6vxxLkgFCuNIuSsnRXLg_cvQm4PJfr67RNNR4EMisbgg4wsUfcT41eVNvcrnGsGFGeWrt5jI-gGinGIgAyyXKEaqCDdG22_k1nXWwC7OnG4MedeT6YWJ8VcdFDjOfClnUYKg
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 200 OK
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+Transfer-Encoding: chunked
+Date: Sun, 20 Aug 2023 07:28:20 GMT
+Server: Google Frontend
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "id": 34372,
+    "legacyId": 0,
+    "ipAddress": "",
+    "facilityGroupId": null,
+    "name": "Bogan Inc",
+    "facilityTypeId": null,
+    "address": {
+        "id": 34396,
+        "placeId": "67412634-72fc-4336-8819-63d1922deed6",
+        "primaryStreet": "6135 Schmidt Shoal",
+        "secondaryStreet": "Apt. 949",
+        "city": "Schowalterchester",
+        "region": "EMEA",
+        "zipCode": "223610",
+        "state": "",
+        "countryCode": "MA",
+        "latitude": 30.6279,
+        "longitude": 22.7323,
+        "country": "string",
+        "formatAddress": "string",
+        "rawData": "string"
+    },
+    "contactNumber": "5918336291",
+    "timezone": "Africa/Tripoli (GMT+2:00)",
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": true
+}
+
+[2023-08-20 07:28:20] [23] [INFO] Getting facilities by userId expecting success
+[2023-08-20 07:28:21] [23] [INFO] Request method:	GET
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/facilities/users/45712?pageIndex=0&pageSize=10
+Request params:	<none>
+Query params:	pageIndex=0
+				pageSize=10
+Form params:	<none>
+Path params:	userId=45712
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MjUxNjQ5NiwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyNTE2NDk2LCJleHAiOjE2OTI1MjAwOTYsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.kflmTElUIR-bNGkHYoaY5SUmQ9QwnS0KXsA97n74M40K2n5J_QK0wt-3GVCT3oR0ptc7YTzECPPRG2o1rT9rRrz7wDMtETgJP1W-0AvvqPcxl0p9jtxr7G6Dygw3WYsiRILYfQHvQyO1Agt_RXXoHmHZcdMC1Dxg1QTbHSYvWMqwlaSRtetqKqkuQvpKeecC3QXXcDASmfF3rGTpGs6vxxLkgFCuNIuSsnRXLg_cvQm4PJfr67RNNR4EMisbgg4wsUfcT41eVNvcrnGsGFGeWrt5jI-gGinGIgAyyXKEaqCDdG22_k1nXWwC7OnG4MedeT6YWJ8VcdFDjOfClnUYKg
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 200 OK
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+Transfer-Encoding: chunked
+Date: Sun, 20 Aug 2023 07:28:21 GMT
+Server: Google Frontend
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "content": [
+        {
+            "id": 34372,
+            "legacyId": 0,
+            "ipAddress": "",
+            "facilityGroupId": null,
+            "name": "Bogan Inc",
+            "facilityTypeId": null,
+            "address": {
+                "id": 34396,
+                "placeId": "67412634-72fc-4336-8819-63d1922deed6",
+                "primaryStreet": "6135 Schmidt Shoal",
+                "secondaryStreet": "Apt. 949",
+                "city": "Schowalterchester",
+                "region": "EMEA",
+                "zipCode": "223610",
+                "state": "",
+                "countryCode": "MA",
+                "latitude": 30.6279,
+                "longitude": 22.7323,
+                "country": "string",
+                "formatAddress": "string",
+                "rawData": "string"
+            },
+            "contactNumber": "5918336291",
+            "timezone": "Africa/Tripoli (GMT+2:00)",
+            "openTime": "10:00 AM",
+            "closeTime": "6:00 PM",
+            "isOpen24Hours": true
+        },
+        {
+            "id": 34376,
+            "legacyId": 0,
+            "ipAddress": "",
+            "facilityGroupId": null,
+            "name": "Treutel and Sons",
+            "facilityTypeId": null,
+            "address": {
+                "id": 34400,
+                "placeId": "fea876eb-3221-4cf5-af3c-89059fbf86f4",
+                "primaryStreet": "9433 Schroeder Courts",
+                "secondaryStreet": "Suite 044",
+                "city": "Sherlytown",
+                "region": "APAC",
+                "zipCode": "223610",
+                "state": "",
+                "countryCode": "PW",
+                "latitude": 30.6279,
+                "longitude": 22.7323,
+                "country": "string",
+                "formatAddress": "string",
+                "rawData": "string"
+            },
+            "contactNumber": "8718886090",
+            "timezone": "Africa/Tripoli (GMT+2:00)",
+            "openTime": "10:00 AM",
+            "closeTime": "6:00 PM",
+            "isOpen24Hours": true
+        }
+    ],
+    "pageable": {
+        "sort": {
+            "empty": false,
+            "sorted": true,
+            "unsorted": false
+        },
+        "offset": 0,
+        "pageNumber": 0,
+        "pageSize": 10,
+        "unpaged": false,
+        "paged": true
+    },
+    "totalElements": 2,
+    "totalPages": 1,
+    "last": true,
+    "size": 10,
+    "number": 0,
+    "sort": {
+        "empty": false,
+        "sorted": true,
+        "unsorted": false
+    },
+    "numberOfElements": 2,
+    "first": true,
+    "empty": false
+}
+
+[2023-08-20 07:28:21] [23] [INFO] Asserting that user is attached to both facilities: 34372 and 34376
+[2023-08-20 07:28:21] [23] [INFO] TEST [LifeFitness Backend Auto Tests - checkGettingFacilitiesByUserIdTest] PASSED at [07:28:21 2023-08-20]
