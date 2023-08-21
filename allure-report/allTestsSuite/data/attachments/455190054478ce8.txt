@@ -1,0 +1,91 @@
+[2023-08-17 07:34:10] [24] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-17 07:34:10] [24] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatUserCantBeRegisteredWithNullLastName] STARTED at [07:34:10 2023-08-17]
+[2023-08-17 07:34:10] [24] [INFO] Setting default registration body values
+[2023-08-17 07:34:10] [24] [INFO] Base properties loaded: api/core/controllers/user/postregistration/registration.properties
+[2023-08-17 07:34:10] [24] [INFO] Get country code except embargoed ones
+[2023-08-17 07:34:10] [24] [INFO] Registering user expecting error response code
+[2023-08-17 07:34:10] [24] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/registration
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoidGVzdFVzZXIiLCJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MjI1NzMwNSwidXNlcl9pZCI6IlZqTHhsb2xYUG5lNDc0RDZjZjVVNHNubFNUbDIiLCJzdWIiOiJWakx4bG9sWFBuZTQ3NEQ2Y2Y1VTRzbmxTVGwyIiwiaWF0IjoxNjkyMjU3MzA1LCJleHAiOjE2OTIyNjA5MDUsImVtYWlsIjoidGVzdEBsaWZlZml0bmVzcy5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJ0ZXN0QGxpZmVmaXRuZXNzLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.Trm8Nbvjek8OyA8qgOhLsl-P4VtZ7ZVc8_yQx_Wli10EaX3bk2gmuTGB3FBRdEiIOIBHuJDkMqMUq-A6BBWtCHd4Qz3HLHiRJanpzHT4x6xWg7i_763qVWab9lOCMrkRKwfitYjJQA5c550BH9VWfBhYlcR3j0baVWuHd2SPrpcEjSZFjBbyks5i5edP5-5cXu8aKyk3Z0CLO3Vs2nsmZwT0fjqB4L0jGZdQpJAZWxbYiVfw8lObjMUIZIOtZsD2kZH9zStwRkUqI7fWwdonQuMwrQU7kVbEWXNrDFjtSbPmnF-HPiUM4uHkFcZju4gHUfEnKT7c84IdMLvgFFtbpw
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "user": {
+        "id": 0,
+        "firstName": "Maile",
+        "email": "lifeFitnessPostman+80647676@gmail.com",
+        "preferredUnit": "METRICS",
+        "preferredLanguageCode": "",
+        "phoneNumber": "",
+        "officePhoneNumber": "",
+        "imageUrl": "",
+        "imageKey": "",
+        "thumbnailUrl": "",
+        "thumbnailKey": "",
+        "isAllowedMarketingEmails": null,
+        "isAllowedFeedbackProviding": null,
+        "useTerms": null
+    },
+    "facility": {
+        "id": 0,
+        "legacyId": 0,
+        "ipAddress": "",
+        "facilityGroupId": 0,
+        "name": "Kunze LLC",
+        "facilityTypeId": 0,
+        "address": {
+            "placeId": "fc21a151-c170-40e8-87cd-11321ec73819",
+            "primaryStreet": "530 Lawerence Islands",
+            "secondaryStreet": "Suite 641",
+            "city": "Ivoryshire",
+            "region": "",
+            "zipCode": "223610",
+            "state": "",
+            "countryCode": "FK",
+            "latitude": "30.6279",
+            "longitude": "22.7323",
+            "country": "string",
+            "formatAddress": "string",
+            "rawData": "string"
+        },
+        "contactNumber": "5039650046",
+        "timezone": "",
+        "openTime": "10:00 AM",
+        "closeTime": "6:00 PM",
+        "isOpen24Hours": true
+    }
+}
+HTTP/1.1 400 Bad Request
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: db6f64456effa324e39b12db305aae4e
+Date: Thu, 17 Aug 2023 07:34:10 GMT
+Server: Google Frontend
+Content-Length: 124
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "timestamp": "2023-08-17T07:34:10.293772681",
+    "errorCode": null,
+    "title": "Last name can't be empty",
+    "details": null,
+    "path": null
+}
+
+[2023-08-17 07:34:10] [24] [INFO] Asserting that user can't be registered with null last name
+[2023-08-17 07:34:10] [24] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatUserCantBeRegisteredWithNullLastName] PASSED at [07:34:10 2023-08-17]

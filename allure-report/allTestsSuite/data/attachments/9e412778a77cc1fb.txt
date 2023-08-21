@@ -1,0 +1,177 @@
+[2023-08-21 04:19:13] [23] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-21 04:19:13] [23] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatUpdatingPWCountryCodeReturnsAPACRegion] STARTED at [16:19:13 2023-08-21]
+[2023-08-21 04:19:13] [23] [INFO] Creating new facility
+[2023-08-21 04:19:13] [23] [INFO] Setting default add facility body values
+[2023-08-21 04:19:13] [23] [INFO] Base properties loaded: api/core/controllers/user/postfacility/post_facility.properties
+[2023-08-21 04:19:13] [23] [INFO] Get country code except embargoed ones
+[2023-08-21 04:19:13] [23] [INFO] Create facility expecting success
+[2023-08-21 04:19:13] [23] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/facilities
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MjYzNDczNywidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyNjM0NzM3LCJleHAiOjE2OTI2MzgzMzcsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.Ih8AldDh_huBfBHzZ9hJZ4GLpCSK3wRTRRjHbWxUQbcLwxt6xQGFMsrs2e6gfAZiUiJqwdHbngkF1yaoKnHGwByDVLk9Xez7aMEEkyXmXzV5t_GzPmqrfuHnY-v8N1PZYk9T4Y3j57zA-LWgnsuCt3w96IKbIJ546-xQXOd2eOF-lZo6Jk0SX_eZM8UQsFs7L-omCFdz0O0mS3B-AqyIy7aGsTZrl6R9D-erRu5jyLEeLradJzAyIcA6JXMjl3fqgxeshg1Ok5d2-gDWZj4A-6mcNulyNU2ZlHxBoDj7QZ6tScBLJe46UzPQ1LX-p4SKqFaEkWtQiJZhli4tRVGQSw
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "name": "Heidenreich Group",
+    "facilityGroupId": 0,
+    "facilityTypeId": 0,
+    "address": {
+        "placeId": "b43e4bb2-4fb1-4dd5-adf1-010b24a59f00",
+        "primaryStreet": "23881 Norman Ways",
+        "secondaryStreet": "Suite 590",
+        "city": "Cormierborough",
+        "state": "",
+        "countryCode": "JO",
+        "latitude": "30.6279",
+        "longitude": "22.7323",
+        "country": "string",
+        "formatAddress": "asd"
+    },
+    "contactNumber": "6213321036",
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": true,
+    "timezone": ""
+}
+HTTP/1.1 201 Created
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: 41eb3f36ff6735a3a242e242c413302c
+Date: Mon, 21 Aug 2023 16:19:13 GMT
+Server: Google Frontend
+Content-Length: 569
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "id": 37895,
+    "legacyId": null,
+    "ipAddress": null,
+    "facilityGroupId": null,
+    "name": "Heidenreich Group",
+    "facilityTypeId": null,
+    "address": {
+        "id": 37919,
+        "placeId": "b43e4bb2-4fb1-4dd5-adf1-010b24a59f00",
+        "primaryStreet": "23881 Norman Ways",
+        "secondaryStreet": "Suite 590",
+        "city": "Cormierborough",
+        "region": "EMEA",
+        "zipCode": null,
+        "state": "",
+        "countryCode": "JO",
+        "latitude": 30.6279,
+        "longitude": 22.7323,
+        "country": "string",
+        "formatAddress": "asd",
+        "rawData": null
+    },
+    "contactNumber": "6213321036",
+    "timezone": "Africa/Tripoli (GMT+2:00)",
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": false
+}
+
+[2023-08-21 04:19:13] [23] [INFO] Updating facility with country code as PW
+[2023-08-21 04:19:13] [23] [INFO] Setting default update facility body values
+[2023-08-21 04:19:13] [23] [INFO] Base properties loaded: api/core/controllers/facility/putfacility/put_facility.properties
+[2023-08-21 04:19:13] [23] [INFO] Get country code except embargoed ones
+[2023-08-21 04:19:13] [23] [INFO] Updating facility expect success
+[2023-08-21 04:19:13] [23] [INFO] Request method:	PUT
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/facilities
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MjYzNDczNywidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyNjM0NzM3LCJleHAiOjE2OTI2MzgzMzcsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.Ih8AldDh_huBfBHzZ9hJZ4GLpCSK3wRTRRjHbWxUQbcLwxt6xQGFMsrs2e6gfAZiUiJqwdHbngkF1yaoKnHGwByDVLk9Xez7aMEEkyXmXzV5t_GzPmqrfuHnY-v8N1PZYk9T4Y3j57zA-LWgnsuCt3w96IKbIJ546-xQXOd2eOF-lZo6Jk0SX_eZM8UQsFs7L-omCFdz0O0mS3B-AqyIy7aGsTZrl6R9D-erRu5jyLEeLradJzAyIcA6JXMjl3fqgxeshg1Ok5d2-gDWZj4A-6mcNulyNU2ZlHxBoDj7QZ6tScBLJe46UzPQ1LX-p4SKqFaEkWtQiJZhli4tRVGQSw
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "id": "37895",
+    "name": "Bradtke and Sons",
+    "facilityGroupId": 0,
+    "facilityTypeId": 5,
+    "address": {
+        "placeId": "f02b485d-773f-4cb1-9c76-133a487b3c36",
+        "primaryStreet": "370 Leida Hollow",
+        "secondaryStreet": "Suite 340",
+        "city": "Hermistonmouth",
+        "zipCode": "",
+        "state": "",
+        "countryCode": "PW",
+        "latitude": "30.6279",
+        "longitude": "22.7323",
+        "country": "string",
+        "formatAddress": "asd"
+    },
+    "contactNumber": "2778573389",
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": true,
+    "timezone": ""
+}
+HTTP/1.1 200 OK
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 21 Aug 2023 16:19:13 GMT
+Server: Google Frontend
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "id": 37895,
+    "legacyId": null,
+    "ipAddress": null,
+    "facilityGroupId": null,
+    "name": "Bradtke and Sons",
+    "facilityTypeId": 5,
+    "address": {
+        "id": 37919,
+        "placeId": "f02b485d-773f-4cb1-9c76-133a487b3c36",
+        "primaryStreet": "370 Leida Hollow",
+        "secondaryStreet": "Suite 340",
+        "city": "Hermistonmouth",
+        "region": "APAC",
+        "zipCode": "",
+        "state": "",
+        "countryCode": "PW",
+        "latitude": 30.6279,
+        "longitude": 22.7323,
+        "country": "string",
+        "formatAddress": "asd",
+        "rawData": null
+    },
+    "contactNumber": "6213321036",
+    "timezone": "Africa/Tripoli (GMT+2:00)",
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": false
+}
+
+[2023-08-21 04:19:13] [23] [INFO] Asserting that PW country code returns APAC region
+[2023-08-21 04:19:13] [23] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatUpdatingPWCountryCodeReturnsAPACRegion] PASSED at [16:19:13 2023-08-21]

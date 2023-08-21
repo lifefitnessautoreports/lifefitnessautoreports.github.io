@@ -1,0 +1,143 @@
+[2023-08-21 04:19:07] [26] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-21 04:19:07] [26] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatFacilityCantBeUpdatedWithoutAddress] STARTED at [16:19:07 2023-08-21]
+[2023-08-21 04:19:07] [26] [INFO] Creating new facility
+[2023-08-21 04:19:07] [26] [INFO] Setting default add facility body values
+[2023-08-21 04:19:07] [26] [INFO] Base properties loaded: api/core/controllers/user/postfacility/post_facility.properties
+[2023-08-21 04:19:07] [26] [INFO] Get country code except embargoed ones
+[2023-08-21 04:19:07] [26] [INFO] Create facility expecting success
+[2023-08-21 04:19:08] [26] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/facilities
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MjYzNDczNywidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyNjM0NzM3LCJleHAiOjE2OTI2MzgzMzcsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.Ih8AldDh_huBfBHzZ9hJZ4GLpCSK3wRTRRjHbWxUQbcLwxt6xQGFMsrs2e6gfAZiUiJqwdHbngkF1yaoKnHGwByDVLk9Xez7aMEEkyXmXzV5t_GzPmqrfuHnY-v8N1PZYk9T4Y3j57zA-LWgnsuCt3w96IKbIJ546-xQXOd2eOF-lZo6Jk0SX_eZM8UQsFs7L-omCFdz0O0mS3B-AqyIy7aGsTZrl6R9D-erRu5jyLEeLradJzAyIcA6JXMjl3fqgxeshg1Ok5d2-gDWZj4A-6mcNulyNU2ZlHxBoDj7QZ6tScBLJe46UzPQ1LX-p4SKqFaEkWtQiJZhli4tRVGQSw
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "name": "Abshire Group",
+    "facilityGroupId": 0,
+    "facilityTypeId": 0,
+    "address": {
+        "placeId": "0a2b9f77-acde-4f46-9179-25af9dc3842b",
+        "primaryStreet": "8542 Myles Flat",
+        "secondaryStreet": "Suite 755",
+        "city": "South Herthastad",
+        "state": "",
+        "countryCode": "NP",
+        "latitude": "30.6279",
+        "longitude": "22.7323",
+        "country": "string",
+        "formatAddress": "asd"
+    },
+    "contactNumber": "4060063491",
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": true,
+    "timezone": ""
+}
+HTTP/1.1 201 Created
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: 4bdc022f978c506dbfb13f249577ba1f
+Date: Mon, 21 Aug 2023 16:19:08 GMT
+Server: Google Frontend
+Content-Length: 565
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "id": 37880,
+    "legacyId": null,
+    "ipAddress": null,
+    "facilityGroupId": null,
+    "name": "Abshire Group",
+    "facilityTypeId": null,
+    "address": {
+        "id": 37904,
+        "placeId": "0a2b9f77-acde-4f46-9179-25af9dc3842b",
+        "primaryStreet": "8542 Myles Flat",
+        "secondaryStreet": "Suite 755",
+        "city": "South Herthastad",
+        "region": "APAC",
+        "zipCode": null,
+        "state": "",
+        "countryCode": "NP",
+        "latitude": 30.6279,
+        "longitude": 22.7323,
+        "country": "string",
+        "formatAddress": "asd",
+        "rawData": null
+    },
+    "contactNumber": "4060063491",
+    "timezone": "Africa/Tripoli (GMT+2:00)",
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": false
+}
+
+[2023-08-21 04:19:08] [26] [INFO] Updating facility without address
+[2023-08-21 04:19:08] [26] [INFO] Setting default update facility body values
+[2023-08-21 04:19:08] [26] [INFO] Base properties loaded: api/core/controllers/facility/putfacility/put_facility.properties
+[2023-08-21 04:19:08] [26] [INFO] Get country code except embargoed ones
+[2023-08-21 04:19:08] [26] [INFO] Updating facility expecting error response code
+[2023-08-21 04:19:09] [26] [INFO] Request method:	PUT
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/facilities
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MjYzNDczNywidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyNjM0NzM3LCJleHAiOjE2OTI2MzgzMzcsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.Ih8AldDh_huBfBHzZ9hJZ4GLpCSK3wRTRRjHbWxUQbcLwxt6xQGFMsrs2e6gfAZiUiJqwdHbngkF1yaoKnHGwByDVLk9Xez7aMEEkyXmXzV5t_GzPmqrfuHnY-v8N1PZYk9T4Y3j57zA-LWgnsuCt3w96IKbIJ546-xQXOd2eOF-lZo6Jk0SX_eZM8UQsFs7L-omCFdz0O0mS3B-AqyIy7aGsTZrl6R9D-erRu5jyLEeLradJzAyIcA6JXMjl3fqgxeshg1Ok5d2-gDWZj4A-6mcNulyNU2ZlHxBoDj7QZ6tScBLJe46UzPQ1LX-p4SKqFaEkWtQiJZhli4tRVGQSw
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "id": "37880",
+    "name": "Kilback and Sons",
+    "facilityGroupId": 0,
+    "facilityTypeId": 5,
+    "contactNumber": "9692397015",
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": true,
+    "timezone": ""
+}
+HTTP/1.1 400 Bad Request
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: d040b8b790a256768543603a9cfaba95
+Date: Mon, 21 Aug 2023 16:19:09 GMT
+Server: Google Frontend
+Content-Length: 123
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "timestamp": "2023-08-21T16:19:09.32101866",
+    "errorCode": null,
+    "title": "Address must not be null",
+    "details": null,
+    "path": null
+}
+
+[2023-08-21 04:19:09] [26] [INFO] Asserting that facility can't be updated without address
+[2023-08-21 04:19:09] [26] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatFacilityCantBeUpdatedWithoutAddress] PASSED at [16:19:09 2023-08-21]

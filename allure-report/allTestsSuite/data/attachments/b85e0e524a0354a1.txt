@@ -1,0 +1,177 @@
+[2023-08-18 04:04:55] [26] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-18 04:04:55] [26] [INFO] TEST [LifeFitness Backend Auto Tests - checkUpdatingFacilityTypeIdFieldAsNonExistentFacilityType] STARTED at [16:04:55 2023-08-18]
+[2023-08-18 04:04:55] [26] [INFO] Creating new facility
+[2023-08-18 04:04:55] [26] [INFO] Setting default add facility body values
+[2023-08-18 04:04:55] [26] [INFO] Base properties loaded: api/core/controllers/user/postfacility/post_facility.properties
+[2023-08-18 04:04:55] [26] [INFO] Get country code except embargoed ones
+[2023-08-18 04:04:55] [26] [INFO] Create facility expecting success
+[2023-08-18 04:04:55] [26] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/facilities
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MjM3NDY3NCwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyMzc0Njc0LCJleHAiOjE2OTIzNzgyNzQsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.kfXynQkLwhEZd5FLYCJjM3UQ87W0LIMi7c11MAWWYp1waNtRzWLfca-YAogstWoDkEhNCwllNNklOzowy2z59ZukMpPlChCS9zvPs2sKK9Yt8YIHgdX2rf404mUQVtzxdtKkV4DVbTwKh3eymKTF1WHPwXb7wAFWiPt6POSzIPdcSUlgG-o6KmW8SRkYxRBwn31sseA7iA_gBVeFl52hKqAdatuPBR6NPaNYXfKuyjhtOvirnSSdc5r7zlhFBM2Q_es4M-5R9JvqacSrwRCeR8Z8JPLc-_BR7BMvJhYKqyxWnjfbEK1_c88M7ZJ-Z0oKsiafCkDult5VDElnExV-yw
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "name": "Mraz Inc",
+    "facilityGroupId": 0,
+    "facilityTypeId": 0,
+    "address": {
+        "placeId": "dd01ef65-35ae-4950-87a5-e4ffe192a884",
+        "primaryStreet": "8728 Kub Light",
+        "secondaryStreet": "Suite 613",
+        "city": "Alfonsoburgh",
+        "state": "",
+        "countryCode": "MX",
+        "latitude": "30.6279",
+        "longitude": "22.7323",
+        "country": "string",
+        "formatAddress": "asd"
+    },
+    "contactNumber": "7326204361",
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": true,
+    "timezone": ""
+}
+HTTP/1.1 201 Created
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: 517e3c98dc1fc7ba2de8278c567649fa
+Date: Fri, 18 Aug 2023 16:04:55 GMT
+Server: Google Frontend
+Content-Length: 554
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "id": 33325,
+    "legacyId": null,
+    "ipAddress": null,
+    "facilityGroupId": null,
+    "name": "Mraz Inc",
+    "facilityTypeId": null,
+    "address": {
+        "id": 33349,
+        "placeId": "dd01ef65-35ae-4950-87a5-e4ffe192a884",
+        "primaryStreet": "8728 Kub Light",
+        "secondaryStreet": "Suite 613",
+        "city": "Alfonsoburgh",
+        "region": "NAM",
+        "zipCode": null,
+        "state": "",
+        "countryCode": "MX",
+        "latitude": 30.6279,
+        "longitude": 22.7323,
+        "country": "string",
+        "formatAddress": "asd",
+        "rawData": null
+    },
+    "contactNumber": "7326204361",
+    "timezone": "Africa/Tripoli (GMT+2:00)",
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": false
+}
+
+[2023-08-18 04:04:55] [26] [INFO] Updating new facility with facility type id as non-existent facility type
+[2023-08-18 04:04:55] [26] [INFO] Setting default update facility body values
+[2023-08-18 04:04:55] [26] [INFO] Base properties loaded: api/core/controllers/facility/putfacility/put_facility.properties
+[2023-08-18 04:04:55] [26] [INFO] Get country code except embargoed ones
+[2023-08-18 04:04:55] [26] [INFO] Updating facility expect success
+[2023-08-18 04:04:56] [26] [INFO] Request method:	PUT
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/facilities
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MjM3NDY3NCwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyMzc0Njc0LCJleHAiOjE2OTIzNzgyNzQsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.kfXynQkLwhEZd5FLYCJjM3UQ87W0LIMi7c11MAWWYp1waNtRzWLfca-YAogstWoDkEhNCwllNNklOzowy2z59ZukMpPlChCS9zvPs2sKK9Yt8YIHgdX2rf404mUQVtzxdtKkV4DVbTwKh3eymKTF1WHPwXb7wAFWiPt6POSzIPdcSUlgG-o6KmW8SRkYxRBwn31sseA7iA_gBVeFl52hKqAdatuPBR6NPaNYXfKuyjhtOvirnSSdc5r7zlhFBM2Q_es4M-5R9JvqacSrwRCeR8Z8JPLc-_BR7BMvJhYKqyxWnjfbEK1_c88M7ZJ-Z0oKsiafCkDult5VDElnExV-yw
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "id": "33325",
+    "name": "Kautzer, Kuhlman and Moen",
+    "facilityGroupId": 0,
+    "facilityTypeId": 20,
+    "address": {
+        "placeId": "89374761-3ccc-4380-86c0-a7ef4b8c2f54",
+        "primaryStreet": "396 Nader Oval",
+        "secondaryStreet": "Apt. 495",
+        "city": "Sammiemouth",
+        "zipCode": "",
+        "state": "",
+        "countryCode": "GM",
+        "latitude": "30.6279",
+        "longitude": "22.7323",
+        "country": "string",
+        "formatAddress": "asd"
+    },
+    "contactNumber": "7327282595",
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": true,
+    "timezone": ""
+}
+HTTP/1.1 200 OK
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+Transfer-Encoding: chunked
+Date: Fri, 18 Aug 2023 16:04:56 GMT
+Server: Google Frontend
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "id": 33325,
+    "legacyId": null,
+    "ipAddress": null,
+    "facilityGroupId": null,
+    "name": "Kautzer, Kuhlman and Moen",
+    "facilityTypeId": null,
+    "address": {
+        "id": 33349,
+        "placeId": "89374761-3ccc-4380-86c0-a7ef4b8c2f54",
+        "primaryStreet": "396 Nader Oval",
+        "secondaryStreet": "Apt. 495",
+        "city": "Sammiemouth",
+        "region": "EMEA",
+        "zipCode": "",
+        "state": "",
+        "countryCode": "GM",
+        "latitude": 30.6279,
+        "longitude": 22.7323,
+        "country": "string",
+        "formatAddress": "asd",
+        "rawData": null
+    },
+    "contactNumber": "7326204361",
+    "timezone": "Africa/Tripoli (GMT+2:00)",
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": false
+}
+
+[2023-08-18 04:04:56] [26] [INFO] Asserting that facility id is null
+[2023-08-18 04:04:56] [26] [INFO] TEST [LifeFitness Backend Auto Tests - checkUpdatingFacilityTypeIdFieldAsNonExistentFacilityType] PASSED at [16:04:56 2023-08-18]

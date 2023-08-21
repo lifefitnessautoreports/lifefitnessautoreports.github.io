@@ -1,0 +1,42 @@
+[2023-08-20 07:34:29] [26] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-20 07:34:29] [26] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatAdminCanNotDeleteTechnicalUser] STARTED at [07:34:29 2023-08-20]
+[2023-08-20 07:34:29] [26] [INFO] Deleting user expecting error response code
+[2023-08-20 07:34:29] [26] [INFO] Request method:	DELETE
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/delete?email=technicalUser.qa%40lifefitness.com
+Request params:	<none>
+Query params:	email=technicalUser.qa@lifefitness.com
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MjUxNjQ5NiwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyNTE2NDk2LCJleHAiOjE2OTI1MjAwOTYsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.kflmTElUIR-bNGkHYoaY5SUmQ9QwnS0KXsA97n74M40K2n5J_QK0wt-3GVCT3oR0ptc7YTzECPPRG2o1rT9rRrz7wDMtETgJP1W-0AvvqPcxl0p9jtxr7G6Dygw3WYsiRILYfQHvQyO1Agt_RXXoHmHZcdMC1Dxg1QTbHSYvWMqwlaSRtetqKqkuQvpKeecC3QXXcDASmfF3rGTpGs6vxxLkgFCuNIuSsnRXLg_cvQm4PJfr67RNNR4EMisbgg4wsUfcT41eVNvcrnGsGFGeWrt5jI-gGinGIgAyyXKEaqCDdG22_k1nXWwC7OnG4MedeT6YWJ8VcdFDjOfClnUYKg
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 400 Bad Request
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: dc04c4cc5e7d90fe5ccaa462648ec560
+Date: Sun, 20 Aug 2023 07:34:29 GMT
+Server: Google Frontend
+Content-Length: 166
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "timestamp": "2023-08-20T07:34:29.7419536",
+    "errorCode": null,
+    "title": "Technical user cannot be deleted",
+    "details": null,
+    "path": "/halo-core-service/api/v1/users/delete"
+}
+
+[2023-08-20 07:34:29] [26] [INFO] Asserting that correct error title is returned when deleting /users for Technical user with Admin access token
+[2023-08-20 07:34:29] [26] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatAdminCanNotDeleteTechnicalUser] PASSED at [07:34:29 2023-08-20]

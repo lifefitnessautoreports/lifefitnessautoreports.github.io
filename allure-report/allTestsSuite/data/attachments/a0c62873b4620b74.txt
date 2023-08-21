@@ -1,0 +1,149 @@
+[2023-08-21 07:57:51] [25] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-21 07:57:51] [25] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatCloseTimeIsOptional] STARTED at [07:57:51 2023-08-21]
+[2023-08-21 07:57:51] [25] [INFO] Creating facility without close time
+[2023-08-21 07:57:51] [25] [INFO] Setting default add facility body values
+[2023-08-21 07:57:51] [25] [INFO] Base properties loaded: api/core/controllers/user/postfacility/post_facility.properties
+[2023-08-21 07:57:51] [25] [INFO] Get country code except embargoed ones
+[2023-08-21 07:57:51] [25] [INFO] Create facility expecting success
+[2023-08-21 07:57:52] [25] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/facilities
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MjYwMjkyOCwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyNjAyOTI4LCJleHAiOjE2OTI2MDY1MjgsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.B8j_QsUJAabhyL4YKHd9lbz5v8PpQa3OGjGrILgMJjzEQFGBBt5GDCaeyoMxRIhMMTMz2Q-5tqX48VxGcpvQGnVyHklKHniVGyqZJm2m3P1gUAhXUIwdwuVejGvx9Wtm_aohCJhjDTx-lM7Kxa8K1SvPzxlnRE9gi9edsjdxGwqWaTKSPhDE1ZYLBnRx6laU5W9lKavomgWPSlB3VuC7N65QF3mvPdriIA5aFtbDtrJAvPEftJTsnvKU8aqQu2SyvOS5t5VVoUvBHH00GgZgxE78MOO0LzzmRpxZgV9IgTYUQbW7jBney5u5DPiwEiWO_p_hDkS2gfu90gy705PbYA
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "name": "Windler, Kling and Schmidt",
+    "facilityGroupId": 0,
+    "facilityTypeId": 0,
+    "address": {
+        "placeId": "eaf0ca93-d79d-42bd-a6e2-b3b47328bea7",
+        "primaryStreet": "2373 Zieme Groves",
+        "secondaryStreet": "Apt. 970",
+        "city": "West Desmond",
+        "state": "",
+        "countryCode": "CI",
+        "latitude": "30.6279",
+        "longitude": "22.7323",
+        "country": "string",
+        "formatAddress": "asd"
+    },
+    "contactNumber": "4380835533",
+    "openTime": "10:00 AM",
+    "isOpen24Hours": true,
+    "timezone": ""
+}
+HTTP/1.1 201 Created
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: e056e9c728dd8b1d28f5845192f11202;o=1
+Date: Mon, 21 Aug 2023 07:57:52 GMT
+Server: Google Frontend
+Content-Length: 563
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "id": 34920,
+    "legacyId": null,
+    "ipAddress": null,
+    "facilityGroupId": null,
+    "name": "Windler, Kling and Schmidt",
+    "facilityTypeId": null,
+    "address": {
+        "id": 34944,
+        "placeId": "eaf0ca93-d79d-42bd-a6e2-b3b47328bea7",
+        "primaryStreet": "2373 Zieme Groves",
+        "secondaryStreet": "Apt. 970",
+        "city": "West Desmond",
+        "region": "EMEA",
+        "zipCode": null,
+        "state": "",
+        "countryCode": "CI",
+        "latitude": 30.6279,
+        "longitude": 22.7323,
+        "country": "string",
+        "formatAddress": "asd",
+        "rawData": null
+    },
+    "contactNumber": "4380835533",
+    "timezone": "Africa/Tripoli (GMT+2:00)",
+    "openTime": null,
+    "closeTime": null,
+    "isOpen24Hours": true
+}
+
+[2023-08-21 07:57:52] [25] [INFO] Getting facility from system
+[2023-08-21 07:57:52] [25] [INFO] Get facility by id expecting success
+[2023-08-21 07:58:42] [25] [INFO] Request method:	GET
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/facilities/34920
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	facilityId=34920
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MjYwMjkyOCwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyNjAyOTI4LCJleHAiOjE2OTI2MDY1MjgsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.B8j_QsUJAabhyL4YKHd9lbz5v8PpQa3OGjGrILgMJjzEQFGBBt5GDCaeyoMxRIhMMTMz2Q-5tqX48VxGcpvQGnVyHklKHniVGyqZJm2m3P1gUAhXUIwdwuVejGvx9Wtm_aohCJhjDTx-lM7Kxa8K1SvPzxlnRE9gi9edsjdxGwqWaTKSPhDE1ZYLBnRx6laU5W9lKavomgWPSlB3VuC7N65QF3mvPdriIA5aFtbDtrJAvPEftJTsnvKU8aqQu2SyvOS5t5VVoUvBHH00GgZgxE78MOO0LzzmRpxZgV9IgTYUQbW7jBney5u5DPiwEiWO_p_hDkS2gfu90gy705PbYA
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 200 OK
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 21 Aug 2023 07:58:42 GMT
+Server: Google Frontend
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "id": 34920,
+    "legacyId": null,
+    "ipAddress": null,
+    "facilityGroupId": null,
+    "name": "Windler, Kling and Schmidt",
+    "facilityTypeId": null,
+    "address": {
+        "id": 34944,
+        "placeId": "eaf0ca93-d79d-42bd-a6e2-b3b47328bea7",
+        "primaryStreet": "2373 Zieme Groves",
+        "secondaryStreet": "Apt. 970",
+        "city": "West Desmond",
+        "region": "EMEA",
+        "zipCode": null,
+        "state": "",
+        "countryCode": "CI",
+        "latitude": 30.6279,
+        "longitude": 22.7323,
+        "country": "string",
+        "formatAddress": "asd",
+        "rawData": null
+    },
+    "contactNumber": "4380835533",
+    "timezone": "Africa/Tripoli (GMT+2:00)",
+    "openTime": null,
+    "closeTime": null,
+    "isOpen24Hours": true
+}
+
+[2023-08-21 07:58:42] [25] [INFO] Asserting that facility was created in system
+[2023-08-21 07:58:42] [25] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatCloseTimeIsOptional] PASSED at [07:58:42 2023-08-21]

@@ -1,0 +1,43 @@
+[2023-08-18 04:05:44] [24] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-18 04:05:44] [24] [INFO] TEST [LifeFitness Backend Auto Tests - checkGettingUserWithEmptyEmailString] STARTED at [16:05:44 2023-08-18]
+[2023-08-18 04:05:44] [24] [INFO] Getting user with email -  expecting negative response
+[2023-08-18 04:05:44] [24] [INFO] Getting user by email
+[2023-08-18 04:05:44] [24] [INFO] Request method:	GET
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users?email=
+Request params:	<none>
+Query params:	email=
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MjM3NDY3NCwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyMzc0Njc0LCJleHAiOjE2OTIzNzgyNzQsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.kfXynQkLwhEZd5FLYCJjM3UQ87W0LIMi7c11MAWWYp1waNtRzWLfca-YAogstWoDkEhNCwllNNklOzowy2z59ZukMpPlChCS9zvPs2sKK9Yt8YIHgdX2rf404mUQVtzxdtKkV4DVbTwKh3eymKTF1WHPwXb7wAFWiPt6POSzIPdcSUlgG-o6KmW8SRkYxRBwn31sseA7iA_gBVeFl52hKqAdatuPBR6NPaNYXfKuyjhtOvirnSSdc5r7zlhFBM2Q_es4M-5R9JvqacSrwRCeR8Z8JPLc-_BR7BMvJhYKqyxWnjfbEK1_c88M7ZJ-Z0oKsiafCkDult5VDElnExV-yw
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 404 Not Found
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: 0a7b0756a955a044d73aa47c3622a934
+Date: Fri, 18 Aug 2023 16:05:44 GMT
+Server: Google Frontend
+Content-Length: 123
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "timestamp": "2023-08-18T16:05:44.5923293",
+    "errorCode": 404,
+    "title": "NOT_FOUND",
+    "details": "User does not exist",
+    "path": null
+}
+
+[2023-08-18 04:05:44] [24] [INFO] Asserting the correct error message
+[2023-08-18 04:05:44] [24] [INFO] TEST [LifeFitness Backend Auto Tests - checkGettingUserWithEmptyEmailString] PASSED at [16:05:44 2023-08-18]

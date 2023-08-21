@@ -1,0 +1,90 @@
+[2023-08-20 07:30:27] [26] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-20 07:30:27] [26] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatUSCountryCodeReturnsNAMRegion] STARTED at [07:30:27 2023-08-20]
+[2023-08-20 07:30:27] [26] [INFO] Creating facility with US country expecting success
+[2023-08-20 07:30:27] [26] [INFO] Setting default add facility body values
+[2023-08-20 07:30:27] [26] [INFO] Base properties loaded: api/core/controllers/user/postfacility/post_facility.properties
+[2023-08-20 07:30:27] [26] [INFO] Get country code except embargoed ones
+[2023-08-20 07:30:27] [26] [INFO] Create facility expecting success
+[2023-08-20 07:30:28] [26] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/facilities
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MjUxNjQ5NiwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyNTE2NDk2LCJleHAiOjE2OTI1MjAwOTYsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.kflmTElUIR-bNGkHYoaY5SUmQ9QwnS0KXsA97n74M40K2n5J_QK0wt-3GVCT3oR0ptc7YTzECPPRG2o1rT9rRrz7wDMtETgJP1W-0AvvqPcxl0p9jtxr7G6Dygw3WYsiRILYfQHvQyO1Agt_RXXoHmHZcdMC1Dxg1QTbHSYvWMqwlaSRtetqKqkuQvpKeecC3QXXcDASmfF3rGTpGs6vxxLkgFCuNIuSsnRXLg_cvQm4PJfr67RNNR4EMisbgg4wsUfcT41eVNvcrnGsGFGeWrt5jI-gGinGIgAyyXKEaqCDdG22_k1nXWwC7OnG4MedeT6YWJ8VcdFDjOfClnUYKg
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "name": "Haley-Parisian",
+    "facilityGroupId": 0,
+    "facilityTypeId": 0,
+    "address": {
+        "placeId": "a39fec6d-30dc-43f5-8c7d-033f46bd92de",
+        "primaryStreet": "329 Renner Spur",
+        "secondaryStreet": "Apt. 387",
+        "city": "West Faustoland",
+        "state": "",
+        "countryCode": "US",
+        "latitude": "30.6279",
+        "longitude": "22.7323",
+        "country": "string",
+        "formatAddress": "asd"
+    },
+    "contactNumber": "6927354016",
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": true,
+    "timezone": ""
+}
+HTTP/1.1 201 Created
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: 3e119df0f6aee1f6a8aa604a35692886
+Date: Sun, 20 Aug 2023 07:30:28 GMT
+Server: Google Frontend
+Content-Length: 563
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "id": 34535,
+    "legacyId": null,
+    "ipAddress": null,
+    "facilityGroupId": null,
+    "name": "Haley-Parisian",
+    "facilityTypeId": null,
+    "address": {
+        "id": 34559,
+        "placeId": "a39fec6d-30dc-43f5-8c7d-033f46bd92de",
+        "primaryStreet": "329 Renner Spur",
+        "secondaryStreet": "Apt. 387",
+        "city": "West Faustoland",
+        "region": "NAM",
+        "zipCode": null,
+        "state": "",
+        "countryCode": "US",
+        "latitude": 30.6279,
+        "longitude": 22.7323,
+        "country": "string",
+        "formatAddress": "asd",
+        "rawData": null
+    },
+    "contactNumber": "6927354016",
+    "timezone": "Africa/Tripoli (GMT+2:00)",
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": false
+}
+
+[2023-08-20 07:30:28] [26] [INFO] Asserting that US country code returns NAM region
+[2023-08-20 07:30:28] [26] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatUSCountryCodeReturnsNAMRegion] PASSED at [07:30:28 2023-08-20]
