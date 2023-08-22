@@ -1,0 +1,53 @@
+[2023-08-20 07:34:35] [24] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-20 07:34:35] [24] [INFO] TEST [LifeFitness Backend Auto Tests - checkEmailVerificationWithEmptyStringEmail] STARTED at [07:34:35 2023-08-20]
+[2023-08-20 07:34:35] [24] [INFO] Verify user email
+[2023-08-20 07:34:35] [24] [INFO] Getting Halo System Utils dev base URL
+[2023-08-20 07:34:35] [24] [INFO] Getting Halo System Utils dev Api Key
+[2023-08-20 07:34:35] [24] [INFO] Verifying email expect failure
+[2023-08-20 07:34:35] [24] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-system-utils/api/v1/idp-user/email-verification?email=%22%22
+Request params:	<none>
+Query params:	email=%22%22
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=P3jxJislR3PNt1P1gQxXepwRY8RiHGTps+Yld/5Ot50=
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 400 Bad Request
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: 40a1b8c999d064c848dd657c68e7bbaf
+Date: Sun, 20 Aug 2023 07:34:35 GMT
+Server: Google Frontend
+Content-Length: 125
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "timestamp": [
+        2023,
+        8,
+        20,
+        7,
+        34,
+        35,
+        293413614
+    ],
+    "errorCode": 400,
+    "title": "BAD_REQUEST",
+    "details": "User does not exist",
+    "path": null
+}
+
+[2023-08-20 07:34:35] [24] [INFO] Asserting error details are correct
+[2023-08-20 07:34:35] [24] [INFO] TEST [LifeFitness Backend Auto Tests - checkEmailVerificationWithEmptyStringEmail] PASSED at [07:34:35 2023-08-20]

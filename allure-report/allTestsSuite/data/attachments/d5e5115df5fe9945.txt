@@ -1,0 +1,154 @@
+[2023-08-21 04:21:11] [23] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-21 04:21:11] [23] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatPlaceIdCantBeCreatedWithExistingPlaceId] STARTED at [16:21:11 2023-08-21]
+[2023-08-21 04:21:11] [23] [INFO] Creating new facility
+[2023-08-21 04:21:11] [23] [INFO] Setting default add facility body values
+[2023-08-21 04:21:11] [23] [INFO] Base properties loaded: api/core/controllers/user/postfacility/post_facility.properties
+[2023-08-21 04:21:11] [23] [INFO] Get country code except embargoed ones
+[2023-08-21 04:21:11] [23] [INFO] Create facility expecting success
+[2023-08-21 04:21:11] [23] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/facilities
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MjYzNDczNywidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyNjM0NzM3LCJleHAiOjE2OTI2MzgzMzcsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.Ih8AldDh_huBfBHzZ9hJZ4GLpCSK3wRTRRjHbWxUQbcLwxt6xQGFMsrs2e6gfAZiUiJqwdHbngkF1yaoKnHGwByDVLk9Xez7aMEEkyXmXzV5t_GzPmqrfuHnY-v8N1PZYk9T4Y3j57zA-LWgnsuCt3w96IKbIJ546-xQXOd2eOF-lZo6Jk0SX_eZM8UQsFs7L-omCFdz0O0mS3B-AqyIy7aGsTZrl6R9D-erRu5jyLEeLradJzAyIcA6JXMjl3fqgxeshg1Ok5d2-gDWZj4A-6mcNulyNU2ZlHxBoDj7QZ6tScBLJe46UzPQ1LX-p4SKqFaEkWtQiJZhli4tRVGQSw
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "name": "Kub-Littel",
+    "facilityGroupId": 0,
+    "facilityTypeId": 0,
+    "address": {
+        "placeId": "060a8fea-56ab-4afe-8464-8fc0c05618c2",
+        "primaryStreet": "8103 Blanda Mission",
+        "secondaryStreet": "Suite 327",
+        "city": "Port Dariafort",
+        "state": "",
+        "countryCode": "TD",
+        "latitude": "30.6279",
+        "longitude": "22.7323",
+        "country": "string",
+        "formatAddress": "asd"
+    },
+    "contactNumber": "0340116196",
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": true,
+    "timezone": ""
+}
+HTTP/1.1 201 Created
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: b3e3497f79f410b4a6624b550caf41d0
+Date: Mon, 21 Aug 2023 16:21:11 GMT
+Server: Google Frontend
+Content-Length: 564
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "id": 38013,
+    "legacyId": null,
+    "ipAddress": null,
+    "facilityGroupId": null,
+    "name": "Kub-Littel",
+    "facilityTypeId": null,
+    "address": {
+        "id": 38037,
+        "placeId": "060a8fea-56ab-4afe-8464-8fc0c05618c2",
+        "primaryStreet": "8103 Blanda Mission",
+        "secondaryStreet": "Suite 327",
+        "city": "Port Dariafort",
+        "region": "EMEA",
+        "zipCode": null,
+        "state": "",
+        "countryCode": "TD",
+        "latitude": 30.6279,
+        "longitude": 22.7323,
+        "country": "string",
+        "formatAddress": "asd",
+        "rawData": null
+    },
+    "contactNumber": "0340116196",
+    "timezone": "Africa/Tripoli (GMT+2:00)",
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": false
+}
+
+[2023-08-21 04:21:11] [23] [INFO] Creating new facility with existing placeId expecting failure
+[2023-08-21 04:21:11] [23] [INFO] Setting default add facility body values
+[2023-08-21 04:21:11] [23] [INFO] Base properties loaded: api/core/controllers/user/postfacility/post_facility.properties
+[2023-08-21 04:21:11] [23] [INFO] Get country code except embargoed ones
+[2023-08-21 04:21:11] [23] [INFO] Creating facility expecting failure
+[2023-08-21 04:21:12] [23] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/facilities
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MjYzNDczNywidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyNjM0NzM3LCJleHAiOjE2OTI2MzgzMzcsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.Ih8AldDh_huBfBHzZ9hJZ4GLpCSK3wRTRRjHbWxUQbcLwxt6xQGFMsrs2e6gfAZiUiJqwdHbngkF1yaoKnHGwByDVLk9Xez7aMEEkyXmXzV5t_GzPmqrfuHnY-v8N1PZYk9T4Y3j57zA-LWgnsuCt3w96IKbIJ546-xQXOd2eOF-lZo6Jk0SX_eZM8UQsFs7L-omCFdz0O0mS3B-AqyIy7aGsTZrl6R9D-erRu5jyLEeLradJzAyIcA6JXMjl3fqgxeshg1Ok5d2-gDWZj4A-6mcNulyNU2ZlHxBoDj7QZ6tScBLJe46UzPQ1LX-p4SKqFaEkWtQiJZhli4tRVGQSw
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "name": "Moore-Champlin",
+    "facilityGroupId": 0,
+    "facilityTypeId": 0,
+    "address": {
+        "placeId": "060a8fea-56ab-4afe-8464-8fc0c05618c2",
+        "primaryStreet": "76633 Ed Lodge",
+        "secondaryStreet": "Suite 222",
+        "city": "Gottliebbury",
+        "state": "",
+        "countryCode": "MO",
+        "latitude": "30.6279",
+        "longitude": "22.7323",
+        "country": "string",
+        "formatAddress": "asd"
+    },
+    "contactNumber": "6572504904",
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": true,
+    "timezone": ""
+}
+HTTP/1.1 400 Bad Request
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: 3c7a92b81e22a575906b16632b7cb975
+Date: Mon, 21 Aug 2023 16:21:12 GMT
+Server: Google Frontend
+Content-Length: 155
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "timestamp": "2023-08-21T16:21:12.106293181",
+    "errorCode": 400,
+    "title": "BAD_REQUEST",
+    "details": "Facility already exists at the provided address",
+    "path": null
+}
+
+[2023-08-21 04:21:12] [23] [INFO] Asserting that error message is correct
+[2023-08-21 04:21:12] [23] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatPlaceIdCantBeCreatedWithExistingPlaceId] PASSED at [16:21:12 2023-08-21]

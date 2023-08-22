@@ -1,0 +1,159 @@
+{
+  "uid" : "e3c9d6970e1614f4",
+  "name" : "Check that facilityId is mandatory",
+  "fullName" : "com.lifefitness.qa.api.core.controllers.user.putuserdetails.PutUserDetailsTest.checkThatFacilityIdsIsFieldMandatory",
+  "historyId" : "4b30a375036d2d67574b6654f2ad3cc6",
+  "time" : {
+    "start" : 1692606716009,
+    "stop" : 1692606776206,
+    "duration" : 60197
+  },
+  "status" : "broken",
+  "statusMessage" : "Unable to register user",
+  "statusTrace" : "java.lang.RuntimeException: Unable to register user\n\tat com.lifefitness.qa.api.corecontrollers.user.postregistration.PostRegistrationHelper.registerUser(PostRegistrationHelper.java:41)\n\tat com.lifefitness.qa.api.corecontrollers.user.postregistration.PostRegistrationHelper.registerUserWithDefaultParameters(PostRegistrationHelper.java:25)\n\tat com.lifefitness.qa.api.core.controllers.user.putuserdetails.PutUserDetailsTest.checkThatFacilityIdsIsFieldMandatory(PutUserDetailsTest.java:398)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\n\tat org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)\n\tat org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)\n\tat org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)\n\tat org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)\n\tat org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)\n\tat org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)\n\tat org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)\n\tat org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)\n\tat java.base/java.lang.Thread.run(Thread.java:833)\nCaused by: com.fasterxml.jackson.databind.exc.MismatchedInputException: No content to map due to end-of-input\n at [Source: (String)\"\"; line: 1, column: 0]\n\tat com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:59)\n\tat com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4821)\n\tat com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4723)\n\tat com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3677)\n\tat com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3645)\n\tat com.lifefitness.qa.api.corecontrollers.user.postregistration.PostRegistrationHelper.registerUser(PostRegistrationHelper.java:39)\n\t... 17 more\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "executeBeforeTestSuite",
+    "time" : {
+      "start" : 1692602928144,
+      "stop" : 1692602928661,
+      "duration" : 517
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "onCarinaAfterMethod",
+    "time" : {
+      "start" : 1692606776244,
+      "stop" : 1692606776244,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "addTestLog",
+    "time" : {
+      "start" : 1692606776208,
+      "stop" : 1692606776244,
+      "duration" : 36
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "4b638b919a32314",
+      "name" : "Test log",
+      "source" : "4b638b919a32314.txt",
+      "type" : "text/plain",
+      "size" : 5782
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  }, {
+    "name" : "deleteAllEmails",
+    "time" : {
+      "start" : 1692607112376,
+      "stop" : 1692607113181,
+      "duration" : 805
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.lifefitness.qa.api.core.controllers.user.putuserdetails.PutUserDetailsTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.lifefitness.qa.api.core.controllers.user.putuserdetails.PutUserDetailsTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "checkThatFacilityIdsIsFieldMandatory"
+  }, {
+    "name" : "parentSuite",
+    "value" : "LifeFitness Backend Auto Tests"
+  }, {
+    "name" : "suite",
+    "value" : "LifeFitness Backend Auto Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.lifefitness.qa.api.core.controllers.user.putuserdetails.PutUserDetailsTest"
+  }, {
+    "name" : "host",
+    "value" : "f38744b6-8415-48d1-9a17-1d21ab7613e1-vtj8m"
+  }, {
+    "name" : "thread",
+    "value" : "304@f38744b6-8415-48d1-9a17-1d21ab7613e1-vtj8m.TestNG-test=LifeFitness Backend Auto Tests-2(23)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "owner",
+    "value" : "Dmitry Parkhomenko"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "HPB-6930",
+    "url" : "https://lfagile.atlassian.net/browse/HPB-6930",
+    "type" : "issue"
+  }, {
+    "name" : "HPB-7256",
+    "url" : "https://lfagile.atlassian.net/browse/HPB-7256",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "owner" : "Dmitry Parkhomenko",
+    "retries" : [ {
+      "uid" : "d6aad21b0c055516",
+      "status" : "skipped",
+      "statusDetails" : "2 expectations failed.\nExpected status code <201> but was <504>.\n\nExpected status line a string containing \"Created\" doesn't match actual status line \"HTTP/1.1 504 Gateway Timeout\".\n",
+      "time" : {
+        "start" : 1692606593101,
+        "stop" : 1692606716006,
+        "duration" : 122905
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "e3c9d6970e1614f4.json",
+  "parameterValues" : [ ]
+}
