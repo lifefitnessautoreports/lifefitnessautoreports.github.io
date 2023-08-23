@@ -1,0 +1,668 @@
+[2023-08-22 07:35:11] [24] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-22 07:35:11] [24] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatExistingUserCanBeAddedToExistingFacilityWithPostUsersEndpoint] STARTED at [07:35:11 2023-08-22]
+[2023-08-22 07:35:11] [24] [INFO] Setting default registration body values
+[2023-08-22 07:35:11] [24] [INFO] Base properties loaded: api/core/controllers/user/postregistration/registration.properties
+[2023-08-22 07:35:11] [24] [INFO] Get country code except embargoed ones
+[2023-08-22 07:35:11] [24] [INFO] Registering user with lifeFitnessPostman+56076882@gmail.com email
+[2023-08-22 07:35:12] [24] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/registration
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MjY4OTMxMSwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyNjg5MzExLCJleHAiOjE2OTI2OTI5MTEsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.PNeV1HBNrfWCwtfdlSrupBr1JnQi7BFIMb1Gt8s7-UAdJS4AvffsxjbuqIVtdxRAKFmv-aRVAHIhquFCvENsC4TuziPjIRL9aFwlHRsUAQwinjdUhA-Ga9Fa7zobTaQsc7-CsGrsqXCAKUao2ShSC5rg9AncYT3Paou-NN7vxpcBYdxmB5YJn2NpCNJmwKhoteGjYFHAAv32J1o3vJXUwbv9_atNOxzpSNPL_YzwhKz1XXPou9rSvFv4UzsUCRD2PiGgFwN4Q5sz9rw_lsTMytkuCtuZnJlvGaFv_E7W8O8bq5Gsfsynbfj9v5-9k88SAElGBLlLG4aYOJUR64Xemw
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "user": {
+        "id": 0,
+        "firstName": "Ambrose",
+        "lastName": "Bins",
+        "email": "lifeFitnessPostman+56076882@gmail.com",
+        "preferredUnit": "METRICS",
+        "preferredLanguageCode": "",
+        "phoneNumber": "",
+        "officePhoneNumber": "",
+        "imageUrl": "",
+        "imageKey": "",
+        "thumbnailUrl": "",
+        "thumbnailKey": "",
+        "isAllowedMarketingEmails": null,
+        "isAllowedFeedbackProviding": null,
+        "useTerms": null
+    },
+    "facility": {
+        "id": 0,
+        "legacyId": 0,
+        "ipAddress": "",
+        "facilityGroupId": 0,
+        "name": "Runte, Jacobs and Kris",
+        "facilityTypeId": 0,
+        "address": {
+            "placeId": "50c67eaf-fec4-43eb-bb4b-7b04c4b0cb3c",
+            "primaryStreet": "4203 Kemmer Terrace",
+            "secondaryStreet": "Apt. 458",
+            "city": "Port Brooks",
+            "region": "",
+            "zipCode": "223610",
+            "state": "",
+            "countryCode": "QA",
+            "latitude": "30.6279",
+            "longitude": "22.7323",
+            "country": "string",
+            "formatAddress": "string",
+            "rawData": "string"
+        },
+        "contactNumber": "0653785261",
+        "timezone": "",
+        "openTime": "10:00 AM",
+        "closeTime": "6:00 PM",
+        "isOpen24Hours": true
+    }
+}
+HTTP/1.1 201 Created
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: ef76e0f7c19d7113b6581b182e775beb
+Date: Tue, 22 Aug 2023 07:35:12 GMT
+Server: Google Frontend
+Content-Length: 985
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "user": {
+        "id": 50515,
+        "firstName": "Ambrose",
+        "lastName": "Bins",
+        "email": "lifefitnesspostman+56076882@gmail.com",
+        "preferredUnit": "METRICS",
+        "preferredLanguageCode": "en-US",
+        "phoneNumber": "",
+        "officePhoneNumber": "",
+        "profilePicUrl": null,
+        "imageKey": "",
+        "isEnabled": true,
+        "isAllowedMarketingEmails": true,
+        "isAllowedFeedbackProviding": true,
+        "useTerms": true,
+        "encodedPassword": null,
+        "status": "ACTIVE",
+        "roleIds": [
+            2
+        ]
+    },
+    "facility": {
+        "id": 38483,
+        "legacyId": 0,
+        "ipAddress": "",
+        "facilityGroupId": null,
+        "name": "Runte, Jacobs and Kris",
+        "facilityTypeId": null,
+        "address": {
+            "id": 38507,
+            "placeId": "50c67eaf-fec4-43eb-bb4b-7b04c4b0cb3c",
+            "primaryStreet": "4203 Kemmer Terrace",
+            "secondaryStreet": "Apt. 458",
+            "city": "Port Brooks",
+            "region": "EMEA",
+            "zipCode": "223610",
+            "state": "",
+            "countryCode": "QA",
+            "latitude": 30.6279,
+            "longitude": 22.7323,
+            "country": "string",
+            "formatAddress": "string",
+            "rawData": "string"
+        },
+        "contactNumber": "0653785261",
+        "timezone": "Africa/Tripoli (GMT+2:00)",
+        "openTime": "10:00 AM",
+        "closeTime": "6:00 PM",
+        "isOpen24Hours": true
+    }
+}
+
+[2023-08-22 07:35:12] [24] [INFO] Setting default registration body values
+[2023-08-22 07:35:12] [24] [INFO] Base properties loaded: api/core/controllers/user/postregistration/registration.properties
+[2023-08-22 07:35:12] [24] [INFO] Get country code except embargoed ones
+[2023-08-22 07:35:12] [24] [INFO] Registering user with lifeFitnessPostman+84760627@gmail.com email
+[2023-08-22 07:35:13] [24] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/registration
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MjY4OTMxMSwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyNjg5MzExLCJleHAiOjE2OTI2OTI5MTEsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.PNeV1HBNrfWCwtfdlSrupBr1JnQi7BFIMb1Gt8s7-UAdJS4AvffsxjbuqIVtdxRAKFmv-aRVAHIhquFCvENsC4TuziPjIRL9aFwlHRsUAQwinjdUhA-Ga9Fa7zobTaQsc7-CsGrsqXCAKUao2ShSC5rg9AncYT3Paou-NN7vxpcBYdxmB5YJn2NpCNJmwKhoteGjYFHAAv32J1o3vJXUwbv9_atNOxzpSNPL_YzwhKz1XXPou9rSvFv4UzsUCRD2PiGgFwN4Q5sz9rw_lsTMytkuCtuZnJlvGaFv_E7W8O8bq5Gsfsynbfj9v5-9k88SAElGBLlLG4aYOJUR64Xemw
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "user": {
+        "id": 0,
+        "firstName": "Kum",
+        "lastName": "Legros",
+        "email": "lifeFitnessPostman+84760627@gmail.com",
+        "preferredUnit": "METRICS",
+        "preferredLanguageCode": "",
+        "phoneNumber": "",
+        "officePhoneNumber": "",
+        "imageUrl": "",
+        "imageKey": "",
+        "thumbnailUrl": "",
+        "thumbnailKey": "",
+        "isAllowedMarketingEmails": null,
+        "isAllowedFeedbackProviding": null,
+        "useTerms": null
+    },
+    "facility": {
+        "id": 0,
+        "legacyId": 0,
+        "ipAddress": "",
+        "facilityGroupId": 0,
+        "name": "Yost and Sons",
+        "facilityTypeId": 0,
+        "address": {
+            "placeId": "5cb61012-beb2-4652-b7de-4eb86f958fb1",
+            "primaryStreet": "26112 Suk Forges",
+            "secondaryStreet": "Apt. 804",
+            "city": "North Keeley",
+            "region": "",
+            "zipCode": "223610",
+            "state": "",
+            "countryCode": "AO",
+            "latitude": "30.6279",
+            "longitude": "22.7323",
+            "country": "string",
+            "formatAddress": "string",
+            "rawData": "string"
+        },
+        "contactNumber": "0461600446",
+        "timezone": "",
+        "openTime": "10:00 AM",
+        "closeTime": "6:00 PM",
+        "isOpen24Hours": true
+    }
+}
+HTTP/1.1 201 Created
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: b2300a652bc4de8cc9f24ee2f12f4ff6
+Date: Tue, 22 Aug 2023 07:35:13 GMT
+Server: Google Frontend
+Content-Length: 972
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "user": {
+        "id": 50516,
+        "firstName": "Kum",
+        "lastName": "Legros",
+        "email": "lifefitnesspostman+84760627@gmail.com",
+        "preferredUnit": "METRICS",
+        "preferredLanguageCode": "en-US",
+        "phoneNumber": "",
+        "officePhoneNumber": "",
+        "profilePicUrl": null,
+        "imageKey": "",
+        "isEnabled": true,
+        "isAllowedMarketingEmails": true,
+        "isAllowedFeedbackProviding": true,
+        "useTerms": true,
+        "encodedPassword": null,
+        "status": "ACTIVE",
+        "roleIds": [
+            2
+        ]
+    },
+    "facility": {
+        "id": 38484,
+        "legacyId": 0,
+        "ipAddress": "",
+        "facilityGroupId": null,
+        "name": "Yost and Sons",
+        "facilityTypeId": null,
+        "address": {
+            "id": 38508,
+            "placeId": "5cb61012-beb2-4652-b7de-4eb86f958fb1",
+            "primaryStreet": "26112 Suk Forges",
+            "secondaryStreet": "Apt. 804",
+            "city": "North Keeley",
+            "region": "EMEA",
+            "zipCode": "223610",
+            "state": "",
+            "countryCode": "AO",
+            "latitude": 30.6279,
+            "longitude": 22.7323,
+            "country": "string",
+            "formatAddress": "string",
+            "rawData": "string"
+        },
+        "contactNumber": "0461600446",
+        "timezone": "Africa/Tripoli (GMT+2:00)",
+        "openTime": "10:00 AM",
+        "closeTime": "6:00 PM",
+        "isOpen24Hours": true
+    }
+}
+
+[2023-08-22 07:35:13] [24] [INFO] Setting default IDP method to call
+[2023-08-22 07:35:13] [24] [INFO] Setting up IDP method to SIGN_UP
+[2023-08-22 07:35:13] [24] [INFO] Base properties loaded: api/identityplatform/idp.properties
+[2023-08-22 07:35:13] [24] [INFO] Sending PostSignUp IDP method to get access token
+[2023-08-22 07:35:13] [24] [INFO] Request method:	POST
+Request URI:	https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyDuJaUYc3JtGHvbdX_7b-Nav25lXPmzuN0
+Request params:	<none>
+Query params:	key=AIzaSyDuJaUYc3JtGHvbdX_7b-Nav25lXPmzuN0
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "returnSecureToken": true,
+    "email": "lifefitnesspostman+56076882@gmail.com",
+    "password": "lifefitnesspostman+56076882@gmail.com"
+}
+HTTP/1.1 200 OK
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Date: Tue, 22 Aug 2023 07:35:13 GMT
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Content-Type: application/json; charset=UTF-8
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+Content-Encoding: gzip
+Server: ESF
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+{
+    "kind": "identitytoolkit#SignupNewUserResponse",
+    "idToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MjY4OTcxMywidXNlcl9pZCI6InVNRDk5SXRTR3FUWUN6M0NNQ0xLR3FWaVlDMzMiLCJzdWIiOiJ1TUQ5OUl0U0dxVFlDejNDTUNMS0dxVmlZQzMzIiwiaWF0IjoxNjkyNjg5NzEzLCJleHAiOjE2OTI2OTMzMTMsImVtYWlsIjoibGlmZWZpdG5lc3Nwb3N0bWFuKzU2MDc2ODgyQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJsaWZlZml0bmVzc3Bvc3RtYW4rNTYwNzY4ODJAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.kzsoBr1fqcq-xEOhxnHG1vLyu1_6RfR5Q5xGFZAkDVHv0Urxy3jG7ZE0OcjVz_WZGHvnSOyTDvreOXamYuFYB0E9xFBdH_HbaU42FaiZyRi5sU0WuPt-thuKj9Sdhq-MV9hfwfpXX41RHc5S9SrLYw-DtoR1HCCMrMNGnxtLrw6MpMIGfFAfhF5JZSkPpuEJ4WXtvjOagSEZb1xVeoUQOlZvFr2UMzQjIIpfHZwAELTnEHYwu8anLFgnDkF3ZQSWIDJyan5aWkuRW6YFU4oM0Pu4n1jOUjnXg4F6OGY5T127MRfT4YHU3tnr7Ja6q8Pc9SfH9ITEpEfs3PuAleB1Xw",
+    "email": "lifefitnesspostman+56076882@gmail.com",
+    "refreshToken": "AMf-vByJKHWpyEzO1gShuQDyMVW21VQf61c87oNngS_eJi7JGTFR-Z-Ce6A9M5KW4mvSdAbvFKY-rQz5eo16veCJl76hgugOD_Hj7L2mcjh8UOr0w5d42r7crZiUtTdfQust6qpO6n4VQ9UnnZraWFAXs6SUw-NmrWv-pvwu2Dq_lHjwEZsvN-Ygo3Q-xPpJsliQRYgvoGwJk3jER7PXmS6ulzNnqDQ42g",
+    "expiresIn": "3600",
+    "localId": "uMD99ItSGqTYCz3CMCLKGqViYC33"
+}
+
+[2023-08-22 07:35:13] [24] [INFO] Trying to parse IDP response to access token model
+[2023-08-22 07:35:13] [24] [INFO] Setting default IDP method to call
+[2023-08-22 07:35:13] [24] [INFO] Setting up IDP method to SIGN_IN_WITH_PASSWORD
+[2023-08-22 07:35:13] [24] [INFO] Base properties loaded: api/identityplatform/idp.properties
+[2023-08-22 07:35:13] [24] [INFO] Sending PostSignInWithPassword IDP method to get access token
+[2023-08-22 07:35:13] [24] [INFO] Request method:	POST
+Request URI:	https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyDuJaUYc3JtGHvbdX_7b-Nav25lXPmzuN0
+Request params:	<none>
+Query params:	key=AIzaSyDuJaUYc3JtGHvbdX_7b-Nav25lXPmzuN0
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "returnSecureToken": true,
+    "email": "lifefitnesspostman+56076882@gmail.com",
+    "password": "lifefitnesspostman+56076882@gmail.com"
+}
+HTTP/1.1 200 OK
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Pragma: no-cache
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Date: Tue, 22 Aug 2023 07:35:13 GMT
+Content-Type: application/json; charset=UTF-8
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+Content-Encoding: gzip
+Server: ESF
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+{
+    "kind": "identitytoolkit#VerifyPasswordResponse",
+    "localId": "uMD99ItSGqTYCz3CMCLKGqViYC33",
+    "email": "lifefitnesspostman+56076882@gmail.com",
+    "displayName": "",
+    "idToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MjY4OTcxMywidXNlcl9pZCI6InVNRDk5SXRTR3FUWUN6M0NNQ0xLR3FWaVlDMzMiLCJzdWIiOiJ1TUQ5OUl0U0dxVFlDejNDTUNMS0dxVmlZQzMzIiwiaWF0IjoxNjkyNjg5NzEzLCJleHAiOjE2OTI2OTMzMTMsImVtYWlsIjoibGlmZWZpdG5lc3Nwb3N0bWFuKzU2MDc2ODgyQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJsaWZlZml0bmVzc3Bvc3RtYW4rNTYwNzY4ODJAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.kzsoBr1fqcq-xEOhxnHG1vLyu1_6RfR5Q5xGFZAkDVHv0Urxy3jG7ZE0OcjVz_WZGHvnSOyTDvreOXamYuFYB0E9xFBdH_HbaU42FaiZyRi5sU0WuPt-thuKj9Sdhq-MV9hfwfpXX41RHc5S9SrLYw-DtoR1HCCMrMNGnxtLrw6MpMIGfFAfhF5JZSkPpuEJ4WXtvjOagSEZb1xVeoUQOlZvFr2UMzQjIIpfHZwAELTnEHYwu8anLFgnDkF3ZQSWIDJyan5aWkuRW6YFU4oM0Pu4n1jOUjnXg4F6OGY5T127MRfT4YHU3tnr7Ja6q8Pc9SfH9ITEpEfs3PuAleB1Xw",
+    "registered": true,
+    "refreshToken": "AMf-vByA3yGI_CKmCd8Qa8CBb0gWm84IF5fFZnKqoHzVBMdUtOtEtDbQzmecjhvxGmZkfO-WUhy6hhgExHeZIh0jSWB0xBMuaMZ68Ph0NPtmuf2jht_sp7oNRBd33oLWR9P2TRjUdrIm3MLNwfE1MdnBIA1diq3Q0CWpVuQ0xICv_xK0k_ynAiLxLgrAilocZAnt2Xnx3W8RZuwmhcHb2ntr1hIYMr_akw",
+    "expiresIn": "3600"
+}
+
+[2023-08-22 07:35:13] [24] [INFO] Trying to parse IDP response to access token model
+[2023-08-22 07:35:13] [24] [INFO] Setting default add user body values
+[2023-08-22 07:35:13] [24] [INFO] Base properties loaded: api/core/controllers/user/postuser/create_user.properties
+[2023-08-22 07:35:13] [24] [INFO] Creating user expecting success
+[2023-08-22 07:35:15] [24] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MjY4OTcxMywidXNlcl9pZCI6InVNRDk5SXRTR3FUWUN6M0NNQ0xLR3FWaVlDMzMiLCJzdWIiOiJ1TUQ5OUl0U0dxVFlDejNDTUNMS0dxVmlZQzMzIiwiaWF0IjoxNjkyNjg5NzEzLCJleHAiOjE2OTI2OTMzMTMsImVtYWlsIjoibGlmZWZpdG5lc3Nwb3N0bWFuKzU2MDc2ODgyQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJsaWZlZml0bmVzc3Bvc3RtYW4rNTYwNzY4ODJAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.kzsoBr1fqcq-xEOhxnHG1vLyu1_6RfR5Q5xGFZAkDVHv0Urxy3jG7ZE0OcjVz_WZGHvnSOyTDvreOXamYuFYB0E9xFBdH_HbaU42FaiZyRi5sU0WuPt-thuKj9Sdhq-MV9hfwfpXX41RHc5S9SrLYw-DtoR1HCCMrMNGnxtLrw6MpMIGfFAfhF5JZSkPpuEJ4WXtvjOagSEZb1xVeoUQOlZvFr2UMzQjIIpfHZwAELTnEHYwu8anLFgnDkF3ZQSWIDJyan5aWkuRW6YFU4oM0Pu4n1jOUjnXg4F6OGY5T127MRfT4YHU3tnr7Ja6q8Pc9SfH9ITEpEfs3PuAleB1Xw
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "id": 1,
+    "firstName": "Mila",
+    "lastName": "Treutel",
+    "email": "lifefitnesspostman+84760627@gmail.com",
+    "roleIds": [
+        2,
+        3,
+        4
+    ],
+    "supplementaryPermissionIds": [
+        1,
+        2,
+        3,
+        4
+    ],
+    "facilityIds": [
+        38483
+    ],
+    "profilePicUrl": ""
+}
+HTTP/1.1 201 Created
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: 4288e77e743c3c8145fc0064c36c2ad2
+Date: Tue, 22 Aug 2023 07:35:15 GMT
+Server: Google Frontend
+Content-Length: 389
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "id": 50516,
+    "firstName": "Mila",
+    "lastName": "Treutel",
+    "email": "lifefitnesspostman+84760627@gmail.com",
+    "preferredUnit": "METRICS",
+    "preferredLanguageCode": "en-US",
+    "phoneNumber": "",
+    "officePhoneNumber": "",
+    "profilePicUrl": "",
+    "imageKey": "",
+    "isEnabled": true,
+    "isAllowedMarketingEmails": true,
+    "isAllowedFeedbackProviding": true,
+    "useTerms": true,
+    "encodedPassword": null,
+    "status": "ACTIVE",
+    "roleIds": [
+        3,
+        4,
+        2
+    ]
+}
+
+[2023-08-22 07:35:15] [24] [INFO] Getting users at facility expecting success
+[2023-08-22 07:35:15] [24] [INFO] Request method:	GET
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/facilities/38483?pageIndex=0&pageSize=10
+Request params:	<none>
+Query params:	pageIndex=0
+				pageSize=10
+Form params:	<none>
+Path params:	facilityId=38483
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MjY4OTMxMSwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyNjg5MzExLCJleHAiOjE2OTI2OTI5MTEsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.PNeV1HBNrfWCwtfdlSrupBr1JnQi7BFIMb1Gt8s7-UAdJS4AvffsxjbuqIVtdxRAKFmv-aRVAHIhquFCvENsC4TuziPjIRL9aFwlHRsUAQwinjdUhA-Ga9Fa7zobTaQsc7-CsGrsqXCAKUao2ShSC5rg9AncYT3Paou-NN7vxpcBYdxmB5YJn2NpCNJmwKhoteGjYFHAAv32J1o3vJXUwbv9_atNOxzpSNPL_YzwhKz1XXPou9rSvFv4UzsUCRD2PiGgFwN4Q5sz9rw_lsTMytkuCtuZnJlvGaFv_E7W8O8bq5Gsfsynbfj9v5-9k88SAElGBLlLG4aYOJUR64Xemw
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 200 OK
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 22 Aug 2023 07:35:15 GMT
+Server: Google Frontend
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "content": [
+        {
+            "id": 50515,
+            "firstName": "Ambrose",
+            "lastName": "Bins",
+            "email": "lifefitnesspostman+56076882@gmail.com",
+            "preferredUnit": "METRICS",
+            "preferredLanguageCode": "en-US",
+            "phoneNumber": "",
+            "officePhoneNumber": "",
+            "profilePicUrl": null,
+            "imageKey": "",
+            "isEnabled": true,
+            "isAllowedMarketingEmails": true,
+            "isAllowedFeedbackProviding": true,
+            "useTerms": true,
+            "encodedPassword": null,
+            "status": "ACTIVE",
+            "roleIds": [
+                2
+            ]
+        },
+        {
+            "id": 50516,
+            "firstName": "Mila",
+            "lastName": "Treutel",
+            "email": "lifefitnesspostman+84760627@gmail.com",
+            "preferredUnit": "METRICS",
+            "preferredLanguageCode": "en-US",
+            "phoneNumber": "",
+            "officePhoneNumber": "",
+            "profilePicUrl": "",
+            "imageKey": "",
+            "isEnabled": true,
+            "isAllowedMarketingEmails": true,
+            "isAllowedFeedbackProviding": true,
+            "useTerms": true,
+            "encodedPassword": null,
+            "status": "ACTIVE",
+            "roleIds": [
+                2,
+                3,
+                4
+            ]
+        }
+    ],
+    "pageable": {
+        "sort": {
+            "empty": false,
+            "sorted": true,
+            "unsorted": false
+        },
+        "offset": 0,
+        "pageNumber": 0,
+        "pageSize": 10,
+        "unpaged": false,
+        "paged": true
+    },
+    "totalElements": 2,
+    "totalPages": 1,
+    "last": true,
+    "size": 10,
+    "number": 0,
+    "sort": {
+        "empty": false,
+        "sorted": true,
+        "unsorted": false
+    },
+    "numberOfElements": 2,
+    "first": true,
+    "empty": false
+}
+
+[2023-08-22 07:35:15] [24] [INFO] Asserting that both users are attached to facility number 38483
+[2023-08-22 07:35:15] [24] [INFO] Asserting that both user status is correct at facility number 38483
+[2023-08-22 07:35:15] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:16] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:16] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:17] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:17] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:18] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:18] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:19] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:19] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:20] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:20] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:21] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:21] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:22] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:23] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:23] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:24] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:24] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:25] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:25] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:26] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:26] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:27] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:27] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:28] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:29] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:29] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:30] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:30] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:31] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:31] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:32] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:32] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:33] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:33] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:34] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:34] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:35] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:36] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:36] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:37] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:37] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:38] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:38] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:39] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:39] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:40] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:40] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:41] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:42] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:42] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:43] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:43] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:44] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:44] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:45] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:45] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:46] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:46] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:47] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:47] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:48] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:49] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:49] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:50] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:50] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:51] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:51] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:52] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:52] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:53] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:53] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:54] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:54] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:55] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:56] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:56] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:57] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:57] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:58] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:58] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:59] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:35:59] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:36:00] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:36:00] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:36:01] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:36:01] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:36:02] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:36:03] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:36:03] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:36:04] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:36:04] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:36:05] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:36:05] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:36:06] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:36:06] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:36:07] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:36:07] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:36:08] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:36:09] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-22 07:36:09] [24] [ERROR] Message wasn't found!
+[2023-08-22 07:36:09] [24] [ERROR] TEST [LifeFitness Backend Auto Tests - checkThatExistingUserCanBeAddedToExistingFacilityWithPostUsersEndpoint] SKIPPED at [07:36:09 2023-08-22] - Could not get message.
+
+com.lifefitness.qa.utils.email.EmailUtils.getMessage(EmailUtils.java:187)
+com.lifefitness.qa.api.core.controllers.user.postuser.PostUserTest.checkThatExistingUserCanBeAddedToExistingFacilityWithPostUsersEndpoint(PostUserTest.java:225)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:568)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+java.base/java.lang.Thread.run(Thread.java:833)
+[2023-08-22 07:36:09] [24] [INFO] Attaching logs to Allure report

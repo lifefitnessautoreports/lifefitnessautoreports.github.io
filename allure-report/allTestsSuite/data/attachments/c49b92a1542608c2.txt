@@ -1,0 +1,68 @@
+[2023-08-17 07:31:41] [23] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-17 07:31:41] [23] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatOpenTimeCantBePastCloseTime] STARTED at [07:31:41 2023-08-17]
+[2023-08-17 07:31:41] [23] [INFO] Creating facility with open time past close time
+[2023-08-17 07:31:41] [23] [INFO] Setting default add facility body values
+[2023-08-17 07:31:41] [23] [INFO] Base properties loaded: api/core/controllers/user/postfacility/post_facility.properties
+[2023-08-17 07:31:41] [23] [INFO] Get country code except embargoed ones
+[2023-08-17 07:31:41] [23] [INFO] Creating facility expecting failure
+[2023-08-17 07:31:42] [23] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/facilities
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoidGVzdFVzZXIiLCJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MjI1NzMwNSwidXNlcl9pZCI6IlZqTHhsb2xYUG5lNDc0RDZjZjVVNHNubFNUbDIiLCJzdWIiOiJWakx4bG9sWFBuZTQ3NEQ2Y2Y1VTRzbmxTVGwyIiwiaWF0IjoxNjkyMjU3MzA1LCJleHAiOjE2OTIyNjA5MDUsImVtYWlsIjoidGVzdEBsaWZlZml0bmVzcy5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJ0ZXN0QGxpZmVmaXRuZXNzLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.Trm8Nbvjek8OyA8qgOhLsl-P4VtZ7ZVc8_yQx_Wli10EaX3bk2gmuTGB3FBRdEiIOIBHuJDkMqMUq-A6BBWtCHd4Qz3HLHiRJanpzHT4x6xWg7i_763qVWab9lOCMrkRKwfitYjJQA5c550BH9VWfBhYlcR3j0baVWuHd2SPrpcEjSZFjBbyks5i5edP5-5cXu8aKyk3Z0CLO3Vs2nsmZwT0fjqB4L0jGZdQpJAZWxbYiVfw8lObjMUIZIOtZsD2kZH9zStwRkUqI7fWwdonQuMwrQU7kVbEWXNrDFjtSbPmnF-HPiUM4uHkFcZju4gHUfEnKT7c84IdMLvgFFtbpw
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "name": "Pfannerstill, Bednar and Rosenbaum",
+    "facilityGroupId": 0,
+    "facilityTypeId": 0,
+    "address": {
+        "placeId": "1048efb9-eca9-46b0-ae2b-6b7f321d6c7e",
+        "primaryStreet": "03304 Aufderhar Knolls",
+        "secondaryStreet": "Suite 671",
+        "city": "Trudychester",
+        "state": "",
+        "countryCode": "CK",
+        "latitude": "30.6279",
+        "longitude": "22.7323",
+        "country": "string",
+        "formatAddress": "asd"
+    },
+    "contactNumber": "3172622966",
+    "openTime": "11:00 PM",
+    "closeTime": "10:00 PM",
+    "isOpen24Hours": true,
+    "timezone": ""
+}
+HTTP/1.1 400 Bad Request
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: a7a8731171794f22004646d56c949859
+Date: Thu, 17 Aug 2023 07:31:42 GMT
+Server: Google Frontend
+Content-Length: 152
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "timestamp": "2023-08-17T07:31:42.098289129",
+    "errorCode": 400,
+    "title": "BAD_REQUEST",
+    "details": "Opening hours should be before closing hours",
+    "path": null
+}
+
+[2023-08-17 07:31:42] [23] [INFO] Asserting that error message is correct
+[2023-08-17 07:31:42] [23] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatOpenTimeCantBePastCloseTime] PASSED at [07:31:42 2023-08-17]
