@@ -1,0 +1,68 @@
+[2023-08-18 02:47:26] [23] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-18 02:47:26] [23] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatCountryCodeCantBeEmptyString] STARTED at [14:47:26 2023-08-18]
+[2023-08-18 02:47:26] [23] [INFO] Creating facility with country code as empty string expecting failure
+[2023-08-18 02:47:26] [23] [INFO] Setting default add facility body values
+[2023-08-18 02:47:26] [23] [INFO] Base properties loaded: api/core/controllers/user/postfacility/post_facility.properties
+[2023-08-18 02:47:26] [23] [INFO] Get country code except embargoed ones
+[2023-08-18 02:47:26] [23] [INFO] Creating facility expecting failure
+[2023-08-18 02:47:27] [23] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/facilities
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MjM2Nzg5MywidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyMzY3ODkzLCJleHAiOjE2OTIzNzE0OTMsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJhdXRvdGVzdHVzZXJAbGlmZWZpdG5lc3MuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.AneDUAvM6tLEKyiyLck7t5frm3syH4q5vCFBCiaDFqqWejt_xNmm2u9l5nwSluumb7Qg_z4B9lo7bx6WtAtfiR2mFms4TjPINUDrzXDjo6tHgd5rFgcClkOnf0YTg6DnryfHkswxzrQejlbc653HlIXpMYhDJ_m429w69eWgRs109fwA3RiyCVsauPsNWyISwAlptvXuVh-AgjnzQKSSmha064fzl8fC96D6PXEPWXKp5pB-iR-19eX-CDUo_jCJRV27oDlIZOKam6FFKjryOv27tc3wPE3TpAay7yAJpb3pwY1kApDMnWQkZ_s5HoflT9IJpKwSvAwk8CxcQ1fKPw
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "name": "Gutkowski, Barrows and Gottlieb",
+    "facilityGroupId": 0,
+    "facilityTypeId": 0,
+    "address": {
+        "placeId": "a757213c-797f-44df-93ca-c57a6bc555ba",
+        "primaryStreet": "87172 Vincenza Pass",
+        "secondaryStreet": "Suite 834",
+        "city": "New Rea",
+        "state": "",
+        "countryCode": "",
+        "latitude": "30.6279",
+        "longitude": "22.7323",
+        "country": "string",
+        "formatAddress": "asd"
+    },
+    "contactNumber": "4774320500",
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": true,
+    "timezone": ""
+}
+HTTP/1.1 400 Bad Request
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: cb193621b4cdb71fcfd9ad87a6b2d6a6
+Date: Fri, 18 Aug 2023 14:47:27 GMT
+Server: Google Frontend
+Content-Length: 136
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "timestamp": "2023-08-18T14:47:27.112398058",
+    "errorCode": 400,
+    "title": "BAD_REQUEST",
+    "details": "Country code cannot be empty",
+    "path": null
+}
+
+[2023-08-18 02:47:27] [23] [INFO] Asserting that countryCode can't be empty string
+[2023-08-18 02:47:27] [23] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatCountryCodeCantBeEmptyString] PASSED at [14:47:27 2023-08-18]

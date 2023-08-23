@@ -1,0 +1,37 @@
+[2023-08-23 07:29:19] [25] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-23 07:29:19] [25] [INFO] TEST [LifeFitness Backend Auto Tests - checkDeletingUserFromExistingFacilityWithoutApiKey] STARTED at [07:29:19 2023-08-23]
+[2023-08-23 07:29:19] [25] [INFO] Getting Halo Core dev base URL
+[2023-08-23 07:29:19] [25] [INFO] Base properties loaded: api/core/controllers/user/deleteuserfromfacility/delete_user_from_facility.properties
+[2023-08-23 07:29:19] [25] [INFO] Request method:	DELETE
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/facilities/delete
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "email": "",
+    "facilityIds": [
+        
+    ]
+}
+HTTP/1.1 401 Unauthorized
+X-Goog-IAP-Generated-Response: true
+Date: Wed, 23 Aug 2023 07:29:19 GMT
+Content-Type: text/html
+Server: Google Frontend
+Content-Length: 34
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+<html>
+  <body>Invalid GCIP ID token: empty token</body>
+</html>
+
+[2023-08-23 07:29:19] [25] [INFO] Asserting that correct status code is returned
+[2023-08-23 07:29:19] [25] [INFO] TEST [LifeFitness Backend Auto Tests - checkDeletingUserFromExistingFacilityWithoutApiKey] PASSED at [07:29:19 2023-08-23]

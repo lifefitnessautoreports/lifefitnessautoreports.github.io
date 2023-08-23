@@ -1,0 +1,2557 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "2 expectations failed.\nExpected status code <201> but was <504>.\n\nExpected status line a string containing \"Created\" doesn't match actual status line \"HTTP/1.1 504 Gateway Timeout\".\n",
+      "children" : [ {
+        "name" : "Check that user can login when was granted facility access",
+        "uid" : "460d519e8ac8448f",
+        "parentUid" : "a727d07fc69853f2c6dea8ddddc67107",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692775852824,
+          "stop" : 1692775974813,
+          "duration" : 121989
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can't login when it exists but was not granted facility access",
+        "uid" : "e846e5ebf6b947e4",
+        "parentUid" : "a727d07fc69853f2c6dea8ddddc67107",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692775874489,
+          "stop" : 1692775996495,
+          "duration" : 122006
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check what user can be deleted as per CCPA requirements",
+        "uid" : "41ca26054af9b8fb",
+        "parentUid" : "a727d07fc69853f2c6dea8ddddc67107",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692775875544,
+          "stop" : 1692775997530,
+          "duration" : 121986
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that POST /registration user to existing facility in REQUEST_ACCESS status without approve andafter that POST /users to another facility in ACTIVE",
+        "uid" : "b64d63d4c3d6ff7b",
+        "parentUid" : "a727d07fc69853f2c6dea8ddddc67107",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692776706281,
+          "stop" : 1692776919509,
+          "duration" : 213228
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that POST /users in ACTIVE status if user was activated",
+        "uid" : "2312f2c7de794956",
+        "parentUid" : "a727d07fc69853f2c6dea8ddddc67107",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692776707268,
+          "stop" : 1692776880284,
+          "duration" : 173016
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that POST /users in PENDING status if user was not activated",
+        "uid" : "9ed93e36d63974e5",
+        "parentUid" : "a727d07fc69853f2c6dea8ddddc67107",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692776720453,
+          "stop" : 1692776882508,
+          "duration" : 162055
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can be activated",
+        "uid" : "3208128a415f4599",
+        "parentUid" : "a727d07fc69853f2c6dea8ddddc67107",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692777099918,
+          "stop" : 1692777248771,
+          "duration" : 148853
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can't be activated with another user token",
+        "uid" : "2d2c0f9ed75355ec",
+        "parentUid" : "a727d07fc69853f2c6dea8ddddc67107",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692777122720,
+          "stop" : 1692777250040,
+          "duration" : 127320
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that facility can't be created by non admin users",
+        "uid" : "f21b7958a85bae91",
+        "parentUid" : "a727d07fc69853f2c6dea8ddddc67107",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692777331773,
+          "stop" : 1692777456905,
+          "duration" : 125132
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can be validated with camel case email",
+        "uid" : "e895558282e05993",
+        "parentUid" : "a727d07fc69853f2c6dea8ddddc67107",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692777638208,
+          "stop" : 1692777781144,
+          "duration" : 142936
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can be validated with several facilities one attached others not",
+        "uid" : "7bc55d16cef40b7c",
+        "parentUid" : "a727d07fc69853f2c6dea8ddddc67107",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692777917361,
+          "stop" : 1692778058898,
+          "duration" : 141537
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check adding supplementaryPermissionIds as empty string creates a user",
+        "uid" : "587b805fccf6eadc",
+        "parentUid" : "a727d07fc69853f2c6dea8ddddc67107",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692778728937,
+          "stop" : 1692778850860,
+          "duration" : 121923
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that UK country code sets default measurement unit - METRICS",
+        "uid" : "bec08ba9db4c952c",
+        "parentUid" : "a727d07fc69853f2c6dea8ddddc67107",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692778741942,
+          "stop" : 1692778863537,
+          "duration" : 121595
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check updating password with camel case email",
+        "uid" : "c2df7dd8043e187",
+        "parentUid" : "a727d07fc69853f2c6dea8ddddc67107",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692779774905,
+          "stop" : 1692779899031,
+          "duration" : 124126
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check updating password with lower case email",
+        "uid" : "aa2927c364414b82",
+        "parentUid" : "a727d07fc69853f2c6dea8ddddc67107",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692779776359,
+          "stop" : 1692779901400,
+          "duration" : 125041
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check updating password with upper case email",
+        "uid" : "1e61ba5dbf539473",
+        "parentUid" : "a727d07fc69853f2c6dea8ddddc67107",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692779782029,
+          "stop" : 1692779905521,
+          "duration" : 123492
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a727d07fc69853f2c6dea8ddddc67107"
+    }, {
+      "name" : "2 expectations failed.\nExpected status code <201> but was <401>.\n\nExpected status line a string containing \"Created\" doesn't match actual status line \"HTTP/1.1 401 Unauthorized\".\n",
+      "children" : [ {
+        "name" : "Check users grid sorting by lastLogged asc",
+        "uid" : "68dbefc05a6d11a4",
+        "parentUid" : "945f012085cdadf52b84c775da834659",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692776479999,
+          "stop" : 1692776540102,
+          "duration" : 60103
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check users grid sorting by lastLogged desc",
+        "uid" : "8b073ac5b48147f0",
+        "parentUid" : "945f012085cdadf52b84c775da834659",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692776584640,
+          "stop" : 1692776644737,
+          "duration" : 60097
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that selected facility can be changed",
+        "uid" : "a75d5f26794e8d6e",
+        "parentUid" : "945f012085cdadf52b84c775da834659",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692776882288,
+          "stop" : 1692776942386,
+          "duration" : 60098
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that CA country code returns NAM region",
+        "uid" : "af854b14e537d850",
+        "parentUid" : "945f012085cdadf52b84c775da834659",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692778242306,
+          "stop" : 1692778302424,
+          "duration" : 60118
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can be deleted from IDP by camel case email",
+        "uid" : "7b281b896e392808",
+        "parentUid" : "945f012085cdadf52b84c775da834659",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692779640549,
+          "stop" : 1692779640634,
+          "duration" : 85
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can be deleted from IDP by lower case email",
+        "uid" : "549649d4a4ceb9ff",
+        "parentUid" : "945f012085cdadf52b84c775da834659",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692779640733,
+          "stop" : 1692779640798,
+          "duration" : 65
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can be deleted from IDP by multi domain email",
+        "uid" : "5e9b837388a102e7",
+        "parentUid" : "945f012085cdadf52b84c775da834659",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692779640760,
+          "stop" : 1692779640842,
+          "duration" : 82
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can be deleted from IDP by upper case email",
+        "uid" : "90b01026e5970908",
+        "parentUid" : "945f012085cdadf52b84c775da834659",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692779640919,
+          "stop" : 1692779641007,
+          "duration" : 88
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that email button link is correct and contains user email",
+        "uid" : "f9d585bbe43face6",
+        "parentUid" : "945f012085cdadf52b84c775da834659",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692779641410,
+          "stop" : 1692779641478,
+          "duration" : 68
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that email can be verified",
+        "uid" : "95ca8fc29ebdd203",
+        "parentUid" : "945f012085cdadf52b84c775da834659",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692779641530,
+          "stop" : 1692779641688,
+          "duration" : 158
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "945f012085cdadf52b84c775da834659"
+    }, {
+      "name" : "2 expectations failed.\nExpected status code <400> but was <401>.\n\nExpected status line a string containing \"Bad Request\" doesn't match actual status line \"HTTP/1.1 401 Unauthorized\".\n",
+      "children" : [ {
+        "name" : "Check users grid with not existing facility",
+        "uid" : "93b435d609271822",
+        "parentUid" : "daf919f1b42e785e458d15d0b300d52c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692776600256,
+          "stop" : 1692776660349,
+          "duration" : 60093
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can't be denied without an email",
+        "uid" : "48d4bd0f654276f1",
+        "parentUid" : "daf919f1b42e785e458d15d0b300d52c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692777637206,
+          "stop" : 1692777724125,
+          "duration" : 86919
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can't be denied without facility id",
+        "uid" : "1aedf505b6606eee",
+        "parentUid" : "daf919f1b42e785e458d15d0b300d52c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692777638161,
+          "stop" : 1692777784290,
+          "duration" : 146129
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that BY country code is embargoed",
+        "uid" : "90b0ee31bf04ee69",
+        "parentUid" : "daf919f1b42e785e458d15d0b300d52c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692778241933,
+          "stop" : 1692778302052,
+          "duration" : 60119
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that CU country code is embargoed",
+        "uid" : "692b28bc35a8719e",
+        "parentUid" : "daf919f1b42e785e458d15d0b300d52c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692778302010,
+          "stop" : 1692778362128,
+          "duration" : 60118
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that city can't be empty",
+        "uid" : "960523e5f056b9e2",
+        "parentUid" : "daf919f1b42e785e458d15d0b300d52c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692778302061,
+          "stop" : 1692778362145,
+          "duration" : 60084
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that city can't be empty string",
+        "uid" : "41098eaa34a379e0",
+        "parentUid" : "daf919f1b42e785e458d15d0b300d52c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692778359456,
+          "stop" : 1692778419605,
+          "duration" : 60149
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that city can't be more than 85 chars",
+        "uid" : "ed7a7f4555cfa5cb",
+        "parentUid" : "daf919f1b42e785e458d15d0b300d52c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692778362161,
+          "stop" : 1692778422254,
+          "duration" : 60093
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that contactNumber can't be more than 20 chars",
+        "uid" : "2d2b7cb556f2ebda",
+        "parentUid" : "daf919f1b42e785e458d15d0b300d52c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692778362530,
+          "stop" : 1692778422621,
+          "duration" : 60091
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that countryCode can't be empty string",
+        "uid" : "da61889aeb0bc11d",
+        "parentUid" : "daf919f1b42e785e458d15d0b300d52c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692778422228,
+          "stop" : 1692778482331,
+          "duration" : 60103
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that countryCode is mandatory",
+        "uid" : "7df947094b24f01",
+        "parentUid" : "daf919f1b42e785e458d15d0b300d52c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692778422252,
+          "stop" : 1692778482330,
+          "duration" : 60078
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can't be created to empty list facilityIds",
+        "uid" : "57b47f3b613ff89b",
+        "parentUid" : "daf919f1b42e785e458d15d0b300d52c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692779111229,
+          "stop" : 1692779171324,
+          "duration" : 60095
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can't be created to empty string facilityIds",
+        "uid" : "898282fbcb1d50fc",
+        "parentUid" : "daf919f1b42e785e458d15d0b300d52c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692779112221,
+          "stop" : 1692779172322,
+          "duration" : 60101
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can't be created to non existent facilityIds",
+        "uid" : "36596676a30b4931",
+        "parentUid" : "daf919f1b42e785e458d15d0b300d52c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692779151506,
+          "stop" : 1692779211597,
+          "duration" : 60091
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that non existing user can't be updated",
+        "uid" : "ea6158d404f980be",
+        "parentUid" : "daf919f1b42e785e458d15d0b300d52c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692779635424,
+          "stop" : 1692779635485,
+          "duration" : 61
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can't be updated without a body",
+        "uid" : "ab93d18c986a7a15",
+        "parentUid" : "daf919f1b42e785e458d15d0b300d52c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692779637276,
+          "stop" : 1692779637332,
+          "duration" : 56
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that Admin can not DELETE /users Technical user",
+        "uid" : "92b4a62204f37da6",
+        "parentUid" : "daf919f1b42e785e458d15d0b300d52c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692779639309,
+          "stop" : 1692779639432,
+          "duration" : 123
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that Admin can not GET /users/{userId}/supplementary-permissions for Technical user",
+        "uid" : "23b1441280d18d56",
+        "parentUid" : "daf919f1b42e785e458d15d0b300d52c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692779639419,
+          "stop" : 1692779639513,
+          "duration" : 94
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that Admin can not PUT /api/v1/users/{userId}/roles for Technical user",
+        "uid" : "6fde236e1989e3c0",
+        "parentUid" : "daf919f1b42e785e458d15d0b300d52c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692779639727,
+          "stop" : 1692779639830,
+          "duration" : 103
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that Admin can not PUT /users/{userId}/supplementary-permissions for Technical user",
+        "uid" : "abf48f6afeed77c",
+        "parentUid" : "daf919f1b42e785e458d15d0b300d52c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692779639847,
+          "stop" : 1692779639929,
+          "duration" : 82
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "daf919f1b42e785e458d15d0b300d52c"
+    }, {
+      "name" : "2 expectations failed.\nExpected status code <201> but was <500>.\n\nExpected status line a string containing \"Created\" doesn't match actual status line \"HTTP/1.1 500 Internal Server Error\".\n",
+      "children" : [ {
+        "name" : "Check that user can be validated with different admin token",
+        "uid" : "c80ca1b3dbbbb670",
+        "parentUid" : "271610a234cf1583354bc622cfc970e0",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692777638998,
+          "stop" : 1692777723594,
+          "duration" : 84596
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can be validated with lower case email",
+        "uid" : "9c9ce1b68548498a",
+        "parentUid" : "271610a234cf1583354bc622cfc970e0",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692777639297,
+          "stop" : 1692777723701,
+          "duration" : 84404
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can be validated with multi domain email",
+        "uid" : "58481db8da292bb4",
+        "parentUid" : "271610a234cf1583354bc622cfc970e0",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692777783721,
+          "stop" : 1692777860477,
+          "duration" : 76756
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can be validated with non attached facility",
+        "uid" : "53266dcc8739d818",
+        "parentUid" : "271610a234cf1583354bc622cfc970e0",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692777783807,
+          "stop" : 1692777860509,
+          "duration" : 76702
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can be validated with non-existent facility",
+        "uid" : "6a2b06ad5263d390",
+        "parentUid" : "271610a234cf1583354bc622cfc970e0",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692777784244,
+          "stop" : 1692777860541,
+          "duration" : 76297
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can't be validated with empty string email",
+        "uid" : "bdeb0c6607bdca5c",
+        "parentUid" : "271610a234cf1583354bc622cfc970e0",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692777920605,
+          "stop" : 1692778001370,
+          "duration" : 80765
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can be validated with upper case email",
+        "uid" : "2aed46a7b48f3341",
+        "parentUid" : "271610a234cf1583354bc622cfc970e0",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692777920605,
+          "stop" : 1692778001451,
+          "duration" : 80846
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "271610a234cf1583354bc622cfc970e0"
+    }, {
+      "name" : "Status code is incorrect expected [400] but found [401]",
+      "children" : [ {
+        "name" : "Check sending invitation with user id as empty string",
+        "uid" : "e17432a80b759a6",
+        "parentUid" : "09340f638656e6222f2734f2b2d1619b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692778061531,
+          "stop" : 1692778121627,
+          "duration" : 60096
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user roles can't be updated with userId as empty string",
+        "uid" : "573d36341b1d43d5",
+        "parentUid" : "09340f638656e6222f2734f2b2d1619b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692779404571,
+          "stop" : 1692779464693,
+          "duration" : 60122
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user roles can't be updated with userId as null",
+        "uid" : "304b5276f41dd3b5",
+        "parentUid" : "09340f638656e6222f2734f2b2d1619b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692779455657,
+          "stop" : 1692779515759,
+          "duration" : 60102
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that supplementary permissions can't be updated with userId as empty string",
+        "uid" : "c31574a8d121121d",
+        "parentUid" : "09340f638656e6222f2734f2b2d1619b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692779593062,
+          "stop" : 1692779653166,
+          "duration" : 60104
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that supplementary permissions can't be updated with userId as null",
+        "uid" : "12131f595a472743",
+        "parentUid" : "09340f638656e6222f2734f2b2d1619b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692779632516,
+          "stop" : 1692779632620,
+          "duration" : 104
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "09340f638656e6222f2734f2b2d1619b"
+    }, {
+      "name" : "2 expectations failed.\nExpected status code <200> but was <401>.\n\nExpected status line a string containing \"OK\" doesn't match actual status line \"HTTP/1.1 401 Unauthorized\".\n",
+      "children" : [ {
+        "name" : "Check getting user roles",
+        "uid" : "f769852303bad3eb",
+        "parentUid" : "0b984c5531e52c6619a81a7badebbadf",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692779639002,
+          "stop" : 1692779639069,
+          "duration" : 67
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that Super Admin can GET /users/{userId}/supplementary-permissions for Technical user",
+        "uid" : "baf93a0874401b18",
+        "parentUid" : "0b984c5531e52c6619a81a7badebbadf",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692779639968,
+          "stop" : 1692779640036,
+          "duration" : 68
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that Super Admin can GET /users for Technical user",
+        "uid" : "ee17e4d3aa6f2bd8",
+        "parentUid" : "0b984c5531e52c6619a81a7badebbadf",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692779640035,
+          "stop" : 1692779640102,
+          "duration" : 67
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "0b984c5531e52c6619a81a7badebbadf"
+    }, {
+      "name" : "Status code is incorrect expected [200] but found [401]",
+      "children" : [ {
+        "name" : "Check that Super Admin can PUT /api/v1/users/{userId}/roles for Technical user",
+        "uid" : "f96a706f2c312283",
+        "parentUid" : "92adf156c72b8626aa09b7eef990a899",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692779640184,
+          "stop" : 1692779640285,
+          "duration" : 101
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that Super Admin can PUT /users/{userId}/supplementary-permissions for Technical user",
+        "uid" : "a6b4a221945fe6e6",
+        "parentUid" : "92adf156c72b8626aa09b7eef990a899",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692779640334,
+          "stop" : 1692779640391,
+          "duration" : 57
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "92adf156c72b8626aa09b7eef990a899"
+    }, {
+      "name" : "2 expectations failed.\nExpected status code <400> but was <404>.\n\nExpected status line a string containing \"Bad Request\" doesn't match actual status line \"HTTP/1.1 404 Not Found\".\n",
+      "children" : [ {
+        "name" : "Check updating password when user does not exists in Firebase",
+        "uid" : "fc6ccf6a37408562",
+        "parentUid" : "7c154c8977864ecef4a7de8a52e8bdd4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692779648539,
+          "stop" : 1692779649187,
+          "duration" : 648
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check updating password when user does not exists in IDP",
+        "uid" : "7a4626c0d396ea82",
+        "parentUid" : "7c154c8977864ecef4a7de8a52e8bdd4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692779649351,
+          "stop" : 1692779649449,
+          "duration" : 98
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7c154c8977864ecef4a7de8a52e8bdd4"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  }, {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Unable to register user",
+      "children" : [ {
+        "name" : "Check that facilityIds can't be empty list",
+        "uid" : "6878b86934a1b243",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692775885032,
+          "stop" : 1692775945178,
+          "duration" : 60146
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that facilityIds must be valid",
+        "uid" : "ac3ef272f429fa73",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692775953737,
+          "stop" : 1692776013844,
+          "duration" : 60107
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check what user can be deleted from existing facility with camel case email",
+        "uid" : "44b98ab30ff78d7",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692776005369,
+          "stop" : 1692776065466,
+          "duration" : 60097
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check what user can be deleted from existing facility with lower case email",
+        "uid" : "370a2b7dd3302427",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692776034968,
+          "stop" : 1692776095062,
+          "duration" : 60094
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check what user can be deleted from existing facility with multi domain email",
+        "uid" : "4e4a633580347edc",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692776056668,
+          "stop" : 1692776116834,
+          "duration" : 60166
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check what user can be deleted from existing facility with upper case email",
+        "uid" : "a9b7c881d1ae94f0",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692776057692,
+          "stop" : 1692776117795,
+          "duration" : 60103
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check what user without ‘Add/Edit Users’ permission are not able to deleted from existing facility",
+        "uid" : "7a7b3c5326ad6b39",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692776073988,
+          "stop" : 1692776134093,
+          "duration" : 60105
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check facilities grid sorting by Facility Name asc",
+        "uid" : "9d6c205dc148853a",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692776125590,
+          "stop" : 1692776185703,
+          "duration" : 60113
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check facilities grid sorting by Facility Name desc",
+        "uid" : "7e35179caa008c1f",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692776155191,
+          "stop" : 1692776215299,
+          "duration" : 60108
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check facilities grid sorting by Facility Users asc",
+        "uid" : "6163e16474de9ea6",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692776176956,
+          "stop" : 1692776237066,
+          "duration" : 60110
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check facilities grid sorting by Facility Users desc",
+        "uid" : "e95564e4a705335a",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692776177895,
+          "stop" : 1692776238006,
+          "duration" : 60111
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user without \"Add/Edit Facilities\" supplementary-permissions can not see facilities grid",
+        "uid" : "5753f57b050f780d",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692776194226,
+          "stop" : 1692776254324,
+          "duration" : 60098
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check getting users with PENDING status",
+        "uid" : "e40467b866808d63",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692776245827,
+          "stop" : 1692776305938,
+          "duration" : 60111
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check users grid sorting by email asc",
+        "uid" : "83a12e8eae6482d1",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692776464395,
+          "stop" : 1692776524480,
+          "duration" : 60085
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check users grid sorting by email desc",
+        "uid" : "34bac305737e22a2",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692776465821,
+          "stop" : 1692776525921,
+          "duration" : 60100
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check users grid sorting by firstName asc",
+        "uid" : "6d35052ae69b5ab0",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692776466817,
+          "stop" : 1692776526915,
+          "duration" : 60098
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check users grid sorting by firstName desc",
+        "uid" : "53e08b5a3b1f4e63",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692776539429,
+          "stop" : 1692776599532,
+          "duration" : 60103
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check users grid sorting by lastName asc",
+        "uid" : "c5e97a83ffe7e003",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692776586043,
+          "stop" : 1692776646152,
+          "duration" : 60109
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check users grid sorting by lastName desc",
+        "uid" : "2ca0afeb679d71b6",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692776587042,
+          "stop" : 1692776647145,
+          "duration" : 60103
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that POST /registration user to existing facility in ACTIVE status if user was activated",
+        "uid" : "e6d5ca118e2e16bd",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692776659660,
+          "stop" : 1692776719768,
+          "duration" : 60108
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that email field is optional",
+        "uid" : "1f60b07e996a0e8b",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692776940417,
+          "stop" : 1692777000520,
+          "duration" : 60103
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that active user can't be activated",
+        "uid" : "8efa31155a801feb",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692776942193,
+          "stop" : 1692777002284,
+          "duration" : 60091
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that firstName field can't contain empty string",
+        "uid" : "8c9d3d0865fa6814",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692776942637,
+          "stop" : 1692777002731,
+          "duration" : 60094
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that firstName field can't contain more than 30 chars",
+        "uid" : "d9e94c29d195dad9",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692776979616,
+          "stop" : 1692777039756,
+          "duration" : 60140
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that firstName field is mandatory",
+        "uid" : "535cc9a33a9b5a9e",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692777002502,
+          "stop" : 1692777062610,
+          "duration" : 60108
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that lastName field can't contain empty string",
+        "uid" : "eda69258ec0f45cc",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692777060652,
+          "stop" : 1692777120760,
+          "duration" : 60108
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that lastName field can't contain more than 30 chars",
+        "uid" : "88494a3f4f5e5dce",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692777062401,
+          "stop" : 1692777122484,
+          "duration" : 60083
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that lastName field is mandatory",
+        "uid" : "936c9af2201596e1",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692777062863,
+          "stop" : 1692777122951,
+          "duration" : 60088
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can be denied with camel case email",
+        "uid" : "cb27810ee3689002",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692777397729,
+          "stop" : 1692777457818,
+          "duration" : 60089
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can be denied with lower case email",
+        "uid" : "fa87d9b9b8976cf",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692777397828,
+          "stop" : 1692777457908,
+          "duration" : 60080
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that denying user with non existing facility",
+        "uid" : "6be4257f2d634cfa",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692777398595,
+          "stop" : 1692777458685,
+          "duration" : 60090
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that denying user with several facilities, one attached other is not",
+        "uid" : "a800c856ba2ebedf",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692777398910,
+          "stop" : 1692777458996,
+          "duration" : 60086
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can be denied with multi domain email",
+        "uid" : "fe00748a6a9a4f8d",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692777517004,
+          "stop" : 1692777577087,
+          "duration" : 60083
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can be denied with upper case email",
+        "uid" : "8f5cfe9b6c0571fe",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692777517918,
+          "stop" : 1692777578032,
+          "duration" : 60114
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can't be denied with email as empty string",
+        "uid" : "5c90c37814a07e84",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692777518006,
+          "stop" : 1692777578101,
+          "duration" : 60095
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can't be denied with empty list facilityIds",
+        "uid" : "9f90b05ffe7d8ef6",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692777518809,
+          "stop" : 1692777578897,
+          "duration" : 60088
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can't be denied with empty string facilityIds",
+        "uid" : "23ad7822743979c2",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692777519099,
+          "stop" : 1692777579202,
+          "duration" : 60103
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can be validated with several facilities one attached others not with another admin token",
+        "uid" : "7c766e0a014e6a51",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692777861060,
+          "stop" : 1692777921138,
+          "duration" : 60078
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can't be validated without facility id",
+        "uid" : "a5d703c74af17593",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692778001423,
+          "stop" : 1692778061528,
+          "duration" : 60105
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can't be validated without email",
+        "uid" : "50eee294490b7620",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692778001900,
+          "stop" : 1692778061986,
+          "duration" : 60086
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check sending invitation with non admin user",
+        "uid" : "3763e9c8b7af4435",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692778061562,
+          "stop" : 1692778121682,
+          "duration" : 60120
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that invitation can be resent again",
+        "uid" : "3bdaaeeea69e8c99",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692778121713,
+          "stop" : 1692778181804,
+          "duration" : 60091
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that File field is mandatory",
+        "uid" : "d0988aedc8ae0ed9",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692778122094,
+          "stop" : 1692778182176,
+          "duration" : 60082
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that .pdf can not be uploaded as users photo",
+        "uid" : "f30fe359b6ae091a",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692778181738,
+          "stop" : 1692778241825,
+          "duration" : 60087
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Upload users photo up to 10mb in .jpeg format",
+        "uid" : "89e830c21850a8ed",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692778181789,
+          "stop" : 1692778241893,
+          "duration" : 60104
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Upload users photo up to 10mb in .png format",
+        "uid" : "2e7d3847f154f880",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692778239230,
+          "stop" : 1692778299340,
+          "duration" : 60110
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that US country code sets default measurement unit - IMPERIAL",
+        "uid" : "5a8536c086e2e065",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692778479711,
+          "stop" : 1692778539810,
+          "duration" : 60099
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that not US country code sets default measurement unit - IMPERIAL",
+        "uid" : "763ae35e02e6c7c9",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692778734454,
+          "stop" : 1692778794535,
+          "duration" : 60081
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that existing user can be added to existing facility with POST /users endpoint",
+        "uid" : "3ce827451ab6a6cc",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692778750549,
+          "stop" : 1692778810678,
+          "duration" : 60129
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that firstName field can't contain more than 30 chars",
+        "uid" : "6de9889909202cd2",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692778751592,
+          "stop" : 1692778811683,
+          "duration" : 60091
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that firstName field is mandatory",
+        "uid" : "7e0818512b366339",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692778854653,
+          "stop" : 1692778914735,
+          "duration" : 60082
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that lastName field can't contain empty string",
+        "uid" : "247880092467e781",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692778870801,
+          "stop" : 1692778930893,
+          "duration" : 60092
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that lastName field can't contain more than 30 chars",
+        "uid" : "9ba81199ada4849d",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692778871806,
+          "stop" : 1692778931896,
+          "duration" : 60090
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that lastName field is mandatory",
+        "uid" : "595738c7872fb07d",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692778911009,
+          "stop" : 1692778971126,
+          "duration" : 60117
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that adding non existent roles",
+        "uid" : "9e6cfc9bf8e2d76a",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692778923659,
+          "stop" : 1692778983756,
+          "duration" : 60097
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that roleIds is mandatory",
+        "uid" : "ad761b3b52cb0736",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692778974848,
+          "stop" : 1692779034927,
+          "duration" : 60079
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that supplementaryPermissionIds is optional",
+        "uid" : "bac9d0afd976914a",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692778991011,
+          "stop" : 1692779051118,
+          "duration" : 60107
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can be created with camel case email",
+        "uid" : "ea8b5688789c1092",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692778992018,
+          "stop" : 1692779052111,
+          "duration" : 60093
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can be created with lower case email",
+        "uid" : "8ff095c0ca3eb312",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779031266,
+          "stop" : 1692779091385,
+          "duration" : 60119
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can be created with multi domain email",
+        "uid" : "94013cd9ab43e48b",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779043866,
+          "stop" : 1692779103950,
+          "duration" : 60084
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can be created with upper case email",
+        "uid" : "3bb3c7243082f093",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779095051,
+          "stop" : 1692779155149,
+          "duration" : 60098
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user without Add/Edit User permission can't create users",
+        "uid" : "75321b42f9986925",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779164136,
+          "stop" : 1692779224242,
+          "duration" : 60106
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can be attached to existing facility",
+        "uid" : "5fb465684ef30620",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779215259,
+          "stop" : 1692779275359,
+          "duration" : 60100
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can't be attached to existing facility without access token",
+        "uid" : "f3aab1681b69d08c",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779231433,
+          "stop" : 1692779291520,
+          "duration" : 60087
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can't be attached to existing facility without facilityId",
+        "uid" : "df08f1e15544567",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779232419,
+          "stop" : 1692779292518,
+          "duration" : 60099
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can't be attached to existing facility without userId",
+        "uid" : "76c7b0295551d7a2",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779271756,
+          "stop" : 1692779331852,
+          "duration" : 60096
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that Super Admin role can't be assigned",
+        "uid" : "a7341a9fd7cdb178",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779284357,
+          "stop" : 1692779344442,
+          "duration" : 60085
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user roles can be updated",
+        "uid" : "e77bc05290545371",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779335469,
+          "stop" : 1692779395561,
+          "duration" : 60092
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user roles can't be updated with empty string in parameter",
+        "uid" : "37a9e24f31e63d1d",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779351626,
+          "stop" : 1692779411741,
+          "duration" : 60115
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user roles can't be updated with incorrect permission number",
+        "uid" : "943fa08e07f9918f",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779352615,
+          "stop" : 1692779412705,
+          "duration" : 60090
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user roles can't be updated with null in a body",
+        "uid" : "1f1505b99e5e89e1",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779392031,
+          "stop" : 1692779452133,
+          "duration" : 60102
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check user roles can't be updated without a body",
+        "uid" : "f0053732a10734bf",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779471867,
+          "stop" : 1692779531975,
+          "duration" : 60108
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user roles can't be updated without a token",
+        "uid" : "b978e31721e35b29",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779472838,
+          "stop" : 1692779532932,
+          "duration" : 60094
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that supplementary permissions can be updated",
+        "uid" : "d2c5820ddd380ea3",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779512262,
+          "stop" : 1692779572393,
+          "duration" : 60131
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that supplementary permissions can't be updated with empty string in a body",
+        "uid" : "51662fa0038d15a5",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779524871,
+          "stop" : 1692779584984,
+          "duration" : 60113
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that supplementary permissions can't be updated with incorrect permission number",
+        "uid" : "e31180b81e5a6431",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779575890,
+          "stop" : 1692779636004,
+          "duration" : 60114
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that supplementary permissions can't be updated with null in a body",
+        "uid" : "344ae5a5dcde3c56",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779592082,
+          "stop" : 1692779652188,
+          "duration" : 60106
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that supplementary permissions can't be updated without a token",
+        "uid" : "7d51eae35449b1e3",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779632706,
+          "stop" : 1692779632774,
+          "duration" : 68
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check adding non existent supplementaryPermissionIds does not update a user",
+        "uid" : "4625e99b0f1d86f5",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779632853,
+          "stop" : 1692779632923,
+          "duration" : 70
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that adding roleIds as empty string",
+        "uid" : "d9123a2db78293ad",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779633010,
+          "stop" : 1692779633081,
+          "duration" : 71
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check adding supplementaryPermissionIds as empty string creates a user",
+        "uid" : "a88a4ab6c658fac3",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779633156,
+          "stop" : 1692779633225,
+          "duration" : 69
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that email field does not allow empty string",
+        "uid" : "f7dfdf7fc5c61760",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779633303,
+          "stop" : 1692779633348,
+          "duration" : 45
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that email field does not allow less than 5 chars",
+        "uid" : "83dac049b1eba3a3",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779633443,
+          "stop" : 1692779633502,
+          "duration" : 59
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that email field does not allow more than 50 chars",
+        "uid" : "28883e8f5a197797",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779633588,
+          "stop" : 1692779633662,
+          "duration" : 74
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that email field does not allow special chars",
+        "uid" : "a1421185edb03c80",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779633755,
+          "stop" : 1692779633823,
+          "duration" : 68
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that email field is mandatory",
+        "uid" : "5320bf07ced673fb",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779633903,
+          "stop" : 1692779633962,
+          "duration" : 59
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that facilityId is mandatory",
+        "uid" : "a4ac5916af9d7fa9",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779634056,
+          "stop" : 1692779634111,
+          "duration" : 55
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that firstName field does not allow empty string",
+        "uid" : "162bd3a263cfeed5",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779634196,
+          "stop" : 1692779634269,
+          "duration" : 73
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that firstName field does not allow more than 30 chars",
+        "uid" : "aa5c8cc99198a2a0",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779634362,
+          "stop" : 1692779634436,
+          "duration" : 74
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that first name field is mandatory",
+        "uid" : "dee3c05882711f08",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779634523,
+          "stop" : 1692779634600,
+          "duration" : 77
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that lastName field does not allow empty string",
+        "uid" : "95316b4fccb7c4fb",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779634709,
+          "stop" : 1692779634778,
+          "duration" : 69
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that lastName field does not allow more than 30 chars",
+        "uid" : "ef07dd3969044288",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779634877,
+          "stop" : 1692779634952,
+          "duration" : 75
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that last name field is mandatory",
+        "uid" : "cc7d01b5c809a335",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779635051,
+          "stop" : 1692779635113,
+          "duration" : 62
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that adding non existent roles",
+        "uid" : "ffe08010acfecd6a",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779635225,
+          "stop" : 1692779635288,
+          "duration" : 63
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that role can be changed during updating",
+        "uid" : "a4060c241c3ca4af",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779635608,
+          "stop" : 1692779635694,
+          "duration" : 86
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that roleIds is mandatory",
+        "uid" : "1aa94e9e85dea522",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779635821,
+          "stop" : 1692779635889,
+          "duration" : 68
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that supplementaryPermissionIds is optional",
+        "uid" : "258e2cccde536ef6",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779635979,
+          "stop" : 1692779636099,
+          "duration" : 120
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that supplementary permissions can be changed during updating",
+        "uid" : "abc13dc07a928134",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779636103,
+          "stop" : 1692779636176,
+          "duration" : 73
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can't be updated to empty list facilityIds",
+        "uid" : "c02a7b35cd341fc4",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779636215,
+          "stop" : 1692779636297,
+          "duration" : 82
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can't be updated to empty string facilityIds",
+        "uid" : "eb3eed9ea811a1b6",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779636308,
+          "stop" : 1692779636403,
+          "duration" : 95
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can't be updated to non existent facilityIds",
+        "uid" : "559e7a356c196b04",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779636458,
+          "stop" : 1692779636526,
+          "duration" : 68
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user without Add/Edit User permission can't update users",
+        "uid" : "3cbba6ae2828612f",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779636504,
+          "stop" : 1692779636573,
+          "duration" : 69
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user from another facility can't be updated",
+        "uid" : "e0e67b08b4eaa99e",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779636606,
+          "stop" : 1692779636713,
+          "duration" : 107
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can be updated with camel case email",
+        "uid" : "8561ba648e57a277",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779636687,
+          "stop" : 1692779636813,
+          "duration" : 126
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can be updated with multi domain email",
+        "uid" : "132e52f931c3e46d",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779636971,
+          "stop" : 1692779637038,
+          "duration" : 67
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can be updated with lower case email",
+        "uid" : "bcb2586b1e61b4dc",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779636971,
+          "stop" : 1692779637059,
+          "duration" : 88
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can be updated with upper case email",
+        "uid" : "d99d038678ed2621",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779637152,
+          "stop" : 1692779637241,
+          "duration" : 89
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check invalid language code",
+        "uid" : "a5782689da6e945c",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779637364,
+          "stop" : 1692779637438,
+          "duration" : 74
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that encodedPassword field expects encoded password",
+        "uid" : "df83d3f61e6c9f91",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779637483,
+          "stop" : 1692779637566,
+          "duration" : 83
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that encodedPassword field is optional",
+        "uid" : "e1fd58e9a52d4f4c",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779637613,
+          "stop" : 1692779637692,
+          "duration" : 79
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that EncodedPassword field was updated and new password works after update",
+        "uid" : "e3fbe70d6d01edb9",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779637796,
+          "stop" : 1692779637896,
+          "duration" : 100
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that EncodedPassword field should contain correct values",
+        "uid" : "2f5f6e67d7616f12",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779637912,
+          "stop" : 1692779637987,
+          "duration" : 75
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that firstName field does not allow empty string",
+        "uid" : "66e6aa17de6b7fc2",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779638024,
+          "stop" : 1692779638137,
+          "duration" : 113
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that firstName field does not allow more than 30 chars",
+        "uid" : "5bc7f38f08eaa909",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779638130,
+          "stop" : 1692779638202,
+          "duration" : 72
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that First name is mandatory",
+        "uid" : "83cdd204cc2d5660",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779638249,
+          "stop" : 1692779638338,
+          "duration" : 89
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that lastName field does not allow empty string",
+        "uid" : "db23c16a88bc08d6",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779638305,
+          "stop" : 1692779638397,
+          "duration" : 92
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that Last name is mandatory",
+        "uid" : "317f75c251caca7a",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779638539,
+          "stop" : 1692779638663,
+          "duration" : 124
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that lastName field does not allow more than 30 chars",
+        "uid" : "fe637497083e18b5",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779638565,
+          "stop" : 1692779638686,
+          "duration" : 121
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that preferredUnit field is optional",
+        "uid" : "766d660278f97cdd",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779638808,
+          "stop" : 1692779638869,
+          "duration" : 61
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that preferred language code field is optional",
+        "uid" : "a01179096ddf53d2",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779638811,
+          "stop" : 1692779638882,
+          "duration" : 71
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that users profile can be updated",
+        "uid" : "21c498f6c15d5481",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779638989,
+          "stop" : 1692779639098,
+          "duration" : 109
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that Admin can not PUT /users/details for Technical user",
+        "uid" : "cd228f693b443316",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779639678,
+          "stop" : 1692779639750,
+          "duration" : 72
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that token is not returned for non-technical user",
+        "uid" : "bbca560c7deff49c",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779640384,
+          "stop" : 1692779640457,
+          "duration" : 73
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that supplementary permissions can't be updated without a body",
+        "uid" : "49a2900cb957769c",
+        "parentUid" : "c6df9d774866e1768a06deffa7752059",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779645120,
+          "stop" : 1692779645169,
+          "duration" : 49
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c6df9d774866e1768a06deffa7752059"
+    }, {
+      "name" : "Unable to send api call",
+      "children" : [ {
+        "name" : "Check sending invitation with non existing user id",
+        "uid" : "91b6101a0e022674",
+        "parentUid" : "a4098389873709fec199062dd8754808",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692778119022,
+          "stop" : 1692778179111,
+          "duration" : 60089
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a4098389873709fec199062dd8754808"
+    }, {
+      "name" : "Unable to get user be email",
+      "children" : [ {
+        "name" : "Check that Admin can not GET /users for Technical user",
+        "uid" : "8a3d8c8ac66a01c0",
+        "parentUid" : "a74efc170ea96f39ca7b8c644f0fd92c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779639547,
+          "stop" : 1692779639612,
+          "duration" : 65
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a74efc170ea96f39ca7b8c644f0fd92c"
+    }, {
+      "name" : "Unable to get users details expecting success",
+      "children" : [ {
+        "name" : "Check that Super Admin can PUT /users/details for Technical user",
+        "uid" : "24422e00656eaed9",
+        "parentUid" : "aabeb2abb6b97b0cc964ef78462a8295",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692779640138,
+          "stop" : 1692779640205,
+          "duration" : 67
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "aabeb2abb6b97b0cc964ef78462a8295"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}
