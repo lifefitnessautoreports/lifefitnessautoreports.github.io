@@ -1,0 +1,103 @@
+[2023-08-24 07:29:17] [23] [INFO] TEST [LifeFitness Backend Auto Tests - checkUserGetsEmailWhenAnotherUserRegisteringToItsFacilityThenDenyingIt] STARTED at [07:29:17 2023-08-24]
+[2023-08-24 07:29:17] [23] [INFO] Setting default registration body values
+[2023-08-24 07:29:17] [23] [INFO] Base properties loaded: api/core/controllers/user/postregistration/registration.properties
+[2023-08-24 07:29:17] [23] [INFO] Get country code except embargoed ones
+[2023-08-24 07:29:17] [23] [INFO] Registering user with lifeFitnessPostman+54241684@gmail.com email
+[2023-08-24 07:29:17] [23] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/registration
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5Mjg2MjEwMywidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyODYyMTAzLCJleHAiOjE2OTI4NjU3MDMsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.LI5_wDa8bjK89wpOdqgxsF5uNzzZ4Epe-YITIQuUkHv3l60CY-yP-eWk1wgKAj9CMbsXsHM43RD8qxaXIBms4vRXqnxBP8D3DIt2hSuHCf7EwkNb1ZHvcPrzalgKNtwJVz8FeUngZ7ojg7pgA_RjnR4cG3VDEda4W0CLNVdCASwGm-LD9SSYD6epVX-ffj8U9xSDwGzmUmuEpLoAJn7J-15qiHFaKO_ymXdzYQdCHiiroPmmU-xJEItolIve1xgYzOV7zvc40BeafUofry1yHFna65JNSYmGloolqs1gQhuYc8G2fmLAtaRZR1SvaPcD2DDtiJvCJtbrwKsjyWEtBA
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "user": {
+        "id": 0,
+        "firstName": "Efren",
+        "lastName": "Littel",
+        "email": "lifeFitnessPostman+54241684@gmail.com",
+        "preferredUnit": "METRICS",
+        "preferredLanguageCode": "",
+        "phoneNumber": "",
+        "officePhoneNumber": "",
+        "imageUrl": "",
+        "imageKey": "",
+        "thumbnailUrl": "",
+        "thumbnailKey": "",
+        "isAllowedMarketingEmails": null,
+        "isAllowedFeedbackProviding": null,
+        "useTerms": null
+    },
+    "facility": {
+        "id": 0,
+        "legacyId": 0,
+        "ipAddress": "",
+        "facilityGroupId": 0,
+        "name": "Fay-Mante",
+        "facilityTypeId": 0,
+        "address": {
+            "placeId": "790152ab-e861-4ce0-8eed-9e8687f7100d",
+            "primaryStreet": "167 Flatley Camp",
+            "secondaryStreet": "Suite 150",
+            "city": "North Homer",
+            "region": "",
+            "zipCode": "223610",
+            "state": "",
+            "countryCode": "ER",
+            "latitude": "30.6279",
+            "longitude": "22.7323",
+            "country": "string",
+            "formatAddress": "string",
+            "rawData": "string"
+        },
+        "contactNumber": "2525859335",
+        "timezone": "",
+        "openTime": "10:00 AM",
+        "closeTime": "6:00 PM",
+        "isOpen24Hours": true
+    }
+}
+HTTP/1.1 401 Unauthorized
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+www-authenticate: Bearer
+X-Cloud-Trace-Context: b25d680145d3963fa9cf8e686454bd45
+Date: Thu, 24 Aug 2023 07:29:17 GMT
+Content-Type: text/html
+Server: Google Frontend
+Content-Length: 0
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+
+
+[2023-08-24 07:29:17] [23] [ERROR] TEST [LifeFitness Backend Auto Tests - checkUserGetsEmailWhenAnotherUserRegisteringToItsFacilityThenDenyingIt] FAILED at [07:29:17 2023-08-24] - Unable to register user
+
+com.lifefitness.qa.api.corecontrollers.user.postregistration.PostRegistrationHelper.registerUser(PostRegistrationHelper.java:37)
+com.lifefitness.qa.api.corecontrollers.user.postregistration.PostRegistrationHelper.registerUserWithDefaultParameters(PostRegistrationHelper.java:24)
+com.lifefitness.qa.api.core.controllers.user.postregistration.PostRegistrationTest.checkUserGetsEmailWhenAnotherUserRegisteringToItsFacilityThenDenyingIt(PostRegistrationTest.java:871)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:568)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+java.base/java.lang.Thread.run(Thread.java:833)

@@ -1,0 +1,68 @@
+[2023-08-20 07:30:24] [26] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-20 07:30:24] [26] [INFO] TEST [LifeFitness Backend Auto Tests - checkStateWithMoreThanFortyChars] STARTED at [07:30:24 2023-08-20]
+[2023-08-20 07:30:24] [26] [INFO] Creating facility with state with more than 40 chars expecting failure
+[2023-08-20 07:30:24] [26] [INFO] Setting default add facility body values
+[2023-08-20 07:30:24] [26] [INFO] Base properties loaded: api/core/controllers/user/postfacility/post_facility.properties
+[2023-08-20 07:30:24] [26] [INFO] Get country code except embargoed ones
+[2023-08-20 07:30:24] [26] [INFO] Creating facility expecting failure
+[2023-08-20 07:30:24] [26] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/facilities
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MjUxNjQ5NiwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyNTE2NDk2LCJleHAiOjE2OTI1MjAwOTYsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.kflmTElUIR-bNGkHYoaY5SUmQ9QwnS0KXsA97n74M40K2n5J_QK0wt-3GVCT3oR0ptc7YTzECPPRG2o1rT9rRrz7wDMtETgJP1W-0AvvqPcxl0p9jtxr7G6Dygw3WYsiRILYfQHvQyO1Agt_RXXoHmHZcdMC1Dxg1QTbHSYvWMqwlaSRtetqKqkuQvpKeecC3QXXcDASmfF3rGTpGs6vxxLkgFCuNIuSsnRXLg_cvQm4PJfr67RNNR4EMisbgg4wsUfcT41eVNvcrnGsGFGeWrt5jI-gGinGIgAyyXKEaqCDdG22_k1nXWwC7OnG4MedeT6YWJ8VcdFDjOfClnUYKg
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "name": "Dickens-Harvey",
+    "facilityGroupId": 0,
+    "facilityTypeId": 0,
+    "address": {
+        "placeId": "f4ebb376-89f4-43b0-8993-42b4f3d7a96b",
+        "primaryStreet": "05457 MacGyver Forges",
+        "secondaryStreet": "Suite 827",
+        "city": "Port Jannet",
+        "state": "06598962238247714106265457693474177751120",
+        "countryCode": "LA",
+        "latitude": "30.6279",
+        "longitude": "22.7323",
+        "country": "string",
+        "formatAddress": "asd"
+    },
+    "contactNumber": "4837595000",
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": true,
+    "timezone": ""
+}
+HTTP/1.1 400 Bad Request
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: e2ab1bad93f3073b95c98b0e84f11323
+Date: Sun, 20 Aug 2023 07:30:24 GMT
+Server: Google Frontend
+Content-Length: 135
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "timestamp": "2023-08-20T07:30:24.322745319",
+    "errorCode": null,
+    "title": "State maximum size is 40 characters",
+    "details": null,
+    "path": null
+}
+
+[2023-08-20 07:30:24] [26] [INFO] Assert that error response is correct
+[2023-08-20 07:30:24] [26] [INFO] TEST [LifeFitness Backend Auto Tests - checkStateWithMoreThanFortyChars] PASSED at [07:30:24 2023-08-20]

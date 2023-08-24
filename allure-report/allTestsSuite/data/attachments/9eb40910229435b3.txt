@@ -1,0 +1,68 @@
+[2023-08-21 07:56:44] [24] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-21 07:56:44] [24] [INFO] TEST [LifeFitness Backend Auto Tests - checkFormatAddressWithMoreThanThreeHundredChars] STARTED at [07:56:44 2023-08-21]
+[2023-08-21 07:56:44] [24] [INFO] Creating facility with formatAddress with more than 300 chars
+[2023-08-21 07:56:44] [24] [INFO] Setting default add facility body values
+[2023-08-21 07:56:44] [24] [INFO] Base properties loaded: api/core/controllers/user/postfacility/post_facility.properties
+[2023-08-21 07:56:44] [24] [INFO] Get country code except embargoed ones
+[2023-08-21 07:56:44] [24] [INFO] Creating facility expecting failure
+[2023-08-21 07:56:46] [24] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/facilities
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MjYwMjkyOCwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyNjAyOTI4LCJleHAiOjE2OTI2MDY1MjgsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.B8j_QsUJAabhyL4YKHd9lbz5v8PpQa3OGjGrILgMJjzEQFGBBt5GDCaeyoMxRIhMMTMz2Q-5tqX48VxGcpvQGnVyHklKHniVGyqZJm2m3P1gUAhXUIwdwuVejGvx9Wtm_aohCJhjDTx-lM7Kxa8K1SvPzxlnRE9gi9edsjdxGwqWaTKSPhDE1ZYLBnRx6laU5W9lKavomgWPSlB3VuC7N65QF3mvPdriIA5aFtbDtrJAvPEftJTsnvKU8aqQu2SyvOS5t5VVoUvBHH00GgZgxE78MOO0LzzmRpxZgV9IgTYUQbW7jBney5u5DPiwEiWO_p_hDkS2gfu90gy705PbYA
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "name": "Daugherty-Bosco",
+    "facilityGroupId": 0,
+    "facilityTypeId": 0,
+    "address": {
+        "placeId": "41e3960c-54f1-4c64-a959-cc58308090f4",
+        "primaryStreet": "63478 Winona Circles",
+        "secondaryStreet": "Apt. 354",
+        "city": "Briceshire",
+        "state": "",
+        "countryCode": "KN",
+        "latitude": "30.6279",
+        "longitude": "22.7323",
+        "country": "string",
+        "formatAddress": "9971157813070456980589574278376221956909527365086228749273356296946145897710998860147689853991990060112007443876257867091246641320063743030089836319087887553006257929274526625593213551131396685916612887604128341652968803627964775020486949096457205768365223948168451937013291613376581570307154558387632"
+    },
+    "contactNumber": "5261162211",
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": true,
+    "timezone": ""
+}
+HTTP/1.1 400 Bad Request
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: 911e890af9064b1739e53c3ce26b969b
+Date: Mon, 21 Aug 2023 07:56:46 GMT
+Server: Google Frontend
+Content-Length: 148
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "timestamp": "2023-08-21T07:56:46.617133792",
+    "errorCode": null,
+    "title": "Formatted address maximum size is 300 characters",
+    "details": null,
+    "path": null
+}
+
+[2023-08-21 07:56:46] [24] [INFO] Asserting that format address is mandatory
+[2023-08-21 07:56:46] [24] [INFO] TEST [LifeFitness Backend Auto Tests - checkFormatAddressWithMoreThanThreeHundredChars] PASSED at [07:56:46 2023-08-21]

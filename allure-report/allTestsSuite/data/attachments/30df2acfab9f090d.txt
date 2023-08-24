@@ -1,0 +1,60 @@
+[2023-08-23 08:29:55] [22] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-23 08:29:55] [22] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatUserRolesCantBeUpdatedWithUserIdAsNull] STARTED at [08:29:55 2023-08-23]
+[2023-08-23 08:30:55] [22] [INFO] Request method:	PUT
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/null/roles?roleIds=2&roleIds=3&roleIds=4&roleIds=5&roleIds=6
+Request params:	<none>
+Query params:	roleIds=[2, 3, 4, 5, 6]
+Form params:	<none>
+Path params:	userId=null
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5Mjc3NTY5NSwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyNzc1Njk1LCJleHAiOjE2OTI3NzkyOTUsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.GszmHNBpx7dWm-X7Vjk13uw-USZbaZSYRcz9g-fWtlTxfCfmlO2mE6BbNk8-B9UGPwGwJL690yJBKeLvkhci8NH8nWBNDjlbMLUocOIEiJkxxZL4e_UZctbxQd7qwFc8Uls7FpDcQD9imSYDJLid6KfegASCaJcxdgCTR4PA3R2jFhbiyeYMNYKFuhSYh8cy449Uvo66wQFOQZKsPC9c6lX_0IAqyLbisCJqWILk3_8vqnGhKStSeWoBe0f12xD8lQg3YwRObO9SGUorvdGiWd62ZGFz1COKja-8e2QnuHae2d8w-cL4gTVq-HLlZbTnicoAWRtiUZwMHNhn5_qbdg
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 401 Unauthorized
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+set-cookie: JSESSIONID=58539AAA037242084D37F55761E57680; Path=/halo-core-service; HttpOnly
+www-authenticate: Bearer
+X-Cloud-Trace-Context: fbff14de74703371e3b06a17a9049f46
+Date: Wed, 23 Aug 2023 08:30:55 GMT
+Content-Type: text/html
+Server: Google Frontend
+Content-Length: 0
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+JSESSIONID=58539AAA037242084D37F55761E57680;Path=/halo-core-service;HttpOnly
+
+
+[2023-08-23 08:30:55] [22] [INFO] Asserting that correct response code is returned when updating with userId as null
+[2023-08-23 08:30:55] [22] [ERROR] TEST [LifeFitness Backend Auto Tests - checkThatUserRolesCantBeUpdatedWithUserIdAsNull] SKIPPED at [08:30:55 2023-08-23] - Status code is incorrect expected [400] but found [401]
+
+org.testng.Assert.fail(Assert.java:110)
+org.testng.Assert.failNotEquals(Assert.java:1577)
+org.testng.Assert.assertEqualsImpl(Assert.java:149)
+org.testng.Assert.assertEquals(Assert.java:131)
+org.testng.Assert.assertEquals(Assert.java:1418)
+org.testng.Assert.assertEquals(Assert.java:1382)
+com.lifefitness.qa.api.core.controllers.user.putrolebyuserid.PutUserRoleByIdTest.checkThatUserRolesCantBeUpdatedWithUserIdAsNull(PutUserRoleByIdTest.java:83)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:568)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+java.base/java.lang.Thread.run(Thread.java:833)
+[2023-08-23 08:30:55] [22] [INFO] Attaching logs to Allure report

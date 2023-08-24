@@ -1,0 +1,51 @@
+[2023-08-24 07:28:58] [26] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-24 07:28:58] [26] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatFacilityCantBeApprovedWithoutToken] STARTED at [07:28:58 2023-08-24]
+[2023-08-24 07:28:58] [26] [INFO] Setting default approve user to facility body values
+[2023-08-24 07:28:58] [26] [INFO] Getting Halo Core dev base URL
+[2023-08-24 07:28:58] [26] [INFO] Base properties loaded: api/core/controllers/user/facilityaccess/postfacilityaccessapprove/facility_access_approve.properties
+[2023-08-24 07:28:58] [26] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/facility-access/approve
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer 
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "id": 1,
+    "firstName": "Lacie",
+    "lastName": "Swaniawski",
+    "email": "lifeFitnessPostman+83661879@gmail.com",
+    "roleIds": [
+        2,
+        3
+    ],
+    "supplementaryPermissionIds": [
+        1,
+        2,
+        3
+    ],
+    "facilityIds": [
+        
+    ],
+    "profilePicUrl": ""
+}
+HTTP/1.1 401 Unauthorized
+X-Goog-IAP-Generated-Response: true
+Date: Thu, 24 Aug 2023 07:28:58 GMT
+Content-Type: text/html
+Server: Google Frontend
+Content-Length: 34
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+<html>
+  <body>Invalid GCIP ID token: empty token</body>
+</html>
+
+[2023-08-24 07:28:58] [26] [INFO] Assert that error details are correct
+[2023-08-24 07:28:58] [26] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatFacilityCantBeApprovedWithoutToken] PASSED at [07:28:58 2023-08-24]

@@ -1,0 +1,163 @@
+[2023-08-18 03:21:02] [22] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-18 03:21:02] [22] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatUserRolesCantBeUpdatedWithoutAToken] STARTED at [15:21:02 2023-08-18]
+[2023-08-18 03:21:02] [22] [INFO] Setting default registration body values
+[2023-08-18 03:21:02] [22] [INFO] Base properties loaded: api/core/controllers/user/postregistration/registration.properties
+[2023-08-18 03:21:02] [22] [INFO] Get country code except embargoed ones
+[2023-08-18 03:21:02] [22] [INFO] Waiting for 0.1 sec to cool Core Backend off
+[2023-08-18 03:21:02] [22] [INFO] Registering user with lifeFitnessPostman+99008240@gmail.com email
+[2023-08-18 03:21:03] [22] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/registration
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MjM3MTczNiwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyMzcxNzM2LCJleHAiOjE2OTIzNzUzMzYsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.AzF-wt5XW252jZw1QT9ZwYrj7xCRCYpn4ZFNv9864HZ4fUWpKU-lQaoz_XgvtlYsuHqNdAlAx8d9qLGA9rU7k1x1vqPYC-8fIt12VNHbOAV-RUsJmQxIJfjSHtF2CXQkFtfk0cJfJifyLNGZWTTrL2r34sxQoSTVTck1wAqKBK6m-nu5xpPFyW5tAjBtLAU27kNUdu4l9SPyNJyMGxXiZmc4QCgjk7ot7YVDmsM-3IfiZ4Wk0w11nw1CkywoQr8jsq9vahq9iaLwEw8rzbcIPfwMcdhd0tXtzL97pb00Sw-VJM4Q_BNmy15X1NUPdEi1XPZ1-zENIQyLy1JYLokmSg
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "user": {
+        "id": 0,
+        "firstName": "Andy",
+        "lastName": "Kub",
+        "email": "lifeFitnessPostman+99008240@gmail.com",
+        "preferredUnit": "METRICS",
+        "preferredLanguageCode": "",
+        "phoneNumber": "",
+        "officePhoneNumber": "",
+        "imageUrl": "",
+        "imageKey": "",
+        "thumbnailUrl": "",
+        "thumbnailKey": "",
+        "isAllowedMarketingEmails": null,
+        "isAllowedFeedbackProviding": null,
+        "useTerms": null
+    },
+    "facility": {
+        "id": 0,
+        "legacyId": 0,
+        "ipAddress": "",
+        "facilityGroupId": 0,
+        "name": "Powlowski Group",
+        "facilityTypeId": 0,
+        "address": {
+            "placeId": "dcfcb68d-cef9-42e4-83a9-b2b5813326b3",
+            "primaryStreet": "9858 Abernathy Land",
+            "secondaryStreet": "Apt. 503",
+            "city": "Vikkimouth",
+            "region": "",
+            "zipCode": "223610",
+            "state": "",
+            "countryCode": "VG",
+            "latitude": "30.6279",
+            "longitude": "22.7323",
+            "country": "string",
+            "formatAddress": "string",
+            "rawData": "string"
+        },
+        "contactNumber": "5417305516",
+        "timezone": "",
+        "openTime": "10:00 AM",
+        "closeTime": "6:00 PM",
+        "isOpen24Hours": true
+    }
+}
+HTTP/1.1 201 Created
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: c6b4786c338da5c3f86390dca701b9a7
+Date: Fri, 18 Aug 2023 15:21:03 GMT
+Server: Google Frontend
+Content-Length: 972
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "user": {
+        "id": 44291,
+        "firstName": "Andy",
+        "lastName": "Kub",
+        "email": "lifefitnesspostman+99008240@gmail.com",
+        "preferredUnit": "METRICS",
+        "preferredLanguageCode": "en-US",
+        "phoneNumber": "",
+        "officePhoneNumber": "",
+        "profilePicUrl": null,
+        "imageKey": "",
+        "isEnabled": true,
+        "isAllowedMarketingEmails": true,
+        "isAllowedFeedbackProviding": true,
+        "useTerms": true,
+        "encodedPassword": null,
+        "status": "ACTIVE",
+        "roleIds": [
+            2
+        ]
+    },
+    "facility": {
+        "id": 33195,
+        "legacyId": 0,
+        "ipAddress": "",
+        "facilityGroupId": null,
+        "name": "Powlowski Group",
+        "facilityTypeId": null,
+        "address": {
+            "id": 33219,
+            "placeId": "dcfcb68d-cef9-42e4-83a9-b2b5813326b3",
+            "primaryStreet": "9858 Abernathy Land",
+            "secondaryStreet": "Apt. 503",
+            "city": "Vikkimouth",
+            "region": "NAM",
+            "zipCode": "223610",
+            "state": "",
+            "countryCode": "VG",
+            "latitude": 30.6279,
+            "longitude": 22.7323,
+            "country": "string",
+            "formatAddress": "string",
+            "rawData": "string"
+        },
+        "contactNumber": "5417305516",
+        "timezone": "Africa/Tripoli (GMT+2:00)",
+        "openTime": "10:00 AM",
+        "closeTime": "6:00 PM",
+        "isOpen24Hours": true
+    }
+}
+
+[2023-08-18 03:21:04] [22] [INFO] Request method:	PUT
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/44291/roles?roleIds=2&roleIds=3&roleIds=4&roleIds=5&roleIds=6
+Request params:	<none>
+Query params:	roleIds=[2, 3, 4, 5, 6]
+Form params:	<none>
+Path params:	userId=44291
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer 
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 401 Unauthorized
+X-Goog-IAP-Generated-Response: true
+Date: Fri, 18 Aug 2023 15:21:04 GMT
+Content-Type: text/html
+Server: Google Frontend
+Content-Length: 34
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+<html>
+  <body>Invalid GCIP ID token: empty token</body>
+</html>
+
+[2023-08-18 03:21:04] [22] [INFO] Asserting that correct response code is returned when updating without access token
+[2023-08-18 03:21:04] [22] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatUserRolesCantBeUpdatedWithoutAToken] PASSED at [15:21:04 2023-08-18]

@@ -1,0 +1,44 @@
+[2023-08-23 08:56:53] [22] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-23 08:56:53] [22] [INFO] TEST [LifeFitness Backend Auto Tests - checkGettingUserThatDoesNotExists] STARTED at [08:56:53 2023-08-23]
+[2023-08-23 08:56:53] [22] [INFO] Getting user with email - lifeFitnessPostman+94172628@gmail.com expecting negative response
+[2023-08-23 08:56:53] [22] [INFO] Getting Halo Core dev base URL
+[2023-08-23 08:56:53] [22] [INFO] Getting user by email
+[2023-08-23 08:56:57] [22] [INFO] Request method:	GET
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users?email=lifeFitnessPostman%2B94172628%40gmail.com
+Request params:	<none>
+Query params:	email=lifeFitnessPostman+94172628@gmail.com
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5Mjc4MDM1MSwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyNzgwMzUxLCJleHAiOjE2OTI3ODM5NTEsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.a5rer7TC3tq7s2UU9DMU4Zg0V8gb3qXmOqQr9kjUfnA84AXRaOKfF0TRQy0StrIQWIyciCzUQu1BXqXfsdnDTfoHRU2ZaPeUWycdMCD4qnaoA-bR3KkK-SgBQkLmxOuVauwh02hfvNBsihJrqq-f8-7IkWfpsVymtcLxOAb5oqXrO0QOUGKhdnRNtLl0rQdypGJn2lIVtZ1GFy5JKjucJbL8WyPSus8Wl-XbU8dzSn4UiHTVNDw1G9rVeQp-RVgt2ddNETO8obNZY_Y_dBLDpPt4gRXgGfsT0uzAx-n-jSN6oU39J297mWKEO5AsMCjgyxlIxy1PItRG71SsVtfCzw
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 404 Not Found
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: cac009d61adbd08b4d47daa6468c0c5d;o=1
+Date: Wed, 23 Aug 2023 08:56:57 GMT
+Server: Google Frontend
+Content-Length: 125
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "timestamp": "2023-08-23T08:56:57.711621605",
+    "errorCode": 404,
+    "title": "NOT_FOUND",
+    "details": "User does not exist",
+    "path": null
+}
+
+[2023-08-23 08:56:57] [22] [INFO] Asserting the correct error message
+[2023-08-23 08:56:57] [22] [INFO] TEST [LifeFitness Backend Auto Tests - checkGettingUserThatDoesNotExists] PASSED at [08:56:57 2023-08-23]

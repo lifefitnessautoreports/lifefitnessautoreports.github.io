@@ -1,0 +1,42 @@
+[2023-08-21 07:47:38] [24] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-21 07:47:38] [24] [INFO] TEST [LifeFitness Backend Auto Tests - checkUpdatingLanguageWithoutNewLanguageCodeQueryParam] STARTED at [07:47:38 2023-08-21]
+[2023-08-21 07:47:38] [24] [INFO] Setting email to camel case
+[2023-08-21 07:47:41] [24] [INFO] Request method:	PATCH
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/preferred-language?email=lifeFitnessPostman%2B28450738%40gmail.com
+Request params:	<none>
+Query params:	email=lifeFitnessPostman+28450738@gmail.com
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MjYwMjkyOCwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyNjAyOTI4LCJleHAiOjE2OTI2MDY1MjgsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.B8j_QsUJAabhyL4YKHd9lbz5v8PpQa3OGjGrILgMJjzEQFGBBt5GDCaeyoMxRIhMMTMz2Q-5tqX48VxGcpvQGnVyHklKHniVGyqZJm2m3P1gUAhXUIwdwuVejGvx9Wtm_aohCJhjDTx-lM7Kxa8K1SvPzxlnRE9gi9edsjdxGwqWaTKSPhDE1ZYLBnRx6laU5W9lKavomgWPSlB3VuC7N65QF3mvPdriIA5aFtbDtrJAvPEftJTsnvKU8aqQu2SyvOS5t5VVoUvBHH00GgZgxE78MOO0LzzmRpxZgV9IgTYUQbW7jBney5u5DPiwEiWO_p_hDkS2gfu90gy705PbYA
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 400 Bad Request
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/problem+json
+X-Cloud-Trace-Context: 04c16741991a3481756cc6cdea05eccf
+Date: Mon, 21 Aug 2023 07:47:41 GMT
+Server: Google Frontend
+Content-Length: 185
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "type": "about:blank",
+    "title": "Bad Request",
+    "status": 400,
+    "detail": "Required parameter 'newLanguageCode' is not present.",
+    "instance": "/halo-core-service/api/v1/users/preferred-language"
+}
+
+[2023-08-21 07:47:41] [24] [INFO] Asserting that error status code is correct
+[2023-08-21 07:47:41] [24] [INFO] TEST [LifeFitness Backend Auto Tests - checkUpdatingLanguageWithoutNewLanguageCodeQueryParam] PASSED at [07:47:41 2023-08-21]
