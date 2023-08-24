@@ -1,0 +1,67 @@
+[2023-08-22 07:30:33] [22] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-22 07:30:33] [22] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatFormatAddressIsMandatory] STARTED at [07:30:33 2023-08-22]
+[2023-08-22 07:30:33] [22] [INFO] Creating facility without format address
+[2023-08-22 07:30:33] [22] [INFO] Setting default add facility body values
+[2023-08-22 07:30:33] [22] [INFO] Base properties loaded: api/core/controllers/user/postfacility/post_facility.properties
+[2023-08-22 07:30:33] [22] [INFO] Get country code except embargoed ones
+[2023-08-22 07:30:33] [22] [INFO] Creating facility expecting failure
+[2023-08-22 07:30:33] [22] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/facilities
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MjY4OTMxMSwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyNjg5MzExLCJleHAiOjE2OTI2OTI5MTEsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.PNeV1HBNrfWCwtfdlSrupBr1JnQi7BFIMb1Gt8s7-UAdJS4AvffsxjbuqIVtdxRAKFmv-aRVAHIhquFCvENsC4TuziPjIRL9aFwlHRsUAQwinjdUhA-Ga9Fa7zobTaQsc7-CsGrsqXCAKUao2ShSC5rg9AncYT3Paou-NN7vxpcBYdxmB5YJn2NpCNJmwKhoteGjYFHAAv32J1o3vJXUwbv9_atNOxzpSNPL_YzwhKz1XXPou9rSvFv4UzsUCRD2PiGgFwN4Q5sz9rw_lsTMytkuCtuZnJlvGaFv_E7W8O8bq5Gsfsynbfj9v5-9k88SAElGBLlLG4aYOJUR64Xemw
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "name": "King-Harris",
+    "facilityGroupId": 0,
+    "facilityTypeId": 0,
+    "address": {
+        "placeId": "f43ffdac-cdbb-4682-a8e5-df40814a8698",
+        "primaryStreet": "79494 Horace Place",
+        "secondaryStreet": "Apt. 507",
+        "city": "Cruickshankhaven",
+        "state": "",
+        "countryCode": "AM",
+        "latitude": "30.6279",
+        "longitude": "22.7323",
+        "country": "string"
+    },
+    "contactNumber": "9245189938",
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": true,
+    "timezone": ""
+}
+HTTP/1.1 400 Bad Request
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: c329ddaa05d808a37d31235d69efc885
+Date: Tue, 22 Aug 2023 07:30:33 GMT
+Server: Google Frontend
+Content-Length: 133
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "timestamp": "2023-08-22T07:30:33.191352306",
+    "errorCode": null,
+    "title": "Formatted address cannot be empty",
+    "details": null,
+    "path": null
+}
+
+[2023-08-22 07:30:33] [22] [INFO] Asserting that format address is mandatory
+[2023-08-22 07:30:33] [22] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatFormatAddressIsMandatory] PASSED at [07:30:33 2023-08-22]

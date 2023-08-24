@@ -1,0 +1,258 @@
+[2023-08-19 07:32:36] [26] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-19 07:32:36] [26] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatUserCanBeRegisteredWithLowerCaseEmail] STARTED at [07:32:36 2023-08-19]
+[2023-08-19 07:32:36] [26] [INFO] Setting default registration body values
+[2023-08-19 07:32:36] [26] [INFO] Base properties loaded: api/core/controllers/user/postregistration/registration.properties
+[2023-08-19 07:32:36] [26] [INFO] Get country code except embargoed ones
+[2023-08-19 07:32:36] [26] [INFO] Setting email to lower case
+[2023-08-19 07:32:36] [26] [INFO] Waiting for 0.1 sec to cool Core Backend off
+[2023-08-19 07:32:36] [26] [INFO] Registering user with lifefitnesspostman+28612029@gmail.com email
+[2023-08-19 07:32:37] [26] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/registration
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MjQzMDA5OCwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyNDMwMDk4LCJleHAiOjE2OTI0MzM2OTgsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.El3B0WaarZd8LKMdU8wos9BWubz4WJ1zPv7-YkisMlkdvomY5bBZJGfiaIg2PYeAM2Zu-r-Lm-iwUsZr3cUBK4_K-yF7cKGcnwlCr-4zohfE4L4RLtqUJJiS8uH9znWuOodkrweIW76C-CYVHBGe98F113t4kz6B9lvakoVf9Iq6SrO8zHgHW0D6T6L4-febEcUkL4EDLBvOwRlSYraB2nMmRSkaaEN9hhBZ2sy20F7VCLE45yJNnZ-Mfim1sal3Ux2NboUAboiqhkS1jALd3B949n3BQ8ZTrQg8PQqVI4NsschInqdhhraLLPvNdsMzhbYvC9IsQ40SKE3gR1TENw
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "user": {
+        "id": 0,
+        "firstName": "Gordon",
+        "lastName": "Blick",
+        "email": "lifefitnesspostman+28612029@gmail.com",
+        "preferredUnit": "METRICS",
+        "preferredLanguageCode": "",
+        "phoneNumber": "",
+        "officePhoneNumber": "",
+        "imageUrl": "",
+        "imageKey": "",
+        "thumbnailUrl": "",
+        "thumbnailKey": "",
+        "isAllowedMarketingEmails": null,
+        "isAllowedFeedbackProviding": null,
+        "useTerms": null
+    },
+    "facility": {
+        "id": 0,
+        "legacyId": 0,
+        "ipAddress": "",
+        "facilityGroupId": 0,
+        "name": "Langosh, Toy and Fay",
+        "facilityTypeId": 0,
+        "address": {
+            "placeId": "efab9c0b-0bae-44fd-8d2a-97b8762374a7",
+            "primaryStreet": "075 Turcotte Pass",
+            "secondaryStreet": "Suite 702",
+            "city": "North Louvenia",
+            "region": "",
+            "zipCode": "223610",
+            "state": "",
+            "countryCode": "RE",
+            "latitude": "30.6279",
+            "longitude": "22.7323",
+            "country": "string",
+            "formatAddress": "string",
+            "rawData": "string"
+        },
+        "contactNumber": "6826109233",
+        "timezone": "",
+        "openTime": "10:00 AM",
+        "closeTime": "6:00 PM",
+        "isOpen24Hours": true
+    }
+}
+HTTP/1.1 201 Created
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: f4e42c9a5287d0bb75c01812c671765f
+Date: Sat, 19 Aug 2023 07:32:37 GMT
+Server: Google Frontend
+Content-Length: 985
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "user": {
+        "id": 45545,
+        "firstName": "Gordon",
+        "lastName": "Blick",
+        "email": "lifefitnesspostman+28612029@gmail.com",
+        "preferredUnit": "METRICS",
+        "preferredLanguageCode": "en-US",
+        "phoneNumber": "",
+        "officePhoneNumber": "",
+        "profilePicUrl": null,
+        "imageKey": "",
+        "isEnabled": true,
+        "isAllowedMarketingEmails": true,
+        "isAllowedFeedbackProviding": true,
+        "useTerms": true,
+        "encodedPassword": null,
+        "status": "ACTIVE",
+        "roleIds": [
+            2
+        ]
+    },
+    "facility": {
+        "id": 34248,
+        "legacyId": 0,
+        "ipAddress": "",
+        "facilityGroupId": null,
+        "name": "Langosh, Toy and Fay",
+        "facilityTypeId": null,
+        "address": {
+            "id": 34272,
+            "placeId": "efab9c0b-0bae-44fd-8d2a-97b8762374a7",
+            "primaryStreet": "075 Turcotte Pass",
+            "secondaryStreet": "Suite 702",
+            "city": "North Louvenia",
+            "region": "EMEA",
+            "zipCode": "223610",
+            "state": "",
+            "countryCode": "RE",
+            "latitude": 30.6279,
+            "longitude": 22.7323,
+            "country": "string",
+            "formatAddress": "string",
+            "rawData": "string"
+        },
+        "contactNumber": "6826109233",
+        "timezone": "Africa/Tripoli (GMT+2:00)",
+        "openTime": "10:00 AM",
+        "closeTime": "6:00 PM",
+        "isOpen24Hours": true
+    }
+}
+
+[2023-08-19 07:32:37] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:32:38] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:32:38] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:32:39] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:32:40] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:32:40] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:32:41] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:32:41] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:32:42] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:32:42] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:32:43] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:32:43] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:32:44] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:32:45] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:32:45] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:32:46] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:32:46] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:32:47] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:32:47] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:32:48] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:32:48] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:32:49] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:32:49] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:32:50] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:32:51] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:32:51] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:32:52] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:32:52] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:32:53] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:32:53] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:32:54] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:32:54] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:32:55] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:32:55] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:32:56] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:32:56] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:32:57] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:32:58] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:32:58] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:32:59] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:32:59] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:00] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:00] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:01] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:02] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:02] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:03] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:03] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:04] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:04] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:05] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:05] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:06] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:06] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:07] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:07] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:08] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:09] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:09] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:10] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:10] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:11] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:11] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:12] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:12] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:13] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:13] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:14] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:14] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:15] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:16] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:16] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:17] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:17] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:18] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:18] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:19] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:19] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:20] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:21] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:21] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:22] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:22] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:23] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:23] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:24] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:25] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:25] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:26] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:26] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:27] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:27] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:28] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:28] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:29] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:29] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:30] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:30] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:31] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:32] [26] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-19 07:33:32] [26] [ERROR] Message wasn't found!
+[2023-08-19 07:33:32] [26] [ERROR] TEST [LifeFitness Backend Auto Tests - checkThatUserCanBeRegisteredWithLowerCaseEmail] SKIPPED at [07:33:32 2023-08-19] - Could not get message.
+
+com.lifefitness.qa.utils.email.EmailUtils.getMessageAndDeleteEmail(EmailUtils.java:186)
+com.lifefitness.qa.api.core.controllers.user.postregistration.PostRegistrationTest.checkThatUserCanBeRegisteredWithLowerCaseEmail(PostRegistrationTest.java:99)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:568)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+java.base/java.lang.Thread.run(Thread.java:833)
+[2023-08-19 07:33:32] [26] [INFO] Attaching logs to Allure report

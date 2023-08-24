@@ -1,0 +1,90 @@
+[2023-08-23 07:54:14] [23] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-23 07:54:14] [23] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatUSCountryCodeReturnsNAMRegion] STARTED at [07:54:14 2023-08-23]
+[2023-08-23 07:54:14] [23] [INFO] Creating facility with US country expecting success
+[2023-08-23 07:54:14] [23] [INFO] Setting default add facility body values
+[2023-08-23 07:54:14] [23] [INFO] Base properties loaded: api/core/controllers/user/postfacility/post_facility.properties
+[2023-08-23 07:54:14] [23] [INFO] Get country code except embargoed ones
+[2023-08-23 07:54:14] [23] [INFO] Create facility expecting success
+[2023-08-23 07:54:14] [23] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/facilities
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5Mjc3NTY5NSwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyNzc1Njk1LCJleHAiOjE2OTI3NzkyOTUsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.GszmHNBpx7dWm-X7Vjk13uw-USZbaZSYRcz9g-fWtlTxfCfmlO2mE6BbNk8-B9UGPwGwJL690yJBKeLvkhci8NH8nWBNDjlbMLUocOIEiJkxxZL4e_UZctbxQd7qwFc8Uls7FpDcQD9imSYDJLid6KfegASCaJcxdgCTR4PA3R2jFhbiyeYMNYKFuhSYh8cy449Uvo66wQFOQZKsPC9c6lX_0IAqyLbisCJqWILk3_8vqnGhKStSeWoBe0f12xD8lQg3YwRObO9SGUorvdGiWd62ZGFz1COKja-8e2QnuHae2d8w-cL4gTVq-HLlZbTnicoAWRtiUZwMHNhn5_qbdg
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "name": "Sanford-Little",
+    "facilityGroupId": 0,
+    "facilityTypeId": 0,
+    "address": {
+        "placeId": "02cd55fe-6f03-4451-b92d-732b8c0976c4",
+        "primaryStreet": "14991 Runte Orchard",
+        "secondaryStreet": "Suite 405",
+        "city": "Deborahport",
+        "state": "",
+        "countryCode": "US",
+        "latitude": "30.6279",
+        "longitude": "22.7323",
+        "country": "string",
+        "formatAddress": "asd"
+    },
+    "contactNumber": "4465326487",
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": true,
+    "timezone": ""
+}
+HTTP/1.1 201 Created
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: 191a178d125033addf89f5cfe741a49b
+Date: Wed, 23 Aug 2023 07:54:14 GMT
+Server: Google Frontend
+Content-Length: 564
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "id": 38734,
+    "legacyId": null,
+    "ipAddress": null,
+    "facilityGroupId": null,
+    "name": "Sanford-Little",
+    "facilityTypeId": null,
+    "address": {
+        "id": 38758,
+        "placeId": "02cd55fe-6f03-4451-b92d-732b8c0976c4",
+        "primaryStreet": "14991 Runte Orchard",
+        "secondaryStreet": "Suite 405",
+        "city": "Deborahport",
+        "region": "NAM",
+        "zipCode": null,
+        "state": "",
+        "countryCode": "US",
+        "latitude": 30.6279,
+        "longitude": 22.7323,
+        "country": "string",
+        "formatAddress": "asd",
+        "rawData": null
+    },
+    "contactNumber": "4465326487",
+    "timezone": "Africa/Tripoli (GMT+2:00)",
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": false
+}
+
+[2023-08-23 07:54:14] [23] [INFO] Asserting that US country code returns NAM region
+[2023-08-23 07:54:14] [23] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatUSCountryCodeReturnsNAMRegion] PASSED at [07:54:14 2023-08-23]
