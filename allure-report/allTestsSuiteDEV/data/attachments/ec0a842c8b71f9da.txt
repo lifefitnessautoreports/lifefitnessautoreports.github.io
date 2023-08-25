@@ -1,0 +1,56 @@
+[2023-08-25 01:39:01] [22] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-25 01:39:01] [22] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatSuperAdminCanGetUsersForTechnicalUser] STARTED at [13:39:01 2023-08-25]
+[2023-08-25 01:39:01] [22] [INFO] Asserting that Super Admin can Get /users for Technical user
+[2023-08-25 01:39:01] [22] [INFO] Getting user with email - technicalUser.qa@lifefitness.com expecting positive response
+[2023-08-25 01:39:01] [22] [INFO] Getting user by email
+[2023-08-25 01:39:01] [22] [INFO] Request method:	GET
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users?email=technicalUser.qa%40lifefitness.com
+Request params:	<none>
+Query params:	email=technicalUser.qa@lifefitness.com
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5Mjk3MDI1OCwidXNlcl9pZCI6Im52eWRlcTdCWlVWUlpDZ252WUo5cUNZRmZrOTMiLCJzdWIiOiJudnlkZXE3QlpVVlJaQ2dudllKOXFDWUZmazkzIiwiaWF0IjoxNjkyOTcwMjU4LCJleHAiOjE2OTI5NzM4NTgsImVtYWlsIjoibGlmZWZpdG5lc3Nwb3N0bWFuKzIzMTI2OTM5QGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImxpZmVmaXRuZXNzcG9zdG1hbisyMzEyNjkzOUBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.K2l-5xeYMqHtfSrc0VCOj7GF3p-j_uP2tLhp_vlDaanTBm8Kmv8CHQIvAbLWsLM7WgF7KOUR6-LK5crA9o-8ukTJXHiUOcUsJjl81PcoWVbOdIuryJFET70urQdWLv8GcK2lf7hoSoV0qAkYNsBXgPwDwiLOGVYBcy_OsE1YFT7p5Cp-BiuLG-srIs28Dttaz2rAaBRA5LciEHzB929zZ6F6iJZRhuzTVNy2dwVgKGtUwOQaSGtbzktkRKyjcAxI5wvEeqIpODVkX_vL_TYKym4IS2c0Y5csocELNNgETkH_E85DE5sBsGa_-fOvaA9zQdHESZw5-9v_eHPOpIduHQ
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 200 OK
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+Transfer-Encoding: chunked
+Date: Fri, 25 Aug 2023 13:39:01 GMT
+Server: Google Frontend
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "id": 2133,
+    "firstName": "UPDATED_NAME",
+    "lastName": "UPDATED_LAST_NAME",
+    "email": "technicaluser.qa@lifefitness.com",
+    "preferredUnit": "METRICS",
+    "preferredLanguageCode": "en-US",
+    "phoneNumber": null,
+    "officePhoneNumber": null,
+    "profilePicUrl": null,
+    "imageKey": null,
+    "isEnabled": true,
+    "isAllowedMarketingEmails": true,
+    "isAllowedFeedbackProviding": true,
+    "useTerms": true,
+    "encodedPassword": null,
+    "status": "ACTIVE",
+    "roleIds": [
+        6
+    ]
+}
+
+[2023-08-25 01:39:01] [22] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatSuperAdminCanGetUsersForTechnicalUser] PASSED at [13:39:01 2023-08-25]
