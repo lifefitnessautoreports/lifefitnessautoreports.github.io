@@ -1,0 +1,68 @@
+[2023-08-23 09:12:12] [22] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-23 09:12:12] [22] [INFO] TEST [LifeFitness Backend Auto Tests - checkFormatAddressWithMoreThanThreeHundredChars] STARTED at [09:12:12 2023-08-23]
+[2023-08-23 09:12:12] [22] [INFO] Creating facility with formatAddress with more than 300 chars
+[2023-08-23 09:12:12] [22] [INFO] Setting default add facility body values
+[2023-08-23 09:12:12] [22] [INFO] Base properties loaded: api/core/controllers/user/postfacility/post_facility.properties
+[2023-08-23 09:12:12] [22] [INFO] Get country code except embargoed ones
+[2023-08-23 09:12:12] [22] [INFO] Creating facility expecting failure
+[2023-08-23 09:12:13] [22] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/facilities
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5Mjc4MDM1MSwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyNzgwMzUxLCJleHAiOjE2OTI3ODM5NTEsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.a5rer7TC3tq7s2UU9DMU4Zg0V8gb3qXmOqQr9kjUfnA84AXRaOKfF0TRQy0StrIQWIyciCzUQu1BXqXfsdnDTfoHRU2ZaPeUWycdMCD4qnaoA-bR3KkK-SgBQkLmxOuVauwh02hfvNBsihJrqq-f8-7IkWfpsVymtcLxOAb5oqXrO0QOUGKhdnRNtLl0rQdypGJn2lIVtZ1GFy5JKjucJbL8WyPSus8Wl-XbU8dzSn4UiHTVNDw1G9rVeQp-RVgt2ddNETO8obNZY_Y_dBLDpPt4gRXgGfsT0uzAx-n-jSN6oU39J297mWKEO5AsMCjgyxlIxy1PItRG71SsVtfCzw
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "name": "Mraz-Swaniawski",
+    "facilityGroupId": 0,
+    "facilityTypeId": 0,
+    "address": {
+        "placeId": "cc7cdc7b-9319-4f45-a705-39b199f7ce30",
+        "primaryStreet": "1521 Stefani Points",
+        "secondaryStreet": "Apt. 317",
+        "city": "Rosendaview",
+        "state": "",
+        "countryCode": "SL",
+        "latitude": "30.6279",
+        "longitude": "22.7323",
+        "country": "string",
+        "formatAddress": "7829012900464019667386102307771173292235683280736762177846197654053257486710679638431441896303627342376750470331104324552442555025690476867787722295750500896764693626376559780622842535258851340625070951975434466961464613216011858056055743044976297651555945227982052808785014853966617728529480673322807"
+    },
+    "contactNumber": "3408018000",
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": true,
+    "timezone": ""
+}
+HTTP/1.1 400 Bad Request
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: 80b76cfdff43fed5294287cfb837345d;o=1
+Date: Wed, 23 Aug 2023 09:12:13 GMT
+Server: Google Frontend
+Content-Length: 148
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "timestamp": "2023-08-23T09:12:13.902877649",
+    "errorCode": null,
+    "title": "Formatted address maximum size is 300 characters",
+    "details": null,
+    "path": null
+}
+
+[2023-08-23 09:12:13] [22] [INFO] Asserting that format address is mandatory
+[2023-08-23 09:12:13] [22] [INFO] TEST [LifeFitness Backend Auto Tests - checkFormatAddressWithMoreThanThreeHundredChars] PASSED at [09:12:13 2023-08-23]

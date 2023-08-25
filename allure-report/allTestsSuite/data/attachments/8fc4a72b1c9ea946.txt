@@ -1,0 +1,41 @@
+[2023-08-24 11:32:17] [26] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-24 11:32:17] [26] [INFO] TEST [LifeFitness Backend Auto Tests - checkGettingSupplementaryPermissionsWithEmptyStringPathParam] STARTED at [11:32:17 2023-08-24]
+[2023-08-24 11:32:18] [26] [INFO] Request method:	GET
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/%22%22/supplementary-permissions
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	userId=%22%22
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5Mjg3NjE5MCwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyODc2MTkwLCJleHAiOjE2OTI4Nzk3OTAsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.fekhN28Uaoa7LCrUlSghUT3tmgGrmBplxJ7gH8uCxv9n1jqqOT7ArH3jYkNk5EUGiarTy8fMHUUf8kGGIJkmVbYMsqcjj9kauimdpiokMXaNCIsj--IkatxbdWzmhhvFzOG1ObfIqCti2_YAxHSrI5JNWrNYsbnOz8Nw4bkvwyra8o7OIMaupW0dj3zc84iRe1jfoNPFtT1SKlSvVR93nuhrXCPLzwr5Jcji08ziiryRfnLTQADtcCWGfdkST94Da9lH4bOLjHXi3ysSZObLM7Z00s2TIdf4uKEV8aEcTqvrfudqSeQfdLfkC6OBzCCIrE3Fn11KdsV0-Z_5qEfk5Q
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 400 Bad Request
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/problem+json
+X-Cloud-Trace-Context: 9530e556b001639a5ef57dbad311244f
+Date: Thu, 24 Aug 2023 11:32:18 GMT
+Server: Google Frontend
+Content-Length: 192
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "type": "about:blank",
+    "title": "Bad Request",
+    "status": 400,
+    "detail": "Failed to convert 'userId' with value: '\"\"'",
+    "instance": "/halo-core-service/api/v1/users/%22%22/supplementary-permissions"
+}
+
+[2023-08-24 11:32:18] [26] [INFO] Asserting that correct status code is returned
+[2023-08-24 11:32:18] [26] [INFO] TEST [LifeFitness Backend Auto Tests - checkGettingSupplementaryPermissionsWithEmptyStringPathParam] PASSED at [11:32:18 2023-08-24]

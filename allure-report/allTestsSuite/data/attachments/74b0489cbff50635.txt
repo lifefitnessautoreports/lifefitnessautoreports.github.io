@@ -1,0 +1,202 @@
+[2023-08-25 07:36:14] [24] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-25 07:36:14] [24] [INFO] TEST [LifeFitness Backend Auto Tests - checkResetPasswordWithLowerCaseEmail] STARTED at [07:36:14 2023-08-25]
+[2023-08-25 07:36:14] [24] [INFO] Setting default IDP method to call
+[2023-08-25 07:36:14] [24] [INFO] Setting up IDP method to SIGN_UP
+[2023-08-25 07:36:14] [24] [INFO] Base properties loaded: api/identityplatform/idp.properties
+[2023-08-25 07:36:14] [24] [INFO] Sending PostSignUp IDP method to get access token
+[2023-08-25 07:36:15] [24] [INFO] Request method:	POST
+Request URI:	https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyDuJaUYc3JtGHvbdX_7b-Nav25lXPmzuN0
+Request params:	<none>
+Query params:	key=AIzaSyDuJaUYc3JtGHvbdX_7b-Nav25lXPmzuN0
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "returnSecureToken": true,
+    "email": "lifefitnesspostman+70468138@gmail.com",
+    "password": "7wy6m96457xjwhf"
+}
+HTTP/1.1 200 OK
+Date: Fri, 25 Aug 2023 07:36:15 GMT
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Content-Type: application/json; charset=UTF-8
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+Content-Encoding: gzip
+Server: ESF
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+{
+    "kind": "identitytoolkit#SignupNewUserResponse",
+    "idToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5Mjk0ODk3NSwidXNlcl9pZCI6InIwYnJKaWE5bkliMHU3MGNpeEE3bXRraG15STMiLCJzdWIiOiJyMGJySmlhOW5JYjB1NzBjaXhBN210a2hteUkzIiwiaWF0IjoxNjkyOTQ4OTc1LCJleHAiOjE2OTI5NTI1NzUsImVtYWlsIjoibGlmZWZpdG5lc3Nwb3N0bWFuKzcwNDY4MTM4QGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJsaWZlZml0bmVzc3Bvc3RtYW4rNzA0NjgxMzhAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.C17ObHpeGcGN9x4vQ5ZHhwxDtHMXrx28kOORJPS91bIPfsUhjtfXbsPVdgKP2dPnDTUaZsjT9S2v3Nm0GhOJSf4Ura9o2vP8_gV2Ko_RI9a6Y2FFM4fhxTNed2JSgUjdi-Jq68JErPIqjjnOsZ5zqR-BncfNjl1fz_I-zLCrjfKmZy0Cuyeb9hT8xe6sxaUv_O4LsWU0ROxO9hqlwfklltjzTGShM0rEc6ywLlFsoONR_VrGRJf2jclvOe7DUqF57sYa5gzuY5cChBPRpnTmpLeG9FZYi-GqYrjAExckFrCPBxBLk65i1gwwXuUjDDQ1sih2VlWznYwIirURv1762A",
+    "email": "lifefitnesspostman+70468138@gmail.com",
+    "refreshToken": "AMf-vBwZgiRGFWjLmGvlY6wPj-HY9njYfh20JUlWAXLlQboZtDQWZnWUTxqH2RN2l_kkyBOO2TDI8HzX5CXOIyKi6l_oumHQcC6uSOJPpnMm5GTEYoUlMb5ykFkLbuAUAKZjaiZPg_PB0daG63ZcPx_ykCp8Lyo6StL_9-Z4AsL-Kn69FDo4mD-A7iweju-KxCm9hL_NQBtpHzKIlKGcCENeR-rZCztCcQ",
+    "expiresIn": "3600",
+    "localId": "r0brJia9nIb0u70cixA7mtkhmyI3"
+}
+
+[2023-08-25 07:36:15] [24] [INFO] Trying to parse IDP response to access token model
+[2023-08-25 07:36:16] [24] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-system-utils/api/v1/password/reset?email=lifefitnesspostman%2B70468138%40gmail.com
+Request params:	<none>
+Query params:	email=lifefitnesspostman+70468138@gmail.com
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=P3jxJislR3PNt1P1gQxXepwRY8RiHGTps+Yld/5Ot50=
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 201 Created
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+X-Cloud-Trace-Context: c2deb62815898be1f75ed9a461016b16
+Date: Fri, 25 Aug 2023 07:36:16 GMT
+Content-Type: text/html
+Server: Google Frontend
+Content-Length: 0
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+
+
+[2023-08-25 07:36:16] [24] [INFO] Assert that api call was successful
+[2023-08-25 07:36:16] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:17] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:17] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:18] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:18] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:19] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:19] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:20] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:20] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:21] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:21] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:22] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:23] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:23] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:24] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:24] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:25] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:25] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:26] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:27] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:27] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:28] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:28] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:29] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:29] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:30] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:30] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:31] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:32] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:32] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:33] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:33] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:34] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:34] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:35] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:35] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:36] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:36] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:37] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:37] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:38] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:39] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:39] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:40] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:40] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:41] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:41] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:42] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:42] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:43] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:43] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:44] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:45] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:45] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:46] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:46] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:47] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:47] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:48] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:48] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:49] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:49] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:50] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:51] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:51] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:52] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:52] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:53] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:53] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:54] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:54] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:55] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:56] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:56] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:57] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:57] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:58] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:58] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:59] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:36:59] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:37:00] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:37:00] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:37:01] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:37:01] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:37:02] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:37:03] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:37:03] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:37:04] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:37:04] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:37:05] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:37:05] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:37:06] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:37:06] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:37:07] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:37:08] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:37:08] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:37:09] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:37:09] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:37:10] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:37:10] [24] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 07:37:11] [24] [ERROR] Message wasn't found!
+[2023-08-25 07:37:11] [24] [ERROR] TEST [LifeFitness Backend Auto Tests - checkResetPasswordWithLowerCaseEmail] SKIPPED at [07:37:11 2023-08-25] - Could not get message.
+
+com.lifefitness.qa.utils.email.EmailUtils.getMessage(EmailUtils.java:186)
+com.lifefitness.qa.api.utils.controllers.password.postresetpassword.PostResetPasswordTest.checkResetPasswordWithLowerCaseEmail(PostResetPasswordTest.java:89)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:568)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+java.base/java.lang.Thread.run(Thread.java:833)
+[2023-08-25 07:37:11] [24] [INFO] Attaching logs to Allure report

@@ -1,0 +1,139 @@
+{
+  "uid" : "7263c51d4d2d4803",
+  "name" : "Check facilities grid sorting by Facility Name desc",
+  "fullName" : "com.lifefitness.qa.api.core.controllers.user.getfacilitiesgrid.GetFacilitiesGridTest.checkFacilitiesGridSortingByFacilityNameDesc",
+  "historyId" : "e18ebb88187a3760041f0ff23501d607",
+  "time" : {
+    "start" : 1692948537756,
+    "stop" : 1692948547116,
+    "duration" : 9360
+  },
+  "status" : "skipped",
+  "statusMessage" : "Unable to get facilities grid",
+  "statusTrace" : "java.lang.RuntimeException: Unable to get facilities grid\n\tat com.lifefitness.qa.api.corecontrollers.user.getfacilitiesgrid.GetFacilitiesGridHelper.getFacilitiesGridExpectSuccess(GetFacilitiesGridHelper.java:23)\n\tat com.lifefitness.qa.api.core.controllers.user.getfacilitiesgrid.GetFacilitiesGridTest.checkFacilitiesGridSortingByFacilityNameDesc(GetFacilitiesGridTest.java:95)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\n\tat org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)\n\tat org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)\n\tat org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)\n\tat org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)\n\tat org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)\n\tat org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)\n\tat org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)\n\tat org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)\n\tat java.base/java.lang.Thread.run(Thread.java:833)\nCaused by: com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `com.lifefitness.qa.api.corecontrollers.user.postregistration.models.LifeFitnessTimezone` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('Africa/Tripoli')\n at [Source: (String)\"{\"content\":[{\"id\":39777,\"name\":\"Brekke and Sons\",\"timezone\":\"Africa/Tripoli\",\"users\":[{\"id\":51933,\"firstName\":\"Alina\",\"lastName\":\"Halvorson\",\"email\":\"lifefitnesspostman+60561450@gmail.com\"},{\"id\":51937,\"firstName\":\"Bethany\",\"lastName\":\"Mayer\",\"email\":\"lifefitnesspostman+14156090@gmail.com\"},{\"id\":51924,\"firstName\":\"Leeann\",\"lastName\":\"Goldner\",\"email\":\"lifefitnesspostman+25836843@gmail.com\"},{\"id\":51929,\"firstName\":\"Ryan\",\"lastName\":\"Ritchie\",\"email\":\"lifefitnesspostman+28340439@gmail.com\"}]},{\"\"[truncated 654 chars]; line: 1, column: 61] (through reference chain: com.lifefitness.qa.api.corecontrollers.user.getfacilitiesgrid.models.ContentModel[\"content\"]->java.util.ArrayList[0]->com.lifefitness.qa.api.corecontrollers.user.getfacilitiesgrid.models.LifeFitnessFacilitiesGridContent[\"timezone\"])\n\tat com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:63)\n\tat com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1733)\n\tat com.fasterxml.jackson.databind.DeserializationContext.handleMissingInstantiator(DeserializationContext.java:1358)\n\tat com.fasterxml.jackson.databind.deser.std.StdDeserializer._deserializeFromString(StdDeserializer.java:311)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeFromString(BeanDeserializerBase.java:1500)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializer._deserializeOther(BeanDeserializer.java:197)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)\n\tat com.fasterxml.jackson.databind.deser.impl.FieldProperty.deserializeAndSet(FieldProperty.java:138)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:314)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)\n\tat com.fasterxml.jackson.databind.deser.std.CollectionDeserializer._deserializeFromArray(CollectionDeserializer.java:359)\n\tat com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:244)\n\tat com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:28)\n\tat com.fasterxml.jackson.databind.deser.impl.FieldProperty.deserializeAndSet(FieldProperty.java:138)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:314)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)\n\tat com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)\n\tat com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4730)\n\tat com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3677)\n\tat com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3645)\n\tat com.lifefitness.qa.api.corecontrollers.user.getfacilitiesgrid.GetFacilitiesGridHelper.getFacilitiesGridExpectSuccess(GetFacilitiesGridHelper.java:21)\n\t... 16 more\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "executeBeforeTestSuite",
+    "time" : {
+      "start" : 1692948501355,
+      "stop" : 1692948501712,
+      "duration" : 357
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "onCarinaAfterMethod",
+    "time" : {
+      "start" : 1692948547123,
+      "stop" : 1692948547123,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "addTestLog",
+    "time" : {
+      "start" : 1692948547121,
+      "stop" : 1692948547122,
+      "duration" : 1
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "3eb02feb6194be64",
+      "name" : "Test log",
+      "source" : "3eb02feb6194be64.txt",
+      "type" : "text/plain",
+      "size" : 51399
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  }, {
+    "name" : "deleteAllEmails",
+    "time" : {
+      "start" : 1692949278279,
+      "stop" : 1692949281156,
+      "duration" : 2877
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.lifefitness.qa.api.core.controllers.user.getfacilitiesgrid.GetFacilitiesGridTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.lifefitness.qa.api.core.controllers.user.getfacilitiesgrid.GetFacilitiesGridTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "checkFacilitiesGridSortingByFacilityNameDesc"
+  }, {
+    "name" : "parentSuite",
+    "value" : "LifeFitness Backend Auto Tests"
+  }, {
+    "name" : "suite",
+    "value" : "LifeFitness Backend Auto Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.lifefitness.qa.api.core.controllers.user.getfacilitiesgrid.GetFacilitiesGridTest"
+  }, {
+    "name" : "host",
+    "value" : "a6fb45c8-f274-4442-a74a-3db2766fcd02-9rf96"
+  }, {
+    "name" : "thread",
+    "value" : "300@a6fb45c8-f274-4442-a74a-3db2766fcd02-9rf96.TestNG-test=LifeFitness Backend Auto Tests-1(22)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "owner",
+    "value" : "Valeria Sorokina"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "HPB-6933",
+    "url" : "https://lfagile.atlassian.net/browse/HPB-6933",
+    "type" : "issue"
+  } ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "7263c51d4d2d4803.json",
+  "parameterValues" : [ ]
+}
