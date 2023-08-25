@@ -1,0 +1,188 @@
+[2023-08-25 01:31:40] [23] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-25 01:31:40] [23] [INFO] TEST [LifeFitness Backend Auto Tests - checkUpdatingFacilityStateIsOptional] STARTED at [13:31:40 2023-08-25]
+[2023-08-25 01:31:40] [23] [INFO] Creating new facility
+[2023-08-25 01:31:40] [23] [INFO] Setting default add facility body values
+[2023-08-25 01:31:40] [23] [INFO] Base properties loaded: api/core/controllers/user/postfacility/post_facility.properties
+[2023-08-25 01:31:40] [23] [INFO] Get country code except embargoed ones
+[2023-08-25 01:31:40] [23] [INFO] Create facility expecting success
+[2023-08-25 01:31:40] [23] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/facilities
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5Mjk3MDI1OSwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyOTcwMjU5LCJleHAiOjE2OTI5NzM4NTksImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.dvGu0yM2hGj-Fsj8QR1aKz1ryYjNPXYBMPZZUjoU2fmuwfCE4EFDTMSdyvolIgVu7Atl-O9UVojZJmrdAwO2tQU5Cg5K6nY5WF5mIuBAJxM6imV26eM7IusjFIUeatN9oXKcO3AP8FRHuwlH_wl6IZFvDk30dlOfovV5tuAHE0xcIepwG3QraN4hKv6GvnndrJgYUeniLr6nH4_ECKW_spqBc3zPqsZ4pbl0IUXdGQq2UL5YsYAKeuH_TKdBetLAGoRVUe9R2HPQ3CaXlCcFsLzyTby7OAiLc1yVNCFP9LHa_fmHD47Dy7b3mScwCoFGJuv8kHgzYkkeDlImzYxQsg
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "name": "Smith Group",
+    "facilityGroupId": 0,
+    "facilityTypeId": 0,
+    "address": {
+        "placeId": "0c899234-d97c-47ee-af25-39a3f146e4cc",
+        "primaryStreet": "733 Reynolds Shoal",
+        "secondaryStreet": "Suite 953",
+        "city": "Lennaville",
+        "state": "",
+        "countryCode": "FI",
+        "latitude": "30.6279",
+        "longitude": "22.7323",
+        "country": "string",
+        "formatAddress": "asd"
+    },
+    "contactNumber": "1300537272",
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": true,
+    "timezone": null
+}
+HTTP/1.1 201 Created
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: 3a4186ad9f4fe2621a627dae37b94ca6
+Date: Fri, 25 Aug 2023 13:31:40 GMT
+Server: Google Frontend
+Content-Length: 647
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "id": 40956,
+    "legacyId": null,
+    "ipAddress": null,
+    "facilityGroupId": null,
+    "name": "Smith Group",
+    "facilityTypeId": null,
+    "address": {
+        "id": 40980,
+        "placeId": "0c899234-d97c-47ee-af25-39a3f146e4cc",
+        "primaryStreet": "733 Reynolds Shoal",
+        "secondaryStreet": "Suite 953",
+        "city": "Lennaville",
+        "region": "EMEA",
+        "zipCode": null,
+        "state": "",
+        "countryCode": "FI",
+        "latitude": 30.6279,
+        "longitude": 22.7323,
+        "country": "string",
+        "formatAddress": "asd",
+        "rawData": null
+    },
+    "contactNumber": "1300537272",
+    "timezone": {
+        "id": 186,
+        "dstOffset": 0,
+        "rawOffset": 7200000,
+        "timezoneId": "Africa/Tripoli",
+        "name": "Eastern European Standard Time"
+    },
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": false
+}
+
+[2023-08-25 01:31:40] [23] [INFO] Updating previously created facility without state
+[2023-08-25 01:31:40] [23] [INFO] Setting default update facility body values
+[2023-08-25 01:31:40] [23] [INFO] Base properties loaded: api/core/controllers/facility/putfacility/put_facility.properties
+[2023-08-25 01:31:40] [23] [INFO] Get country code except embargoed ones
+[2023-08-25 01:31:40] [23] [INFO] Updating facility expect success
+[2023-08-25 01:31:41] [23] [INFO] Request method:	PUT
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/facilities
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5Mjk3MDI1OSwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyOTcwMjU5LCJleHAiOjE2OTI5NzM4NTksImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.dvGu0yM2hGj-Fsj8QR1aKz1ryYjNPXYBMPZZUjoU2fmuwfCE4EFDTMSdyvolIgVu7Atl-O9UVojZJmrdAwO2tQU5Cg5K6nY5WF5mIuBAJxM6imV26eM7IusjFIUeatN9oXKcO3AP8FRHuwlH_wl6IZFvDk30dlOfovV5tuAHE0xcIepwG3QraN4hKv6GvnndrJgYUeniLr6nH4_ECKW_spqBc3zPqsZ4pbl0IUXdGQq2UL5YsYAKeuH_TKdBetLAGoRVUe9R2HPQ3CaXlCcFsLzyTby7OAiLc1yVNCFP9LHa_fmHD47Dy7b3mScwCoFGJuv8kHgzYkkeDlImzYxQsg
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "id": "40956",
+    "name": "Okuneva-O'Reilly",
+    "facilityGroupId": 0,
+    "facilityTypeId": 5,
+    "address": {
+        "placeId": "b6b75923-3e6c-4087-95cd-21a254933f3d",
+        "primaryStreet": "706 Langosh Trail",
+        "secondaryStreet": "Apt. 082",
+        "city": "Socorroborough",
+        "zipCode": "",
+        "countryCode": "BA",
+        "latitude": "30.6279",
+        "longitude": "22.7323",
+        "country": "string",
+        "formatAddress": "asd"
+    },
+    "contactNumber": "1977441749",
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": true,
+    "timezone": null
+}
+HTTP/1.1 200 OK
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+Transfer-Encoding: chunked
+Date: Fri, 25 Aug 2023 13:31:41 GMT
+Server: Google Frontend
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "id": 40956,
+    "legacyId": null,
+    "ipAddress": null,
+    "facilityGroupId": null,
+    "name": "Okuneva-O'Reilly",
+    "facilityTypeId": 5,
+    "address": {
+        "id": 40980,
+        "placeId": "b6b75923-3e6c-4087-95cd-21a254933f3d",
+        "primaryStreet": "706 Langosh Trail",
+        "secondaryStreet": "Apt. 082",
+        "city": "Socorroborough",
+        "region": "EMEA",
+        "zipCode": "",
+        "state": null,
+        "countryCode": "BA",
+        "latitude": 30.6279,
+        "longitude": 22.7323,
+        "country": "string",
+        "formatAddress": "asd",
+        "rawData": null
+    },
+    "contactNumber": "1300537272",
+    "timezone": {
+        "id": 186,
+        "dstOffset": 0,
+        "rawOffset": 7200000,
+        "timezoneId": "Africa/Tripoli",
+        "name": "Eastern European Standard Time"
+    },
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": false
+}
+
+[2023-08-25 01:31:41] [23] [INFO] Asserting that response contains updated facility values
+[2023-08-25 01:31:41] [23] [INFO] TEST [LifeFitness Backend Auto Tests - checkUpdatingFacilityStateIsOptional] PASSED at [13:31:41 2023-08-25]

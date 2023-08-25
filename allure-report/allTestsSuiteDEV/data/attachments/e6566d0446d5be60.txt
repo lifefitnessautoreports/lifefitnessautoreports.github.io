@@ -1,0 +1,162 @@
+[2023-08-25 01:31:23] [23] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-25 01:31:23] [23] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatFacilityCantBeUpdatedWithCountryCodeAsEmptyString] STARTED at [13:31:23 2023-08-25]
+[2023-08-25 01:31:23] [23] [INFO] Creating new facility
+[2023-08-25 01:31:23] [23] [INFO] Setting default add facility body values
+[2023-08-25 01:31:23] [23] [INFO] Base properties loaded: api/core/controllers/user/postfacility/post_facility.properties
+[2023-08-25 01:31:23] [23] [INFO] Get country code except embargoed ones
+[2023-08-25 01:31:23] [23] [INFO] Create facility expecting success
+[2023-08-25 01:31:24] [23] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/facilities
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5Mjk3MDI1OSwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyOTcwMjU5LCJleHAiOjE2OTI5NzM4NTksImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.dvGu0yM2hGj-Fsj8QR1aKz1ryYjNPXYBMPZZUjoU2fmuwfCE4EFDTMSdyvolIgVu7Atl-O9UVojZJmrdAwO2tQU5Cg5K6nY5WF5mIuBAJxM6imV26eM7IusjFIUeatN9oXKcO3AP8FRHuwlH_wl6IZFvDk30dlOfovV5tuAHE0xcIepwG3QraN4hKv6GvnndrJgYUeniLr6nH4_ECKW_spqBc3zPqsZ4pbl0IUXdGQq2UL5YsYAKeuH_TKdBetLAGoRVUe9R2HPQ3CaXlCcFsLzyTby7OAiLc1yVNCFP9LHa_fmHD47Dy7b3mScwCoFGJuv8kHgzYkkeDlImzYxQsg
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "name": "Jakubowski LLC",
+    "facilityGroupId": 0,
+    "facilityTypeId": 0,
+    "address": {
+        "placeId": "2d266b86-43d6-4bd0-9783-2e3747f9fb7a",
+        "primaryStreet": "9895 Moore Locks",
+        "secondaryStreet": "Apt. 849",
+        "city": "Port Kristinefurt",
+        "state": "",
+        "countryCode": "CX",
+        "latitude": "30.6279",
+        "longitude": "22.7323",
+        "country": "string",
+        "formatAddress": "asd"
+    },
+    "contactNumber": "1065198062",
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": true,
+    "timezone": null
+}
+HTTP/1.1 201 Created
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: 9042e0144f425c7e355e42748de21d83
+Date: Fri, 25 Aug 2023 13:31:24 GMT
+Server: Google Frontend
+Content-Length: 663
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "id": 40924,
+    "legacyId": null,
+    "ipAddress": null,
+    "facilityGroupId": null,
+    "name": "Jakubowski LLC",
+    "facilityTypeId": null,
+    "address": {
+        "id": 40948,
+        "placeId": "2d266b86-43d6-4bd0-9783-2e3747f9fb7a",
+        "primaryStreet": "9895 Moore Locks",
+        "secondaryStreet": "Apt. 849",
+        "city": "Port Kristinefurt",
+        "region": "Not Specified",
+        "zipCode": null,
+        "state": "",
+        "countryCode": "CX",
+        "latitude": 30.6279,
+        "longitude": 22.7323,
+        "country": "string",
+        "formatAddress": "asd",
+        "rawData": null
+    },
+    "contactNumber": "1065198062",
+    "timezone": {
+        "id": 186,
+        "dstOffset": 0,
+        "rawOffset": 7200000,
+        "timezoneId": "Africa/Tripoli",
+        "name": "Eastern European Standard Time"
+    },
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": false
+}
+
+[2023-08-25 01:31:24] [23] [INFO] Updating facility with country code as empty string
+[2023-08-25 01:31:24] [23] [INFO] Setting default update facility body values
+[2023-08-25 01:31:24] [23] [INFO] Base properties loaded: api/core/controllers/facility/putfacility/put_facility.properties
+[2023-08-25 01:31:24] [23] [INFO] Get country code except embargoed ones
+[2023-08-25 01:31:24] [23] [INFO] Updating facility expecting error response code
+[2023-08-25 01:31:24] [23] [INFO] Request method:	PUT
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/facilities
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5Mjk3MDI1OSwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyOTcwMjU5LCJleHAiOjE2OTI5NzM4NTksImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.dvGu0yM2hGj-Fsj8QR1aKz1ryYjNPXYBMPZZUjoU2fmuwfCE4EFDTMSdyvolIgVu7Atl-O9UVojZJmrdAwO2tQU5Cg5K6nY5WF5mIuBAJxM6imV26eM7IusjFIUeatN9oXKcO3AP8FRHuwlH_wl6IZFvDk30dlOfovV5tuAHE0xcIepwG3QraN4hKv6GvnndrJgYUeniLr6nH4_ECKW_spqBc3zPqsZ4pbl0IUXdGQq2UL5YsYAKeuH_TKdBetLAGoRVUe9R2HPQ3CaXlCcFsLzyTby7OAiLc1yVNCFP9LHa_fmHD47Dy7b3mScwCoFGJuv8kHgzYkkeDlImzYxQsg
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "id": "40924",
+    "name": "Stehr LLC",
+    "facilityGroupId": 0,
+    "facilityTypeId": 5,
+    "address": {
+        "placeId": "9b12cdcf-5073-4fb2-9031-65552062f607",
+        "primaryStreet": "218 Kub Hills",
+        "secondaryStreet": "Apt. 533",
+        "city": "Port Juliet",
+        "zipCode": "",
+        "state": "",
+        "countryCode": "",
+        "latitude": "30.6279",
+        "longitude": "22.7323",
+        "country": "string",
+        "formatAddress": "asd"
+    },
+    "contactNumber": "8842013730",
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": true,
+    "timezone": null
+}
+HTTP/1.1 400 Bad Request
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: 7b9d2341fe26d0c3292daf110b4df75d
+Date: Fri, 25 Aug 2023 13:31:24 GMT
+Server: Google Frontend
+Content-Length: 136
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "timestamp": "2023-08-25T13:31:24.356784626",
+    "errorCode": 400,
+    "title": "BAD_REQUEST",
+    "details": "Country code cannot be empty",
+    "path": null
+}
+
+[2023-08-25 01:31:24] [23] [INFO] Asserting that facility can't be updated without country code
+[2023-08-25 01:31:24] [23] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatFacilityCantBeUpdatedWithCountryCodeAsEmptyString] PASSED at [13:31:24 2023-08-25]

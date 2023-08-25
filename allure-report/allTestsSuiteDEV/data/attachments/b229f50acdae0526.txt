@@ -1,0 +1,162 @@
+[2023-08-25 02:02:33] [25] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-25 02:02:33] [25] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatKPCountryCodeIsEmbargoed] STARTED at [14:02:33 2023-08-25]
+[2023-08-25 02:02:33] [25] [INFO] Creating new facility
+[2023-08-25 02:02:33] [25] [INFO] Setting default add facility body values
+[2023-08-25 02:02:33] [25] [INFO] Base properties loaded: api/core/controllers/user/postfacility/post_facility.properties
+[2023-08-25 02:02:33] [25] [INFO] Get country code except embargoed ones
+[2023-08-25 02:02:33] [25] [INFO] Create facility expecting success
+[2023-08-25 02:02:34] [25] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/facilities
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5Mjk3MjEyNywidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyOTcyMTI3LCJleHAiOjE2OTI5NzU3MjcsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.gq2DtVYfCvyWIDnu35LPWMyUIAALuQhqp_HMlyZHFSTzTXF0FfFBXA_DTGCKcxmKuRbMf84_zbS3wdZ2iySB-Ujg47TQwPqAiEKL4pe5SPMiLcywRAdk6NHdcuimimirHpIB7FWMFuheQcmDaeDj_hEOWjARi9WG9zC2O1zCuWFv1X8gTIWgU-EIMMZwxR_IyFLKtUj8wy46P2P9eZpbr83-UAcV-eZTkoeBPfkdICcjUGxHNz0y9KOk0e7KXpdijLLAeida4T59VQgDvh5QcGkXfrt-_AeJUhMToI_W9E1gUj_JxxNL4a0DRbkeCMzu9-Al4mmqGZ5kHSMkH9vRlw
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "name": "Hettinger and Sons",
+    "facilityGroupId": 0,
+    "facilityTypeId": 0,
+    "address": {
+        "placeId": "8151cca0-6089-471e-ad8e-34c6bf9258c3",
+        "primaryStreet": "2347 Long Course",
+        "secondaryStreet": "Apt. 519",
+        "city": "Hermanside",
+        "state": "",
+        "countryCode": "PG",
+        "latitude": "30.6279",
+        "longitude": "22.7323",
+        "country": "string",
+        "formatAddress": "asd"
+    },
+    "contactNumber": "6281631248",
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": true,
+    "timezone": null
+}
+HTTP/1.1 201 Created
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: 8e66db56afc3168f2099e81a5b85b82c
+Date: Fri, 25 Aug 2023 14:02:34 GMT
+Server: Google Frontend
+Content-Length: 651
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "id": 41303,
+    "legacyId": null,
+    "ipAddress": null,
+    "facilityGroupId": null,
+    "name": "Hettinger and Sons",
+    "facilityTypeId": null,
+    "address": {
+        "id": 41327,
+        "placeId": "8151cca0-6089-471e-ad8e-34c6bf9258c3",
+        "primaryStreet": "2347 Long Course",
+        "secondaryStreet": "Apt. 519",
+        "city": "Hermanside",
+        "region": "APAC",
+        "zipCode": null,
+        "state": "",
+        "countryCode": "PG",
+        "latitude": 30.6279,
+        "longitude": 22.7323,
+        "country": "string",
+        "formatAddress": "asd",
+        "rawData": null
+    },
+    "contactNumber": "6281631248",
+    "timezone": {
+        "id": 186,
+        "dstOffset": 0,
+        "rawOffset": 7200000,
+        "timezoneId": "Africa/Tripoli",
+        "name": "Eastern European Standard Time"
+    },
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": false
+}
+
+[2023-08-25 02:02:34] [25] [INFO] Updating facility with country code as KP
+[2023-08-25 02:02:34] [25] [INFO] Setting default update facility body values
+[2023-08-25 02:02:34] [25] [INFO] Base properties loaded: api/core/controllers/facility/putfacility/put_facility.properties
+[2023-08-25 02:02:34] [25] [INFO] Get country code except embargoed ones
+[2023-08-25 02:02:34] [25] [INFO] Updating facility expecting error response code
+[2023-08-25 02:02:34] [25] [INFO] Request method:	PUT
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/facilities
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5Mjk3MjEyNywidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyOTcyMTI3LCJleHAiOjE2OTI5NzU3MjcsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.gq2DtVYfCvyWIDnu35LPWMyUIAALuQhqp_HMlyZHFSTzTXF0FfFBXA_DTGCKcxmKuRbMf84_zbS3wdZ2iySB-Ujg47TQwPqAiEKL4pe5SPMiLcywRAdk6NHdcuimimirHpIB7FWMFuheQcmDaeDj_hEOWjARi9WG9zC2O1zCuWFv1X8gTIWgU-EIMMZwxR_IyFLKtUj8wy46P2P9eZpbr83-UAcV-eZTkoeBPfkdICcjUGxHNz0y9KOk0e7KXpdijLLAeida4T59VQgDvh5QcGkXfrt-_AeJUhMToI_W9E1gUj_JxxNL4a0DRbkeCMzu9-Al4mmqGZ5kHSMkH9vRlw
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "id": "41303",
+    "name": "Robel-Cartwright",
+    "facilityGroupId": 0,
+    "facilityTypeId": 5,
+    "address": {
+        "placeId": "74f70d6c-269f-40cf-a680-251bbd9a4ca2",
+        "primaryStreet": "45426 Noah Villages",
+        "secondaryStreet": "Suite 234",
+        "city": "Watersburgh",
+        "zipCode": "",
+        "state": "",
+        "countryCode": "KP",
+        "latitude": "30.6279",
+        "longitude": "22.7323",
+        "country": "string",
+        "formatAddress": "asd"
+    },
+    "contactNumber": "4293477097",
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": true,
+    "timezone": null
+}
+HTTP/1.1 400 Bad Request
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: 9aaa49bb89b7b819100e2b065e0e7e0c
+Date: Fri, 25 Aug 2023 14:02:34 GMT
+Server: Google Frontend
+Content-Length: 120
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "timestamp": "2023-08-25T14:02:34.497831541",
+    "errorCode": null,
+    "title": "Country is embargoed",
+    "details": null,
+    "path": null
+}
+
+[2023-08-25 02:02:34] [25] [INFO] Asserting that KP country is embargoed
+[2023-08-25 02:02:34] [25] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatKPCountryCodeIsEmbargoed] PASSED at [14:02:34 2023-08-25]

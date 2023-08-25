@@ -1,0 +1,196 @@
+[2023-08-25 02:02:30] [26] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-25 02:02:30] [26] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatFacilityCanBeUpdated] STARTED at [14:02:30 2023-08-25]
+[2023-08-25 02:02:30] [26] [INFO] Creating new facility
+[2023-08-25 02:02:30] [26] [INFO] Setting default add facility body values
+[2023-08-25 02:02:30] [26] [INFO] Base properties loaded: api/core/controllers/user/postfacility/post_facility.properties
+[2023-08-25 02:02:30] [26] [INFO] Get country code except embargoed ones
+[2023-08-25 02:02:30] [26] [INFO] Create facility expecting success
+[2023-08-25 02:02:31] [26] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/facilities
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5Mjk3MjEyNywidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyOTcyMTI3LCJleHAiOjE2OTI5NzU3MjcsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.gq2DtVYfCvyWIDnu35LPWMyUIAALuQhqp_HMlyZHFSTzTXF0FfFBXA_DTGCKcxmKuRbMf84_zbS3wdZ2iySB-Ujg47TQwPqAiEKL4pe5SPMiLcywRAdk6NHdcuimimirHpIB7FWMFuheQcmDaeDj_hEOWjARi9WG9zC2O1zCuWFv1X8gTIWgU-EIMMZwxR_IyFLKtUj8wy46P2P9eZpbr83-UAcV-eZTkoeBPfkdICcjUGxHNz0y9KOk0e7KXpdijLLAeida4T59VQgDvh5QcGkXfrt-_AeJUhMToI_W9E1gUj_JxxNL4a0DRbkeCMzu9-Al4mmqGZ5kHSMkH9vRlw
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "name": "Wunsch-Muller",
+    "facilityGroupId": 0,
+    "facilityTypeId": 0,
+    "address": {
+        "placeId": "a763d180-2580-4cdb-ac79-197174f8a3ec",
+        "primaryStreet": "9425 Millie Forest",
+        "secondaryStreet": "Apt. 407",
+        "city": "West Merrill",
+        "state": "",
+        "countryCode": "CG",
+        "latitude": "30.6279",
+        "longitude": "22.7323",
+        "country": "string",
+        "formatAddress": "asd"
+    },
+    "contactNumber": "6153026344",
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": true,
+    "timezone": null
+}
+HTTP/1.1 201 Created
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: d72fc34b342ba3cdfaddbf6a2e9332a4
+Date: Fri, 25 Aug 2023 14:02:31 GMT
+Server: Google Frontend
+Content-Length: 650
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "id": 41291,
+    "legacyId": null,
+    "ipAddress": null,
+    "facilityGroupId": null,
+    "name": "Wunsch-Muller",
+    "facilityTypeId": null,
+    "address": {
+        "id": 41315,
+        "placeId": "a763d180-2580-4cdb-ac79-197174f8a3ec",
+        "primaryStreet": "9425 Millie Forest",
+        "secondaryStreet": "Apt. 407",
+        "city": "West Merrill",
+        "region": "EMEA",
+        "zipCode": null,
+        "state": "",
+        "countryCode": "CG",
+        "latitude": 30.6279,
+        "longitude": 22.7323,
+        "country": "string",
+        "formatAddress": "asd",
+        "rawData": null
+    },
+    "contactNumber": "6153026344",
+    "timezone": {
+        "id": 186,
+        "dstOffset": 0,
+        "rawOffset": 7200000,
+        "timezoneId": "Africa/Tripoli",
+        "name": "Eastern European Standard Time"
+    },
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": false
+}
+
+[2023-08-25 02:02:31] [26] [INFO] Updating previously created facility
+[2023-08-25 02:02:31] [26] [INFO] Setting default update facility body values
+[2023-08-25 02:02:31] [26] [INFO] Base properties loaded: api/core/controllers/facility/putfacility/put_facility.properties
+[2023-08-25 02:02:31] [26] [INFO] Get country code except embargoed ones
+[2023-08-25 02:02:31] [26] [INFO] Updating facility expect success
+[2023-08-25 02:02:31] [26] [INFO] Request method:	PUT
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/facilities
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5Mjk3MjEyNywidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyOTcyMTI3LCJleHAiOjE2OTI5NzU3MjcsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.gq2DtVYfCvyWIDnu35LPWMyUIAALuQhqp_HMlyZHFSTzTXF0FfFBXA_DTGCKcxmKuRbMf84_zbS3wdZ2iySB-Ujg47TQwPqAiEKL4pe5SPMiLcywRAdk6NHdcuimimirHpIB7FWMFuheQcmDaeDj_hEOWjARi9WG9zC2O1zCuWFv1X8gTIWgU-EIMMZwxR_IyFLKtUj8wy46P2P9eZpbr83-UAcV-eZTkoeBPfkdICcjUGxHNz0y9KOk0e7KXpdijLLAeida4T59VQgDvh5QcGkXfrt-_AeJUhMToI_W9E1gUj_JxxNL4a0DRbkeCMzu9-Al4mmqGZ5kHSMkH9vRlw
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "id": "41291",
+    "name": "Carter, Blanda and Lynch",
+    "facilityGroupId": 0,
+    "facilityTypeId": 5,
+    "address": {
+        "placeId": "aaa6b5bf-14f6-4e38-bf51-e34378190141",
+        "primaryStreet": "07961 Carolee Via",
+        "secondaryStreet": "Apt. 636",
+        "city": "Sergiofurt",
+        "zipCode": "",
+        "state": "",
+        "countryCode": "TZ",
+        "latitude": "30.6279",
+        "longitude": "22.7323",
+        "country": "string",
+        "formatAddress": "asd"
+    },
+    "contactNumber": "1216164213",
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": true,
+    "timezone": null
+}
+HTTP/1.1 200 OK
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+Transfer-Encoding: chunked
+Date: Fri, 25 Aug 2023 14:02:31 GMT
+Server: Google Frontend
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "id": 41291,
+    "legacyId": null,
+    "ipAddress": null,
+    "facilityGroupId": null,
+    "name": "Carter, Blanda and Lynch",
+    "facilityTypeId": 5,
+    "address": {
+        "id": 41315,
+        "placeId": "aaa6b5bf-14f6-4e38-bf51-e34378190141",
+        "primaryStreet": "07961 Carolee Via",
+        "secondaryStreet": "Apt. 636",
+        "city": "Sergiofurt",
+        "region": "EMEA",
+        "zipCode": "",
+        "state": "",
+        "countryCode": "TZ",
+        "latitude": 30.6279,
+        "longitude": 22.7323,
+        "country": "string",
+        "formatAddress": "asd",
+        "rawData": null
+    },
+    "contactNumber": "6153026344",
+    "timezone": {
+        "id": 186,
+        "dstOffset": 0,
+        "rawOffset": 7200000,
+        "timezoneId": "Africa/Tripoli",
+        "name": "Eastern European Standard Time"
+    },
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": false
+}
+
+[2023-08-25 02:02:31] [26] [INFO] Asserting that response contains updated facility values
+[2023-08-25 02:02:31] [26] [INFO] ================================================================================================
+[2023-08-25 02:02:31] [26] [INFO] Initial created facility
+[2023-08-25 02:02:32] [26] [INFO] LifeFitnessFacility {id='41291', legacyId='null', ipAddress=null, facilityGroupId=null, name=Wunsch-Muller, facilityTypeId=null, address=LifeFitnessAddress {id='41315', placeId='a763d180-2580-4cdb-ac79-197174f8a3ec', primaryStreet=9425 Millie Forest, secondaryStreet=Apt. 407, city=West Merrill, region=EMEA, zipCode=null, state='', countryCode='CG', latitude='30.6279', longitude='22.7323', country='string', formatAddress='asd', rawData='null'}, contactNumber='6153026344', openTime='10:00 AM', closeTime='6:00 PM'}
+[2023-08-25 02:02:32] [26] [INFO] ================================================================================================
+[2023-08-25 02:02:32] [26] [INFO] Updated facility
+[2023-08-25 02:02:32] [26] [INFO] LifeFitnessFacility {id='41291', legacyId='null', ipAddress=null, facilityGroupId=null, name=Carter, Blanda and Lynch, facilityTypeId=5, address=LifeFitnessAddress {id='41315', placeId='aaa6b5bf-14f6-4e38-bf51-e34378190141', primaryStreet=07961 Carolee Via, secondaryStreet=Apt. 636, city=Sergiofurt, region=EMEA, zipCode=, state='', countryCode='TZ', latitude='30.6279', longitude='22.7323', country='string', formatAddress='asd', rawData='null'}, contactNumber='6153026344', openTime='10:00 AM', closeTime='6:00 PM'}
+[2023-08-25 02:02:32] [26] [INFO] ================================================================================================
+[2023-08-25 02:02:32] [26] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatFacilityCanBeUpdated] PASSED at [14:02:32 2023-08-25]
