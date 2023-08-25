@@ -1,0 +1,161 @@
+[2023-08-24 11:48:53] [26] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-24 11:48:53] [26] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatSecondaryStreetIsOptional] STARTED at [11:48:53 2023-08-24]
+[2023-08-24 11:48:53] [26] [INFO] Creating facility without secondary street expecting success
+[2023-08-24 11:48:53] [26] [INFO] Setting default add facility body values
+[2023-08-24 11:48:53] [26] [INFO] Base properties loaded: api/core/controllers/user/postfacility/post_facility.properties
+[2023-08-24 11:48:53] [26] [INFO] Get country code except embargoed ones
+[2023-08-24 11:48:53] [26] [INFO] Create facility expecting success
+[2023-08-24 11:48:53] [26] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/facilities
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5Mjg3NjE5MCwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyODc2MTkwLCJleHAiOjE2OTI4Nzk3OTAsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.fekhN28Uaoa7LCrUlSghUT3tmgGrmBplxJ7gH8uCxv9n1jqqOT7ArH3jYkNk5EUGiarTy8fMHUUf8kGGIJkmVbYMsqcjj9kauimdpiokMXaNCIsj--IkatxbdWzmhhvFzOG1ObfIqCti2_YAxHSrI5JNWrNYsbnOz8Nw4bkvwyra8o7OIMaupW0dj3zc84iRe1jfoNPFtT1SKlSvVR93nuhrXCPLzwr5Jcji08ziiryRfnLTQADtcCWGfdkST94Da9lH4bOLjHXi3ysSZObLM7Z00s2TIdf4uKEV8aEcTqvrfudqSeQfdLfkC6OBzCCIrE3Fn11KdsV0-Z_5qEfk5Q
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "name": "McCullough, Turcotte and Heathcote",
+    "facilityGroupId": 0,
+    "facilityTypeId": 0,
+    "address": {
+        "placeId": "c8756852-550d-4f72-bf31-ab89290207fc",
+        "primaryStreet": "86894 Cremin Causeway",
+        "city": "Port Donnell",
+        "state": "",
+        "countryCode": "RS",
+        "latitude": "30.6279",
+        "longitude": "22.7323",
+        "country": "string",
+        "formatAddress": "asd"
+    },
+    "contactNumber": "2304844314",
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": true,
+    "timezone": null
+}
+HTTP/1.1 201 Created
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: 4b1e10994ab71eed0af388bfa82254f2
+Date: Thu, 24 Aug 2023 11:48:53 GMT
+Server: Google Frontend
+Content-Length: 668
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "id": 39436,
+    "legacyId": null,
+    "ipAddress": null,
+    "facilityGroupId": null,
+    "name": "McCullough, Turcotte and Heathcote",
+    "facilityTypeId": null,
+    "address": {
+        "id": 39460,
+        "placeId": "c8756852-550d-4f72-bf31-ab89290207fc",
+        "primaryStreet": "86894 Cremin Causeway",
+        "secondaryStreet": null,
+        "city": "Port Donnell",
+        "region": "EMEA",
+        "zipCode": null,
+        "state": "",
+        "countryCode": "RS",
+        "latitude": 30.6279,
+        "longitude": 22.7323,
+        "country": "string",
+        "formatAddress": "asd",
+        "rawData": null
+    },
+    "contactNumber": "2304844314",
+    "timezone": {
+        "id": 186,
+        "dstOffset": 0,
+        "rawOffset": 7200000,
+        "timezoneId": "Africa/Tripoli",
+        "name": "Eastern European Standard Time"
+    },
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": false
+}
+
+[2023-08-24 11:48:53] [26] [INFO] Getting facility from system
+[2023-08-24 11:48:53] [26] [INFO] Get facility by id expecting success
+[2023-08-24 11:48:53] [26] [INFO] Request method:	GET
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/facilities/39436
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	facilityId=39436
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5Mjg3NjE5MCwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyODc2MTkwLCJleHAiOjE2OTI4Nzk3OTAsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.fekhN28Uaoa7LCrUlSghUT3tmgGrmBplxJ7gH8uCxv9n1jqqOT7ArH3jYkNk5EUGiarTy8fMHUUf8kGGIJkmVbYMsqcjj9kauimdpiokMXaNCIsj--IkatxbdWzmhhvFzOG1ObfIqCti2_YAxHSrI5JNWrNYsbnOz8Nw4bkvwyra8o7OIMaupW0dj3zc84iRe1jfoNPFtT1SKlSvVR93nuhrXCPLzwr5Jcji08ziiryRfnLTQADtcCWGfdkST94Da9lH4bOLjHXi3ysSZObLM7Z00s2TIdf4uKEV8aEcTqvrfudqSeQfdLfkC6OBzCCIrE3Fn11KdsV0-Z_5qEfk5Q
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 200 OK
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+Transfer-Encoding: chunked
+Date: Thu, 24 Aug 2023 11:48:53 GMT
+Server: Google Frontend
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "id": 39436,
+    "legacyId": null,
+    "ipAddress": null,
+    "facilityGroupId": null,
+    "name": "McCullough, Turcotte and Heathcote",
+    "facilityTypeId": null,
+    "address": {
+        "id": 39460,
+        "placeId": "c8756852-550d-4f72-bf31-ab89290207fc",
+        "primaryStreet": "86894 Cremin Causeway",
+        "secondaryStreet": null,
+        "city": "Port Donnell",
+        "region": "EMEA",
+        "zipCode": null,
+        "state": "",
+        "countryCode": "RS",
+        "latitude": 30.6279,
+        "longitude": 22.7323,
+        "country": "string",
+        "formatAddress": "asd",
+        "rawData": null
+    },
+    "contactNumber": "2304844314",
+    "timezone": {
+        "id": 186,
+        "dstOffset": 0,
+        "rawOffset": 7200000,
+        "timezoneId": "Africa/Tripoli",
+        "name": "Eastern European Standard Time"
+    },
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": false
+}
+
+[2023-08-24 11:48:53] [26] [INFO] Asserting that facility was created in system
+[2023-08-24 11:48:53] [26] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatSecondaryStreetIsOptional] PASSED at [11:48:53 2023-08-24]

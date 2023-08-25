@@ -1,0 +1,50 @@
+[2023-08-21 04:27:56] [23] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-21 04:27:56] [23] [INFO] TEST [LifeFitness Backend Auto Tests - checkResetPasswordUserDoesNotExistInIDPWithMultiDomainEmail] STARTED at [16:27:56 2023-08-21]
+[2023-08-21 04:27:56] [23] [INFO] Reset password expecting error response code
+[2023-08-21 04:27:56] [23] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-system-utils/api/v1/password/reset?email=lifeFitnessPostman%2B75741273%40gmail.com.sg
+Request params:	<none>
+Query params:	email=lifeFitnessPostman+75741273@gmail.com.sg
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=P3jxJislR3PNt1P1gQxXepwRY8RiHGTps+Yld/5Ot50=
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 400 Bad Request
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: 1d59d48c40a8e0c0dcc1fb08a81487ce
+Date: Mon, 21 Aug 2023 16:27:56 GMT
+Server: Google Frontend
+Content-Length: 126
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "timestamp": [
+        2023,
+        8,
+        21,
+        16,
+        27,
+        56,
+        353804350
+    ],
+    "errorCode": 400,
+    "title": "BAD_REQUEST",
+    "details": "User does not exist",
+    "path": null
+}
+
+[2023-08-21 04:27:56] [23] [INFO] Assert that api call error code is correct
+[2023-08-21 04:27:56] [23] [INFO] TEST [LifeFitness Backend Auto Tests - checkResetPasswordUserDoesNotExistInIDPWithMultiDomainEmail] PASSED at [16:27:56 2023-08-21]

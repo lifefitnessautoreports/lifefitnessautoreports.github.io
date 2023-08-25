@@ -1,0 +1,99 @@
+[2023-08-23 09:51:32] [22] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-23 09:51:32] [22] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatUserCantBeUpdatedToEmptyStringFacility] STARTED at [09:51:32 2023-08-23]
+[2023-08-23 09:51:32] [22] [INFO] Setting default registration body values
+[2023-08-23 09:51:32] [22] [INFO] Base properties loaded: api/core/controllers/user/postregistration/registration.properties
+[2023-08-23 09:51:32] [22] [INFO] Get country code except embargoed ones
+[2023-08-23 09:51:32] [22] [INFO] Registering user with lifeFitnessPostman+07804624@gmail.com email
+[2023-08-23 09:51:32] [22] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/registration
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5Mjc4MDM1MSwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyNzgwMzUxLCJleHAiOjE2OTI3ODM5NTEsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.a5rer7TC3tq7s2UU9DMU4Zg0V8gb3qXmOqQr9kjUfnA84AXRaOKfF0TRQy0StrIQWIyciCzUQu1BXqXfsdnDTfoHRU2ZaPeUWycdMCD4qnaoA-bR3KkK-SgBQkLmxOuVauwh02hfvNBsihJrqq-f8-7IkWfpsVymtcLxOAb5oqXrO0QOUGKhdnRNtLl0rQdypGJn2lIVtZ1GFy5JKjucJbL8WyPSus8Wl-XbU8dzSn4UiHTVNDw1G9rVeQp-RVgt2ddNETO8obNZY_Y_dBLDpPt4gRXgGfsT0uzAx-n-jSN6oU39J297mWKEO5AsMCjgyxlIxy1PItRG71SsVtfCzw
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "user": {
+        "id": 0,
+        "firstName": "Arielle",
+        "lastName": "Jacobs",
+        "email": "lifeFitnessPostman+07804624@gmail.com",
+        "preferredUnit": "METRICS",
+        "preferredLanguageCode": "",
+        "phoneNumber": "",
+        "officePhoneNumber": "",
+        "imageUrl": "",
+        "imageKey": "",
+        "thumbnailUrl": "",
+        "thumbnailKey": "",
+        "isAllowedMarketingEmails": null,
+        "isAllowedFeedbackProviding": null,
+        "useTerms": null
+    },
+    "facility": {
+        "id": 0,
+        "legacyId": 0,
+        "ipAddress": "",
+        "facilityGroupId": 0,
+        "name": "Deckow-Herman",
+        "facilityTypeId": 0,
+        "address": {
+            "placeId": "2e4f1d12-82e7-409a-8fdb-28995d41511d",
+            "primaryStreet": "34565 Schmeler Underpass",
+            "secondaryStreet": "Apt. 255",
+            "city": "Port Monnie",
+            "region": "",
+            "zipCode": "223610",
+            "state": "",
+            "countryCode": "ES",
+            "latitude": "30.6279",
+            "longitude": "22.7323",
+            "country": "string",
+            "formatAddress": "string",
+            "rawData": "string"
+        },
+        "contactNumber": "4867069035",
+        "timezone": "",
+        "openTime": "10:00 AM",
+        "closeTime": "6:00 PM",
+        "isOpen24Hours": true
+    }
+}
+HTTP/1.1 401 Unauthorized
+X-Goog-IAP-Generated-Response: true
+Date: Wed, 23 Aug 2023 09:51:32 GMT
+Content-Type: text/html
+Server: Google Frontend
+Content-Length: 22
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+<html>
+  <body>Expired GCIP ID token.</body>
+</html>
+
+[2023-08-23 09:51:32] [22] [ERROR] TEST [LifeFitness Backend Auto Tests - checkThatUserCantBeUpdatedToEmptyStringFacility] SKIPPED at [09:51:32 2023-08-23] - Unable to register user
+
+com.lifefitness.qa.api.corecontrollers.user.postregistration.PostRegistrationHelper.registerUser(PostRegistrationHelper.java:37)
+com.lifefitness.qa.api.corecontrollers.user.postregistration.PostRegistrationHelper.registerUserWithDefaultParameters(PostRegistrationHelper.java:24)
+com.lifefitness.qa.api.core.controllers.user.putuserdetails.PutUserDetailsTest.checkThatUserCantBeUpdatedToEmptyStringFacility(PutUserDetailsTest.java:442)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:568)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+java.base/java.lang.Thread.run(Thread.java:833)
+[2023-08-23 09:51:32] [22] [INFO] Attaching logs to Allure report

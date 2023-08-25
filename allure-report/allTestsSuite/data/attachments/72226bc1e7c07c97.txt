@@ -1,0 +1,162 @@
+[2023-08-25 09:21:01] [24] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-25 09:21:01] [24] [INFO] TEST [LifeFitness Backend Auto Tests - checkPrimaryStreetWithEmptyString] STARTED at [09:21:01 2023-08-25]
+[2023-08-25 09:21:01] [24] [INFO] Creating facility without primary street expecting success
+[2023-08-25 09:21:01] [24] [INFO] Setting default add facility body values
+[2023-08-25 09:21:01] [24] [INFO] Base properties loaded: api/core/controllers/user/postfacility/post_facility.properties
+[2023-08-25 09:21:01] [24] [INFO] Get country code except embargoed ones
+[2023-08-25 09:21:01] [24] [INFO] Create facility expecting success
+[2023-08-25 09:21:02] [24] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/facilities
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5Mjk1NTE1MiwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyOTU1MTUyLCJleHAiOjE2OTI5NTg3NTIsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.S0wEwgpcbaYT9x6AymSKH9fZq2lbMmLCVUiGG4NNVQv-9xpyubVoRrVlBodr-lsk__i6ljzaD7DDB2OPZla1rtHdF3OTFKqSJpCo4c1Dl3EuHfvgNXBuPUGDeY4yisS_gWcu3fO8_s4TRgmUSMqT4Lc0DEZc_A8PQdnYVfGnB1xIYD_Kzq03F7E2ePSkYBofqBeHcia3f9aAJ4kE0e3DeQvKPW_Ctg43ALZpJQKxH_vGPgzvDQ_tp-rsDB2Cb5_X93PNKKMPBLST4v_Dm1kxTUn7eb_Pvn8_f0iFaJTrpHdvLqdu5UKymdqNECoFH9IbO5qCPnf3Azp3MU6m35_Sww
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "name": "Aufderhar, Schneider and Buckridge",
+    "facilityGroupId": 0,
+    "facilityTypeId": 0,
+    "address": {
+        "placeId": "4b6d4605-af88-4436-87fb-9a7f8f954cb2",
+        "primaryStreet": "",
+        "secondaryStreet": "Apt. 043",
+        "city": "New Melisa",
+        "state": "",
+        "countryCode": "KE",
+        "latitude": "30.6279",
+        "longitude": "22.7323",
+        "country": "string",
+        "formatAddress": "asd"
+    },
+    "contactNumber": "3738934262",
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": true,
+    "timezone": null
+}
+HTTP/1.1 201 Created
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: 65b8970eff8c4cc1424c22bd1eb4c8fa
+Date: Fri, 25 Aug 2023 09:21:02 GMT
+Server: Google Frontend
+Content-Length: 651
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "id": 40269,
+    "legacyId": null,
+    "ipAddress": null,
+    "facilityGroupId": null,
+    "name": "Aufderhar, Schneider and Buckridge",
+    "facilityTypeId": null,
+    "address": {
+        "id": 40293,
+        "placeId": "4b6d4605-af88-4436-87fb-9a7f8f954cb2",
+        "primaryStreet": "",
+        "secondaryStreet": "Apt. 043",
+        "city": "New Melisa",
+        "region": "EMEA",
+        "zipCode": null,
+        "state": "",
+        "countryCode": "KE",
+        "latitude": 30.6279,
+        "longitude": 22.7323,
+        "country": "string",
+        "formatAddress": "asd",
+        "rawData": null
+    },
+    "contactNumber": "3738934262",
+    "timezone": {
+        "id": 186,
+        "dstOffset": 0,
+        "rawOffset": 7200000,
+        "timezoneId": "Africa/Tripoli",
+        "name": "Eastern European Standard Time"
+    },
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": false
+}
+
+[2023-08-25 09:21:02] [24] [INFO] Getting facility from system
+[2023-08-25 09:21:02] [24] [INFO] Get facility by id expecting success
+[2023-08-25 09:21:02] [24] [INFO] Request method:	GET
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/facilities/40269
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	facilityId=40269
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5Mjk1NTE1MiwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyOTU1MTUyLCJleHAiOjE2OTI5NTg3NTIsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.S0wEwgpcbaYT9x6AymSKH9fZq2lbMmLCVUiGG4NNVQv-9xpyubVoRrVlBodr-lsk__i6ljzaD7DDB2OPZla1rtHdF3OTFKqSJpCo4c1Dl3EuHfvgNXBuPUGDeY4yisS_gWcu3fO8_s4TRgmUSMqT4Lc0DEZc_A8PQdnYVfGnB1xIYD_Kzq03F7E2ePSkYBofqBeHcia3f9aAJ4kE0e3DeQvKPW_Ctg43ALZpJQKxH_vGPgzvDQ_tp-rsDB2Cb5_X93PNKKMPBLST4v_Dm1kxTUn7eb_Pvn8_f0iFaJTrpHdvLqdu5UKymdqNECoFH9IbO5qCPnf3Azp3MU6m35_Sww
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 200 OK
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+Transfer-Encoding: chunked
+Date: Fri, 25 Aug 2023 09:21:02 GMT
+Server: Google Frontend
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "id": 40269,
+    "legacyId": null,
+    "ipAddress": null,
+    "facilityGroupId": null,
+    "name": "Aufderhar, Schneider and Buckridge",
+    "facilityTypeId": null,
+    "address": {
+        "id": 40293,
+        "placeId": "4b6d4605-af88-4436-87fb-9a7f8f954cb2",
+        "primaryStreet": "",
+        "secondaryStreet": "Apt. 043",
+        "city": "New Melisa",
+        "region": "EMEA",
+        "zipCode": null,
+        "state": "",
+        "countryCode": "KE",
+        "latitude": 30.6279,
+        "longitude": 22.7323,
+        "country": "string",
+        "formatAddress": "asd",
+        "rawData": null
+    },
+    "contactNumber": "3738934262",
+    "timezone": {
+        "id": 186,
+        "dstOffset": 0,
+        "rawOffset": 7200000,
+        "timezoneId": "Africa/Tripoli",
+        "name": "Eastern European Standard Time"
+    },
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": false
+}
+
+[2023-08-25 09:21:02] [24] [INFO] Asserting that facility was created in system
+[2023-08-25 09:21:02] [24] [INFO] TEST [LifeFitness Backend Auto Tests - checkPrimaryStreetWithEmptyString] PASSED at [09:21:02 2023-08-25]

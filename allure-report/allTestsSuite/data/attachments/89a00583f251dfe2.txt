@@ -1,0 +1,192 @@
+[2023-08-21 07:38:37] [23] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-21 07:38:37] [23] [INFO] TEST [LifeFitness Backend Auto Tests - checkGettingUserByCamelCaseEmail] STARTED at [07:38:37 2023-08-21]
+[2023-08-21 07:38:37] [23] [INFO] Setting default registration body values
+[2023-08-21 07:38:37] [23] [INFO] Base properties loaded: api/core/controllers/user/postregistration/registration.properties
+[2023-08-21 07:38:37] [23] [INFO] Get country code except embargoed ones
+[2023-08-21 07:38:37] [23] [INFO] Setting email to camel case
+[2023-08-21 07:38:37] [23] [INFO] Waiting for 0.1 sec to cool Core Backend off
+[2023-08-21 07:38:37] [23] [INFO] Registering user with lifeFitnessPostman+96180542@gmail.com email
+[2023-08-21 07:38:38] [23] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/registration
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MjYwMjkyOCwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyNjAyOTI4LCJleHAiOjE2OTI2MDY1MjgsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.B8j_QsUJAabhyL4YKHd9lbz5v8PpQa3OGjGrILgMJjzEQFGBBt5GDCaeyoMxRIhMMTMz2Q-5tqX48VxGcpvQGnVyHklKHniVGyqZJm2m3P1gUAhXUIwdwuVejGvx9Wtm_aohCJhjDTx-lM7Kxa8K1SvPzxlnRE9gi9edsjdxGwqWaTKSPhDE1ZYLBnRx6laU5W9lKavomgWPSlB3VuC7N65QF3mvPdriIA5aFtbDtrJAvPEftJTsnvKU8aqQu2SyvOS5t5VVoUvBHH00GgZgxE78MOO0LzzmRpxZgV9IgTYUQbW7jBney5u5DPiwEiWO_p_hDkS2gfu90gy705PbYA
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "user": {
+        "id": 0,
+        "firstName": "Dong",
+        "lastName": "Kris",
+        "email": "lifeFitnessPostman+96180542@gmail.com",
+        "preferredUnit": "METRICS",
+        "preferredLanguageCode": "",
+        "phoneNumber": "",
+        "officePhoneNumber": "",
+        "imageUrl": "",
+        "imageKey": "",
+        "thumbnailUrl": "",
+        "thumbnailKey": "",
+        "isAllowedMarketingEmails": null,
+        "isAllowedFeedbackProviding": null,
+        "useTerms": null
+    },
+    "facility": {
+        "id": 0,
+        "legacyId": 0,
+        "ipAddress": "",
+        "facilityGroupId": 0,
+        "name": "Beatty, Hamill and Macejkovic",
+        "facilityTypeId": 0,
+        "address": {
+            "placeId": "17e24541-e1c8-4c74-9571-8f0db2da55ac",
+            "primaryStreet": "4829 Kreiger Island",
+            "secondaryStreet": "Apt. 654",
+            "city": "South Kyong",
+            "region": "",
+            "zipCode": "223610",
+            "state": "",
+            "countryCode": "BA",
+            "latitude": "30.6279",
+            "longitude": "22.7323",
+            "country": "string",
+            "formatAddress": "string",
+            "rawData": "string"
+        },
+        "contactNumber": "2118553930",
+        "timezone": "",
+        "openTime": "10:00 AM",
+        "closeTime": "6:00 PM",
+        "isOpen24Hours": true
+    }
+}
+HTTP/1.1 201 Created
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: b7745d7a815036f238dce0a94f22b5dd
+Date: Mon, 21 Aug 2023 07:38:38 GMT
+Server: Google Frontend
+Content-Length: 989
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "user": {
+        "id": 46231,
+        "firstName": "Dong",
+        "lastName": "Kris",
+        "email": "lifefitnesspostman+96180542@gmail.com",
+        "preferredUnit": "METRICS",
+        "preferredLanguageCode": "en-US",
+        "phoneNumber": "",
+        "officePhoneNumber": "",
+        "profilePicUrl": null,
+        "imageKey": "",
+        "isEnabled": true,
+        "isAllowedMarketingEmails": true,
+        "isAllowedFeedbackProviding": true,
+        "useTerms": true,
+        "encodedPassword": null,
+        "status": "ACTIVE",
+        "roleIds": [
+            2
+        ]
+    },
+    "facility": {
+        "id": 34870,
+        "legacyId": 0,
+        "ipAddress": "",
+        "facilityGroupId": null,
+        "name": "Beatty, Hamill and Macejkovic",
+        "facilityTypeId": null,
+        "address": {
+            "id": 34894,
+            "placeId": "17e24541-e1c8-4c74-9571-8f0db2da55ac",
+            "primaryStreet": "4829 Kreiger Island",
+            "secondaryStreet": "Apt. 654",
+            "city": "South Kyong",
+            "region": "EMEA",
+            "zipCode": "223610",
+            "state": "",
+            "countryCode": "BA",
+            "latitude": 30.6279,
+            "longitude": 22.7323,
+            "country": "string",
+            "formatAddress": "string",
+            "rawData": "string"
+        },
+        "contactNumber": "2118553930",
+        "timezone": "Africa/Tripoli (GMT+2:00)",
+        "openTime": "10:00 AM",
+        "closeTime": "6:00 PM",
+        "isOpen24Hours": true
+    }
+}
+
+[2023-08-21 07:38:38] [23] [INFO] Getting user with email - lifeFitnessPostman+96180542@gmail.com expecting positive response
+[2023-08-21 07:38:38] [23] [INFO] Getting Halo Core dev base URL
+[2023-08-21 07:38:38] [23] [INFO] Getting user by email
+[2023-08-21 07:38:39] [23] [INFO] Request method:	GET
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users?email=lifeFitnessPostman%2B96180542%40gmail.com
+Request params:	<none>
+Query params:	email=lifeFitnessPostman+96180542@gmail.com
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MjYwMjkyOCwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyNjAyOTI4LCJleHAiOjE2OTI2MDY1MjgsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.B8j_QsUJAabhyL4YKHd9lbz5v8PpQa3OGjGrILgMJjzEQFGBBt5GDCaeyoMxRIhMMTMz2Q-5tqX48VxGcpvQGnVyHklKHniVGyqZJm2m3P1gUAhXUIwdwuVejGvx9Wtm_aohCJhjDTx-lM7Kxa8K1SvPzxlnRE9gi9edsjdxGwqWaTKSPhDE1ZYLBnRx6laU5W9lKavomgWPSlB3VuC7N65QF3mvPdriIA5aFtbDtrJAvPEftJTsnvKU8aqQu2SyvOS5t5VVoUvBHH00GgZgxE78MOO0LzzmRpxZgV9IgTYUQbW7jBney5u5DPiwEiWO_p_hDkS2gfu90gy705PbYA
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 200 OK
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+Transfer-Encoding: chunked
+Date: Mon, 21 Aug 2023 07:38:39 GMT
+Server: Google Frontend
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "id": 46231,
+    "firstName": "Dong",
+    "lastName": "Kris",
+    "email": "lifefitnesspostman+96180542@gmail.com",
+    "preferredUnit": "METRICS",
+    "preferredLanguageCode": "en-US",
+    "phoneNumber": "",
+    "officePhoneNumber": "",
+    "profilePicUrl": null,
+    "imageKey": "",
+    "isEnabled": true,
+    "isAllowedMarketingEmails": true,
+    "isAllowedFeedbackProviding": true,
+    "useTerms": true,
+    "encodedPassword": null,
+    "status": "ACTIVE",
+    "roleIds": [
+        2
+    ]
+}
+
+[2023-08-21 07:38:39] [23] [INFO] Asserting the correct user is returned
+[2023-08-21 07:38:39] [23] [INFO] TEST [LifeFitness Backend Auto Tests - checkGettingUserByCamelCaseEmail] PASSED at [07:38:39 2023-08-21]

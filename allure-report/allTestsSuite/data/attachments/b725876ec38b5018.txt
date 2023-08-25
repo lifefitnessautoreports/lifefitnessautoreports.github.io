@@ -1,0 +1,53 @@
+[2023-08-25 09:32:22] [22] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-25 09:32:22] [22] [INFO] TEST [LifeFitness Backend Auto Tests - checkLoginAttemptStatusWithUpperCaseEmail] STARTED at [09:32:22 2023-08-25]
+[2023-08-25 09:32:22] [22] [INFO] Setting default post login body values
+[2023-08-25 09:32:22] [22] [INFO] Base properties loaded: api/utils/controllers/userloginattempt/postloginattempt/login_attempt.properties
+[2023-08-25 09:32:22] [22] [INFO] Attempting to login a user with LIFEFITNESSPOSTMAN+57443031@GMAIL.COM email
+[2023-08-25 09:32:23] [22] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-system-utils/api/v1/login_attempt
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=P3jxJislR3PNt1P1gQxXepwRY8RiHGTps+Yld/5Ot50=
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "email": "LIFEFITNESSPOSTMAN+57443031@GMAIL.COM",
+    "isLoginSuccess": false,
+    "lastFailedTimestamp": null,
+    "isLocked": null,
+    "loginAttemptCount": null
+}
+HTTP/1.1 201 Created
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: 6bc0ed6aedeeb2e5095ffb4e02f15c6f
+Date: Fri, 25 Aug 2023 09:32:23 GMT
+Server: Google Frontend
+Content-Length: 146
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "email": "lifefitnesspostman+57443031@gmail.com",
+    "isLoginSuccess": null,
+    "lastFailedTimestamp": 1692955942973,
+    "isLocked": false,
+    "loginAttemptCount": 1
+}
+
+[2023-08-25 09:32:23] [22] [INFO] Assert that email is correct
+[2023-08-25 09:32:23] [22] [INFO] Assert that is locked is correct
+[2023-08-25 09:32:23] [22] [INFO] Assert that login attempt count is correct
+[2023-08-25 09:32:23] [22] [INFO] TEST [LifeFitness Backend Auto Tests - checkLoginAttemptStatusWithUpperCaseEmail] PASSED at [09:32:23 2023-08-25]

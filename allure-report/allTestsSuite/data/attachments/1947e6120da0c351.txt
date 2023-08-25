@@ -1,0 +1,161 @@
+[2023-08-25 07:29:56] [23] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-25 07:29:56] [23] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatPrimaryStreetIsOptional] STARTED at [07:29:56 2023-08-25]
+[2023-08-25 07:29:56] [23] [INFO] Creating facility without primary street expecting success
+[2023-08-25 07:29:56] [23] [INFO] Setting default add facility body values
+[2023-08-25 07:29:56] [23] [INFO] Base properties loaded: api/core/controllers/user/postfacility/post_facility.properties
+[2023-08-25 07:29:56] [23] [INFO] Get country code except embargoed ones
+[2023-08-25 07:29:56] [23] [INFO] Create facility expecting success
+[2023-08-25 07:29:57] [23] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/facilities
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5Mjk0ODUwMSwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyOTQ4NTAxLCJleHAiOjE2OTI5NTIxMDEsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.Dn4rjSt1_zRX5coTGc5wUxGl8RjsVaQ5geSO6ZR2jMq3iVt6bRD0XlU7QDelTBqAgD7zJbbUcSdbaNc6n2PDI30NkGkxv1V_SqQKJ1q2JAECH1H_XsLbmeZHlh1W--LWKTuTIC7Fz_29ntENB4f6or7iCL9jW_SrVFsUg5xw4YbuJVGZVPwfr2eWN_-J63XLBmuvheK1_LA4o37WbongfttaRrFpi4GtqKaSmJRN-_kvWcVmh897BrqCzPFtLQWakIpfqxbN4fZHHWWLxYKqlJjq0FsqMDDqnjuI-86ymi_26w_s_W-V7nmOWFysCNxvP7ffiXhI9y2bSryzKTt_-w
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "name": "Volkman, Bogan and Cruickshank",
+    "facilityGroupId": 0,
+    "facilityTypeId": 0,
+    "address": {
+        "placeId": "47140c6e-aa28-4b4b-ae7f-db9c62830f71",
+        "secondaryStreet": "Apt. 953",
+        "city": "Ondrickaland",
+        "state": "",
+        "countryCode": "SR",
+        "latitude": "30.6279",
+        "longitude": "22.7323",
+        "country": "string",
+        "formatAddress": "asd"
+    },
+    "contactNumber": "1360540214",
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": true,
+    "timezone": null
+}
+HTTP/1.1 201 Created
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: 08e2c4026179bf3d92a8b1cbbe2d4fbe
+Date: Fri, 25 Aug 2023 07:29:57 GMT
+Server: Google Frontend
+Content-Length: 652
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "id": 39860,
+    "legacyId": null,
+    "ipAddress": null,
+    "facilityGroupId": null,
+    "name": "Volkman, Bogan and Cruickshank",
+    "facilityTypeId": null,
+    "address": {
+        "id": 39884,
+        "placeId": "47140c6e-aa28-4b4b-ae7f-db9c62830f71",
+        "primaryStreet": null,
+        "secondaryStreet": "Apt. 953",
+        "city": "Ondrickaland",
+        "region": "LATAM",
+        "zipCode": null,
+        "state": "",
+        "countryCode": "SR",
+        "latitude": 30.6279,
+        "longitude": 22.7323,
+        "country": "string",
+        "formatAddress": "asd",
+        "rawData": null
+    },
+    "contactNumber": "1360540214",
+    "timezone": {
+        "id": 186,
+        "dstOffset": 0,
+        "rawOffset": 7200000,
+        "timezoneId": "Africa/Tripoli",
+        "name": "Eastern European Standard Time"
+    },
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": false
+}
+
+[2023-08-25 07:29:57] [23] [INFO] Getting facility from system
+[2023-08-25 07:29:57] [23] [INFO] Get facility by id expecting success
+[2023-08-25 07:29:57] [23] [INFO] Request method:	GET
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/facilities/39860
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	facilityId=39860
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5Mjk0ODUwMSwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyOTQ4NTAxLCJleHAiOjE2OTI5NTIxMDEsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.Dn4rjSt1_zRX5coTGc5wUxGl8RjsVaQ5geSO6ZR2jMq3iVt6bRD0XlU7QDelTBqAgD7zJbbUcSdbaNc6n2PDI30NkGkxv1V_SqQKJ1q2JAECH1H_XsLbmeZHlh1W--LWKTuTIC7Fz_29ntENB4f6or7iCL9jW_SrVFsUg5xw4YbuJVGZVPwfr2eWN_-J63XLBmuvheK1_LA4o37WbongfttaRrFpi4GtqKaSmJRN-_kvWcVmh897BrqCzPFtLQWakIpfqxbN4fZHHWWLxYKqlJjq0FsqMDDqnjuI-86ymi_26w_s_W-V7nmOWFysCNxvP7ffiXhI9y2bSryzKTt_-w
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 200 OK
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+Transfer-Encoding: chunked
+Date: Fri, 25 Aug 2023 07:29:57 GMT
+Server: Google Frontend
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "id": 39860,
+    "legacyId": null,
+    "ipAddress": null,
+    "facilityGroupId": null,
+    "name": "Volkman, Bogan and Cruickshank",
+    "facilityTypeId": null,
+    "address": {
+        "id": 39884,
+        "placeId": "47140c6e-aa28-4b4b-ae7f-db9c62830f71",
+        "primaryStreet": null,
+        "secondaryStreet": "Apt. 953",
+        "city": "Ondrickaland",
+        "region": "LATAM",
+        "zipCode": null,
+        "state": "",
+        "countryCode": "SR",
+        "latitude": 30.6279,
+        "longitude": 22.7323,
+        "country": "string",
+        "formatAddress": "asd",
+        "rawData": null
+    },
+    "contactNumber": "1360540214",
+    "timezone": {
+        "id": 186,
+        "dstOffset": 0,
+        "rawOffset": 7200000,
+        "timezoneId": "Africa/Tripoli",
+        "name": "Eastern European Standard Time"
+    },
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": false
+}
+
+[2023-08-25 07:29:57] [23] [INFO] Asserting that facility was created in system
+[2023-08-25 07:29:57] [23] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatPrimaryStreetIsOptional] PASSED at [07:29:57 2023-08-25]

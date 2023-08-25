@@ -1,0 +1,92 @@
+[2023-08-25 09:25:39] [25] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-25 09:25:39] [25] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatPrimaryStreetCantContainMoreThanFiftyChars] STARTED at [09:25:39 2023-08-25]
+[2023-08-25 09:25:39] [25] [INFO] Setting default registration body values
+[2023-08-25 09:25:39] [25] [INFO] Base properties loaded: api/core/controllers/user/postregistration/registration.properties
+[2023-08-25 09:25:39] [25] [INFO] Get country code except embargoed ones
+[2023-08-25 09:25:39] [25] [INFO] Registering user expecting error response code
+[2023-08-25 09:25:39] [25] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/registration
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5Mjk1NTE1MiwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyOTU1MTUyLCJleHAiOjE2OTI5NTg3NTIsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.S0wEwgpcbaYT9x6AymSKH9fZq2lbMmLCVUiGG4NNVQv-9xpyubVoRrVlBodr-lsk__i6ljzaD7DDB2OPZla1rtHdF3OTFKqSJpCo4c1Dl3EuHfvgNXBuPUGDeY4yisS_gWcu3fO8_s4TRgmUSMqT4Lc0DEZc_A8PQdnYVfGnB1xIYD_Kzq03F7E2ePSkYBofqBeHcia3f9aAJ4kE0e3DeQvKPW_Ctg43ALZpJQKxH_vGPgzvDQ_tp-rsDB2Cb5_X93PNKKMPBLST4v_Dm1kxTUn7eb_Pvn8_f0iFaJTrpHdvLqdu5UKymdqNECoFH9IbO5qCPnf3Azp3MU6m35_Sww
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "user": {
+        "id": 0,
+        "firstName": "Christian",
+        "lastName": "White",
+        "email": "lifeFitnessPostman+66005887@gmail.com",
+        "preferredUnit": "METRICS",
+        "preferredLanguageCode": "",
+        "phoneNumber": "",
+        "officePhoneNumber": "",
+        "imageUrl": "",
+        "imageKey": "",
+        "thumbnailUrl": "",
+        "thumbnailKey": "",
+        "isAllowedMarketingEmails": null,
+        "isAllowedFeedbackProviding": null,
+        "useTerms": null
+    },
+    "facility": {
+        "id": 0,
+        "legacyId": 0,
+        "ipAddress": "",
+        "facilityGroupId": 0,
+        "name": "Maggio, Rolfson and Huels",
+        "facilityTypeId": 0,
+        "address": {
+            "placeId": "71f6526e-71fd-4d91-bfcf-e25f3f44209f",
+            "primaryStreet": "3079 Amparo Turnpike82146609857517574481899935048908470496548999915721",
+            "secondaryStreet": "Suite 133",
+            "city": "East Betty",
+            "region": "",
+            "zipCode": "223610",
+            "state": "",
+            "countryCode": "FR",
+            "latitude": "30.6279",
+            "longitude": "22.7323",
+            "country": "string",
+            "formatAddress": "string",
+            "rawData": "string"
+        },
+        "contactNumber": "8259698547",
+        "timezone": null,
+        "openTime": "10:00 AM",
+        "closeTime": "6:00 PM",
+        "isOpen24Hours": true
+    }
+}
+HTTP/1.1 400 Bad Request
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: ac1e416eaccf285060c2c7885b371371
+Date: Fri, 25 Aug 2023 09:25:39 GMT
+Server: Google Frontend
+Content-Length: 143
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "timestamp": "2023-08-25T09:25:39.56439655",
+    "errorCode": null,
+    "title": "Street address maximum size is 50 characters",
+    "details": null,
+    "path": null
+}
+
+[2023-08-25 09:25:39] [25] [INFO] Asserting that user was registered. Primary Street can contain empty string
+[2023-08-25 09:25:39] [25] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatPrimaryStreetCantContainMoreThanFiftyChars] PASSED at [09:25:39 2023-08-25]

@@ -1,0 +1,161 @@
+[2023-08-25 09:19:17] [23] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-25 09:19:17] [23] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatFacilityCantBeUpdatedWithoutPlaceId] STARTED at [09:19:17 2023-08-25]
+[2023-08-25 09:19:17] [23] [INFO] Creating new facility
+[2023-08-25 09:19:17] [23] [INFO] Setting default add facility body values
+[2023-08-25 09:19:17] [23] [INFO] Base properties loaded: api/core/controllers/user/postfacility/post_facility.properties
+[2023-08-25 09:19:17] [23] [INFO] Get country code except embargoed ones
+[2023-08-25 09:19:17] [23] [INFO] Create facility expecting success
+[2023-08-25 09:19:17] [23] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/facilities
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5Mjk1NTE1MiwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyOTU1MTUyLCJleHAiOjE2OTI5NTg3NTIsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.S0wEwgpcbaYT9x6AymSKH9fZq2lbMmLCVUiGG4NNVQv-9xpyubVoRrVlBodr-lsk__i6ljzaD7DDB2OPZla1rtHdF3OTFKqSJpCo4c1Dl3EuHfvgNXBuPUGDeY4yisS_gWcu3fO8_s4TRgmUSMqT4Lc0DEZc_A8PQdnYVfGnB1xIYD_Kzq03F7E2ePSkYBofqBeHcia3f9aAJ4kE0e3DeQvKPW_Ctg43ALZpJQKxH_vGPgzvDQ_tp-rsDB2Cb5_X93PNKKMPBLST4v_Dm1kxTUn7eb_Pvn8_f0iFaJTrpHdvLqdu5UKymdqNECoFH9IbO5qCPnf3Azp3MU6m35_Sww
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "name": "Gutkowski LLC",
+    "facilityGroupId": 0,
+    "facilityTypeId": 0,
+    "address": {
+        "placeId": "fddafaa7-d387-4f66-b673-ccccb55820e3",
+        "primaryStreet": "6466 Novella Brooks",
+        "secondaryStreet": "Suite 555",
+        "city": "Deniseside",
+        "state": "",
+        "countryCode": "MG",
+        "latitude": "30.6279",
+        "longitude": "22.7323",
+        "country": "string",
+        "formatAddress": "asd"
+    },
+    "contactNumber": "4904903680",
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": true,
+    "timezone": null
+}
+HTTP/1.1 201 Created
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: f1c3cfea1ab6c2ced9061b6af356655b
+Date: Fri, 25 Aug 2023 09:19:17 GMT
+Server: Google Frontend
+Content-Length: 650
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "id": 40147,
+    "legacyId": null,
+    "ipAddress": null,
+    "facilityGroupId": null,
+    "name": "Gutkowski LLC",
+    "facilityTypeId": null,
+    "address": {
+        "id": 40171,
+        "placeId": "fddafaa7-d387-4f66-b673-ccccb55820e3",
+        "primaryStreet": "6466 Novella Brooks",
+        "secondaryStreet": "Suite 555",
+        "city": "Deniseside",
+        "region": "EMEA",
+        "zipCode": null,
+        "state": "",
+        "countryCode": "MG",
+        "latitude": 30.6279,
+        "longitude": 22.7323,
+        "country": "string",
+        "formatAddress": "asd",
+        "rawData": null
+    },
+    "contactNumber": "4904903680",
+    "timezone": {
+        "id": 186,
+        "dstOffset": 0,
+        "rawOffset": 7200000,
+        "timezoneId": "Africa/Tripoli",
+        "name": "Eastern European Standard Time"
+    },
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": false
+}
+
+[2023-08-25 09:19:17] [23] [INFO] Updating facility without place id
+[2023-08-25 09:19:17] [23] [INFO] Setting default update facility body values
+[2023-08-25 09:19:17] [23] [INFO] Base properties loaded: api/core/controllers/facility/putfacility/put_facility.properties
+[2023-08-25 09:19:17] [23] [INFO] Get country code except embargoed ones
+[2023-08-25 09:19:17] [23] [INFO] Updating facility expecting error response code
+[2023-08-25 09:19:18] [23] [INFO] Request method:	PUT
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/facilities
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5Mjk1NTE1MiwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyOTU1MTUyLCJleHAiOjE2OTI5NTg3NTIsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.S0wEwgpcbaYT9x6AymSKH9fZq2lbMmLCVUiGG4NNVQv-9xpyubVoRrVlBodr-lsk__i6ljzaD7DDB2OPZla1rtHdF3OTFKqSJpCo4c1Dl3EuHfvgNXBuPUGDeY4yisS_gWcu3fO8_s4TRgmUSMqT4Lc0DEZc_A8PQdnYVfGnB1xIYD_Kzq03F7E2ePSkYBofqBeHcia3f9aAJ4kE0e3DeQvKPW_Ctg43ALZpJQKxH_vGPgzvDQ_tp-rsDB2Cb5_X93PNKKMPBLST4v_Dm1kxTUn7eb_Pvn8_f0iFaJTrpHdvLqdu5UKymdqNECoFH9IbO5qCPnf3Azp3MU6m35_Sww
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "id": "40147",
+    "name": "Schumm and Sons",
+    "facilityGroupId": 0,
+    "facilityTypeId": 5,
+    "address": {
+        "primaryStreet": "30902 Cronin Crossing",
+        "secondaryStreet": "Suite 058",
+        "city": "Pourosside",
+        "zipCode": "",
+        "state": "",
+        "countryCode": "IQ",
+        "latitude": "30.6279",
+        "longitude": "22.7323",
+        "country": "string",
+        "formatAddress": "asd"
+    },
+    "contactNumber": "9532809193",
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": true,
+    "timezone": null
+}
+HTTP/1.1 400 Bad Request
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: 041288a652055536f2843effae05b745
+Date: Fri, 25 Aug 2023 09:19:18 GMT
+Server: Google Frontend
+Content-Length: 124
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "timestamp": "2023-08-25T09:19:18.048928939",
+    "errorCode": null,
+    "title": "Place ID cannot be empty",
+    "details": null,
+    "path": null
+}
+
+[2023-08-25 09:19:18] [23] [INFO] Asserting that facility can't be updated without place id
+[2023-08-25 09:19:18] [23] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatFacilityCantBeUpdatedWithoutPlaceId] PASSED at [09:19:18 2023-08-25]

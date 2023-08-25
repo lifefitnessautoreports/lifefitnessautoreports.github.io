@@ -1,0 +1,68 @@
+[2023-08-20 07:30:23] [26] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-20 07:30:23] [26] [INFO] TEST [LifeFitness Backend Auto Tests - checkPrimaryStreetWithMoreThanFiftyChars] STARTED at [07:30:23 2023-08-20]
+[2023-08-20 07:30:23] [26] [INFO] Creating facility with primary street with more than 50 chars expecting failure
+[2023-08-20 07:30:23] [26] [INFO] Setting default add facility body values
+[2023-08-20 07:30:23] [26] [INFO] Base properties loaded: api/core/controllers/user/postfacility/post_facility.properties
+[2023-08-20 07:30:23] [26] [INFO] Get country code except embargoed ones
+[2023-08-20 07:30:23] [26] [INFO] Creating facility expecting failure
+[2023-08-20 07:30:23] [26] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/facilities
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MjUxNjQ5NiwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyNTE2NDk2LCJleHAiOjE2OTI1MjAwOTYsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.kflmTElUIR-bNGkHYoaY5SUmQ9QwnS0KXsA97n74M40K2n5J_QK0wt-3GVCT3oR0ptc7YTzECPPRG2o1rT9rRrz7wDMtETgJP1W-0AvvqPcxl0p9jtxr7G6Dygw3WYsiRILYfQHvQyO1Agt_RXXoHmHZcdMC1Dxg1QTbHSYvWMqwlaSRtetqKqkuQvpKeecC3QXXcDASmfF3rGTpGs6vxxLkgFCuNIuSsnRXLg_cvQm4PJfr67RNNR4EMisbgg4wsUfcT41eVNvcrnGsGFGeWrt5jI-gGinGIgAyyXKEaqCDdG22_k1nXWwC7OnG4MedeT6YWJ8VcdFDjOfClnUYKg
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "name": "Lind-Connelly",
+    "facilityGroupId": 0,
+    "facilityTypeId": 0,
+    "address": {
+        "placeId": "4e345543-229e-4362-b1ef-453ffb9663c5",
+        "primaryStreet": "491 Metz Run58323288954512855347467082383338362017336829222720",
+        "secondaryStreet": "Suite 479",
+        "city": "Torphyville",
+        "state": "",
+        "countryCode": "EH",
+        "latitude": "30.6279",
+        "longitude": "22.7323",
+        "country": "string",
+        "formatAddress": "asd"
+    },
+    "contactNumber": "3359846430",
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": true,
+    "timezone": ""
+}
+HTTP/1.1 400 Bad Request
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: 8f8688bf362e874156ee7edd4c0477cd
+Date: Sun, 20 Aug 2023 07:30:23 GMT
+Server: Google Frontend
+Content-Length: 144
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "timestamp": "2023-08-20T07:30:23.690098752",
+    "errorCode": null,
+    "title": "Street address maximum size is 50 characters",
+    "details": null,
+    "path": null
+}
+
+[2023-08-20 07:30:23] [26] [INFO] Assert that error response is correct
+[2023-08-20 07:30:23] [26] [INFO] TEST [LifeFitness Backend Auto Tests - checkPrimaryStreetWithMoreThanFiftyChars] PASSED at [07:30:23 2023-08-20]

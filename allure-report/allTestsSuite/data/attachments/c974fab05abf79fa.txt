@@ -1,0 +1,50 @@
+[2023-08-22 07:41:25] [24] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-22 07:41:25] [24] [INFO] TEST [LifeFitness Backend Auto Tests - checkResetPasswordWithEmptyEmail] STARTED at [07:41:25 2023-08-22]
+[2023-08-22 07:41:25] [24] [INFO] Reset password expecting error response code
+[2023-08-22 07:41:25] [24] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-system-utils/api/v1/password/reset?email=%22%22
+Request params:	<none>
+Query params:	email=%22%22
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=P3jxJislR3PNt1P1gQxXepwRY8RiHGTps+Yld/5Ot50=
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 400 Bad Request
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: 9ff5e965a0761ef316c03a2cdbf5b173
+Date: Tue, 22 Aug 2023 07:41:25 GMT
+Server: Google Frontend
+Content-Length: 125
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "timestamp": [
+        2023,
+        8,
+        22,
+        7,
+        41,
+        25,
+        356260743
+    ],
+    "errorCode": 400,
+    "title": "BAD_REQUEST",
+    "details": "User does not exist",
+    "path": null
+}
+
+[2023-08-22 07:41:25] [24] [INFO] Assert that api call error code is correct
+[2023-08-22 07:41:25] [24] [INFO] TEST [LifeFitness Backend Auto Tests - checkResetPasswordWithEmptyEmail] PASSED at [07:41:25 2023-08-22]

@@ -1,0 +1,187 @@
+[2023-08-25 09:19:19] [22] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-25 09:19:19] [22] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatTimezoneIsOptional] STARTED at [09:19:19 2023-08-25]
+[2023-08-25 09:19:19] [22] [INFO] Creating new facility
+[2023-08-25 09:19:19] [22] [INFO] Setting default add facility body values
+[2023-08-25 09:19:19] [22] [INFO] Base properties loaded: api/core/controllers/user/postfacility/post_facility.properties
+[2023-08-25 09:19:19] [22] [INFO] Get country code except embargoed ones
+[2023-08-25 09:19:19] [22] [INFO] Create facility expecting success
+[2023-08-25 09:19:20] [22] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/facilities
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5Mjk1NTE1MiwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyOTU1MTUyLCJleHAiOjE2OTI5NTg3NTIsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.S0wEwgpcbaYT9x6AymSKH9fZq2lbMmLCVUiGG4NNVQv-9xpyubVoRrVlBodr-lsk__i6ljzaD7DDB2OPZla1rtHdF3OTFKqSJpCo4c1Dl3EuHfvgNXBuPUGDeY4yisS_gWcu3fO8_s4TRgmUSMqT4Lc0DEZc_A8PQdnYVfGnB1xIYD_Kzq03F7E2ePSkYBofqBeHcia3f9aAJ4kE0e3DeQvKPW_Ctg43ALZpJQKxH_vGPgzvDQ_tp-rsDB2Cb5_X93PNKKMPBLST4v_Dm1kxTUn7eb_Pvn8_f0iFaJTrpHdvLqdu5UKymdqNECoFH9IbO5qCPnf3Azp3MU6m35_Sww
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "name": "Mueller, Lynch and Macejkovic",
+    "facilityGroupId": 0,
+    "facilityTypeId": 0,
+    "address": {
+        "placeId": "252f310b-2d64-4193-8889-f0160ce3e2d4",
+        "primaryStreet": "199 Cartwright Springs",
+        "secondaryStreet": "Apt. 415",
+        "city": "Strackestad",
+        "state": "",
+        "countryCode": "NZ",
+        "latitude": "30.6279",
+        "longitude": "22.7323",
+        "country": "string",
+        "formatAddress": "asd"
+    },
+    "contactNumber": "5293346264",
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": true,
+    "timezone": null
+}
+HTTP/1.1 201 Created
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: 517417f9d4cde7d03515bb7a459ef32f
+Date: Fri, 25 Aug 2023 09:19:20 GMT
+Server: Google Frontend
+Content-Length: 669
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "id": 40159,
+    "legacyId": null,
+    "ipAddress": null,
+    "facilityGroupId": null,
+    "name": "Mueller, Lynch and Macejkovic",
+    "facilityTypeId": null,
+    "address": {
+        "id": 40183,
+        "placeId": "252f310b-2d64-4193-8889-f0160ce3e2d4",
+        "primaryStreet": "199 Cartwright Springs",
+        "secondaryStreet": "Apt. 415",
+        "city": "Strackestad",
+        "region": "APAC",
+        "zipCode": null,
+        "state": "",
+        "countryCode": "NZ",
+        "latitude": 30.6279,
+        "longitude": 22.7323,
+        "country": "string",
+        "formatAddress": "asd",
+        "rawData": null
+    },
+    "contactNumber": "5293346264",
+    "timezone": {
+        "id": 186,
+        "dstOffset": 0,
+        "rawOffset": 7200000,
+        "timezoneId": "Africa/Tripoli",
+        "name": "Eastern European Standard Time"
+    },
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": false
+}
+
+[2023-08-25 09:19:20] [22] [INFO] Updating facility without timezone field
+[2023-08-25 09:19:20] [22] [INFO] Setting default update facility body values
+[2023-08-25 09:19:20] [22] [INFO] Base properties loaded: api/core/controllers/facility/putfacility/put_facility.properties
+[2023-08-25 09:19:20] [22] [INFO] Get country code except embargoed ones
+[2023-08-25 09:19:20] [22] [INFO] Updating facility expect success
+[2023-08-25 09:19:20] [22] [INFO] Request method:	PUT
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/facilities
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5Mjk1NTE1MiwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyOTU1MTUyLCJleHAiOjE2OTI5NTg3NTIsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.S0wEwgpcbaYT9x6AymSKH9fZq2lbMmLCVUiGG4NNVQv-9xpyubVoRrVlBodr-lsk__i6ljzaD7DDB2OPZla1rtHdF3OTFKqSJpCo4c1Dl3EuHfvgNXBuPUGDeY4yisS_gWcu3fO8_s4TRgmUSMqT4Lc0DEZc_A8PQdnYVfGnB1xIYD_Kzq03F7E2ePSkYBofqBeHcia3f9aAJ4kE0e3DeQvKPW_Ctg43ALZpJQKxH_vGPgzvDQ_tp-rsDB2Cb5_X93PNKKMPBLST4v_Dm1kxTUn7eb_Pvn8_f0iFaJTrpHdvLqdu5UKymdqNECoFH9IbO5qCPnf3Azp3MU6m35_Sww
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "id": "40159",
+    "name": "Ziemann, Maggio and Heathcote",
+    "facilityGroupId": 0,
+    "facilityTypeId": 5,
+    "address": {
+        "placeId": "5159bb8e-ecf4-488d-9fa2-16e11f2f96e7",
+        "primaryStreet": "741 Aurore Rapid",
+        "secondaryStreet": "Suite 679",
+        "city": "Jakubowskiside",
+        "state": "",
+        "countryCode": "IS",
+        "latitude": "30.6279",
+        "longitude": "22.7323",
+        "country": "string",
+        "formatAddress": "asd"
+    },
+    "contactNumber": "3670541269",
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": true
+}
+HTTP/1.1 200 OK
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+Transfer-Encoding: chunked
+Date: Fri, 25 Aug 2023 09:19:20 GMT
+Server: Google Frontend
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "id": 40159,
+    "legacyId": null,
+    "ipAddress": null,
+    "facilityGroupId": null,
+    "name": "Ziemann, Maggio and Heathcote",
+    "facilityTypeId": 5,
+    "address": {
+        "id": 40183,
+        "placeId": "5159bb8e-ecf4-488d-9fa2-16e11f2f96e7",
+        "primaryStreet": "741 Aurore Rapid",
+        "secondaryStreet": "Suite 679",
+        "city": "Jakubowskiside",
+        "region": "EMEA",
+        "zipCode": null,
+        "state": "",
+        "countryCode": "IS",
+        "latitude": 30.6279,
+        "longitude": 22.7323,
+        "country": "string",
+        "formatAddress": "asd",
+        "rawData": null
+    },
+    "contactNumber": "5293346264",
+    "timezone": {
+        "id": 186,
+        "dstOffset": 0,
+        "rawOffset": 7200000,
+        "timezoneId": "Africa/Tripoli",
+        "name": "Eastern European Standard Time"
+    },
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": false
+}
+
+[2023-08-25 09:19:20] [22] [INFO] Asserting that timezone value is correct
+[2023-08-25 09:19:20] [22] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatTimezoneIsOptional] PASSED at [09:19:20 2023-08-25]

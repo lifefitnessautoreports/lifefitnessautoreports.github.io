@@ -1,0 +1,70 @@
+[2023-08-17 07:38:31] [25] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-17 07:38:31] [25] [INFO] TEST [LifeFitness Backend Auto Tests - checkUpdatingPasswordWithEmailAsNull] STARTED at [07:38:31 2023-08-17]
+[2023-08-17 07:38:31] [25] [INFO] Base properties loaded: api/utils/controllers/password/postupdatepassword/rq_update_password.properties
+[2023-08-17 07:38:31] [25] [INFO] Update password expecting error response code
+[2023-08-17 07:38:31] [25] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-system-utils/api/v1/password/update
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=P3jxJislR3PNt1P1gQxXepwRY8RiHGTps+Yld/5Ot50=
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "token": "token",
+    "encodedPassword": "encodedPassword"
+}
+HTTP/1.1 400 Bad Request
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/problem+json
+X-Cloud-Trace-Context: 2429217ef59938b3764ff62a3240f1ef
+Date: Thu, 17 Aug 2023 07:38:31 GMT
+Server: Google Frontend
+Content-Length: 148
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "type": "about:blank",
+    "title": "Bad Request",
+    "status": 400,
+    "detail": "Invalid request content.",
+    "instance": "/halo-system-utils/api/v1/password/update"
+}
+
+[2023-08-17 07:38:31] [25] [INFO] Asserting error details are correct
+[2023-08-17 07:38:31] [25] [ERROR] TEST [LifeFitness Backend Auto Tests - checkUpdatingPasswordWithEmailAsNull] SKIPPED at [07:38:31 2023-08-17] - Error title is incorrect expected [Email can't be empty] but found [Bad Request]
+
+org.testng.Assert.fail(Assert.java:110)
+org.testng.Assert.failNotEquals(Assert.java:1577)
+org.testng.Assert.assertEqualsImpl(Assert.java:149)
+org.testng.Assert.assertEquals(Assert.java:131)
+org.testng.Assert.assertEquals(Assert.java:655)
+com.lifefitness.qa.api.utils.controllers.password.postupdatepassword.PostUpdatePasswordTest.checkUpdatingPasswordWithEmailAsNull(PostUpdatePasswordTest.java:222)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:568)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+java.base/java.lang.Thread.run(Thread.java:833)
+[2023-08-17 07:38:31] [25] [INFO] Attaching logs to Allure report

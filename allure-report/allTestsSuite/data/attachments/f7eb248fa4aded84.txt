@@ -1,0 +1,161 @@
+[2023-08-25 07:29:57] [26] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-25 07:29:57] [26] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatSecondaryStreetIsOptional] STARTED at [07:29:57 2023-08-25]
+[2023-08-25 07:29:57] [26] [INFO] Creating facility without secondary street expecting success
+[2023-08-25 07:29:57] [26] [INFO] Setting default add facility body values
+[2023-08-25 07:29:57] [26] [INFO] Base properties loaded: api/core/controllers/user/postfacility/post_facility.properties
+[2023-08-25 07:29:57] [26] [INFO] Get country code except embargoed ones
+[2023-08-25 07:29:57] [26] [INFO] Create facility expecting success
+[2023-08-25 07:29:57] [26] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/facilities
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5Mjk0ODUwMSwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyOTQ4NTAxLCJleHAiOjE2OTI5NTIxMDEsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.Dn4rjSt1_zRX5coTGc5wUxGl8RjsVaQ5geSO6ZR2jMq3iVt6bRD0XlU7QDelTBqAgD7zJbbUcSdbaNc6n2PDI30NkGkxv1V_SqQKJ1q2JAECH1H_XsLbmeZHlh1W--LWKTuTIC7Fz_29ntENB4f6or7iCL9jW_SrVFsUg5xw4YbuJVGZVPwfr2eWN_-J63XLBmuvheK1_LA4o37WbongfttaRrFpi4GtqKaSmJRN-_kvWcVmh897BrqCzPFtLQWakIpfqxbN4fZHHWWLxYKqlJjq0FsqMDDqnjuI-86ymi_26w_s_W-V7nmOWFysCNxvP7ffiXhI9y2bSryzKTt_-w
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "name": "Lehner Group",
+    "facilityGroupId": 0,
+    "facilityTypeId": 0,
+    "address": {
+        "placeId": "1976fa7b-bf47-4d1d-bb2c-538bfdce7da8",
+        "primaryStreet": "45121 Gottlieb Island",
+        "city": "Emileberg",
+        "state": "",
+        "countryCode": "BG",
+        "latitude": "30.6279",
+        "longitude": "22.7323",
+        "country": "string",
+        "formatAddress": "asd"
+    },
+    "contactNumber": "5703970034",
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": true,
+    "timezone": null
+}
+HTTP/1.1 201 Created
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: cf8b396205e8a3872b92f54040407f83
+Date: Fri, 25 Aug 2023 07:29:57 GMT
+Server: Google Frontend
+Content-Length: 643
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "id": 39861,
+    "legacyId": null,
+    "ipAddress": null,
+    "facilityGroupId": null,
+    "name": "Lehner Group",
+    "facilityTypeId": null,
+    "address": {
+        "id": 39885,
+        "placeId": "1976fa7b-bf47-4d1d-bb2c-538bfdce7da8",
+        "primaryStreet": "45121 Gottlieb Island",
+        "secondaryStreet": null,
+        "city": "Emileberg",
+        "region": "EMEA",
+        "zipCode": null,
+        "state": "",
+        "countryCode": "BG",
+        "latitude": 30.6279,
+        "longitude": 22.7323,
+        "country": "string",
+        "formatAddress": "asd",
+        "rawData": null
+    },
+    "contactNumber": "5703970034",
+    "timezone": {
+        "id": 186,
+        "dstOffset": 0,
+        "rawOffset": 7200000,
+        "timezoneId": "Africa/Tripoli",
+        "name": "Eastern European Standard Time"
+    },
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": false
+}
+
+[2023-08-25 07:29:57] [26] [INFO] Getting facility from system
+[2023-08-25 07:29:57] [26] [INFO] Get facility by id expecting success
+[2023-08-25 07:29:57] [26] [INFO] Request method:	GET
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/facilities/39861
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	facilityId=39861
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5Mjk0ODUwMSwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyOTQ4NTAxLCJleHAiOjE2OTI5NTIxMDEsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.Dn4rjSt1_zRX5coTGc5wUxGl8RjsVaQ5geSO6ZR2jMq3iVt6bRD0XlU7QDelTBqAgD7zJbbUcSdbaNc6n2PDI30NkGkxv1V_SqQKJ1q2JAECH1H_XsLbmeZHlh1W--LWKTuTIC7Fz_29ntENB4f6or7iCL9jW_SrVFsUg5xw4YbuJVGZVPwfr2eWN_-J63XLBmuvheK1_LA4o37WbongfttaRrFpi4GtqKaSmJRN-_kvWcVmh897BrqCzPFtLQWakIpfqxbN4fZHHWWLxYKqlJjq0FsqMDDqnjuI-86ymi_26w_s_W-V7nmOWFysCNxvP7ffiXhI9y2bSryzKTt_-w
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 200 OK
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+Transfer-Encoding: chunked
+Date: Fri, 25 Aug 2023 07:29:57 GMT
+Server: Google Frontend
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "id": 39861,
+    "legacyId": null,
+    "ipAddress": null,
+    "facilityGroupId": null,
+    "name": "Lehner Group",
+    "facilityTypeId": null,
+    "address": {
+        "id": 39885,
+        "placeId": "1976fa7b-bf47-4d1d-bb2c-538bfdce7da8",
+        "primaryStreet": "45121 Gottlieb Island",
+        "secondaryStreet": null,
+        "city": "Emileberg",
+        "region": "EMEA",
+        "zipCode": null,
+        "state": "",
+        "countryCode": "BG",
+        "latitude": 30.6279,
+        "longitude": 22.7323,
+        "country": "string",
+        "formatAddress": "asd",
+        "rawData": null
+    },
+    "contactNumber": "5703970034",
+    "timezone": {
+        "id": 186,
+        "dstOffset": 0,
+        "rawOffset": 7200000,
+        "timezoneId": "Africa/Tripoli",
+        "name": "Eastern European Standard Time"
+    },
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": false
+}
+
+[2023-08-25 07:29:57] [26] [INFO] Asserting that facility was created in system
+[2023-08-25 07:29:57] [26] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatSecondaryStreetIsOptional] PASSED at [07:29:57 2023-08-25]

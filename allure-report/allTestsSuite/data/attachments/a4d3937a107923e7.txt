@@ -1,0 +1,349 @@
+[2023-08-24 12:07:21] [24] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatUserCanBeCreatedWithCamelCaseEmail] STARTED at [12:07:21 2023-08-24]
+[2023-08-24 12:07:21] [24] [INFO] Setting default registration body values
+[2023-08-24 12:07:21] [24] [INFO] Base properties loaded: api/core/controllers/user/postregistration/registration.properties
+[2023-08-24 12:07:21] [24] [INFO] Get country code except embargoed ones
+[2023-08-24 12:07:21] [24] [INFO] Registering user with lifeFitnessPostman+87640569@gmail.com email
+[2023-08-24 12:07:22] [24] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/registration
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5Mjg3NjE5MCwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyODc2MTkwLCJleHAiOjE2OTI4Nzk3OTAsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.fekhN28Uaoa7LCrUlSghUT3tmgGrmBplxJ7gH8uCxv9n1jqqOT7ArH3jYkNk5EUGiarTy8fMHUUf8kGGIJkmVbYMsqcjj9kauimdpiokMXaNCIsj--IkatxbdWzmhhvFzOG1ObfIqCti2_YAxHSrI5JNWrNYsbnOz8Nw4bkvwyra8o7OIMaupW0dj3zc84iRe1jfoNPFtT1SKlSvVR93nuhrXCPLzwr5Jcji08ziiryRfnLTQADtcCWGfdkST94Da9lH4bOLjHXi3ysSZObLM7Z00s2TIdf4uKEV8aEcTqvrfudqSeQfdLfkC6OBzCCIrE3Fn11KdsV0-Z_5qEfk5Q
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "user": {
+        "id": 0,
+        "firstName": "Bart",
+        "lastName": "Pacocha",
+        "email": "lifeFitnessPostman+87640569@gmail.com",
+        "preferredUnit": "METRICS",
+        "preferredLanguageCode": "",
+        "phoneNumber": "",
+        "officePhoneNumber": "",
+        "imageUrl": "",
+        "imageKey": "",
+        "thumbnailUrl": "",
+        "thumbnailKey": "",
+        "isAllowedMarketingEmails": null,
+        "isAllowedFeedbackProviding": null,
+        "useTerms": null
+    },
+    "facility": {
+        "id": 0,
+        "legacyId": 0,
+        "ipAddress": "",
+        "facilityGroupId": 0,
+        "name": "Kreiger-Stamm",
+        "facilityTypeId": 0,
+        "address": {
+            "placeId": "215b24d1-43c8-4221-9759-4c8acca25550",
+            "primaryStreet": "3747 Loris Gardens",
+            "secondaryStreet": "Suite 287",
+            "city": "South Santo",
+            "region": "",
+            "zipCode": "223610",
+            "state": "",
+            "countryCode": "GM",
+            "latitude": "30.6279",
+            "longitude": "22.7323",
+            "country": "string",
+            "formatAddress": "string",
+            "rawData": "string"
+        },
+        "contactNumber": "9928350222",
+        "timezone": null,
+        "openTime": "10:00 AM",
+        "closeTime": "6:00 PM",
+        "isOpen24Hours": true
+    }
+}
+HTTP/1.1 201 Created
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: ec3378c4871cd9ce6ce83ec388ec2097;o=1
+Date: Thu, 24 Aug 2023 12:07:22 GMT
+Server: Google Frontend
+Content-Length: 1063
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "user": {
+        "id": 51728,
+        "firstName": "Bart",
+        "lastName": "Pacocha",
+        "email": "lifefitnesspostman+87640569@gmail.com",
+        "preferredUnit": "METRICS",
+        "preferredLanguageCode": "en-US",
+        "phoneNumber": "",
+        "officePhoneNumber": "",
+        "profilePicUrl": null,
+        "imageKey": "",
+        "isEnabled": true,
+        "isAllowedMarketingEmails": true,
+        "isAllowedFeedbackProviding": true,
+        "useTerms": true,
+        "encodedPassword": null,
+        "status": "ACTIVE",
+        "roleIds": [
+            2
+        ]
+    },
+    "facility": {
+        "id": 39580,
+        "legacyId": 0,
+        "ipAddress": "",
+        "facilityGroupId": null,
+        "name": "Kreiger-Stamm",
+        "facilityTypeId": null,
+        "address": {
+            "id": 39604,
+            "placeId": "215b24d1-43c8-4221-9759-4c8acca25550",
+            "primaryStreet": "3747 Loris Gardens",
+            "secondaryStreet": "Suite 287",
+            "city": "South Santo",
+            "region": "EMEA",
+            "zipCode": "223610",
+            "state": "",
+            "countryCode": "GM",
+            "latitude": 30.6279,
+            "longitude": 22.7323,
+            "country": "string",
+            "formatAddress": "string",
+            "rawData": "string"
+        },
+        "contactNumber": "9928350222",
+        "timezone": {
+            "id": 186,
+            "dstOffset": 0,
+            "rawOffset": 7200000,
+            "timezoneId": "Africa/Tripoli",
+            "name": "Eastern European Standard Time"
+        },
+        "openTime": "10:00 AM",
+        "closeTime": "6:00 PM",
+        "isOpen24Hours": true
+    }
+}
+
+[2023-08-24 12:08:37] [24] [INFO] Setting default IDP method to call
+[2023-08-24 12:08:37] [24] [INFO] Setting up IDP method to SIGN_UP
+[2023-08-24 12:08:37] [24] [INFO] Base properties loaded: api/identityplatform/idp.properties
+[2023-08-24 12:08:37] [24] [INFO] Sending PostSignUp IDP method to get access token
+[2023-08-24 12:08:37] [24] [INFO] Request method:	POST
+Request URI:	https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyDuJaUYc3JtGHvbdX_7b-Nav25lXPmzuN0
+Request params:	<none>
+Query params:	key=AIzaSyDuJaUYc3JtGHvbdX_7b-Nav25lXPmzuN0
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "returnSecureToken": true,
+    "email": "lifefitnesspostman+87640569@gmail.com",
+    "password": "lifefitnesspostman+87640569@gmail.com"
+}
+HTTP/1.1 200 OK
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Date: Thu, 24 Aug 2023 12:08:37 GMT
+Content-Type: application/json; charset=UTF-8
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+Content-Encoding: gzip
+Server: ESF
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+{
+    "kind": "identitytoolkit#SignupNewUserResponse",
+    "idToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5Mjg3ODkxNywidXNlcl9pZCI6InIya21meExqSHRmdGtDbTV5cjk1RVJ5T0ZGazEiLCJzdWIiOiJyMmttZnhMakh0ZnRrQ201eXI5NUVSeU9GRmsxIiwiaWF0IjoxNjkyODc4OTE3LCJleHAiOjE2OTI4ODI1MTcsImVtYWlsIjoibGlmZWZpdG5lc3Nwb3N0bWFuKzg3NjQwNTY5QGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJsaWZlZml0bmVzc3Bvc3RtYW4rODc2NDA1NjlAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.iVoQ1q3JBY-YbrsU0G8p5ML4WSyMBM_o2GSIAM5XpVkx-iS7_zzdzDKJ5bS5cq1cftoMMWwpm67quc_HI7i_0nPQgRluQTnchtPDK4Q4-ouh6PiDnzAXKk1lfcGcwVKZwnTzOmf_SgpF46ggCY5cFQsxKZE7ywCCI7o0Da8lhvNNBO4oymcMqRiNUyPUREA23oQfgWKa2lTf0IJe2oR9Bf5Di-1260d9jE-34VRZG2aYhbqp0wvjRfx0Ro6pTovKswSGcUEL1GRksPRJY20Ihj6aLUwtSFIyduqy8rXnM1A6HLSfvjSbRTYAgV0Cv7OfYZivgzEiwI-tEHJ8v-Lh3A",
+    "email": "lifefitnesspostman+87640569@gmail.com",
+    "refreshToken": "AMf-vBz3UReZAC0gD9rTO-7kLKYNjIcDnZ_lnee9k42f7Q_Xs78h-KSUFV5ljLSAhhtVQjdzQAIx5F7Lo5HBG-cKEULSjwyh1L7CdKplfevJko1erOKCYNtYY3Vj50fd6xIqNnVQ7iLMD6clrDLyF3r7FJer9r2sIuTuhEBtB4X9wdcWqwPGMlshZv-41BzXT8gIR8MZHCQMVHxU_fYcueTlvzSi2URdmw",
+    "expiresIn": "3600",
+    "localId": "r2kmfxLjHtftkCm5yr95ERyOFFk1"
+}
+
+[2023-08-24 12:08:37] [24] [INFO] Trying to parse IDP response to access token model
+[2023-08-24 12:08:37] [24] [INFO] Setting default IDP method to call
+[2023-08-24 12:08:37] [24] [INFO] Setting up IDP method to SIGN_IN_WITH_PASSWORD
+[2023-08-24 12:08:37] [24] [INFO] Base properties loaded: api/identityplatform/idp.properties
+[2023-08-24 12:08:37] [24] [INFO] Sending PostSignInWithPassword IDP method to get access token
+[2023-08-24 12:08:37] [24] [INFO] Request method:	POST
+Request URI:	https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyDuJaUYc3JtGHvbdX_7b-Nav25lXPmzuN0
+Request params:	<none>
+Query params:	key=AIzaSyDuJaUYc3JtGHvbdX_7b-Nav25lXPmzuN0
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "returnSecureToken": true,
+    "email": "lifefitnesspostman+87640569@gmail.com",
+    "password": "lifefitnesspostman+87640569@gmail.com"
+}
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Date: Thu, 24 Aug 2023 12:08:37 GMT
+Content-Type: application/json; charset=UTF-8
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+Content-Encoding: gzip
+Server: ESF
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+{
+    "kind": "identitytoolkit#VerifyPasswordResponse",
+    "localId": "r2kmfxLjHtftkCm5yr95ERyOFFk1",
+    "email": "lifefitnesspostman+87640569@gmail.com",
+    "displayName": "",
+    "idToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5Mjg3ODkxNywidXNlcl9pZCI6InIya21meExqSHRmdGtDbTV5cjk1RVJ5T0ZGazEiLCJzdWIiOiJyMmttZnhMakh0ZnRrQ201eXI5NUVSeU9GRmsxIiwiaWF0IjoxNjkyODc4OTE3LCJleHAiOjE2OTI4ODI1MTcsImVtYWlsIjoibGlmZWZpdG5lc3Nwb3N0bWFuKzg3NjQwNTY5QGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJsaWZlZml0bmVzc3Bvc3RtYW4rODc2NDA1NjlAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.iVoQ1q3JBY-YbrsU0G8p5ML4WSyMBM_o2GSIAM5XpVkx-iS7_zzdzDKJ5bS5cq1cftoMMWwpm67quc_HI7i_0nPQgRluQTnchtPDK4Q4-ouh6PiDnzAXKk1lfcGcwVKZwnTzOmf_SgpF46ggCY5cFQsxKZE7ywCCI7o0Da8lhvNNBO4oymcMqRiNUyPUREA23oQfgWKa2lTf0IJe2oR9Bf5Di-1260d9jE-34VRZG2aYhbqp0wvjRfx0Ro6pTovKswSGcUEL1GRksPRJY20Ihj6aLUwtSFIyduqy8rXnM1A6HLSfvjSbRTYAgV0Cv7OfYZivgzEiwI-tEHJ8v-Lh3A",
+    "registered": true,
+    "refreshToken": "AMf-vBxBS8W-FB6vm440sn8Wt4050lVCf33tcwwp0P4CV5353tzTTnjNEXCcUvQqMqNfsulJGBtE1eNnUFUWuMJPbihn3oxf6fCjE9H-0WSTnLJUmpW94LsT69zs9Hq9d0-Sv6wYAB50KFw9g9Hmgf1Kq-TkiaJMab5UyyAQyPAVpnlLWiFKSRGbdcVnO2V_7e8YsKjk18h78ujIt6ZkRjc0GnIlCziIJw",
+    "expiresIn": "3600"
+}
+
+[2023-08-24 12:08:37] [24] [INFO] Trying to parse IDP response to access token model
+[2023-08-24 12:08:37] [24] [INFO] Setting default add user body values
+[2023-08-24 12:08:37] [24] [INFO] Base properties loaded: api/core/controllers/user/postuser/create_user.properties
+[2023-08-24 12:08:37] [24] [INFO] Creating user expecting success
+[2023-08-24 12:10:37] [24] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5Mjg3ODkxNywidXNlcl9pZCI6InIya21meExqSHRmdGtDbTV5cjk1RVJ5T0ZGazEiLCJzdWIiOiJyMmttZnhMakh0ZnRrQ201eXI5NUVSeU9GRmsxIiwiaWF0IjoxNjkyODc4OTE3LCJleHAiOjE2OTI4ODI1MTcsImVtYWlsIjoibGlmZWZpdG5lc3Nwb3N0bWFuKzg3NjQwNTY5QGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJsaWZlZml0bmVzc3Bvc3RtYW4rODc2NDA1NjlAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.iVoQ1q3JBY-YbrsU0G8p5ML4WSyMBM_o2GSIAM5XpVkx-iS7_zzdzDKJ5bS5cq1cftoMMWwpm67quc_HI7i_0nPQgRluQTnchtPDK4Q4-ouh6PiDnzAXKk1lfcGcwVKZwnTzOmf_SgpF46ggCY5cFQsxKZE7ywCCI7o0Da8lhvNNBO4oymcMqRiNUyPUREA23oQfgWKa2lTf0IJe2oR9Bf5Di-1260d9jE-34VRZG2aYhbqp0wvjRfx0Ro6pTovKswSGcUEL1GRksPRJY20Ihj6aLUwtSFIyduqy8rXnM1A6HLSfvjSbRTYAgV0Cv7OfYZivgzEiwI-tEHJ8v-Lh3A
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "id": 1,
+    "firstName": "Lashaunda",
+    "lastName": "Rippin",
+    "email": "lifeFitnessPostman+03059764@gmail.com",
+    "roleIds": [
+        2,
+        3,
+        4
+    ],
+    "supplementaryPermissionIds": [
+        1,
+        2,
+        3,
+        4
+    ],
+    "facilityIds": [
+        39580
+    ],
+    "profilePicUrl": ""
+}
+HTTP/1.1 504 Gateway Timeout
+content-type: text/plain
+X-Cloud-Trace-Context: 75f1dcbe813deb2d892f6f5c3950bf20
+Date: Thu, 24 Aug 2023 12:10:37 GMT
+Server: Google Frontend
+Content-Length: 24
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+upstream request timeout
+
+[2023-08-24 12:10:37] [24] [ERROR] TEST [LifeFitness Backend Auto Tests - checkThatUserCanBeCreatedWithCamelCaseEmail] FAILED at [12:10:37 2023-08-24] - 2 expectations failed.
+Expected status code <201> but was <504>.
+
+Expected status line a string containing "Created" doesn't match actual status line "HTTP/1.1 504 Gateway Timeout".
+
+
+java.base/jdk.internal.reflect.GeneratedConstructorAccessor102.newInstance(Unknown Source)
+java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)
+org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1656)
+jdk.internal.reflect.GeneratedMethodAccessor79.invoke(Unknown Source)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:568)
+org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1029)
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:816)
+groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1661)
+jdk.internal.reflect.GeneratedMethodAccessor78.invoke(Unknown Source)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:568)
+org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1029)
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:816)
+groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy:175)
+io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy)
+com.zebrunner.carina.api.http.HttpClient.send(HttpClient.java:43)
+com.zebrunner.carina.api.AbstractApiMethod.callAPI(AbstractApiMethod.java:301)
+com.zebrunner.carina.api.AbstractApiMethodV2.callAPI(AbstractApiMethodV2.java:189)
+com.zebrunner.carina.api.AbstractApiMethod.callAPI(AbstractApiMethod.java:279)
+com.zebrunner.carina.api.AbstractApiMethodV2.callAPI(AbstractApiMethodV2.java:181)
+com.lifefitness.qa.api.corecontrollers.user.postuser.PostUserHelper.createUserExpectSuccess(PostUserHelper.java:24)
+com.lifefitness.qa.api.core.controllers.user.postuser.PostUserTest.checkThatUserCanBeCreatedWithCamelCaseEmail(PostUserTest.java:61)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:568)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+java.base/java.lang.Thread.run(Thread.java:833)

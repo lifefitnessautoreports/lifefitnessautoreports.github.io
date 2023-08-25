@@ -1,0 +1,176 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Could not get message.",
+      "children" : [ {
+        "name" : "Check that user can be denied with camel case email",
+        "uid" : "b247c9ec8943b366",
+        "parentUid" : "b874a5740e04697d04400ada0a3a9da1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692955305897,
+          "stop" : 1692955365933,
+          "duration" : 60036
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that user can be denied with lower case email",
+        "uid" : "4a9faeb09f9a9b57",
+        "parentUid" : "b874a5740e04697d04400ada0a3a9da1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692955307050,
+          "stop" : 1692955366332,
+          "duration" : 59282
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check user gets email when another user registering to it's facility then denying it",
+        "uid" : "fde6a5733a2e16b4",
+        "parentUid" : "b874a5740e04697d04400ada0a3a9da1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1692955607897,
+          "stop" : 1692955665399,
+          "duration" : 57502
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b874a5740e04697d04400ada0a3a9da1"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  }, {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "Status code is incorrect expected [403] but found [200]",
+      "children" : [ {
+        "name" : "Check sending invitation with non admin user",
+        "uid" : "c75e48ed684803fb",
+        "parentUid" : "b046d7689c3a2d108fa37edb77e7bc6e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692955536427,
+          "stop" : 1692955542718,
+          "duration" : 6291
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b046d7689c3a2d108fa37edb77e7bc6e"
+    }, {
+      "name" : "2 expectations failed.\nExpected status code <200> but was <400>.\n\nExpected status line a string containing \"OK\" doesn't match actual status line \"HTTP/1.1 400 Bad Request\".\n",
+      "children" : [ {
+        "name" : "Check that EncodedPassword field was updated and new password works after update",
+        "uid" : "4f22bc8c82f929bd",
+        "parentUid" : "d60ae615585723b91c946f2aecf98314",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692955694763,
+          "stop" : 1692955756650,
+          "duration" : 61887
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that preferredUnit field is optional",
+        "uid" : "669a8b4a3bf098bd",
+        "parentUid" : "d60ae615585723b91c946f2aecf98314",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692955699720,
+          "stop" : 1692955761766,
+          "duration" : 62046
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that preferred language code field is optional",
+        "uid" : "40be4cfc032c5c88",
+        "parentUid" : "d60ae615585723b91c946f2aecf98314",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692955759049,
+          "stop" : 1692955941339,
+          "duration" : 182290
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check that users profile can be updated",
+        "uid" : "bc2e0c7e39ac3683",
+        "parentUid" : "d60ae615585723b91c946f2aecf98314",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692955760158,
+          "stop" : 1692955941323,
+          "duration" : 181165
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d60ae615585723b91c946f2aecf98314"
+    }, {
+      "name" : "2 expectations failed.\nExpected status code <201> but was <403>.\n\nExpected status line a string containing \"Created\" doesn't match actual status line \"HTTP/1.1 403 Forbidden\".\n",
+      "children" : [ {
+        "name" : "Check updating password with camel case email",
+        "uid" : "99f2c014358b1bfc",
+        "parentUid" : "13afd964980c8edc7fa13f3093363614",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692955776016,
+          "stop" : 1692955944543,
+          "duration" : 168527
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check updating password with lower case email",
+        "uid" : "730662a48e36b0bc",
+        "parentUid" : "13afd964980c8edc7fa13f3093363614",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692955943207,
+          "stop" : 1692956006956,
+          "duration" : 63749
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "13afd964980c8edc7fa13f3093363614"
+    }, {
+      "name" : "2 expectations failed.\nExpected status code <201> but was <504>.\n\nExpected status line a string containing \"Created\" doesn't match actual status line \"HTTP/1.1 504 Gateway Timeout\".\n",
+      "children" : [ {
+        "name" : "Check updating password with upper case email",
+        "uid" : "8308c90a72a91bda",
+        "parentUid" : "a727d07fc69853f2c6dea8ddddc67107",
+        "status" : "failed",
+        "time" : {
+          "start" : 1692955956544,
+          "stop" : 1692956080102,
+          "duration" : 123558
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a727d07fc69853f2c6dea8ddddc67107"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

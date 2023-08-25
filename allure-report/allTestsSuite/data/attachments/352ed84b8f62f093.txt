@@ -1,0 +1,161 @@
+[2023-08-25 07:29:57] [25] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-25 07:29:57] [25] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatStateIsOptional] STARTED at [07:29:57 2023-08-25]
+[2023-08-25 07:29:57] [25] [INFO] Creating facility without state expecting success
+[2023-08-25 07:29:57] [25] [INFO] Setting default add facility body values
+[2023-08-25 07:29:57] [25] [INFO] Base properties loaded: api/core/controllers/user/postfacility/post_facility.properties
+[2023-08-25 07:29:57] [25] [INFO] Get country code except embargoed ones
+[2023-08-25 07:29:57] [25] [INFO] Create facility expecting success
+[2023-08-25 07:29:57] [25] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/facilities
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5Mjk0ODUwMSwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyOTQ4NTAxLCJleHAiOjE2OTI5NTIxMDEsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.Dn4rjSt1_zRX5coTGc5wUxGl8RjsVaQ5geSO6ZR2jMq3iVt6bRD0XlU7QDelTBqAgD7zJbbUcSdbaNc6n2PDI30NkGkxv1V_SqQKJ1q2JAECH1H_XsLbmeZHlh1W--LWKTuTIC7Fz_29ntENB4f6or7iCL9jW_SrVFsUg5xw4YbuJVGZVPwfr2eWN_-J63XLBmuvheK1_LA4o37WbongfttaRrFpi4GtqKaSmJRN-_kvWcVmh897BrqCzPFtLQWakIpfqxbN4fZHHWWLxYKqlJjq0FsqMDDqnjuI-86ymi_26w_s_W-V7nmOWFysCNxvP7ffiXhI9y2bSryzKTt_-w
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "name": "Brekke-Conroy",
+    "facilityGroupId": 0,
+    "facilityTypeId": 0,
+    "address": {
+        "placeId": "5be7571d-b866-4b85-ad28-8925d10fcd21",
+        "primaryStreet": "346 Rohan Crescent",
+        "secondaryStreet": "Suite 425",
+        "city": "Lake Lyman",
+        "countryCode": "FR",
+        "latitude": "30.6279",
+        "longitude": "22.7323",
+        "country": "string",
+        "formatAddress": "asd"
+    },
+    "contactNumber": "2247773701",
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": true,
+    "timezone": null
+}
+HTTP/1.1 201 Created
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: 0d9ad6979f6d59a2cecaf5cb750f2ddb
+Date: Fri, 25 Aug 2023 07:29:57 GMT
+Server: Google Frontend
+Content-Length: 651
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "id": 39862,
+    "legacyId": null,
+    "ipAddress": null,
+    "facilityGroupId": null,
+    "name": "Brekke-Conroy",
+    "facilityTypeId": null,
+    "address": {
+        "id": 39886,
+        "placeId": "5be7571d-b866-4b85-ad28-8925d10fcd21",
+        "primaryStreet": "346 Rohan Crescent",
+        "secondaryStreet": "Suite 425",
+        "city": "Lake Lyman",
+        "region": "EMEA",
+        "zipCode": null,
+        "state": null,
+        "countryCode": "FR",
+        "latitude": 30.6279,
+        "longitude": 22.7323,
+        "country": "string",
+        "formatAddress": "asd",
+        "rawData": null
+    },
+    "contactNumber": "2247773701",
+    "timezone": {
+        "id": 186,
+        "dstOffset": 0,
+        "rawOffset": 7200000,
+        "timezoneId": "Africa/Tripoli",
+        "name": "Eastern European Standard Time"
+    },
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": false
+}
+
+[2023-08-25 07:29:57] [25] [INFO] Getting facility from system
+[2023-08-25 07:29:57] [25] [INFO] Get facility by id expecting success
+[2023-08-25 07:29:57] [25] [INFO] Request method:	GET
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/facilities/39862
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	facilityId=39862
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5Mjk0ODUwMSwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyOTQ4NTAxLCJleHAiOjE2OTI5NTIxMDEsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.Dn4rjSt1_zRX5coTGc5wUxGl8RjsVaQ5geSO6ZR2jMq3iVt6bRD0XlU7QDelTBqAgD7zJbbUcSdbaNc6n2PDI30NkGkxv1V_SqQKJ1q2JAECH1H_XsLbmeZHlh1W--LWKTuTIC7Fz_29ntENB4f6or7iCL9jW_SrVFsUg5xw4YbuJVGZVPwfr2eWN_-J63XLBmuvheK1_LA4o37WbongfttaRrFpi4GtqKaSmJRN-_kvWcVmh897BrqCzPFtLQWakIpfqxbN4fZHHWWLxYKqlJjq0FsqMDDqnjuI-86ymi_26w_s_W-V7nmOWFysCNxvP7ffiXhI9y2bSryzKTt_-w
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 200 OK
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+Transfer-Encoding: chunked
+Date: Fri, 25 Aug 2023 07:29:57 GMT
+Server: Google Frontend
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "id": 39862,
+    "legacyId": null,
+    "ipAddress": null,
+    "facilityGroupId": null,
+    "name": "Brekke-Conroy",
+    "facilityTypeId": null,
+    "address": {
+        "id": 39886,
+        "placeId": "5be7571d-b866-4b85-ad28-8925d10fcd21",
+        "primaryStreet": "346 Rohan Crescent",
+        "secondaryStreet": "Suite 425",
+        "city": "Lake Lyman",
+        "region": "EMEA",
+        "zipCode": null,
+        "state": null,
+        "countryCode": "FR",
+        "latitude": 30.6279,
+        "longitude": 22.7323,
+        "country": "string",
+        "formatAddress": "asd",
+        "rawData": null
+    },
+    "contactNumber": "2247773701",
+    "timezone": {
+        "id": 186,
+        "dstOffset": 0,
+        "rawOffset": 7200000,
+        "timezoneId": "Africa/Tripoli",
+        "name": "Eastern European Standard Time"
+    },
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": false
+}
+
+[2023-08-25 07:29:57] [25] [INFO] Asserting that facility was created in system
+[2023-08-25 07:29:57] [25] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatStateIsOptional] PASSED at [07:29:57 2023-08-25]
