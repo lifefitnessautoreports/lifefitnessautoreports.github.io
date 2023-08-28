@@ -1,0 +1,91 @@
+[2023-08-25 03:23:40] [24] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-25 03:23:40] [24] [INFO] TEST [LifeFitness Backend Auto Tests - checkGettingLoginAttemptForPreviouslyLoggedInUser] STARTED at [15:23:40 2023-08-25]
+[2023-08-25 03:23:40] [24] [INFO] Setting default post login body values
+[2023-08-25 03:23:40] [24] [INFO] Getting Halo System Utils dev base URL
+[2023-08-25 03:23:40] [24] [INFO] Getting Halo System Utils dev Api Key
+[2023-08-25 03:23:40] [24] [INFO] Base properties loaded: api/utils/controllers/userloginattempt/postloginattempt/login_attempt.properties
+[2023-08-25 03:23:40] [24] [INFO] Attempting to login a user with lifeFitnessPostman+73457906@gmail.com email
+[2023-08-25 03:23:40] [24] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-system-utils/api/v1/login_attempt
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=P3jxJislR3PNt1P1gQxXepwRY8RiHGTps+Yld/5Ot50=
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "email": "lifeFitnessPostman+73457906@gmail.com",
+    "isLoginSuccess": false,
+    "lastFailedTimestamp": null,
+    "isLocked": null,
+    "loginAttemptCount": null
+}
+HTTP/1.1 201 Created
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: b341b2960268db34c225d79120f3a979
+Date: Fri, 25 Aug 2023 15:23:40 GMT
+Server: Google Frontend
+Content-Length: 146
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "email": "lifefitnesspostman+73457906@gmail.com",
+    "isLoginSuccess": null,
+    "lastFailedTimestamp": 1692977020780,
+    "isLocked": false,
+    "loginAttemptCount": 1
+}
+
+[2023-08-25 03:23:40] [24] [INFO] Getting Halo System Utils dev base URL
+[2023-08-25 03:23:40] [24] [INFO] Getting Halo System Utils dev Api Key
+[2023-08-25 03:23:40] [24] [INFO] Request method:	GET
+Request URI:	https://dev-halo5api1.halo.fitness/halo-system-utils/api/v1/login_attempt/status?email=lifeFitnessPostman%2B73457906%40gmail.com
+Request params:	<none>
+Query params:	email=lifeFitnessPostman+73457906@gmail.com
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=P3jxJislR3PNt1P1gQxXepwRY8RiHGTps+Yld/5Ot50=
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 200 OK
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+Transfer-Encoding: chunked
+Date: Fri, 25 Aug 2023 15:23:40 GMT
+Server: Google Frontend
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "email": "lifefitnesspostman+73457906@gmail.com",
+    "isLoginSuccess": null,
+    "lastFailedTimestamp": 1692977020780,
+    "isLocked": false,
+    "loginAttemptCount": 1
+}
+
+[2023-08-25 03:23:40] [24] [INFO] Assert that api call was successful
+[2023-08-25 03:23:40] [24] [INFO] TEST [LifeFitness Backend Auto Tests - checkGettingLoginAttemptForPreviouslyLoggedInUser] PASSED at [15:23:40 2023-08-25]

@@ -1,0 +1,82 @@
+[2023-08-25 02:14:11] [22] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-25 02:14:11] [22] [INFO] TEST [LifeFitness Backend Auto Tests - checkResetPasswordWithMultiDomainEmail] STARTED at [14:14:11 2023-08-25]
+[2023-08-25 02:31:56] [22] [INFO] Setting default IDP method to call
+[2023-08-25 02:31:56] [22] [INFO] Setting up IDP method to SIGN_UP
+[2023-08-25 02:31:56] [22] [INFO] Base properties loaded: api/identityplatform/idp.properties
+[2023-08-25 02:31:56] [22] [INFO] Sending PostSignUp IDP method to get access token
+[2023-08-25 02:31:57] [22] [INFO] Request method:	POST
+Request URI:	https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyDuJaUYc3JtGHvbdX_7b-Nav25lXPmzuN0
+Request params:	<none>
+Query params:	key=AIzaSyDuJaUYc3JtGHvbdX_7b-Nav25lXPmzuN0
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "returnSecureToken": true,
+    "email": "lifeFitnessPostman+22270143@gmail.com.sg",
+    "password": "j73zo8h90i"
+}
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Pragma: no-cache
+Date: Fri, 25 Aug 2023 14:31:57 GMT
+Content-Type: application/json; charset=UTF-8
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+Content-Encoding: gzip
+Server: ESF
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+{
+    "kind": "identitytoolkit#SignupNewUserResponse",
+    "idToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5Mjk3MzkxNywidXNlcl9pZCI6IkFMYnNjcE9RQlFVNWJCV1ZuaEIwN0hEbUdLaTEiLCJzdWIiOiJBTGJzY3BPUUJRVTViQldWbmhCMDdIRG1HS2kxIiwiaWF0IjoxNjkyOTczOTE3LCJleHAiOjE2OTI5Nzc1MTcsImVtYWlsIjoibGlmZWZpdG5lc3Nwb3N0bWFuKzIyMjcwMTQzQGdtYWlsLmNvbS5zZyIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJsaWZlZml0bmVzc3Bvc3RtYW4rMjIyNzAxNDNAZ21haWwuY29tLnNnIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.Bo7-OMg1oFQv2wTxJQLfdZ_v0Dx_x4ypvPFpufmI4IsHpUNJ3jFEyxK-jmoSM90TpTRSK5FmuMLQg-KGnRvyUy3aC_-3HDqla0-o07a0YOfim3Opv43eCOP3wEGvAv0F6aGk2BuPZRGe0VWS7wBRveNj8XIe_Q22G5AO3SMCSpsy6EFnM_fTjRQ9OgAPefGwN5q2vqxaW1V8t9kcQlyx22cYzZeLL7tpAJqfKPj4HnIN9gZ8XOIHo3-MHjhMy7l1fiEXTBLEL20hIK-oVuyQQDp72-vu09GZ7kJCAxHSB3PPjnPOUkZCwucoOyrv2OIW4mHKBbxCb7cH52wpXFKBzw",
+    "email": "lifefitnesspostman+22270143@gmail.com.sg",
+    "refreshToken": "AMf-vBx2Y_7ltZPHBj_SGJ2uPPEImc2wrLCmtwj73Hy_cLlJ2b02lumnu3rPvoawqDbKtcAxvoxYnA5prmuhUsBIYo-fpl0xdkUHVkPDpDpXVm_kWyM6TY3taQkjeDFT_Com3nPhPzLz44hmydmuKzWxmmerrJ_qLKhM-BLD8Nc8H3urubvJF5nKt7GewuTGrLUDjm9nvKmpaTYnirXQl0JdNUT4_R3lfg",
+    "expiresIn": "3600",
+    "localId": "ALbscpOQBQU5bBWVnhB07HDmGKi1"
+}
+
+[2023-08-25 02:31:57] [22] [INFO] Trying to parse IDP response to access token model
+[2023-08-25 02:32:03] [22] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-system-utils/api/v1/password/reset?email=lifeFitnessPostman%2B22270143%40gmail.com.sg
+Request params:	<none>
+Query params:	email=lifeFitnessPostman+22270143@gmail.com.sg
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=P3jxJislR3PNt1P1gQxXepwRY8RiHGTps+Yld/5Ot50=
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 201 Created
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+X-Cloud-Trace-Context: 5350cc384a55b343eea794f7a7d749c9
+Date: Fri, 25 Aug 2023 14:32:03 GMT
+Content-Type: text/html
+Server: Google Frontend
+Content-Length: 0
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+
+
+[2023-08-25 02:32:03] [22] [INFO] Assert that api call was successful
+[2023-08-25 02:32:03] [22] [INFO] TEST [LifeFitness Backend Auto Tests - checkResetPasswordWithMultiDomainEmail] PASSED at [14:32:03 2023-08-25]

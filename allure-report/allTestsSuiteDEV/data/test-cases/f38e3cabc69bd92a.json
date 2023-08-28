@@ -1,0 +1,186 @@
+{
+  "uid" : "f38e3cabc69bd92a",
+  "name" : "Check that user can be registered with facilityTypeId as 0",
+  "fullName" : "com.lifefitness.qa.api.core.controllers.user.postregistration.PostRegistrationTest.checkThatUserCanBeRegisteredWithFacilityTypeIdAsZero",
+  "historyId" : "a8bebbec7382a440d0dd91c2ea4c528c",
+  "time" : {
+    "start" : 1693209621819,
+    "stop" : 1693209621891,
+    "duration" : 72
+  },
+  "status" : "failed",
+  "statusMessage" : "2 expectations failed.\nExpected status code <201> but was <401>.\n\nExpected status line a string containing \"Created\" doesn't match actual status line \"HTTP/1.1 401 Unauthorized\".\n",
+  "statusTrace" : "java.lang.AssertionError: 2 expectations failed.\nExpected status code <201> but was <401>.\n\nExpected status line a string containing \"Created\" doesn't match actual status line \"HTTP/1.1 401 Unauthorized\".\n\n\tat java.base/jdk.internal.reflect.GeneratedConstructorAccessor91.newInstance(Unknown Source)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\n\tat io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1656)\n\tat jdk.internal.reflect.GeneratedMethodAccessor104.invoke(Unknown Source)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1029)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:816)\n\tat groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)\n\tat org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)\n\tat org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)\n\tat io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1661)\n\tat jdk.internal.reflect.GeneratedMethodAccessor103.invoke(Unknown Source)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1029)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:816)\n\tat groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)\n\tat org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)\n\tat org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)\n\tat io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy:175)\n\tat io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy)\n\tat com.zebrunner.carina.api.http.HttpClient.send(HttpClient.java:43)\n\tat com.zebrunner.carina.api.AbstractApiMethod.callAPI(AbstractApiMethod.java:301)\n\tat com.zebrunner.carina.api.AbstractApiMethodV2.callAPI(AbstractApiMethodV2.java:189)\n\tat com.zebrunner.carina.api.AbstractApiMethod.callAPI(AbstractApiMethod.java:279)\n\tat com.zebrunner.carina.api.AbstractApiMethodV2.callAPI(AbstractApiMethodV2.java:181)\n\tat com.lifefitness.qa.api.corecontrollers.user.postregistration.PostRegistrationHelper.registerUser(PostRegistrationHelper.java:32)\n\tat com.lifefitness.qa.api.core.controllers.user.postregistration.PostRegistrationTest.checkThatUserCanBeRegisteredWithFacilityTypeIdAsZero(PostRegistrationTest.java:347)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\n\tat org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)\n\tat org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)\n\tat org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)\n\tat org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)\n\tat org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)\n\tat org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)\n\tat org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)\n\tat org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)\n\tat java.base/java.lang.Thread.run(Thread.java:833)\n",
+  "flaky" : false,
+  "newFailed" : true,
+  "beforeStages" : [ {
+    "name" : "executeBeforeTestSuite",
+    "time" : {
+      "start" : 1693209607549,
+      "stop" : 1693209607788,
+      "duration" : 239
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "onCarinaAfterMethod",
+    "time" : {
+      "start" : 1693209621904,
+      "stop" : 1693209621904,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "addTestLog",
+    "time" : {
+      "start" : 1693209621892,
+      "stop" : 1693209621904,
+      "duration" : 12
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "2e970d167e15b250",
+      "name" : "Test log",
+      "source" : "2e970d167e15b250.txt",
+      "type" : "text/plain",
+      "size" : 9619
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  }, {
+    "name" : "deleteAllEmails",
+    "time" : {
+      "start" : 1693209641764,
+      "stop" : 1693209642335,
+      "duration" : 571
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.lifefitness.qa.api.core.controllers.user.postregistration.PostRegistrationTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.lifefitness.qa.api.core.controllers.user.postregistration.PostRegistrationTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "checkThatUserCanBeRegisteredWithFacilityTypeIdAsZero"
+  }, {
+    "name" : "parentSuite",
+    "value" : "LifeFitness Backend Auto Tests"
+  }, {
+    "name" : "suite",
+    "value" : "LifeFitness Backend Auto Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.lifefitness.qa.api.core.controllers.user.postregistration.PostRegistrationTest"
+  }, {
+    "name" : "host",
+    "value" : "16280b86-2a51-40db-be2f-5f1ea38aa14c-gjbhr"
+  }, {
+    "name" : "thread",
+    "value" : "299@16280b86-2a51-40db-be2f-5f1ea38aa14c-gjbhr.TestNG-test=LifeFitness Backend Auto Tests-4(25)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "owner",
+    "value" : "Dmitry Parkhomenko"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "owner" : "Dmitry Parkhomenko",
+    "retries" : [ {
+      "uid" : "1001d9fd4d10f5a2",
+      "status" : "skipped",
+      "statusDetails" : "2 expectations failed.\nExpected status code <201> but was <401>.\n\nExpected status line a string containing \"Created\" doesn't match actual status line \"HTTP/1.1 401 Unauthorized\".\n",
+      "time" : {
+        "start" : 1693209621748,
+        "stop" : 1693209621816,
+        "duration" : 68
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 1,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 3,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "3fb733c3d4c983e6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1692976512180,
+          "stop" : 1692976513255,
+          "duration" : 1075
+        }
+      }, {
+        "uid" : "28c73fb72ab8a5d6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1692972466148,
+          "stop" : 1692972467278,
+          "duration" : 1130
+        }
+      }, {
+        "uid" : "7db71ae49cb8d14f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1692970617866,
+          "stop" : 1692970619044,
+          "duration" : 1178
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "f38e3cabc69bd92a.json",
+  "parameterValues" : [ ]
+}
