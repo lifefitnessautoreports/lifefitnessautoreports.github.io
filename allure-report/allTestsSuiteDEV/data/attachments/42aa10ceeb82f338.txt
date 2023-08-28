@@ -1,0 +1,60 @@
+[2023-08-28 08:00:26] [25] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-28 08:00:26] [25] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatSuperAdminCanPutSupplementaryPermissionsForTechnicalUser] STARTED at [08:00:26 2023-08-28]
+[2023-08-28 08:00:26] [25] [INFO] Setting supplementary-permissions to 5 what corresponding with Technical user supplementary-permissions
+[2023-08-28 08:00:26] [25] [INFO] Request method:	PUT
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/2133/supplementary-permissions?supplementaryPermissionIds=5
+Request params:	<none>
+Query params:	supplementaryPermissionIds=5
+Form params:	<none>
+Path params:	userId=2133
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6ImM2MGI5ZGUwODBmZmFmYmZjMTgzMzllY2Q0NGFjNzdmN2ZhNGU4ZDMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MzIwOTYwNywidXNlcl9pZCI6Im52eWRlcTdCWlVWUlpDZ252WUo5cUNZRmZrOTMiLCJzdWIiOiJudnlkZXE3QlpVVlJaQ2dudllKOXFDWUZmazkzIiwiaWF0IjoxNjkzMjA5NjA3LCJleHAiOjE2OTMyMTMyMDcsImVtYWlsIjoibGlmZWZpdG5lc3Nwb3N0bWFuKzIzMTI2OTM5QGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImxpZmVmaXRuZXNzcG9zdG1hbisyMzEyNjkzOUBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.E5JrJkMYj4B4NDxwTElEuvogJwFW58X8-OxVDupPRd3_oAphwLoP4H2rZTC0mU7WRrqng3hMaiiNAq7_eq7YttXAahiBadjXm5Caj554AdpXgsnF_MyolMtl7zK9g2LbE6krDgFfNS9qzzrGC-1xboXmRNKhnO1UnvAxdyLdQtNI2YKDyTVk6VpgLXBUqBJE-xM416RpK0wEZppiitkPGGsVaxQDgVSJmJBnTVFEEDqpAliDx25vjG-90aKaDuJPwdyL1Tt_i7MWUh2_DgvTjU4Shthf91-X9JdKmPemD34N5Z-uO3Q55_LwT54szqlI6jlTTPL5CDOAprjhdqcdTw
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 401 Unauthorized
+www-authenticate: Bearer error="invalid_token", error_description="An error occurred while attempting to decode the Jwt: This aud claim is not equal to the configured audience", error_uri="https://tools.ietf.org/html/rfc6750#section-3.1"
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+X-Cloud-Trace-Context: e6c74bdc35285f4b354c009a4f6ab569
+Date: Mon, 28 Aug 2023 08:00:26 GMT
+Content-Type: text/html
+Server: Google Frontend
+Content-Length: 0
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+
+
+[2023-08-28 08:00:26] [25] [INFO] Asserting that correct response code is returned after updating Technical user supplementary-permissions
+[2023-08-28 08:00:26] [25] [ERROR] TEST [LifeFitness Backend Auto Tests - checkThatSuperAdminCanPutSupplementaryPermissionsForTechnicalUser] SKIPPED at [08:00:26 2023-08-28] - Status code is incorrect expected [200] but found [401]
+
+org.testng.Assert.fail(Assert.java:110)
+org.testng.Assert.failNotEquals(Assert.java:1577)
+org.testng.Assert.assertEqualsImpl(Assert.java:149)
+org.testng.Assert.assertEquals(Assert.java:131)
+org.testng.Assert.assertEquals(Assert.java:1418)
+org.testng.Assert.assertEquals(Assert.java:1382)
+com.lifefitness.qa.api.utils.controllers.idpuser.getidptoken.GetTokenTest.checkThatSuperAdminCanPutSupplementaryPermissionsForTechnicalUser(GetTokenTest.java:211)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:568)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+java.base/java.lang.Thread.run(Thread.java:833)
+[2023-08-28 08:00:26] [25] [INFO] Attaching logs to Allure report

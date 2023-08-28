@@ -1,0 +1,284 @@
+[2023-08-28 11:59:58] [22] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-28 11:59:58] [22] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatNonExistingUserCanNotBeDeletedTest] STARTED at [11:59:58 2023-08-28]
+[2023-08-28 11:59:58] [22] [INFO] Setting default registration body values
+[2023-08-28 11:59:58] [22] [INFO] Base properties loaded: api/core/controllers/user/postregistration/registration.properties
+[2023-08-28 11:59:58] [22] [INFO] Get country code except embargoed ones
+[2023-08-28 11:59:58] [22] [INFO] Registering user with lifeFitnessPostman+60913615@gmail.com email
+[2023-08-28 12:00:02] [22] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/registration
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6ImM2MGI5ZGUwODBmZmFmYmZjMTgzMzllY2Q0NGFjNzdmN2ZhNGU4ZDMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MzIyMzQ4NCwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkzMjIzNDg0LCJleHAiOjE2OTMyMjcwODQsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.PrEH43zVXyDRR5OQGsiU4_68cfxD8Rjsp-HPHHeRe5R5K_19s0yPKz90fLtZDKZ1K6XdpiSi6oAaCRAU5lLOH0C-SnYm7t6wedezzxNxqFNJvOggLKQpdQnEtD1pbLb_XrJ9cxNLiMaz1uHHES6QnyRt1nPQy-U9FK64njiqQ5wHx0lN7GayZg1ip-tfSlK3NZLt8mZZeCXRhfihh6pez_lQ48jUgbdSGZ2FctIX7AXmj3xF-fGFbpcGHflONLY5i6Cj6G1ilPMnWv_1lV1QtNr3MPceYo8MjNKETDPx51leYniMm2FznIuNnn8nXQtTy0fPZ6otVeKkfrEkE15pyQ
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "user": {
+        "id": 0,
+        "firstName": "Aron",
+        "lastName": "Kshlerin",
+        "email": "lifeFitnessPostman+60913615@gmail.com",
+        "preferredUnit": "METRICS",
+        "preferredLanguageCode": "",
+        "phoneNumber": "",
+        "officePhoneNumber": "",
+        "imageUrl": "",
+        "imageKey": "",
+        "thumbnailUrl": "",
+        "thumbnailKey": "",
+        "isAllowedMarketingEmails": null,
+        "isAllowedFeedbackProviding": null,
+        "useTerms": null
+    },
+    "facility": {
+        "id": 0,
+        "legacyId": 0,
+        "ipAddress": "",
+        "facilityGroupId": 0,
+        "name": "Hintz Group",
+        "facilityTypeId": 0,
+        "address": {
+            "placeId": "518417b3-6d44-45e4-a2b3-e502157fcea6",
+            "primaryStreet": "11791 Gil Islands",
+            "secondaryStreet": "Apt. 061",
+            "city": "North Giovanniborough",
+            "region": "",
+            "zipCode": "223610",
+            "state": "",
+            "countryCode": "BO",
+            "latitude": "30.6279",
+            "longitude": "22.7323",
+            "country": "string",
+            "formatAddress": "string",
+            "rawData": "string"
+        },
+        "contactNumber": "7785624541",
+        "timezone": {
+            "id": 186,
+            "dstOffset": 0,
+            "rawOffset": 7200000,
+            "timezoneId": "Africa/Tripoli",
+            "name": "Eastern European Standard Time"
+        },
+        "openTime": "10:00 AM",
+        "closeTime": "6:00 PM",
+        "isOpen24Hours": true
+    }
+}
+HTTP/1.1 201 Created
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: 91a492fa693052a57a4bbc352f0a6479
+Date: Mon, 28 Aug 2023 12:00:02 GMT
+Server: Google Frontend
+Content-Length: 1071
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "user": {
+        "id": 54671,
+        "firstName": "Aron",
+        "lastName": "Kshlerin",
+        "email": "lifefitnesspostman+60913615@gmail.com",
+        "preferredUnit": "METRICS",
+        "preferredLanguageCode": "en-US",
+        "phoneNumber": "",
+        "officePhoneNumber": "",
+        "profilePicUrl": null,
+        "imageKey": "",
+        "isEnabled": true,
+        "isAllowedMarketingEmails": true,
+        "isAllowedFeedbackProviding": true,
+        "useTerms": true,
+        "encodedPassword": null,
+        "status": "ACTIVE",
+        "roleIds": [
+            2
+        ]
+    },
+    "facility": {
+        "id": 42132,
+        "legacyId": 0,
+        "ipAddress": "",
+        "facilityGroupId": null,
+        "name": "Hintz Group",
+        "facilityTypeId": null,
+        "address": {
+            "id": 42156,
+            "placeId": "518417b3-6d44-45e4-a2b3-e502157fcea6",
+            "primaryStreet": "11791 Gil Islands",
+            "secondaryStreet": "Apt. 061",
+            "city": "North Giovanniborough",
+            "region": "LATAM",
+            "zipCode": "223610",
+            "state": "",
+            "countryCode": "BO",
+            "latitude": 30.6279,
+            "longitude": 22.7323,
+            "country": "string",
+            "formatAddress": "string",
+            "rawData": "string"
+        },
+        "contactNumber": "7785624541",
+        "timezone": {
+            "id": 186,
+            "dstOffset": 0,
+            "rawOffset": 7200000,
+            "timezoneId": "Africa/Tripoli",
+            "name": "Eastern European Standard Time"
+        },
+        "openTime": "10:00 AM",
+        "closeTime": "6:00 PM",
+        "isOpen24Hours": true
+    }
+}
+
+[2023-08-28 12:00:02] [22] [INFO] Setting default IDP method to call
+[2023-08-28 12:00:02] [22] [INFO] Setting up IDP method to SIGN_UP
+[2023-08-28 12:00:02] [22] [INFO] Base properties loaded: api/identityplatform/idp.properties
+[2023-08-28 12:00:02] [22] [INFO] Sending PostSignUp IDP method to get access token
+[2023-08-28 12:00:02] [22] [INFO] Request method:	POST
+Request URI:	https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyDuJaUYc3JtGHvbdX_7b-Nav25lXPmzuN0
+Request params:	<none>
+Query params:	key=AIzaSyDuJaUYc3JtGHvbdX_7b-Nav25lXPmzuN0
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "returnSecureToken": true,
+    "email": "lifefitnesspostman+60913615@gmail.com",
+    "password": "lifefitnesspostman+60913615@gmail.com"
+}
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Date: Mon, 28 Aug 2023 12:00:02 GMT
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Content-Type: application/json; charset=UTF-8
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+Content-Encoding: gzip
+Server: ESF
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+{
+    "kind": "identitytoolkit#SignupNewUserResponse",
+    "idToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImM2MGI5ZGUwODBmZmFmYmZjMTgzMzllY2Q0NGFjNzdmN2ZhNGU4ZDMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MzIyNDAwMiwidXNlcl9pZCI6Ikh1VHI1cTRlZlNVcWtXRUtOZEEzclJ1U1RKNDMiLCJzdWIiOiJIdVRyNXE0ZWZTVXFrV0VLTmRBM3JSdVNUSjQzIiwiaWF0IjoxNjkzMjI0MDAyLCJleHAiOjE2OTMyMjc2MDIsImVtYWlsIjoibGlmZWZpdG5lc3Nwb3N0bWFuKzYwOTEzNjE1QGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJsaWZlZml0bmVzc3Bvc3RtYW4rNjA5MTM2MTVAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.iUctrLikPvUHdqSdv8n15J3ruUnK0O_t1jO77z_Yegq2tIz4cCrhtVRmwMVWolUHbGb9TrPnEVqRFktekMjJDkitloUC5g3sHCc3Eyra7n4BJJwGn19iVGRvWAs6O7TbZ89zekmi21OBu3Zj3RlxI41TVE1ovt2Xaq3ZaBxL5h9ia4v2EIqbs8Fgyg8u6tIWHKs5QV5RRYsPSF-q_SoOHVtsZ2xBqOCu7cHw1rve-6k3qktnFShMKGKNlbBmneG9msADAUNSdiF0bTu2W-JSfnfiGoIlZqYrH5a4xR7Bae5nP1nN2L-2hYeluwObl19h3vWp4OoxNM1nHHr3TUzyJA",
+    "email": "lifefitnesspostman+60913615@gmail.com",
+    "refreshToken": "AMf-vBzxW5e9d9s52pWWBBH21yTrQMV4z1ZE6kIyQPEsuZ8LbAvbVVuQ6l5gX0ziwjaGYqZU044LwIfYqA9a1HEO-ZZHu1HWVK5ukb6FmjcgPa13EN7p42rm04860WmAan3hUvoDWjB6YLvt2betsJxZwl4S166cnSPyHdxGl9rZ7zak0Tw8r3ItVbHPgDwwyYXwxULQ5NOWfPsihftCDtmqos6xZWK5Eg",
+    "expiresIn": "3600",
+    "localId": "HuTr5q4efSUqkWEKNdA3rRuSTJ43"
+}
+
+[2023-08-28 12:00:02] [22] [INFO] Trying to parse IDP response to access token model
+[2023-08-28 12:00:02] [22] [INFO] Setting default IDP method to call
+[2023-08-28 12:00:02] [22] [INFO] Setting up IDP method to SIGN_IN_WITH_PASSWORD
+[2023-08-28 12:00:02] [22] [INFO] Base properties loaded: api/identityplatform/idp.properties
+[2023-08-28 12:00:02] [22] [INFO] Sending PostSignInWithPassword IDP method to get access token
+[2023-08-28 12:00:02] [22] [INFO] Request method:	POST
+Request URI:	https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyDuJaUYc3JtGHvbdX_7b-Nav25lXPmzuN0
+Request params:	<none>
+Query params:	key=AIzaSyDuJaUYc3JtGHvbdX_7b-Nav25lXPmzuN0
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "returnSecureToken": true,
+    "email": "lifefitnesspostman+60913615@gmail.com",
+    "password": "lifefitnesspostman+60913615@gmail.com"
+}
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Pragma: no-cache
+Date: Mon, 28 Aug 2023 12:00:02 GMT
+Content-Type: application/json; charset=UTF-8
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+Content-Encoding: gzip
+Server: ESF
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+{
+    "kind": "identitytoolkit#VerifyPasswordResponse",
+    "localId": "HuTr5q4efSUqkWEKNdA3rRuSTJ43",
+    "email": "lifefitnesspostman+60913615@gmail.com",
+    "displayName": "",
+    "idToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImM2MGI5ZGUwODBmZmFmYmZjMTgzMzllY2Q0NGFjNzdmN2ZhNGU4ZDMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MzIyNDAwMiwidXNlcl9pZCI6Ikh1VHI1cTRlZlNVcWtXRUtOZEEzclJ1U1RKNDMiLCJzdWIiOiJIdVRyNXE0ZWZTVXFrV0VLTmRBM3JSdVNUSjQzIiwiaWF0IjoxNjkzMjI0MDAyLCJleHAiOjE2OTMyMjc2MDIsImVtYWlsIjoibGlmZWZpdG5lc3Nwb3N0bWFuKzYwOTEzNjE1QGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJsaWZlZml0bmVzc3Bvc3RtYW4rNjA5MTM2MTVAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.iUctrLikPvUHdqSdv8n15J3ruUnK0O_t1jO77z_Yegq2tIz4cCrhtVRmwMVWolUHbGb9TrPnEVqRFktekMjJDkitloUC5g3sHCc3Eyra7n4BJJwGn19iVGRvWAs6O7TbZ89zekmi21OBu3Zj3RlxI41TVE1ovt2Xaq3ZaBxL5h9ia4v2EIqbs8Fgyg8u6tIWHKs5QV5RRYsPSF-q_SoOHVtsZ2xBqOCu7cHw1rve-6k3qktnFShMKGKNlbBmneG9msADAUNSdiF0bTu2W-JSfnfiGoIlZqYrH5a4xR7Bae5nP1nN2L-2hYeluwObl19h3vWp4OoxNM1nHHr3TUzyJA",
+    "registered": true,
+    "refreshToken": "AMf-vBzstBVB_mBaAoe_QE2Nx_wfBKEQdpPlll1JvZXrkV15slXyjPWXkm7HSgjHbqTuU6EXYxODjp0SeP2uMhkHrh7N5V2TWNINYPVO9R0u2fZHXdHqrFRCzRZBmb4ibWdfXLTB80e2JFi9ep8CQ1GhVLVzaVRh3--pilM_y2LqOH6efbuftblNf2CweEZdNAJHNxD0nD9DCDaE4Zr5QiGurJYdecLUxQ",
+    "expiresIn": "3600"
+}
+
+[2023-08-28 12:00:02] [22] [INFO] Trying to parse IDP response to access token model
+[2023-08-28 12:00:02] [22] [INFO] Trying to delete non-existing user
+[2023-08-28 12:00:02] [22] [INFO] Deleting user expecting error response code
+[2023-08-28 12:00:52] [22] [INFO] Request method:	DELETE
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/delete?email=lifeFitnessPostman%2B05540732%40gmail.com
+Request params:	<none>
+Query params:	email=lifeFitnessPostman+05540732@gmail.com
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6ImM2MGI5ZGUwODBmZmFmYmZjMTgzMzllY2Q0NGFjNzdmN2ZhNGU4ZDMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MzIyNDAwMiwidXNlcl9pZCI6Ikh1VHI1cTRlZlNVcWtXRUtOZEEzclJ1U1RKNDMiLCJzdWIiOiJIdVRyNXE0ZWZTVXFrV0VLTmRBM3JSdVNUSjQzIiwiaWF0IjoxNjkzMjI0MDAyLCJleHAiOjE2OTMyMjc2MDIsImVtYWlsIjoibGlmZWZpdG5lc3Nwb3N0bWFuKzYwOTEzNjE1QGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJsaWZlZml0bmVzc3Bvc3RtYW4rNjA5MTM2MTVAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.iUctrLikPvUHdqSdv8n15J3ruUnK0O_t1jO77z_Yegq2tIz4cCrhtVRmwMVWolUHbGb9TrPnEVqRFktekMjJDkitloUC5g3sHCc3Eyra7n4BJJwGn19iVGRvWAs6O7TbZ89zekmi21OBu3Zj3RlxI41TVE1ovt2Xaq3ZaBxL5h9ia4v2EIqbs8Fgyg8u6tIWHKs5QV5RRYsPSF-q_SoOHVtsZ2xBqOCu7cHw1rve-6k3qktnFShMKGKNlbBmneG9msADAUNSdiF0bTu2W-JSfnfiGoIlZqYrH5a4xR7Bae5nP1nN2L-2hYeluwObl19h3vWp4OoxNM1nHHr3TUzyJA
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 400 Bad Request
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: 859663a8de556b2577facf415ffcd3c3
+Date: Mon, 28 Aug 2023 12:00:52 GMT
+Server: Google Frontend
+Content-Length: 155
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "timestamp": "2023-08-28T12:00:52.403800646",
+    "errorCode": null,
+    "title": "User does not exist",
+    "details": null,
+    "path": "/halo-core-service/api/v1/users/delete"
+}
+
+[2023-08-28 12:00:52] [22] [INFO] Assert that error message is correct
+[2023-08-28 12:00:52] [22] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatNonExistingUserCanNotBeDeletedTest] PASSED at [12:00:52 2023-08-28]

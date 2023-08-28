@@ -1,0 +1,177 @@
+[2023-08-28 11:56:08] [24] [INFO] TEST [LifeFitness Backend Auto Tests - checkUpdatingFacilityPrimaryStreetIsOptional] STARTED at [11:56:08 2023-08-28]
+[2023-08-28 11:56:08] [24] [INFO] Creating new facility
+[2023-08-28 11:56:08] [24] [INFO] Setting default add facility body values
+[2023-08-28 11:56:08] [24] [INFO] Base properties loaded: api/core/controllers/user/postfacility/post_facility.properties
+[2023-08-28 11:56:08] [24] [INFO] Get country code except embargoed ones
+[2023-08-28 11:56:08] [24] [INFO] Create facility expecting success
+[2023-08-28 11:56:09] [24] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/facilities
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6ImM2MGI5ZGUwODBmZmFmYmZjMTgzMzllY2Q0NGFjNzdmN2ZhNGU4ZDMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MzIyMzQ4NCwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkzMjIzNDg0LCJleHAiOjE2OTMyMjcwODQsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.PrEH43zVXyDRR5OQGsiU4_68cfxD8Rjsp-HPHHeRe5R5K_19s0yPKz90fLtZDKZ1K6XdpiSi6oAaCRAU5lLOH0C-SnYm7t6wedezzxNxqFNJvOggLKQpdQnEtD1pbLb_XrJ9cxNLiMaz1uHHES6QnyRt1nPQy-U9FK64njiqQ5wHx0lN7GayZg1ip-tfSlK3NZLt8mZZeCXRhfihh6pez_lQ48jUgbdSGZ2FctIX7AXmj3xF-fGFbpcGHflONLY5i6Cj6G1ilPMnWv_1lV1QtNr3MPceYo8MjNKETDPx51leYniMm2FznIuNnn8nXQtTy0fPZ6otVeKkfrEkE15pyQ
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "name": "Lind, Altenwerth and O'Reilly",
+    "facilityGroupId": 0,
+    "facilityTypeId": 0,
+    "address": {
+        "placeId": "564800fe-f13f-45c7-bbc8-f644ccbaef2e",
+        "primaryStreet": "44929 Weissnat Crossroad",
+        "secondaryStreet": "Suite 807",
+        "city": "Reingerfort",
+        "state": "",
+        "countryCode": "VU",
+        "latitude": "30.6279",
+        "longitude": "22.7323",
+        "country": "string",
+        "formatAddress": "asd"
+    },
+    "contactNumber": "0464215340",
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": true,
+    "timezone": {
+        "id": 186,
+        "dstOffset": 0,
+        "rawOffset": 7200000,
+        "timezoneId": "Africa/Tripoli",
+        "name": "Eastern European Standard Time"
+    }
+}
+HTTP/1.1 201 Created
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: e1e2181645726e750599fd359ebe9756
+Date: Mon, 28 Aug 2023 11:56:09 GMT
+Server: Google Frontend
+Content-Length: 672
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "id": 42101,
+    "legacyId": null,
+    "ipAddress": null,
+    "facilityGroupId": null,
+    "name": "Lind, Altenwerth and O'Reilly",
+    "facilityTypeId": null,
+    "address": {
+        "id": 42125,
+        "placeId": "564800fe-f13f-45c7-bbc8-f644ccbaef2e",
+        "primaryStreet": "44929 Weissnat Crossroad",
+        "secondaryStreet": "Suite 807",
+        "city": "Reingerfort",
+        "region": "APAC",
+        "zipCode": null,
+        "state": "",
+        "countryCode": "VU",
+        "latitude": 30.6279,
+        "longitude": 22.7323,
+        "country": "string",
+        "formatAddress": "asd",
+        "rawData": null
+    },
+    "contactNumber": "0464215340",
+    "timezone": {
+        "id": 186,
+        "dstOffset": 0,
+        "rawOffset": 7200000,
+        "timezoneId": "Africa/Tripoli",
+        "name": "Eastern European Standard Time"
+    },
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": false
+}
+
+[2023-08-28 11:56:09] [24] [INFO] Updating previously created facility without primary street
+[2023-08-28 11:56:09] [24] [INFO] Setting default update facility body values
+[2023-08-28 11:56:09] [24] [INFO] Base properties loaded: api/core/controllers/facility/putfacility/put_facility.properties
+[2023-08-28 11:56:09] [24] [INFO] Get country code except embargoed ones
+[2023-08-28 11:56:09] [24] [INFO] Updating facility expect success
+[2023-08-28 11:56:09] [24] [INFO] Request method:	PUT
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/facilities
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6ImM2MGI5ZGUwODBmZmFmYmZjMTgzMzllY2Q0NGFjNzdmN2ZhNGU4ZDMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MzIyMzQ4NCwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkzMjIzNDg0LCJleHAiOjE2OTMyMjcwODQsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.PrEH43zVXyDRR5OQGsiU4_68cfxD8Rjsp-HPHHeRe5R5K_19s0yPKz90fLtZDKZ1K6XdpiSi6oAaCRAU5lLOH0C-SnYm7t6wedezzxNxqFNJvOggLKQpdQnEtD1pbLb_XrJ9cxNLiMaz1uHHES6QnyRt1nPQy-U9FK64njiqQ5wHx0lN7GayZg1ip-tfSlK3NZLt8mZZeCXRhfihh6pez_lQ48jUgbdSGZ2FctIX7AXmj3xF-fGFbpcGHflONLY5i6Cj6G1ilPMnWv_1lV1QtNr3MPceYo8MjNKETDPx51leYniMm2FznIuNnn8nXQtTy0fPZ6otVeKkfrEkE15pyQ
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "id": "42101",
+    "name": "Willms-Runolfsson",
+    "facilityGroupId": 0,
+    "facilityTypeId": 5,
+    "address": {
+        "placeId": "b07f287e-d879-44c5-a963-1c970e2434e0",
+        "secondaryStreet": "Apt. 180",
+        "city": "East Carmen",
+        "zipCode": "",
+        "state": "",
+        "countryCode": "AG",
+        "latitude": "30.6279",
+        "longitude": "22.7323",
+        "country": "string",
+        "formatAddress": "asd"
+    },
+    "contactNumber": "1603353236",
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": true,
+    "timezone": {
+        "id": 186,
+        "dstOffset": 0,
+        "rawOffset": 7200000,
+        "timezoneId": "Africa/Tripoli",
+        "name": "Eastern European Standard Time"
+    }
+}
+HTTP/1.1 429 Too Many Requests
+X-Cloud-Trace-Context: 56d4c58f69d6497dc73dc8b45db3d1ab
+Date: Mon, 28 Aug 2023 11:56:09 GMT
+Content-Type: text/html
+Server: Google Frontend
+Content-Length: 14
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+<html>
+  <body>Rate exceeded.</body>
+</html>
+
+[2023-08-28 11:56:09] [24] [ERROR] TEST [LifeFitness Backend Auto Tests - checkUpdatingFacilityPrimaryStreetIsOptional] FAILED at [11:56:09 2023-08-28] - Unable to update facility
+
+com.lifefitness.qa.api.corecontrollers.facility.putfacility.PutFacilityHelper.updateFacilityExpectSuccess(PutFacilityHelper.java:29)
+com.lifefitness.qa.api.core.controllers.facility.putfacility.PutFacilityTest.checkUpdatingFacilityPrimaryStreetIsOptional(PutFacilityTest.java:296)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:568)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+java.base/java.lang.Thread.run(Thread.java:833)

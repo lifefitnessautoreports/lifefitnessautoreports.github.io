@@ -1,0 +1,44 @@
+[2023-08-25 02:05:07] [24] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-25 02:05:07] [24] [INFO] TEST [LifeFitness Backend Auto Tests - checkPatchingToNonExistentFacility] STARTED at [14:05:07 2023-08-25]
+[2023-08-25 02:05:07] [24] [INFO] Updating selected facility to login with non existent facility
+[2023-08-25 02:05:07] [24] [INFO] Getting Halo Core dev base URL
+[2023-08-25 02:05:07] [24] [INFO] Updating user selected facility expecting error response code
+[2023-08-25 02:05:07] [24] [INFO] Request method:	PATCH
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/selected-facility/100000000
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	facilityId=100000000
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5Mjk3MjEyNywidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyOTcyMTI3LCJleHAiOjE2OTI5NzU3MjcsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.gq2DtVYfCvyWIDnu35LPWMyUIAALuQhqp_HMlyZHFSTzTXF0FfFBXA_DTGCKcxmKuRbMf84_zbS3wdZ2iySB-Ujg47TQwPqAiEKL4pe5SPMiLcywRAdk6NHdcuimimirHpIB7FWMFuheQcmDaeDj_hEOWjARi9WG9zC2O1zCuWFv1X8gTIWgU-EIMMZwxR_IyFLKtUj8wy46P2P9eZpbr83-UAcV-eZTkoeBPfkdICcjUGxHNz0y9KOk0e7KXpdijLLAeida4T59VQgDvh5QcGkXfrt-_AeJUhMToI_W9E1gUj_JxxNL4a0DRbkeCMzu9-Al4mmqGZ5kHSMkH9vRlw
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 400 Bad Request
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: 87c2d40f09d9c129dd5c519c68df47f5
+Date: Fri, 25 Aug 2023 14:05:07 GMT
+Server: Google Frontend
+Content-Length: 180
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "timestamp": "2023-08-25T14:05:07.326623029",
+    "errorCode": null,
+    "title": "Facility does not exist",
+    "details": null,
+    "path": "/halo-core-service/api/v1/users/selected-facility/100000000"
+}
+
+[2023-08-25 02:05:07] [24] [INFO] Assert that response title is correct
+[2023-08-25 02:05:07] [24] [INFO] TEST [LifeFitness Backend Auto Tests - checkPatchingToNonExistentFacility] PASSED at [14:05:07 2023-08-25]

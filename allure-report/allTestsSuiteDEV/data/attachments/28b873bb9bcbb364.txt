@@ -1,0 +1,92 @@
+[2023-08-25 01:36:55] [24] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-25 01:36:55] [24] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatPrimaryStreetCantContainMoreThanFiftyChars] STARTED at [13:36:55 2023-08-25]
+[2023-08-25 01:36:55] [24] [INFO] Setting default registration body values
+[2023-08-25 01:36:55] [24] [INFO] Base properties loaded: api/core/controllers/user/postregistration/registration.properties
+[2023-08-25 01:36:55] [24] [INFO] Get country code except embargoed ones
+[2023-08-25 01:36:55] [24] [INFO] Registering user expecting error response code
+[2023-08-25 01:36:55] [24] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/registration
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5Mjk3MDI1OSwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyOTcwMjU5LCJleHAiOjE2OTI5NzM4NTksImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.dvGu0yM2hGj-Fsj8QR1aKz1ryYjNPXYBMPZZUjoU2fmuwfCE4EFDTMSdyvolIgVu7Atl-O9UVojZJmrdAwO2tQU5Cg5K6nY5WF5mIuBAJxM6imV26eM7IusjFIUeatN9oXKcO3AP8FRHuwlH_wl6IZFvDk30dlOfovV5tuAHE0xcIepwG3QraN4hKv6GvnndrJgYUeniLr6nH4_ECKW_spqBc3zPqsZ4pbl0IUXdGQq2UL5YsYAKeuH_TKdBetLAGoRVUe9R2HPQ3CaXlCcFsLzyTby7OAiLc1yVNCFP9LHa_fmHD47Dy7b3mScwCoFGJuv8kHgzYkkeDlImzYxQsg
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "user": {
+        "id": 0,
+        "firstName": "Randolph",
+        "lastName": "Gutmann",
+        "email": "lifeFitnessPostman+66954554@gmail.com",
+        "preferredUnit": "METRICS",
+        "preferredLanguageCode": "",
+        "phoneNumber": "",
+        "officePhoneNumber": "",
+        "imageUrl": "",
+        "imageKey": "",
+        "thumbnailUrl": "",
+        "thumbnailKey": "",
+        "isAllowedMarketingEmails": null,
+        "isAllowedFeedbackProviding": null,
+        "useTerms": null
+    },
+    "facility": {
+        "id": 0,
+        "legacyId": 0,
+        "ipAddress": "",
+        "facilityGroupId": 0,
+        "name": "Beatty LLC",
+        "facilityTypeId": 0,
+        "address": {
+            "placeId": "7e5d3874-c920-496d-ae1e-ea74b5d0f5ec",
+            "primaryStreet": "87691 Deeann Vista44351978585654969405496947525172279059640530356938",
+            "secondaryStreet": "Suite 963",
+            "city": "Port Stantonbury",
+            "region": "",
+            "zipCode": "223610",
+            "state": "",
+            "countryCode": "TZ",
+            "latitude": "30.6279",
+            "longitude": "22.7323",
+            "country": "string",
+            "formatAddress": "string",
+            "rawData": "string"
+        },
+        "contactNumber": "2528760707",
+        "timezone": null,
+        "openTime": "10:00 AM",
+        "closeTime": "6:00 PM",
+        "isOpen24Hours": true
+    }
+}
+HTTP/1.1 400 Bad Request
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: 9d639256f2832683997ed34b69c1c211
+Date: Fri, 25 Aug 2023 13:36:55 GMT
+Server: Google Frontend
+Content-Length: 144
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "timestamp": "2023-08-25T13:36:55.556954358",
+    "errorCode": null,
+    "title": "Street address maximum size is 50 characters",
+    "details": null,
+    "path": null
+}
+
+[2023-08-25 01:36:55] [24] [INFO] Asserting that user was registered. Primary Street can contain empty string
+[2023-08-25 01:36:55] [24] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatPrimaryStreetCantContainMoreThanFiftyChars] PASSED at [13:36:55 2023-08-25]

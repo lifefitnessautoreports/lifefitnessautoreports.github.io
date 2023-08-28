@@ -1,0 +1,91 @@
+[2023-08-25 02:02:43] [24] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-25 02:02:43] [24] [INFO] TEST [LifeFitness Backend Auto Tests - checkUnsuccessfulLoginIfUserDoesNotExistsInHaloDB] STARTED at [14:02:43 2023-08-25]
+[2023-08-25 02:02:43] [24] [INFO] Create user in IDP
+[2023-08-25 02:02:43] [24] [INFO] Setting default IDP method to call
+[2023-08-25 02:02:43] [24] [INFO] Setting up IDP method to SIGN_UP
+[2023-08-25 02:02:43] [24] [INFO] Base properties loaded: api/identityplatform/idp.properties
+[2023-08-25 02:02:43] [24] [INFO] Sending PostSignUp IDP method to get access token
+[2023-08-25 02:02:43] [24] [INFO] Request method:	POST
+Request URI:	https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyDuJaUYc3JtGHvbdX_7b-Nav25lXPmzuN0
+Request params:	<none>
+Query params:	key=AIzaSyDuJaUYc3JtGHvbdX_7b-Nav25lXPmzuN0
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "returnSecureToken": true,
+    "email": "lifeFitnessPostman+07980527@gmail.com",
+    "password": "i3l8ux2v9"
+}
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Pragma: no-cache
+Date: Fri, 25 Aug 2023 14:02:43 GMT
+Content-Type: application/json; charset=UTF-8
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+Content-Encoding: gzip
+Server: ESF
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+{
+    "kind": "identitytoolkit#SignupNewUserResponse",
+    "idToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5Mjk3MjE2MywidXNlcl9pZCI6IjQ2S1YwZlNTUEVjNHpnalpZWDJpT3BETjJXcTEiLCJzdWIiOiI0NktWMGZTU1BFYzR6Z2paWVgyaU9wRE4yV3ExIiwiaWF0IjoxNjkyOTcyMTYzLCJleHAiOjE2OTI5NzU3NjMsImVtYWlsIjoibGlmZWZpdG5lc3Nwb3N0bWFuKzA3OTgwNTI3QGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJsaWZlZml0bmVzc3Bvc3RtYW4rMDc5ODA1MjdAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.X5KpUwfg3yPCQ3R73Evv5ESHLtGK3XeHcAVg2dRYiJS6Kj24buM9RP-BU2yuI5mzzxe6d50ArPtYxRdEGQoXjNUTQWlWVF_e2HpKh2pEqjlp8iB7HBZK-SPxs6_K9xIaqpSO-oapkxPSI7_AAG8YPlX_lUiPFrc1-G6YZs1TgVYHZ3MpwvferaSSLUOcodlpK5fQipfQOWSR_Uxf-uSnXPEo0vQvhDy1jTSnzRxhlJTGrMaNjABjp1LcZecKzCAXW32QQbllD-IPSIXnL9lZU1DeSH3WxBHjPqaZrgJ7jhX6Y4asEXaRMXFxfvrNZAKnsgZRhYqbcSj2JCj1Tpv2BA",
+    "email": "lifefitnesspostman+07980527@gmail.com",
+    "refreshToken": "AMf-vBymucFQV5F0qTv1yIA4wO2zwacN0oXK_MApXK6H177sYGCOz9lt22aaJSaQ1kJ0RSQZv2-z_DqxOo4TnIWST5RPHiTpSkb2Cu95acNrfnk32mEKRQf90wFNWXr2vXJxwm1HE-a9GgXFHzkDqvn2ykseLfAL6qDLgLUV6Rt7s2K8I2ZFinSzvz56zW1WFDC7fn9Y3_tK2ve5_ZMjfv2wphtnhhq4GA",
+    "expiresIn": "3600",
+    "localId": "46KV0fSSPEc4zgjZYX2iOpDN2Wq1"
+}
+
+[2023-08-25 02:02:43] [24] [INFO] Trying to parse IDP response to access token model
+[2023-08-25 02:02:43] [24] [INFO] Try to login with non existing user
+[2023-08-25 02:02:43] [24] [INFO] Trying to login expecting failure
+[2023-08-25 02:02:44] [24] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/auth/login
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5Mjk3MjE2MywidXNlcl9pZCI6IjQ2S1YwZlNTUEVjNHpnalpZWDJpT3BETjJXcTEiLCJzdWIiOiI0NktWMGZTU1BFYzR6Z2paWVgyaU9wRE4yV3ExIiwiaWF0IjoxNjkyOTcyMTYzLCJleHAiOjE2OTI5NzU3NjMsImVtYWlsIjoibGlmZWZpdG5lc3Nwb3N0bWFuKzA3OTgwNTI3QGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJsaWZlZml0bmVzc3Bvc3RtYW4rMDc5ODA1MjdAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.X5KpUwfg3yPCQ3R73Evv5ESHLtGK3XeHcAVg2dRYiJS6Kj24buM9RP-BU2yuI5mzzxe6d50ArPtYxRdEGQoXjNUTQWlWVF_e2HpKh2pEqjlp8iB7HBZK-SPxs6_K9xIaqpSO-oapkxPSI7_AAG8YPlX_lUiPFrc1-G6YZs1TgVYHZ3MpwvferaSSLUOcodlpK5fQipfQOWSR_Uxf-uSnXPEo0vQvhDy1jTSnzRxhlJTGrMaNjABjp1LcZecKzCAXW32QQbllD-IPSIXnL9lZU1DeSH3WxBHjPqaZrgJ7jhX6Y4asEXaRMXFxfvrNZAKnsgZRhYqbcSj2JCj1Tpv2BA
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 404 Not Found
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: b2a50d9c06838ece2fc4f897d5f3e812
+Date: Fri, 25 Aug 2023 14:02:44 GMT
+Server: Google Frontend
+Content-Length: 125
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "timestamp": "2023-08-25T14:02:44.000995536",
+    "errorCode": 404,
+    "title": "NOT_FOUND",
+    "details": "User does not exist",
+    "path": null
+}
+
+[2023-08-25 02:02:44] [24] [INFO] Assert that error details are correct
+[2023-08-25 02:02:44] [24] [INFO] TEST [LifeFitness Backend Auto Tests - checkUnsuccessfulLoginIfUserDoesNotExistsInHaloDB] PASSED at [14:02:44 2023-08-25]

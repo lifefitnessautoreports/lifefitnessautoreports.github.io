@@ -1,0 +1,162 @@
+[2023-08-25 03:06:08] [23] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-25 03:06:08] [23] [INFO] TEST [LifeFitness Backend Auto Tests - checkSecondaryStreetWithEmptyString] STARTED at [15:06:08 2023-08-25]
+[2023-08-25 03:06:08] [23] [INFO] Creating facility with secondary street as empty string expecting success
+[2023-08-25 03:06:08] [23] [INFO] Setting default add facility body values
+[2023-08-25 03:06:08] [23] [INFO] Base properties loaded: api/core/controllers/user/postfacility/post_facility.properties
+[2023-08-25 03:06:08] [23] [INFO] Get country code except embargoed ones
+[2023-08-25 03:06:08] [23] [INFO] Create facility expecting success
+[2023-08-25 03:06:09] [23] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/facilities
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5Mjk3NTg1NCwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyOTc1ODU0LCJleHAiOjE2OTI5Nzk0NTQsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.Gqtj0ogd7BgJHGeX6WS2MRW1IdXztSMfZFudP1sJ8ZeGNnMijiR0rB6dgSQ6kWb5bSr44jyL2YCnoI4pgxRfX44on3FMN3XTzJQyDDzySdqS3U1MDDmU6iZwBOIBnR11q-6AEC0dlmzZmmDqhL7khu-vytBjjFjqWZB4-DBiw5EcEu880HQH7OBpdI2Llc8PQd3njiHLiCobqDQwBiu4KQeJP_3QvM2zuetLgONKZxrOju04BIpFnXWi7B6GIMSniD9eeP2Roav6nD8iiyYibQS0FMcp3puyT7BrQkQ2oVK8DeDDJ6F5DTsoBYhg7ljrfznVKmL9jd5ezhMn9RBtRg
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "name": "Okuneva LLC",
+    "facilityGroupId": 0,
+    "facilityTypeId": 0,
+    "address": {
+        "placeId": "11142a0a-0173-4105-981e-6633459f144d",
+        "primaryStreet": "824 Weimann Drive",
+        "secondaryStreet": "",
+        "city": "South Angel",
+        "state": "",
+        "countryCode": "HM",
+        "latitude": "30.6279",
+        "longitude": "22.7323",
+        "country": "string",
+        "formatAddress": "asd"
+    },
+    "contactNumber": "5428468158",
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": true,
+    "timezone": null
+}
+HTTP/1.1 201 Created
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: c539ce2f49bda59b5c93ec60a2b53e76
+Date: Fri, 25 Aug 2023 15:06:09 GMT
+Server: Google Frontend
+Content-Length: 647
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "id": 41810,
+    "legacyId": null,
+    "ipAddress": null,
+    "facilityGroupId": null,
+    "name": "Okuneva LLC",
+    "facilityTypeId": null,
+    "address": {
+        "id": 41834,
+        "placeId": "11142a0a-0173-4105-981e-6633459f144d",
+        "primaryStreet": "824 Weimann Drive",
+        "secondaryStreet": "",
+        "city": "South Angel",
+        "region": "Not Specified",
+        "zipCode": null,
+        "state": "",
+        "countryCode": "HM",
+        "latitude": 30.6279,
+        "longitude": 22.7323,
+        "country": "string",
+        "formatAddress": "asd",
+        "rawData": null
+    },
+    "contactNumber": "5428468158",
+    "timezone": {
+        "id": 186,
+        "dstOffset": 0,
+        "rawOffset": 7200000,
+        "timezoneId": "Africa/Tripoli",
+        "name": "Eastern European Standard Time"
+    },
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": false
+}
+
+[2023-08-25 03:06:09] [23] [INFO] Getting facility from system
+[2023-08-25 03:06:09] [23] [INFO] Get facility by id expecting success
+[2023-08-25 03:06:09] [23] [INFO] Request method:	GET
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/facilities/41810
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	facilityId=41810
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5Mjk3NTg1NCwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyOTc1ODU0LCJleHAiOjE2OTI5Nzk0NTQsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.Gqtj0ogd7BgJHGeX6WS2MRW1IdXztSMfZFudP1sJ8ZeGNnMijiR0rB6dgSQ6kWb5bSr44jyL2YCnoI4pgxRfX44on3FMN3XTzJQyDDzySdqS3U1MDDmU6iZwBOIBnR11q-6AEC0dlmzZmmDqhL7khu-vytBjjFjqWZB4-DBiw5EcEu880HQH7OBpdI2Llc8PQd3njiHLiCobqDQwBiu4KQeJP_3QvM2zuetLgONKZxrOju04BIpFnXWi7B6GIMSniD9eeP2Roav6nD8iiyYibQS0FMcp3puyT7BrQkQ2oVK8DeDDJ6F5DTsoBYhg7ljrfznVKmL9jd5ezhMn9RBtRg
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 200 OK
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+Transfer-Encoding: chunked
+Date: Fri, 25 Aug 2023 15:06:09 GMT
+Server: Google Frontend
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "id": 41810,
+    "legacyId": null,
+    "ipAddress": null,
+    "facilityGroupId": null,
+    "name": "Okuneva LLC",
+    "facilityTypeId": null,
+    "address": {
+        "id": 41834,
+        "placeId": "11142a0a-0173-4105-981e-6633459f144d",
+        "primaryStreet": "824 Weimann Drive",
+        "secondaryStreet": "",
+        "city": "South Angel",
+        "region": "Not Specified",
+        "zipCode": null,
+        "state": "",
+        "countryCode": "HM",
+        "latitude": 30.6279,
+        "longitude": 22.7323,
+        "country": "string",
+        "formatAddress": "asd",
+        "rawData": null
+    },
+    "contactNumber": "5428468158",
+    "timezone": {
+        "id": 186,
+        "dstOffset": 0,
+        "rawOffset": 7200000,
+        "timezoneId": "Africa/Tripoli",
+        "name": "Eastern European Standard Time"
+    },
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": false
+}
+
+[2023-08-25 03:06:09] [23] [INFO] Asserting that facility was created in system
+[2023-08-25 03:06:09] [23] [INFO] TEST [LifeFitness Backend Auto Tests - checkSecondaryStreetWithEmptyString] PASSED at [15:06:09 2023-08-25]

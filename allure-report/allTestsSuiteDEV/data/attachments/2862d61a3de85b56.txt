@@ -1,0 +1,189 @@
+[2023-08-25 03:04:25] [26] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-25 03:04:25] [26] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatUpdatingUSCountryCodeReturnsNAMRegion] STARTED at [15:04:25 2023-08-25]
+[2023-08-25 03:04:25] [26] [INFO] Creating new facility
+[2023-08-25 03:04:25] [26] [INFO] Setting default add facility body values
+[2023-08-25 03:04:25] [26] [INFO] Base properties loaded: api/core/controllers/user/postfacility/post_facility.properties
+[2023-08-25 03:04:25] [26] [INFO] Get country code except embargoed ones
+[2023-08-25 03:04:25] [26] [INFO] Create facility expecting success
+[2023-08-25 03:04:26] [26] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/facilities
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5Mjk3NTg1NCwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyOTc1ODU0LCJleHAiOjE2OTI5Nzk0NTQsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.Gqtj0ogd7BgJHGeX6WS2MRW1IdXztSMfZFudP1sJ8ZeGNnMijiR0rB6dgSQ6kWb5bSr44jyL2YCnoI4pgxRfX44on3FMN3XTzJQyDDzySdqS3U1MDDmU6iZwBOIBnR11q-6AEC0dlmzZmmDqhL7khu-vytBjjFjqWZB4-DBiw5EcEu880HQH7OBpdI2Llc8PQd3njiHLiCobqDQwBiu4KQeJP_3QvM2zuetLgONKZxrOju04BIpFnXWi7B6GIMSniD9eeP2Roav6nD8iiyYibQS0FMcp3puyT7BrQkQ2oVK8DeDDJ6F5DTsoBYhg7ljrfznVKmL9jd5ezhMn9RBtRg
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "name": "Gleichner Inc",
+    "facilityGroupId": 0,
+    "facilityTypeId": 0,
+    "address": {
+        "placeId": "a06ab540-dacc-470a-8d50-acc44c684e3c",
+        "primaryStreet": "35457 Ismael Prairie",
+        "secondaryStreet": "Suite 360",
+        "city": "South Efrainberg",
+        "state": "",
+        "countryCode": "BM",
+        "latitude": "30.6279",
+        "longitude": "22.7323",
+        "country": "string",
+        "formatAddress": "asd"
+    },
+    "contactNumber": "7730710067",
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": true,
+    "timezone": null
+}
+HTTP/1.1 201 Created
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: b092895053cd656b8a8fac22caee9eb8
+Date: Fri, 25 Aug 2023 15:04:26 GMT
+Server: Google Frontend
+Content-Length: 656
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "id": 41697,
+    "legacyId": null,
+    "ipAddress": null,
+    "facilityGroupId": null,
+    "name": "Gleichner Inc",
+    "facilityTypeId": null,
+    "address": {
+        "id": 41721,
+        "placeId": "a06ab540-dacc-470a-8d50-acc44c684e3c",
+        "primaryStreet": "35457 Ismael Prairie",
+        "secondaryStreet": "Suite 360",
+        "city": "South Efrainberg",
+        "region": "NAM",
+        "zipCode": null,
+        "state": "",
+        "countryCode": "BM",
+        "latitude": 30.6279,
+        "longitude": 22.7323,
+        "country": "string",
+        "formatAddress": "asd",
+        "rawData": null
+    },
+    "contactNumber": "7730710067",
+    "timezone": {
+        "id": 186,
+        "dstOffset": 0,
+        "rawOffset": 7200000,
+        "timezoneId": "Africa/Tripoli",
+        "name": "Eastern European Standard Time"
+    },
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": false
+}
+
+[2023-08-25 03:04:26] [26] [INFO] Updating facility with country code as US
+[2023-08-25 03:04:26] [26] [INFO] Setting default update facility body values
+[2023-08-25 03:04:26] [26] [INFO] Base properties loaded: api/core/controllers/facility/putfacility/put_facility.properties
+[2023-08-25 03:04:26] [26] [INFO] Get country code except embargoed ones
+[2023-08-25 03:04:26] [26] [INFO] Updating facility expect success
+[2023-08-25 03:04:26] [26] [INFO] Request method:	PUT
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/facilities
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5Mjk3NTg1NCwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyOTc1ODU0LCJleHAiOjE2OTI5Nzk0NTQsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.Gqtj0ogd7BgJHGeX6WS2MRW1IdXztSMfZFudP1sJ8ZeGNnMijiR0rB6dgSQ6kWb5bSr44jyL2YCnoI4pgxRfX44on3FMN3XTzJQyDDzySdqS3U1MDDmU6iZwBOIBnR11q-6AEC0dlmzZmmDqhL7khu-vytBjjFjqWZB4-DBiw5EcEu880HQH7OBpdI2Llc8PQd3njiHLiCobqDQwBiu4KQeJP_3QvM2zuetLgONKZxrOju04BIpFnXWi7B6GIMSniD9eeP2Roav6nD8iiyYibQS0FMcp3puyT7BrQkQ2oVK8DeDDJ6F5DTsoBYhg7ljrfznVKmL9jd5ezhMn9RBtRg
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "id": "41697",
+    "name": "Kemmer LLC",
+    "facilityGroupId": 0,
+    "facilityTypeId": 5,
+    "address": {
+        "placeId": "0015f8fd-c15e-4db3-ab31-8d1d5809e9b3",
+        "primaryStreet": "637 Joaquin Spurs",
+        "secondaryStreet": "Suite 818",
+        "city": "Kareenview",
+        "zipCode": "",
+        "state": "",
+        "countryCode": "US",
+        "latitude": "30.6279",
+        "longitude": "22.7323",
+        "country": "string",
+        "formatAddress": "asd"
+    },
+    "contactNumber": "2010841986",
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": true,
+    "timezone": null
+}
+HTTP/1.1 200 OK
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+Transfer-Encoding: chunked
+Date: Fri, 25 Aug 2023 15:04:26 GMT
+Server: Google Frontend
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "id": 41697,
+    "legacyId": null,
+    "ipAddress": null,
+    "facilityGroupId": null,
+    "name": "Kemmer LLC",
+    "facilityTypeId": 5,
+    "address": {
+        "id": 41721,
+        "placeId": "0015f8fd-c15e-4db3-ab31-8d1d5809e9b3",
+        "primaryStreet": "637 Joaquin Spurs",
+        "secondaryStreet": "Suite 818",
+        "city": "Kareenview",
+        "region": "NAM",
+        "zipCode": "",
+        "state": "",
+        "countryCode": "US",
+        "latitude": 30.6279,
+        "longitude": 22.7323,
+        "country": "string",
+        "formatAddress": "asd",
+        "rawData": null
+    },
+    "contactNumber": "7730710067",
+    "timezone": {
+        "id": 186,
+        "dstOffset": 0,
+        "rawOffset": 7200000,
+        "timezoneId": "Africa/Tripoli",
+        "name": "Eastern European Standard Time"
+    },
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": false
+}
+
+[2023-08-25 03:04:26] [26] [INFO] Asserting that US country code returns NAM region
+[2023-08-25 03:04:26] [26] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatUpdatingUSCountryCodeReturnsNAMRegion] PASSED at [15:04:26 2023-08-25]

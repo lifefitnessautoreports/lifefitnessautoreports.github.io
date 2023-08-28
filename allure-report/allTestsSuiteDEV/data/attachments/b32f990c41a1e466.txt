@@ -1,0 +1,111 @@
+[2023-08-28 08:00:24] [23] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-28 08:00:24] [23] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatUserRolesCantBeUpdatedWithoutAToken] STARTED at [08:00:24 2023-08-28]
+[2023-08-28 08:00:24] [23] [INFO] Setting default registration body values
+[2023-08-28 08:00:24] [23] [INFO] Base properties loaded: api/core/controllers/user/postregistration/registration.properties
+[2023-08-28 08:00:24] [23] [INFO] Get country code except embargoed ones
+[2023-08-28 08:00:24] [23] [INFO] Registering user with lifeFitnessPostman+34024091@gmail.com email
+[2023-08-28 08:00:24] [23] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/registration
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6ImM2MGI5ZGUwODBmZmFmYmZjMTgzMzllY2Q0NGFjNzdmN2ZhNGU4ZDMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MzIwOTYwNywidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkzMjA5NjA3LCJleHAiOjE2OTMyMTMyMDcsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.D4N_qCaH6EGgpcSL6PXNW1PbSJCezO6L7Gv8YPAuo0nLhR9K5pPqGmKS05qBkaGfxE1OzzT3TV9bd6EK4wl61yq3y8LlfD0lQRW_p4m3TnuPTtTeAzbWZzMNpNOEk-IVXAdsf_OvAoGHIFXrhAK_LE57FyqLYqu8Zv8YPY2GaQRmP8HFXTXySil9DmHvWd2PRQi7iWRbnVg7Q9wlJcr8WhQSqqRkZqrhYdbn8GykjwbVlKrM9f3WSdIEDiFscnLoZjpRCE6yZp2NOqmTNH-uAs6MWvCAaxR66RT0QAs5VxDTAdMcuANVILLpjEZzodlGMh9TH0-ZYIS2P5m7mDyvcw
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "user": {
+        "id": 0,
+        "firstName": "Jeanette",
+        "lastName": "O'Connell",
+        "email": "lifeFitnessPostman+34024091@gmail.com",
+        "preferredUnit": "METRICS",
+        "preferredLanguageCode": "",
+        "phoneNumber": "",
+        "officePhoneNumber": "",
+        "imageUrl": "",
+        "imageKey": "",
+        "thumbnailUrl": "",
+        "thumbnailKey": "",
+        "isAllowedMarketingEmails": null,
+        "isAllowedFeedbackProviding": null,
+        "useTerms": null
+    },
+    "facility": {
+        "id": 0,
+        "legacyId": 0,
+        "ipAddress": "",
+        "facilityGroupId": 0,
+        "name": "Spinka-Hoppe",
+        "facilityTypeId": 0,
+        "address": {
+            "placeId": "ccd1997e-98c6-4b69-a4b0-736242129235",
+            "primaryStreet": "734 Keeling Coves",
+            "secondaryStreet": "Suite 240",
+            "city": "Dibbertton",
+            "region": "",
+            "zipCode": "223610",
+            "state": "",
+            "countryCode": "TZ",
+            "latitude": "30.6279",
+            "longitude": "22.7323",
+            "country": "string",
+            "formatAddress": "string",
+            "rawData": "string"
+        },
+        "contactNumber": "1889795321",
+        "timezone": {
+            "id": 186,
+            "dstOffset": 0,
+            "rawOffset": 7200000,
+            "timezoneId": "Africa/Tripoli",
+            "name": "Eastern European Standard Time"
+        },
+        "openTime": "10:00 AM",
+        "closeTime": "6:00 PM",
+        "isOpen24Hours": true
+    }
+}
+HTTP/1.1 401 Unauthorized
+www-authenticate: Bearer error="invalid_token", error_description="An error occurred while attempting to decode the Jwt: This aud claim is not equal to the configured audience", error_uri="https://tools.ietf.org/html/rfc6750#section-3.1"
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+X-Cloud-Trace-Context: d8479ab6c40c6b3848be09f9819115f6
+Date: Mon, 28 Aug 2023 08:00:24 GMT
+Content-Type: text/html
+Server: Google Frontend
+Content-Length: 0
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+
+
+[2023-08-28 08:00:24] [23] [ERROR] TEST [LifeFitness Backend Auto Tests - checkThatUserRolesCantBeUpdatedWithoutAToken] SKIPPED at [08:00:24 2023-08-28] - Unable to register user
+
+com.lifefitness.qa.api.corecontrollers.user.postregistration.PostRegistrationHelper.registerUser(PostRegistrationHelper.java:37)
+com.lifefitness.qa.api.corecontrollers.user.postregistration.PostRegistrationHelper.registerUserWithDefaultParameters(PostRegistrationHelper.java:24)
+com.lifefitness.qa.api.core.controllers.user.putrolebyuserid.PutUserRoleByIdTest.checkThatUserRolesCantBeUpdatedWithoutAToken(PutUserRoleByIdTest.java:66)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:568)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+java.base/java.lang.Thread.run(Thread.java:833)
+[2023-08-28 08:00:24] [23] [INFO] Attaching logs to Allure report
