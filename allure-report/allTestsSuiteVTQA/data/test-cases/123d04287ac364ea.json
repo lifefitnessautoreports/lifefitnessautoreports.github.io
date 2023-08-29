@@ -1,0 +1,175 @@
+{
+  "uid" : "123d04287ac364ea",
+  "name" : "Check that timezone is optional and value is set according to latitude and longtitude",
+  "fullName" : "com.lifefitness.qa.api.core.controllers.user.postfacility.PostFacilityTest.checkThatTimezoneIsOptional",
+  "historyId" : "ae3bb269aaf7b457d6bc81ce852c61fb",
+  "time" : {
+    "start" : 1693281352221,
+    "stop" : 1693281352632,
+    "duration" : 411
+  },
+  "status" : "broken",
+  "statusMessage" : "Unable to create facility",
+  "statusTrace" : "java.lang.RuntimeException: Unable to create facility\n\tat com.lifefitness.qa.api.corecontrollers.user.postfacility.PostFacilityHelper.postFacilityExpectSuccess(PostFacilityHelper.java:31)\n\tat com.lifefitness.qa.api.core.controllers.user.postfacility.PostFacilityTest.checkThatTimezoneIsOptional(PostFacilityTest.java:813)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\n\tat org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)\n\tat org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)\n\tat org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)\n\tat org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)\n\tat org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)\n\tat org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)\n\tat org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)\n\tat org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)\n\tat java.base/java.lang.Thread.run(Thread.java:833)\nCaused by: com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `com.lifefitness.qa.api.corecontrollers.user.postregistration.models.LifeFitnessTimezone` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('Africa/Tripoli (GMT+2:00)')\n at [Source: (String)\"{\"id\":907,\"legacyId\":null,\"ipAddress\":null,\"facilityGroupId\":null,\"name\":\"Marks Group\",\"facilityTypeId\":null,\"address\":{\"id\":907,\"placeId\":\"33952e77-88e0-4fc4-9983-3902deb59cb0\",\"primaryStreet\":\"9963 Amado Row\",\"secondaryStreet\":\"Apt. 192\",\"city\":\"West Louie\",\"region\":\"EMEA\",\"zipCode\":null,\"state\":\"\",\"countryCode\":\"TN\",\"latitude\":30.6279,\"longitude\":22.7323,\"country\":\"string\",\"formatAddress\":\"asd\",\"rawData\":null},\"contactNumber\":\"1990863646\",\"timezone\":\"Africa/Tripoli (GMT+2:00)\",\"openTime\":\"10:\"[truncated 51 chars]; line: 1, column: 458] (through reference chain: com.lifefitness.qa.api.corecontrollers.user.postregistration.models.LifeFitnessFacility[\"timezone\"])\n\tat com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:63)\n\tat com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1733)\n\tat com.fasterxml.jackson.databind.DeserializationContext.handleMissingInstantiator(DeserializationContext.java:1358)\n\tat com.fasterxml.jackson.databind.deser.std.StdDeserializer._deserializeFromString(StdDeserializer.java:311)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeFromString(BeanDeserializerBase.java:1500)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializer._deserializeOther(BeanDeserializer.java:197)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)\n\tat com.fasterxml.jackson.databind.deser.impl.FieldProperty.deserializeAndSet(FieldProperty.java:138)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:314)\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)\n\tat com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)\n\tat com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4730)\n\tat com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3677)\n\tat com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3645)\n\tat com.lifefitness.qa.api.corecontrollers.user.postfacility.PostFacilityHelper.postFacilityExpectSuccess(PostFacilityHelper.java:29)\n\t... 16 more\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "executeBeforeTestSuite",
+    "time" : {
+      "start" : 1693281335875,
+      "stop" : 1693281336139,
+      "duration" : 264
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "addTestLog",
+    "time" : {
+      "start" : 1693281352634,
+      "stop" : 1693281352643,
+      "duration" : 9
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "963bde50992b85fc",
+      "name" : "Test log",
+      "source" : "963bde50992b85fc.txt",
+      "type" : "text/plain",
+      "size" : 8919
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  }, {
+    "name" : "onCarinaAfterMethod",
+    "time" : {
+      "start" : 1693281352643,
+      "stop" : 1693281352643,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "deleteAllEmails",
+    "time" : {
+      "start" : 1693281624028,
+      "stop" : 1693281625117,
+      "duration" : 1089
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.lifefitness.qa.api.core.controllers.user.postfacility.PostFacilityTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.lifefitness.qa.api.core.controllers.user.postfacility.PostFacilityTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "checkThatTimezoneIsOptional"
+  }, {
+    "name" : "parentSuite",
+    "value" : "LifeFitness Backend Auto Tests"
+  }, {
+    "name" : "suite",
+    "value" : "LifeFitness Backend Auto Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.lifefitness.qa.api.core.controllers.user.postfacility.PostFacilityTest"
+  }, {
+    "name" : "host",
+    "value" : "6fa35190-b064-4791-8342-142593eb5b07-5w5mg"
+  }, {
+    "name" : "thread",
+    "value" : "305@6fa35190-b064-4791-8342-142593eb5b07-5w5mg.TestNG-test=LifeFitness Backend Auto Tests-4(25)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "owner",
+    "value" : "Dmitry Parkhomenko"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "HPB-6934",
+    "url" : "https://lfagile.atlassian.net/browse/HPB-6934",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "owner" : "Dmitry Parkhomenko",
+    "retries" : [ {
+      "uid" : "e8965f5d449d548",
+      "status" : "skipped",
+      "statusDetails" : "Unable to create facility",
+      "time" : {
+        "start" : 1693281351766,
+        "stop" : 1693281352218,
+        "duration" : 452
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 1,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "27ee90e0c5c96e16",
+        "status" : "skipped",
+        "statusDetails" : "java.lang.NullPointerException",
+        "time" : {
+          "start" : 1692970312208,
+          "stop" : 1692970312208,
+          "duration" : 0
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "123d04287ac364ea.json",
+  "parameterValues" : [ ]
+}

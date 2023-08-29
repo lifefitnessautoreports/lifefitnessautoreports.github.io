@@ -1,0 +1,209 @@
+[2023-08-29 03:55:59] [25] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-29 03:55:59] [25] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatExistingUserCanBeAddedToExistingFacilityWithPostUsersEndpoint] STARTED at [03:55:59 2023-08-29]
+[2023-08-29 03:55:59] [25] [INFO] Setting default registration body values
+[2023-08-29 03:55:59] [25] [INFO] Base properties loaded: api/core/controllers/user/postregistration/registration.properties
+[2023-08-29 03:55:59] [25] [INFO] Get country code except embargoed ones
+[2023-08-29 03:55:59] [25] [INFO] Registering user with lifeFitnessPostman+86964850@gmail.com email
+[2023-08-29 03:55:59] [25] [INFO] Request method:	POST
+Request URI:	https://vtqa-halo5api1.halo.fitness/halo-core-service/api/v1/users/registration
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6ImM2MGI5ZGUwODBmZmFmYmZjMTgzMzllY2Q0NGFjNzdmN2ZhNGU4ZDMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1xYS0xOTEyMDIiLCJhdWQiOiJsZmNvLXFhLTE5MTIwMiIsImF1dGhfdGltZSI6MTY5MzI4MTMzNiwidXNlcl9pZCI6IjJhVnNLNDNFTGZXRjJsSFFOelJXaXdyUjVZRjIiLCJzdWIiOiIyYVZzSzQzRUxmV0YybEhRTnpSV2l3clI1WUYyIiwiaWF0IjoxNjkzMjgxMzM2LCJleHAiOjE2OTMyODQ5MzYsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJhdXRvdGVzdHVzZXJAbGlmZWZpdG5lc3MuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.RVdikUzQdZNJnrVB_sFeAwnl-2aFogbgAbUyYKynXKW04uxGLGZnyQt4Du84KrohhgpIVN1yW4KWDAOgOPjCJG8lZ957FxlPXful1MQZjOpkKnXX19EVogBRjhekpzc1e693262niGEIVIP-bLmXu2JLc3-d8FRX7kwTPFHp_mUZGoNRQR4EuH29XJ5SSzDdNJ2s6Grc4vkQaOwxDjosw1qwJisL_i0HbI0oRjmHhS9fB8Vgow8WltZEmqaiLEEizIR0zgD-6ZN2lkv0uyEnyeB975leJd3VQ5LGKGI9UV4N7F8q2aExG_L2F1k6NknO47KpbP6QPimO3PU15CkF0A
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "user": {
+        "id": 0,
+        "firstName": "Soraya",
+        "lastName": "Schulist",
+        "email": "lifeFitnessPostman+86964850@gmail.com",
+        "preferredUnit": "METRICS",
+        "preferredLanguageCode": "",
+        "phoneNumber": "",
+        "officePhoneNumber": "",
+        "imageUrl": "",
+        "imageKey": "",
+        "thumbnailUrl": "",
+        "thumbnailKey": "",
+        "isAllowedMarketingEmails": null,
+        "isAllowedFeedbackProviding": null,
+        "useTerms": null
+    },
+    "facility": {
+        "id": 0,
+        "legacyId": 0,
+        "ipAddress": "",
+        "facilityGroupId": 0,
+        "name": "Boehm, Nitzsche and Bayer",
+        "facilityTypeId": 0,
+        "address": {
+            "placeId": "9487cb41-eab9-477e-97c9-f64633c8e89a",
+            "primaryStreet": "32013 Estella Fort",
+            "secondaryStreet": "Suite 536",
+            "city": "Goyettestad",
+            "region": "",
+            "zipCode": "223610",
+            "state": "",
+            "countryCode": "CO",
+            "latitude": "30.6279",
+            "longitude": "22.7323",
+            "country": "string",
+            "formatAddress": "string",
+            "rawData": "string"
+        },
+        "contactNumber": "7288759238",
+        "timezone": {
+            "id": 186,
+            "dstOffset": 0,
+            "rawOffset": 7200000,
+            "timezoneId": "Africa/Tripoli",
+            "name": "Eastern European Standard Time"
+        },
+        "openTime": "10:00 AM",
+        "closeTime": "6:00 PM",
+        "isOpen24Hours": true
+    }
+}
+HTTP/1.1 400 Bad Request
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: 36d629a115e9c697c64d2234ee7e902b
+Date: Tue, 29 Aug 2023 03:55:59 GMT
+Server: Google Frontend
+Content-Length: 276
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "timestamp": "2023-08-29T03:55:59.375025266",
+    "errorCode": null,
+    "title": "Invalid JSON format",
+    "details": "org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver$EmptyBodyCheckingHttpInputMessage@55211493",
+    "path": "/halo-core-service"
+}
+
+[2023-08-29 03:55:59] [25] [INFO] Setting default registration body values
+[2023-08-29 03:55:59] [25] [INFO] Base properties loaded: api/core/controllers/user/postregistration/registration.properties
+[2023-08-29 03:55:59] [25] [INFO] Get country code except embargoed ones
+[2023-08-29 03:55:59] [25] [INFO] Registering user with lifeFitnessPostman+10689915@gmail.com email
+[2023-08-29 03:55:59] [25] [INFO] Request method:	POST
+Request URI:	https://vtqa-halo5api1.halo.fitness/halo-core-service/api/v1/users/registration
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6ImM2MGI5ZGUwODBmZmFmYmZjMTgzMzllY2Q0NGFjNzdmN2ZhNGU4ZDMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1xYS0xOTEyMDIiLCJhdWQiOiJsZmNvLXFhLTE5MTIwMiIsImF1dGhfdGltZSI6MTY5MzI4MTMzNiwidXNlcl9pZCI6IjJhVnNLNDNFTGZXRjJsSFFOelJXaXdyUjVZRjIiLCJzdWIiOiIyYVZzSzQzRUxmV0YybEhRTnpSV2l3clI1WUYyIiwiaWF0IjoxNjkzMjgxMzM2LCJleHAiOjE2OTMyODQ5MzYsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJhdXRvdGVzdHVzZXJAbGlmZWZpdG5lc3MuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.RVdikUzQdZNJnrVB_sFeAwnl-2aFogbgAbUyYKynXKW04uxGLGZnyQt4Du84KrohhgpIVN1yW4KWDAOgOPjCJG8lZ957FxlPXful1MQZjOpkKnXX19EVogBRjhekpzc1e693262niGEIVIP-bLmXu2JLc3-d8FRX7kwTPFHp_mUZGoNRQR4EuH29XJ5SSzDdNJ2s6Grc4vkQaOwxDjosw1qwJisL_i0HbI0oRjmHhS9fB8Vgow8WltZEmqaiLEEizIR0zgD-6ZN2lkv0uyEnyeB975leJd3VQ5LGKGI9UV4N7F8q2aExG_L2F1k6NknO47KpbP6QPimO3PU15CkF0A
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "user": {
+        "id": 0,
+        "firstName": "Joan",
+        "lastName": "Goldner",
+        "email": "lifeFitnessPostman+10689915@gmail.com",
+        "preferredUnit": "METRICS",
+        "preferredLanguageCode": "",
+        "phoneNumber": "",
+        "officePhoneNumber": "",
+        "imageUrl": "",
+        "imageKey": "",
+        "thumbnailUrl": "",
+        "thumbnailKey": "",
+        "isAllowedMarketingEmails": null,
+        "isAllowedFeedbackProviding": null,
+        "useTerms": null
+    },
+    "facility": {
+        "id": 0,
+        "legacyId": 0,
+        "ipAddress": "",
+        "facilityGroupId": 0,
+        "name": "Friesen-Reinger",
+        "facilityTypeId": 0,
+        "address": {
+            "placeId": "abbc8ae5-ba19-4e7e-b1ff-5ac61b10a344",
+            "primaryStreet": "384 Stanton Camp",
+            "secondaryStreet": "Apt. 697",
+            "city": "Deweyfort",
+            "region": "",
+            "zipCode": "223610",
+            "state": "",
+            "countryCode": "BF",
+            "latitude": "30.6279",
+            "longitude": "22.7323",
+            "country": "string",
+            "formatAddress": "string",
+            "rawData": "string"
+        },
+        "contactNumber": "9219178306",
+        "timezone": {
+            "id": 186,
+            "dstOffset": 0,
+            "rawOffset": 7200000,
+            "timezoneId": "Africa/Tripoli",
+            "name": "Eastern European Standard Time"
+        },
+        "openTime": "10:00 AM",
+        "closeTime": "6:00 PM",
+        "isOpen24Hours": true
+    }
+}
+HTTP/1.1 400 Bad Request
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: 3e00c9effd8cc75c15d862dc1c7da3ec
+Date: Tue, 29 Aug 2023 03:55:59 GMT
+Server: Google Frontend
+Content-Length: 276
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "timestamp": "2023-08-29T03:55:59.464145031",
+    "errorCode": null,
+    "title": "Invalid JSON format",
+    "details": "org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver$EmptyBodyCheckingHttpInputMessage@57cf177d",
+    "path": "/halo-core-service"
+}
+
+[2023-08-29 03:55:59] [25] [ERROR] TEST [LifeFitness Backend Auto Tests - checkThatExistingUserCanBeAddedToExistingFacilityWithPostUsersEndpoint] SKIPPED at [03:55:59 2023-08-29] - Cannot invoke "com.lifefitness.qa.api.corecontrollers.user.postregistration.models.LifeFitnessFacility.getId()" because the return value of "com.lifefitness.qa.api.corecontrollers.user.postregistration.models.LifeFitnessUserRegistration.getFacility()" is null
+
+com.lifefitness.qa.api.core.controllers.user.postuser.PostUserTest.checkThatExistingUserCanBeAddedToExistingFacilityWithPostUsersEndpoint(PostUserTest.java:207)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:568)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+java.base/java.lang.Thread.run(Thread.java:833)
+[2023-08-29 03:55:59] [25] [INFO] Attaching logs to Allure report

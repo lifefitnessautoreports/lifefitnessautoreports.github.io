@@ -1,0 +1,50 @@
+[2023-08-29 03:56:14] [23] [INFO] TEST [LifeFitness Backend Auto Tests - checkEmailVerificationWithNonExistingUser] STARTED at [03:56:14 2023-08-29]
+[2023-08-29 03:56:14] [23] [INFO] Verify user email
+[2023-08-29 03:56:14] [23] [INFO] Verifying email expect failure
+[2023-08-29 03:56:28] [23] [INFO] Request method:	POST
+Request URI:	https://vtqa-halo5api1.halo.fitness/halo-system-utils/api/v1/idp-user/email-verification?email=lifeFitnessPostman%2B89618403%40gmail.com
+Request params:	<none>
+Query params:	email=lifeFitnessPostman+89618403@gmail.com
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=HGs/rc3aUDJe1KkKpJE479juIYXD/wcYtOEL8ubuTc8=
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 400 Bad Request
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: 3da3bba7285c8a1d72691278df020f45
+Date: Tue, 29 Aug 2023 03:56:28 GMT
+Server: Google Frontend
+Content-Length: 125
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "timestamp": [
+        2023,
+        8,
+        29,
+        3,
+        56,
+        28,
+        165543573
+    ],
+    "errorCode": 400,
+    "title": "BAD_REQUEST",
+    "details": "User does not exist",
+    "path": null
+}
+
+[2023-08-29 03:56:28] [23] [INFO] Asserting error details are correct
+[2023-08-29 03:56:28] [23] [INFO] TEST [LifeFitness Backend Auto Tests - checkEmailVerificationWithNonExistingUser] PASSED at [03:56:28 2023-08-29]

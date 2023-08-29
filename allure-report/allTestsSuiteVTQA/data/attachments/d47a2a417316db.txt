@@ -1,0 +1,41 @@
+[2023-08-29 03:56:14] [26] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatUserCantBeDeletedFromIdpWithoutQueryParam] STARTED at [03:56:14 2023-08-29]
+[2023-08-29 03:56:14] [26] [INFO] Getting Halo System Utils vtqa Api Key
+[2023-08-29 03:56:25] [26] [INFO] Request method:	DELETE
+Request URI:	https://vtqa-halo5api1.halo.fitness/halo-system-utils/api/v1/idp-user
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=HGs/rc3aUDJe1KkKpJE479juIYXD/wcYtOEL8ubuTc8=
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 400 Bad Request
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/problem+json
+X-Cloud-Trace-Context: 778fb35c0c51134cb9ae72f4aa259821
+Date: Tue, 29 Aug 2023 03:56:24 GMT
+Server: Google Frontend
+Content-Length: 159
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "type": "about:blank",
+    "title": "Bad Request",
+    "status": 400,
+    "detail": "Required parameter 'email' is not present.",
+    "instance": "/halo-system-utils/api/v1/idp-user"
+}
+
+[2023-08-29 03:56:25] [26] [INFO] Assert that error code is correct
+[2023-08-29 03:56:25] [26] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatUserCantBeDeletedFromIdpWithoutQueryParam] PASSED at [03:56:25 2023-08-29]

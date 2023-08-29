@@ -1,0 +1,54 @@
+[2023-08-29 03:56:03] [26] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-29 03:56:03] [26] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatUserCantBeDeletedFromIdpWithoutQueryParam] STARTED at [03:56:03 2023-08-29]
+[2023-08-29 03:56:03] [26] [INFO] Getting Halo System Utils vtqa Api Key
+[2023-08-29 03:56:14] [26] [INFO] Request method:	DELETE
+Request URI:	https://vtqa-halo5api1.halo.fitness/halo-system-utils/api/v1/idp-user
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=HGs/rc3aUDJe1KkKpJE479juIYXD/wcYtOEL8ubuTc8=
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 429 Too Many Requests
+X-Cloud-Trace-Context: 98d9e909a8a7543bf5987c1be275b777
+Date: Tue, 29 Aug 2023 03:56:14 GMT
+Content-Type: text/html
+Server: Google Frontend
+Content-Length: 14
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+<html>
+  <body>Rate exceeded.</body>
+</html>
+
+[2023-08-29 03:56:14] [26] [INFO] Assert that error code is correct
+[2023-08-29 03:56:14] [26] [ERROR] TEST [LifeFitness Backend Auto Tests - checkThatUserCantBeDeletedFromIdpWithoutQueryParam] SKIPPED at [03:56:14 2023-08-29] - Status code is incorrect expected [400] but found [429]
+
+org.testng.Assert.fail(Assert.java:110)
+org.testng.Assert.failNotEquals(Assert.java:1577)
+org.testng.Assert.assertEqualsImpl(Assert.java:149)
+org.testng.Assert.assertEquals(Assert.java:131)
+org.testng.Assert.assertEquals(Assert.java:1418)
+org.testng.Assert.assertEquals(Assert.java:1382)
+com.lifefitness.qa.api.utils.controllers.idpuser.deleteidpuser.DeleteIdpUserTest.checkThatUserCantBeDeletedFromIdpWithoutQueryParam(DeleteIdpUserTest.java:130)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:568)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+java.base/java.lang.Thread.run(Thread.java:833)
+[2023-08-29 03:56:14] [26] [INFO] Attaching logs to Allure report

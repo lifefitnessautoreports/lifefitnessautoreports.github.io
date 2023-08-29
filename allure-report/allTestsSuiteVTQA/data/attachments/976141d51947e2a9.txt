@@ -1,0 +1,375 @@
+[2023-08-29 03:57:31] [22] [INFO] TEST [LifeFitness Backend Auto Tests - checkUpdatingPasswordWithAnotherUsersToken] STARTED at [03:57:31 2023-08-29]
+[2023-08-29 03:57:31] [22] [INFO] Setting default IDP method to call
+[2023-08-29 03:57:31] [22] [INFO] Setting up IDP method to SIGN_UP
+[2023-08-29 03:57:31] [22] [INFO] Base properties loaded: api/identityplatform/idp.properties
+[2023-08-29 03:57:31] [22] [INFO] Sending PostSignUp IDP method to get access token
+[2023-08-29 03:57:31] [22] [INFO] Request method:	POST
+Request URI:	https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyCfEwH88Li2EsqBTrbI2o5JKXj7CiccNMo
+Request params:	<none>
+Query params:	key=AIzaSyCfEwH88Li2EsqBTrbI2o5JKXj7CiccNMo
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "returnSecureToken": true,
+    "email": "lifeFitnessPostman+71195212@gmail.com",
+    "password": "fawkzhlj3ikx442"
+}
+HTTP/1.1 200 OK
+Pragma: no-cache
+Date: Tue, 29 Aug 2023 03:57:31 GMT
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Content-Type: application/json; charset=UTF-8
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+Content-Encoding: gzip
+Server: ESF
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+{
+    "kind": "identitytoolkit#SignupNewUserResponse",
+    "idToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImM2MGI5ZGUwODBmZmFmYmZjMTgzMzllY2Q0NGFjNzdmN2ZhNGU4ZDMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1xYS0xOTEyMDIiLCJhdWQiOiJsZmNvLXFhLTE5MTIwMiIsImF1dGhfdGltZSI6MTY5MzI4MTQ1MSwidXNlcl9pZCI6InVEb2ZubnBJWk5WMlY1Z2lSQjg1U3BZalBIQjMiLCJzdWIiOiJ1RG9mbm5wSVpOVjJWNWdpUkI4NVNwWWpQSEIzIiwiaWF0IjoxNjkzMjgxNDUxLCJleHAiOjE2OTMyODUwNTEsImVtYWlsIjoibGlmZWZpdG5lc3Nwb3N0bWFuKzcxMTk1MjEyQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJsaWZlZml0bmVzc3Bvc3RtYW4rNzExOTUyMTJAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.WElVqy-D8OaoUlVSn98tDoHB-s6ulCvq51vD3K_HWB5FJyVc3pcqMe7QX56Y5POhRf2zGJEIwMsP8cQQtFRWXXmVckbgy5vsbiYNe41lvgZv2R5tQ332erg0OvcsfZIdmbhVn16C1n0xb6u3e92ngVhb5PyLckypkuXttOSnzUUnUKCavqjssIZEEP--sSYCnbM2SknezWu7yCRka3ck9l7HasiqXNHvo6yG-WRS72ihQn-e5vegiBSpM1OiRw-v-OHjcVi5lGhDMzBOn0KuIpORHDKvoO2Q7L7Q3CGvXDYrLQFAbpcL1x8fSYACuIFvR2qpJdywDJ3PwX1Bs-ACuQ",
+    "email": "lifefitnesspostman+71195212@gmail.com",
+    "refreshToken": "AMf-vBywfzKNT5ujow7rQQf4dVBABZr_B0z-eqfV2buBdrVaKj-9ukQ6mc5JoqLqi2RjUV0e4HL5r_2zl4fs0ctWrqeei_jUNrwLTcppRzJPM87HkZGmTbHtpc-5gquewZGsQd5RhXsstsCaxOtV2ijpxlSTnP7uoEkLOiK42JXZXEV4HM3j0j9t8iGujQrApuNIBO2SPlj8ZM2i9WpbRVWezg56QpJemZ5jbh3hCmNBj5ULUHtW70k",
+    "expiresIn": "3600",
+    "localId": "uDofnnpIZNV2V5giRB85SpYjPHB3"
+}
+
+[2023-08-29 03:57:31] [22] [INFO] Trying to parse IDP response to access token model
+[2023-08-29 03:57:31] [22] [INFO] Setting default IDP method to call
+[2023-08-29 03:57:31] [22] [INFO] Setting up IDP method to SIGN_IN_WITH_PASSWORD
+[2023-08-29 03:57:31] [22] [INFO] Base properties loaded: api/identityplatform/idp.properties
+[2023-08-29 03:57:31] [22] [INFO] Sending PostSignInWithPassword IDP method to get access token
+[2023-08-29 03:57:32] [22] [INFO] Request method:	POST
+Request URI:	https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyCfEwH88Li2EsqBTrbI2o5JKXj7CiccNMo
+Request params:	<none>
+Query params:	key=AIzaSyCfEwH88Li2EsqBTrbI2o5JKXj7CiccNMo
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "returnSecureToken": true,
+    "email": "lifeFitnessPostman+71195212@gmail.com",
+    "password": "fawkzhlj3ikx442"
+}
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Date: Tue, 29 Aug 2023 03:57:32 GMT
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Content-Type: application/json; charset=UTF-8
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+Content-Encoding: gzip
+Server: ESF
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+{
+    "kind": "identitytoolkit#VerifyPasswordResponse",
+    "localId": "uDofnnpIZNV2V5giRB85SpYjPHB3",
+    "email": "lifefitnesspostman+71195212@gmail.com",
+    "displayName": "",
+    "idToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImM2MGI5ZGUwODBmZmFmYmZjMTgzMzllY2Q0NGFjNzdmN2ZhNGU4ZDMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1xYS0xOTEyMDIiLCJhdWQiOiJsZmNvLXFhLTE5MTIwMiIsImF1dGhfdGltZSI6MTY5MzI4MTQ1MiwidXNlcl9pZCI6InVEb2ZubnBJWk5WMlY1Z2lSQjg1U3BZalBIQjMiLCJzdWIiOiJ1RG9mbm5wSVpOVjJWNWdpUkI4NVNwWWpQSEIzIiwiaWF0IjoxNjkzMjgxNDUyLCJleHAiOjE2OTMyODUwNTIsImVtYWlsIjoibGlmZWZpdG5lc3Nwb3N0bWFuKzcxMTk1MjEyQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJsaWZlZml0bmVzc3Bvc3RtYW4rNzExOTUyMTJAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.h2y1gp2xdBg-PdaQMBWbPgbEqKY3t6UaIFJ1u7RopvjDoPlWTPAbUC0OWGlqx0R8KAuFOfWuK9tiWPX1jEOe5UNgk_8IRK8JPsqw_QcUbjXnmsLc8lQ1f7vyhaagAYR8Mkr-V_ZAA-z-CASeDpiI-xVy_XmvkwUIVoruvBpiCbg93bHjWKYIQmLe_z_h6xwMona5vXpzrKp-XEgn7Ngf3vBR1qvLCoUIPhpNip3kl6siK_znr4ny8eMRQGcbTJNWSPe2cwaW-HFv52oJoYZ79Ki3I3UPM-lhgo-FzeCt9HMeUA00Acj-NGOwO96H2KjUN_MqYf0dBVJG8zpSF9zPhA",
+    "registered": true,
+    "refreshToken": "AMf-vByuSx3iAQgg7tdfjNQBuhGiMutVPdq0NfR3jOOO2K8iO5Su5pFsn1nCQ-D5bfIBOMeeiZarvTu0SgIla_HJ6gxXwo97lCg9h32Eq1UkGxWvDXdLKMBhlSygioWNq8Orrr-hW9QauhnCkru7IIoYHBhiLzK2rrzkeIUbSLKuD018KexT-5V1x1iyzZmtImUAUWv3--NZjUjZaD9X_0mmhiRQn8q3OSoLEHzkU6ffXlDm4hinHAE",
+    "expiresIn": "3600"
+}
+
+[2023-08-29 03:57:32] [22] [INFO] Trying to parse IDP response to access token model
+[2023-08-29 03:57:33] [22] [INFO] Request method:	POST
+Request URI:	https://vtqa-halo5api1.halo.fitness/halo-system-utils/api/v1/password/reset?email=lifeFitnessPostman%2B71195212%40gmail.com
+Request params:	<none>
+Query params:	email=lifeFitnessPostman+71195212@gmail.com
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=HGs/rc3aUDJe1KkKpJE479juIYXD/wcYtOEL8ubuTc8=
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 201 Created
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+X-Cloud-Trace-Context: 5ff3e9d83d3012cbbfb6762ec812f840
+Date: Tue, 29 Aug 2023 03:57:33 GMT
+Content-Type: text/html
+Server: Google Frontend
+Content-Length: 0
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+
+
+[2023-08-29 03:57:33] [22] [INFO] Setting default IDP method to call
+[2023-08-29 03:57:33] [22] [INFO] Setting up IDP method to SIGN_UP
+[2023-08-29 03:57:33] [22] [INFO] Base properties loaded: api/identityplatform/idp.properties
+[2023-08-29 03:57:33] [22] [INFO] Sending PostSignUp IDP method to get access token
+[2023-08-29 03:57:33] [22] [INFO] Request method:	POST
+Request URI:	https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyCfEwH88Li2EsqBTrbI2o5JKXj7CiccNMo
+Request params:	<none>
+Query params:	key=AIzaSyCfEwH88Li2EsqBTrbI2o5JKXj7CiccNMo
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "returnSecureToken": true,
+    "email": "lifeFitnessPostman+51133971@gmail.com",
+    "password": "b1jjn83rvaz5pdr"
+}
+HTTP/1.1 200 OK
+Pragma: no-cache
+Date: Tue, 29 Aug 2023 03:57:33 GMT
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Content-Type: application/json; charset=UTF-8
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+Content-Encoding: gzip
+Server: ESF
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+{
+    "kind": "identitytoolkit#SignupNewUserResponse",
+    "idToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImM2MGI5ZGUwODBmZmFmYmZjMTgzMzllY2Q0NGFjNzdmN2ZhNGU4ZDMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1xYS0xOTEyMDIiLCJhdWQiOiJsZmNvLXFhLTE5MTIwMiIsImF1dGhfdGltZSI6MTY5MzI4MTQ1MywidXNlcl9pZCI6Imd5WWNESE9vYUlYMUtOV1pLOFFUZEl3emFwbjEiLCJzdWIiOiJneVljREhPb2FJWDFLTldaSzhRVGRJd3phcG4xIiwiaWF0IjoxNjkzMjgxNDUzLCJleHAiOjE2OTMyODUwNTMsImVtYWlsIjoibGlmZWZpdG5lc3Nwb3N0bWFuKzUxMTMzOTcxQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJsaWZlZml0bmVzc3Bvc3RtYW4rNTExMzM5NzFAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.L6zHxvqdi71hdabYfGFglx02OHxZikwhtoHcto9b0o_UHHV1QzYC9yQgdY8tYDC5pfvNy2YHqtDFBigSR1rywNU2IfC-cQPKFwk-S9mE3v4mpoo6OxlIWSlsGQub__ZZ_v1tCzlrNhLAkEKbOHlH869sbYYMsaZlWrq41Ujn-OiWvw2VfpnEGVNzN1rZyn-amsbxDIt7W71w6TLmfcBH8fvz9WnYtpuE4TYVl7T_1RzP1uvBST5dvIHvGpX9-XxPgdoPH9dL_7eqEL7otxeHoXk5p7zUGDrdJodvPlR7yGkKBN9hG7MjteXmFdBo8CshfAKVyGi0Dv5fdbOHiI58LA",
+    "email": "lifefitnesspostman+51133971@gmail.com",
+    "refreshToken": "AMf-vBydUfl74RBCiX5iRKwnNxrTuzmL0PW_6JxvMyf3PckImrBL1bPK6HSiNZsA6jVthn4QoHnIl_MeP4p0CHVKOhQcs47mCPPeOumywCKAdvq2JztcVtWIVqBR-wscnsizrtw7ECnju63NeVQ0d6ZrxaaEy4J8wVlSLYHe_D-eqmCoeWYapmF8Z0Chm4vUhjkkGjNefKqNwOLWXYPCfEcIPfcaV_NTIgZjI60XVHk4DS-UX9x2fGE",
+    "expiresIn": "3600",
+    "localId": "gyYcDHOoaIX1KNWZK8QTdIwzapn1"
+}
+
+[2023-08-29 03:57:33] [22] [INFO] Trying to parse IDP response to access token model
+[2023-08-29 03:57:33] [22] [INFO] Setting default IDP method to call
+[2023-08-29 03:57:33] [22] [INFO] Setting up IDP method to SIGN_IN_WITH_PASSWORD
+[2023-08-29 03:57:33] [22] [INFO] Base properties loaded: api/identityplatform/idp.properties
+[2023-08-29 03:57:33] [22] [INFO] Sending PostSignInWithPassword IDP method to get access token
+[2023-08-29 03:57:33] [22] [INFO] Request method:	POST
+Request URI:	https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyCfEwH88Li2EsqBTrbI2o5JKXj7CiccNMo
+Request params:	<none>
+Query params:	key=AIzaSyCfEwH88Li2EsqBTrbI2o5JKXj7CiccNMo
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "returnSecureToken": true,
+    "email": "lifeFitnessPostman+51133971@gmail.com",
+    "password": "b1jjn83rvaz5pdr"
+}
+HTTP/1.1 200 OK
+Date: Tue, 29 Aug 2023 03:57:33 GMT
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Content-Type: application/json; charset=UTF-8
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+Content-Encoding: gzip
+Server: ESF
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+{
+    "kind": "identitytoolkit#VerifyPasswordResponse",
+    "localId": "gyYcDHOoaIX1KNWZK8QTdIwzapn1",
+    "email": "lifefitnesspostman+51133971@gmail.com",
+    "displayName": "",
+    "idToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImM2MGI5ZGUwODBmZmFmYmZjMTgzMzllY2Q0NGFjNzdmN2ZhNGU4ZDMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1xYS0xOTEyMDIiLCJhdWQiOiJsZmNvLXFhLTE5MTIwMiIsImF1dGhfdGltZSI6MTY5MzI4MTQ1MywidXNlcl9pZCI6Imd5WWNESE9vYUlYMUtOV1pLOFFUZEl3emFwbjEiLCJzdWIiOiJneVljREhPb2FJWDFLTldaSzhRVGRJd3phcG4xIiwiaWF0IjoxNjkzMjgxNDUzLCJleHAiOjE2OTMyODUwNTMsImVtYWlsIjoibGlmZWZpdG5lc3Nwb3N0bWFuKzUxMTMzOTcxQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJsaWZlZml0bmVzc3Bvc3RtYW4rNTExMzM5NzFAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.L6zHxvqdi71hdabYfGFglx02OHxZikwhtoHcto9b0o_UHHV1QzYC9yQgdY8tYDC5pfvNy2YHqtDFBigSR1rywNU2IfC-cQPKFwk-S9mE3v4mpoo6OxlIWSlsGQub__ZZ_v1tCzlrNhLAkEKbOHlH869sbYYMsaZlWrq41Ujn-OiWvw2VfpnEGVNzN1rZyn-amsbxDIt7W71w6TLmfcBH8fvz9WnYtpuE4TYVl7T_1RzP1uvBST5dvIHvGpX9-XxPgdoPH9dL_7eqEL7otxeHoXk5p7zUGDrdJodvPlR7yGkKBN9hG7MjteXmFdBo8CshfAKVyGi0Dv5fdbOHiI58LA",
+    "registered": true,
+    "refreshToken": "AMf-vBxhOS8jh4g3sTlAPCWY2YCoSNgyF7UX_uVHzs6Ma6yTRpj6WTRCehT2pAl85SIbMgZCK7NMGQ0IsufJBNuhP316nuG40ixdELfxzA-hbc8TtzuRxqe5oELAD5XAGnSKp5LaFfVZypaRdF_wLXxNRl6qe1Nvj78KI1yAukXwA65ikASm0TnhpoJLDbovhKDlFduLYngGcRTA_qhHX-Xy_wp4KpjZfjQCmIUEotl3cuYOLQibPSg",
+    "expiresIn": "3600"
+}
+
+[2023-08-29 03:57:33] [22] [INFO] Trying to parse IDP response to access token model
+[2023-08-29 03:57:34] [22] [INFO] Request method:	POST
+Request URI:	https://vtqa-halo5api1.halo.fitness/halo-system-utils/api/v1/password/reset?email=lifeFitnessPostman%2B51133971%40gmail.com
+Request params:	<none>
+Query params:	email=lifeFitnessPostman+51133971@gmail.com
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=HGs/rc3aUDJe1KkKpJE479juIYXD/wcYtOEL8ubuTc8=
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 201 Created
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+X-Cloud-Trace-Context: 184f0377225e1ebdde7fac94bf535937
+Date: Tue, 29 Aug 2023 03:57:34 GMT
+Content-Type: text/html
+Server: Google Frontend
+Content-Length: 0
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+
+
+[2023-08-29 03:57:34] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:57:35] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:57:36] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:57:36] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:57:37] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:57:37] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:57:38] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:57:38] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:57:39] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:57:39] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:57:40] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:57:40] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:57:41] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:57:42] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:57:42] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:57:43] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:57:43] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:57:44] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:57:44] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:57:45] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:57:45] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:57:46] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:57:47] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:57:47] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:57:48] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:57:48] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:57:49] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:57:49] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:57:50] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:57:50] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:57:51] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:57:52] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:57:52] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:57:53] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:57:53] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:57:54] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:57:54] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:57:55] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:57:55] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:57:56] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:57:56] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:57:57] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:57:58] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:57:58] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:57:59] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:57:59] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:58:00] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:58:00] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:58:01] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:58:01] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:58:02] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:58:02] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:58:03] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:58:04] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:58:04] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:58:05] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:58:05] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:58:06] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:58:06] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:58:07] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:58:07] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:58:08] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:58:08] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:58:09] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:58:10] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:58:10] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:58:11] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:58:11] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:58:12] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:58:12] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:58:13] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:58:13] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:58:14] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:58:14] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:58:15] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:58:16] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:58:16] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:58:17] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:58:17] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:58:18] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:58:18] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:58:19] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:58:19] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:58:20] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:58:20] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:58:21] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:58:22] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:58:22] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:58:23] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:58:23] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:58:24] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:58:24] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:58:25] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:58:25] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:58:26] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:58:27] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:58:27] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:58:28] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:58:28] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:58:29] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-29 03:58:29] [22] [ERROR] Message wasn't found!
+[2023-08-29 03:58:29] [22] [ERROR] TEST [LifeFitness Backend Auto Tests - checkUpdatingPasswordWithAnotherUsersToken] FAILED at [03:58:29 2023-08-29] - Could not get message.
+
+com.lifefitness.qa.utils.email.EmailUtils.getMessage(EmailUtils.java:186)
+com.lifefitness.qa.api.utils.controllers.password.postupdatepassword.PostUpdatePasswordTest.checkUpdatingPasswordWithAnotherUsersToken(PostUpdatePasswordTest.java:277)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:568)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+java.base/java.lang.Thread.run(Thread.java:833)

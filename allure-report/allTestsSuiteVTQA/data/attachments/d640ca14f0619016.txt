@@ -1,0 +1,121 @@
+[2023-08-29 03:56:03] [26] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-29 03:56:03] [26] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatPreferredUnitFieldIsOptional] STARTED at [03:56:03 2023-08-29]
+[2023-08-29 03:56:03] [26] [INFO] Setting default registration body values
+[2023-08-29 03:56:03] [26] [INFO] Base properties loaded: api/core/controllers/user/postregistration/registration.properties
+[2023-08-29 03:56:03] [26] [INFO] Get country code except embargoed ones
+[2023-08-29 03:56:03] [26] [INFO] Registering user with lifeFitnessPostman+22503034@gmail.com email
+[2023-08-29 03:56:03] [26] [INFO] Request method:	POST
+Request URI:	https://vtqa-halo5api1.halo.fitness/halo-core-service/api/v1/users/registration
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6ImM2MGI5ZGUwODBmZmFmYmZjMTgzMzllY2Q0NGFjNzdmN2ZhNGU4ZDMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1xYS0xOTEyMDIiLCJhdWQiOiJsZmNvLXFhLTE5MTIwMiIsImF1dGhfdGltZSI6MTY5MzI4MTMzNiwidXNlcl9pZCI6IjJhVnNLNDNFTGZXRjJsSFFOelJXaXdyUjVZRjIiLCJzdWIiOiIyYVZzSzQzRUxmV0YybEhRTnpSV2l3clI1WUYyIiwiaWF0IjoxNjkzMjgxMzM2LCJleHAiOjE2OTMyODQ5MzYsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJhdXRvdGVzdHVzZXJAbGlmZWZpdG5lc3MuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.RVdikUzQdZNJnrVB_sFeAwnl-2aFogbgAbUyYKynXKW04uxGLGZnyQt4Du84KrohhgpIVN1yW4KWDAOgOPjCJG8lZ957FxlPXful1MQZjOpkKnXX19EVogBRjhekpzc1e693262niGEIVIP-bLmXu2JLc3-d8FRX7kwTPFHp_mUZGoNRQR4EuH29XJ5SSzDdNJ2s6Grc4vkQaOwxDjosw1qwJisL_i0HbI0oRjmHhS9fB8Vgow8WltZEmqaiLEEizIR0zgD-6ZN2lkv0uyEnyeB975leJd3VQ5LGKGI9UV4N7F8q2aExG_L2F1k6NknO47KpbP6QPimO3PU15CkF0A
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "user": {
+        "id": 0,
+        "firstName": "Lyn",
+        "lastName": "Wiza",
+        "email": "lifeFitnessPostman+22503034@gmail.com",
+        "preferredUnit": "METRICS",
+        "preferredLanguageCode": "",
+        "phoneNumber": "",
+        "officePhoneNumber": "",
+        "imageUrl": "",
+        "imageKey": "",
+        "thumbnailUrl": "",
+        "thumbnailKey": "",
+        "isAllowedMarketingEmails": null,
+        "isAllowedFeedbackProviding": null,
+        "useTerms": null
+    },
+    "facility": {
+        "id": 0,
+        "legacyId": 0,
+        "ipAddress": "",
+        "facilityGroupId": 0,
+        "name": "Feeney, Schamberger and Kirlin",
+        "facilityTypeId": 0,
+        "address": {
+            "placeId": "406a0715-1327-4a21-80e1-e5f6a6205071",
+            "primaryStreet": "07585 Luettgen Union",
+            "secondaryStreet": "Suite 079",
+            "city": "Port Carroll",
+            "region": "",
+            "zipCode": "223610",
+            "state": "",
+            "countryCode": "TG",
+            "latitude": "30.6279",
+            "longitude": "22.7323",
+            "country": "string",
+            "formatAddress": "string",
+            "rawData": "string"
+        },
+        "contactNumber": "9175319603",
+        "timezone": {
+            "id": 186,
+            "dstOffset": 0,
+            "rawOffset": 7200000,
+            "timezoneId": "Africa/Tripoli",
+            "name": "Eastern European Standard Time"
+        },
+        "openTime": "10:00 AM",
+        "closeTime": "6:00 PM",
+        "isOpen24Hours": true
+    }
+}
+HTTP/1.1 400 Bad Request
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: 1cd9a2dadc76db32e2eb904c6749f97a
+Date: Tue, 29 Aug 2023 03:56:03 GMT
+Server: Google Frontend
+Content-Length: 276
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "timestamp": "2023-08-29T03:56:03.126188558",
+    "errorCode": null,
+    "title": "Invalid JSON format",
+    "details": "org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver$EmptyBodyCheckingHttpInputMessage@4bb05a2a",
+    "path": "/halo-core-service"
+}
+
+[2023-08-29 03:56:03] [26] [INFO] Setting default IDP method to call
+[2023-08-29 03:56:03] [26] [INFO] Setting up IDP method to SIGN_UP
+[2023-08-29 03:56:03] [26] [INFO] Base properties loaded: api/identityplatform/idp.properties
+[2023-08-29 03:56:03] [26] [ERROR] TEST [LifeFitness Backend Auto Tests - checkThatPreferredUnitFieldIsOptional] SKIPPED at [03:56:03 2023-08-29] - Cannot invoke "com.lifefitness.qa.api.corecontrollers.user.postregistration.models.LifeFitnessUser.getEmail()" because "lifeFitnessUser" is null
+
+com.lifefitness.qa.identityplatform.IdentityPlatformHelper.setUpIdentityPlatformAndSendApiCall(IdentityPlatformHelper.java:39)
+com.lifefitness.qa.identityplatform.IdentityPlatformHelper.signUp(IdentityPlatformHelper.java:30)
+com.lifefitness.qa.identityplatform.IdentityPlatformHelper.signUpThenSignInWithPassword(IdentityPlatformHelper.java:25)
+com.lifefitness.qa.api.core.controllers.user.putusersprofile.PutUsersProfileTest.checkThatPreferredUnitFieldIsOptional(PutUsersProfileTest.java:197)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:568)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+java.base/java.lang.Thread.run(Thread.java:833)
+[2023-08-29 03:56:03] [26] [INFO] Attaching logs to Allure report
