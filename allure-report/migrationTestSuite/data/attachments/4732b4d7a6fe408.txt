@@ -1,0 +1,211 @@
+[2023-08-29 12:03:29] [23] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-29 12:03:29] [23] [INFO] TEST [Migration Backend Auto Tests - checkThatAdminOfFacilityCanBeDeletedTest] STARTED at [12:03:29 2023-08-29]
+[2023-08-29 12:03:29] [23] [INFO] Setting default registration body values
+[2023-08-29 12:03:29] [23] [INFO] Base properties loaded: api/core/controllers/user/postregistration/registration.properties
+[2023-08-29 12:03:29] [23] [INFO] Get country code except embargoed ones
+[2023-08-29 12:03:29] [23] [INFO] Registering user with lifeFitnessPostman+52778556@gmail.com email
+[2023-08-29 12:03:30] [23] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/registration
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6ImM2MGI5ZGUwODBmZmFmYmZjMTgzMzllY2Q0NGFjNzdmN2ZhNGU4ZDMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MzMxMDU5NCwidXNlcl9pZCI6ImQ3ZVZMTm9UcTFaWGxMZUhpTXpoS29MRHIwVjIiLCJzdWIiOiJkN2VWTE5vVHExWlhsTGVIaU16aEtvTERyMFYyIiwiaWF0IjoxNjkzMzEwNTk0LCJleHAiOjE2OTMzMTQxOTQsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJhdXRvdGVzdHVzZXJAbGlmZWZpdG5lc3MuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.HUVAUQbJlqDRj-zQa-26iZ7hIAfLSuQbG3cLTfADHuaRwCcEZjQN2UGYp-GtlHvN1c9Mcfe2vma3G6lughRAAqF7Cf_8zWGhGgfC7pAfDHKcbu1jxxKk9Fi_55wpnHjUZNDTg3KM7xAG0DZFohsM9Yq834NyHOwHqydTZGPy1D4DCYwo9K0rL1hPW0fjTBOqxe5-nMdCIgkWlHRCGIvD5fWDsXnA008PCYPdsBq59Xo5Vjq6Eyj_YNdc6rqfUj0FH7OPS7Kb6sN_tVn9PtuX50UePs2psEuhNLvCkp7gMBKZqMfFSANcAUcV9ZHH5rQ1ezCNWNHSp6WBOXs7ynvBCQ
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "user": {
+        "id": 0,
+        "firstName": "Maria",
+        "lastName": "Crist",
+        "email": "lifeFitnessPostman+52778556@gmail.com",
+        "preferredUnit": "METRICS",
+        "preferredLanguageCode": "",
+        "phoneNumber": "",
+        "officePhoneNumber": "",
+        "imageUrl": "",
+        "imageKey": "",
+        "thumbnailUrl": "",
+        "thumbnailKey": "",
+        "isAllowedMarketingEmails": null,
+        "isAllowedFeedbackProviding": null,
+        "useTerms": null
+    },
+    "facility": {
+        "id": 0,
+        "legacyId": 0,
+        "ipAddress": "",
+        "facilityGroupId": 0,
+        "name": "Hilpert Inc",
+        "facilityTypeId": 0,
+        "address": {
+            "placeId": "b90bbba6-9829-4537-9bce-1a9d48a6f47b",
+            "primaryStreet": "4871 Jan Walk",
+            "secondaryStreet": "Apt. 189",
+            "city": "Vadamouth",
+            "region": "",
+            "zipCode": "223610",
+            "state": "",
+            "countryCode": "SK",
+            "latitude": "30.6279",
+            "longitude": "22.7323",
+            "country": "string",
+            "formatAddress": "string",
+            "rawData": "string"
+        },
+        "contactNumber": "9526033788",
+        "timezone": {
+            "id": 186,
+            "dstOffset": 0,
+            "rawOffset": 7200000,
+            "timezoneId": "Africa/Tripoli",
+            "name": "Eastern European Standard Time"
+        },
+        "openTime": "10:00 AM",
+        "closeTime": "6:00 PM",
+        "isOpen24Hours": true
+    }
+}
+HTTP/1.1 201 Created
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: ba5a4bdd62115eaae51940b733d9e4b2
+Date: Tue, 29 Aug 2023 12:03:30 GMT
+Server: Google Frontend
+Content-Length: 1052
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "user": {
+        "id": 55479,
+        "firstName": "Maria",
+        "lastName": "Crist",
+        "email": "lifefitnesspostman+52778556@gmail.com",
+        "preferredUnit": "METRICS",
+        "preferredLanguageCode": "en-US",
+        "phoneNumber": "",
+        "officePhoneNumber": "",
+        "profilePicUrl": null,
+        "imageKey": "",
+        "isEnabled": true,
+        "isAllowedMarketingEmails": true,
+        "isAllowedFeedbackProviding": true,
+        "useTerms": true,
+        "encodedPassword": null,
+        "status": "ACTIVE",
+        "roleIds": [
+            2
+        ]
+    },
+    "facility": {
+        "id": 42773,
+        "legacyId": 0,
+        "ipAddress": "",
+        "facilityGroupId": null,
+        "name": "Hilpert Inc",
+        "facilityTypeId": null,
+        "address": {
+            "id": 42797,
+            "placeId": "b90bbba6-9829-4537-9bce-1a9d48a6f47b",
+            "primaryStreet": "4871 Jan Walk",
+            "secondaryStreet": "Apt. 189",
+            "city": "Vadamouth",
+            "region": "EMEA",
+            "zipCode": "223610",
+            "state": "",
+            "countryCode": "SK",
+            "latitude": 30.6279,
+            "longitude": 22.7323,
+            "country": "string",
+            "formatAddress": "string",
+            "rawData": "string"
+        },
+        "contactNumber": "9526033788",
+        "timezone": {
+            "id": 186,
+            "dstOffset": 0,
+            "rawOffset": 7200000,
+            "timezoneId": "Africa/Tripoli",
+            "name": "Eastern European Standard Time"
+        },
+        "openTime": "10:00 AM",
+        "closeTime": "6:00 PM",
+        "isOpen24Hours": true
+    }
+}
+
+[2023-08-29 12:03:30] [23] [INFO] Trying to delete user as per CCPA requirements
+[2023-08-29 12:03:30] [23] [INFO] Getting Halo Core dev base URL
+[2023-08-29 12:03:41] [23] [INFO] Request method:	DELETE
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/delete?email=lifefitnesspostman%2B52778556%40gmail.com
+Request params:	<none>
+Query params:	email=lifefitnesspostman+52778556@gmail.com
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6ImM2MGI5ZGUwODBmZmFmYmZjMTgzMzllY2Q0NGFjNzdmN2ZhNGU4ZDMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MzMxMDU5MywidXNlcl9pZCI6Im52eWRlcTdCWlVWUlpDZ252WUo5cUNZRmZrOTMiLCJzdWIiOiJudnlkZXE3QlpVVlJaQ2dudllKOXFDWUZmazkzIiwiaWF0IjoxNjkzMzEwNTkzLCJleHAiOjE2OTMzMTQxOTMsImVtYWlsIjoibGlmZWZpdG5lc3Nwb3N0bWFuKzIzMTI2OTM5QGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImxpZmVmaXRuZXNzcG9zdG1hbisyMzEyNjkzOUBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.RYbxcUvep9zhGgyBJaw8Ygg6pAS3chqOnAI23OoSugzocFh4v98-GeTq1M8AXMvvm-jFzIq0gFzkGcib4fvQba_F9JWvYLrH1n9Gj61je-tL94_vJv7QEk6NNcDbk_V3DAk-cILCi5qMGr_tG7XO9w9f9Lu74J4yMg_MPFU9OhwdJvoo2fiaiZk_BBw1APidQNk5n1eEUQQ_qJS9K5QWV3oVHMnyTFaTM1SL2qFOM-dx5zWYk1MBXs4rt0z519Cp2llNMvFPkMrPBzgIwuB19-eqZkzxCQth5c9CRiy1TLRpWcWKyEBSyD3GOWjLQCujuLGphTX48ARSLECb_c6leQ
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 400 Bad Request
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: 1587053a74ff0f75e7240b014f190f99
+Date: Tue, 29 Aug 2023 12:03:41 GMT
+Server: Google Frontend
+Content-Length: 132
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "timestamp": "2023-08-29T12:03:41.332954354",
+    "errorCode": 400,
+    "title": "BAD_REQUEST",
+    "details": "[6b15e4fb] [7b87d8ed-1] ",
+    "path": null
+}
+
+[2023-08-29 12:03:41] [23] [INFO] Asserting that correct response code is returned after user was deleted
+[2023-08-29 12:03:41] [23] [ERROR] TEST [Migration Backend Auto Tests - checkThatAdminOfFacilityCanBeDeletedTest] FAILED at [12:03:41 2023-08-29] - Status code is incorrect expected [204] but found [400]
+
+org.testng.Assert.fail(Assert.java:110)
+org.testng.Assert.failNotEquals(Assert.java:1577)
+org.testng.Assert.assertEqualsImpl(Assert.java:149)
+org.testng.Assert.assertEquals(Assert.java:131)
+org.testng.Assert.assertEquals(Assert.java:1418)
+org.testng.Assert.assertEquals(Assert.java:1382)
+com.lifefitness.qa.api.core.controllers.user.deleteuser.DeleteUserTest.checkThatAdminOfFacilityCanBeDeletedTest(DeleteUserTest.java:84)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:568)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+java.base/java.lang.Thread.run(Thread.java:833)

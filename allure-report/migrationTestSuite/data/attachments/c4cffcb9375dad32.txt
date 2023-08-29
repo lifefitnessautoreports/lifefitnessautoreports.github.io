@@ -1,0 +1,102 @@
+[2023-08-28 01:29:18] [24] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-28 01:29:18] [24] [INFO] TEST [Migration Backend Auto Tests - checkUpdatingUserWithCamelCaseEmail] STARTED at [13:29:18 2023-08-28]
+[2023-08-28 01:29:18] [24] [INFO] Setting default registration body values
+[2023-08-28 01:29:18] [24] [INFO] Base properties loaded: api/core/controllers/user/postregistration/registration.properties
+[2023-08-28 01:29:18] [24] [INFO] Get country code except embargoed ones
+[2023-08-28 01:29:18] [24] [INFO] Setting email to camel case
+[2023-08-28 01:29:18] [24] [INFO] Registering user with lifeFitnessPostman+47601432@gmail.com email
+[2023-08-28 01:29:22] [24] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/registration
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6ImM2MGI5ZGUwODBmZmFmYmZjMTgzMzllY2Q0NGFjNzdmN2ZhNGU4ZDMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MzIyOTM1NywidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkzMjI5MzU3LCJleHAiOjE2OTMyMzI5NTcsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.bXTm-VdTSkri4OSYft4i6aJcs6uzA6r4ccQnfatCKonDLfmTQY_JZCzGZVL4VW9lfiVGy3R_Ucm7locpNRyn1raSvhJ4goiks6IC8SJvobwfOzfhV4RnHbgpC0LP1LgbhTK3xJXgU3GEPSmbC_glpteJ5xhK4KnWLY43N6RqWJeTnaXtdNNJFtWTYiS09i-ZgCXtQohrhKC7Laj08LWKiK4EMT3yekXeydnCmAjUj3gp_OINBMmZIGV-qe4y5fpal4dEESNovztvsNJgDGyIc17b02ScFT91MkNzTG8HkR6i6nu5NGVf1_-INpzbvZnSQNDVMnAZC7vyWgxE29Maag
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "user": {
+        "id": 0,
+        "firstName": "Bruce",
+        "lastName": "Jenkins",
+        "email": "lifeFitnessPostman+47601432@gmail.com",
+        "preferredUnit": "METRICS",
+        "preferredLanguageCode": "",
+        "phoneNumber": "",
+        "officePhoneNumber": "",
+        "imageUrl": "",
+        "imageKey": "",
+        "thumbnailUrl": "",
+        "thumbnailKey": "",
+        "isAllowedMarketingEmails": null,
+        "isAllowedFeedbackProviding": null,
+        "useTerms": null
+    },
+    "facility": {
+        "id": 0,
+        "legacyId": 0,
+        "ipAddress": "",
+        "facilityGroupId": 0,
+        "name": "Gleason, Becker and Schmitt",
+        "facilityTypeId": 0,
+        "address": {
+            "placeId": "8008cb88-86b4-4fcb-9b84-a1c4b4a47e8b",
+            "primaryStreet": "96440 Cornelia Path",
+            "secondaryStreet": "Suite 777",
+            "city": "South Annborough",
+            "region": "",
+            "zipCode": "223610",
+            "state": "",
+            "countryCode": "AI",
+            "latitude": "30.6279",
+            "longitude": "22.7323",
+            "country": "string",
+            "formatAddress": "string",
+            "rawData": "string"
+        },
+        "contactNumber": "7361092441",
+        "timezone": {
+            "id": 186,
+            "dstOffset": 0,
+            "rawOffset": 7200000,
+            "timezoneId": "Africa/Tripoli",
+            "name": "Eastern European Standard Time"
+        },
+        "openTime": "10:00 AM",
+        "closeTime": "6:00 PM",
+        "isOpen24Hours": true
+    }
+}
+HTTP/1.1 503 Service Unavailable
+content-type: text/plain
+X-Cloud-Trace-Context: 308c4429a21c5f37ac8077fb3ac36acd
+Date: Mon, 28 Aug 2023 13:29:22 GMT
+Server: Google Frontend
+Content-Length: 19
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+Service Unavailable
+
+[2023-08-28 01:29:22] [24] [ERROR] TEST [Migration Backend Auto Tests - checkUpdatingUserWithCamelCaseEmail] FAILED at [13:29:22 2023-08-28] - Unable to register user
+
+com.lifefitness.qa.api.corecontrollers.user.postregistration.PostRegistrationHelper.registerUser(PostRegistrationHelper.java:37)
+com.lifefitness.qa.api.core.controllers.user.putuserdetails.PutUserDetailsTest.checkUpdatingUserWithCamelCaseEmail(PutUserDetailsTest.java:49)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:568)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+java.base/java.lang.Thread.run(Thread.java:833)
