@@ -1,0 +1,201 @@
+[2023-08-29 03:55:45] [24] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-29 03:55:45] [24] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatUpdatingGBCountryCodeReturnsEMEARegion] STARTED at [03:55:45 2023-08-29]
+[2023-08-29 03:55:45] [24] [INFO] Creating new facility
+[2023-08-29 03:55:45] [24] [INFO] Setting default add facility body values
+[2023-08-29 03:55:45] [24] [INFO] Base properties loaded: api/core/controllers/user/postfacility/post_facility.properties
+[2023-08-29 03:55:45] [24] [INFO] Get country code except embargoed ones
+[2023-08-29 03:55:45] [24] [INFO] Create facility expecting success
+[2023-08-29 03:55:45] [24] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/facilities
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6ImM2MGI5ZGUwODBmZmFmYmZjMTgzMzllY2Q0NGFjNzdmN2ZhNGU4ZDMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MzI4MTMzMCwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkzMjgxMzMwLCJleHAiOjE2OTMyODQ5MzAsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.HGP_tQOP8AjoLQNMvtpP08fWRecy6mEbusXz7PFwxY9rTClBrp10BZJRoANvwtQFCNGhaqT-95mSoeYCsSM25PH--ZZqbsATaWy9lSednABbUa6x5yeXstS__hNhp8W-XTcN8oABUriJ0J2qBMZB4Wkg_Fn9jFwbrfOZRVFzc1fuJWg3jfckPnrmCQYBf0brtUI25Plc-FK785qyH5dOY4AvNRUVx5-0Dqb-BgvYAW2xcPGdKw4ErK3oeRjKY8F-f0E7BDVWzLAvrrb_DZGjySZc1e7yA1w6UeMm_2t211L8Y_u2DCS6PHLc2hLh8EbltQ1eJmSf4vRWgF9GfdBW4A
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "name": "Von Inc",
+    "facilityGroupId": 0,
+    "facilityTypeId": 0,
+    "address": {
+        "placeId": "f911497e-25c9-47a3-b195-982e871140e9",
+        "primaryStreet": "595 Koss Freeway",
+        "secondaryStreet": "Apt. 914",
+        "city": "Port Jameton",
+        "state": "",
+        "countryCode": "CF",
+        "latitude": "30.6279",
+        "longitude": "22.7323",
+        "country": "string",
+        "formatAddress": "asd"
+    },
+    "contactNumber": "6909493167",
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": true,
+    "timezone": {
+        "id": 186,
+        "dstOffset": 0,
+        "rawOffset": 7200000,
+        "timezoneId": "Africa/Tripoli",
+        "name": "Eastern European Standard Time"
+    }
+}
+HTTP/1.1 201 Created
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: 5adee54b74f288a12c1f8adb8daecf5e
+Date: Tue, 29 Aug 2023 03:55:45 GMT
+Server: Google Frontend
+Content-Length: 642
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "id": 42377,
+    "legacyId": null,
+    "ipAddress": null,
+    "facilityGroupId": null,
+    "name": "Von Inc",
+    "facilityTypeId": null,
+    "address": {
+        "id": 42401,
+        "placeId": "f911497e-25c9-47a3-b195-982e871140e9",
+        "primaryStreet": "595 Koss Freeway",
+        "secondaryStreet": "Apt. 914",
+        "city": "Port Jameton",
+        "region": "EMEA",
+        "zipCode": null,
+        "state": "",
+        "countryCode": "CF",
+        "latitude": 30.6279,
+        "longitude": 22.7323,
+        "country": "string",
+        "formatAddress": "asd",
+        "rawData": null
+    },
+    "contactNumber": "6909493167",
+    "timezone": {
+        "id": 186,
+        "dstOffset": 0,
+        "rawOffset": 7200000,
+        "timezoneId": "Africa/Tripoli",
+        "name": "Eastern European Standard Time"
+    },
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": false
+}
+
+[2023-08-29 03:55:45] [24] [INFO] Updating facility with country code as GB
+[2023-08-29 03:55:45] [24] [INFO] Setting default update facility body values
+[2023-08-29 03:55:45] [24] [INFO] Base properties loaded: api/core/controllers/facility/putfacility/put_facility.properties
+[2023-08-29 03:55:45] [24] [INFO] Get country code except embargoed ones
+[2023-08-29 03:55:45] [24] [INFO] Updating facility expect success
+[2023-08-29 03:55:46] [24] [INFO] Request method:	PUT
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/facilities
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6ImM2MGI5ZGUwODBmZmFmYmZjMTgzMzllY2Q0NGFjNzdmN2ZhNGU4ZDMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MzI4MTMzMCwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkzMjgxMzMwLCJleHAiOjE2OTMyODQ5MzAsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.HGP_tQOP8AjoLQNMvtpP08fWRecy6mEbusXz7PFwxY9rTClBrp10BZJRoANvwtQFCNGhaqT-95mSoeYCsSM25PH--ZZqbsATaWy9lSednABbUa6x5yeXstS__hNhp8W-XTcN8oABUriJ0J2qBMZB4Wkg_Fn9jFwbrfOZRVFzc1fuJWg3jfckPnrmCQYBf0brtUI25Plc-FK785qyH5dOY4AvNRUVx5-0Dqb-BgvYAW2xcPGdKw4ErK3oeRjKY8F-f0E7BDVWzLAvrrb_DZGjySZc1e7yA1w6UeMm_2t211L8Y_u2DCS6PHLc2hLh8EbltQ1eJmSf4vRWgF9GfdBW4A
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "id": "42377",
+    "name": "Tillman LLC",
+    "facilityGroupId": 0,
+    "facilityTypeId": 5,
+    "address": {
+        "placeId": "2e0b56ea-98d1-43d5-af03-17149fc0e6b1",
+        "primaryStreet": "357 Nisha Bypass",
+        "secondaryStreet": "Suite 054",
+        "city": "Lake Melvinaland",
+        "zipCode": "",
+        "state": "",
+        "countryCode": "GB",
+        "latitude": "30.6279",
+        "longitude": "22.7323",
+        "country": "string",
+        "formatAddress": "asd"
+    },
+    "contactNumber": "6508244433",
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": true,
+    "timezone": {
+        "id": 186,
+        "dstOffset": 0,
+        "rawOffset": 7200000,
+        "timezoneId": "Africa/Tripoli",
+        "name": "Eastern European Standard Time"
+    }
+}
+HTTP/1.1 200 OK
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 29 Aug 2023 03:55:46 GMT
+Server: Google Frontend
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "id": 42377,
+    "legacyId": null,
+    "ipAddress": null,
+    "facilityGroupId": null,
+    "name": "Tillman LLC",
+    "facilityTypeId": 5,
+    "address": {
+        "id": 42401,
+        "placeId": "2e0b56ea-98d1-43d5-af03-17149fc0e6b1",
+        "primaryStreet": "357 Nisha Bypass",
+        "secondaryStreet": "Suite 054",
+        "city": "Lake Melvinaland",
+        "region": "EMEA",
+        "zipCode": "",
+        "state": "",
+        "countryCode": "GB",
+        "latitude": 30.6279,
+        "longitude": 22.7323,
+        "country": "string",
+        "formatAddress": "asd",
+        "rawData": null
+    },
+    "contactNumber": "6909493167",
+    "timezone": {
+        "id": 186,
+        "dstOffset": 0,
+        "rawOffset": 7200000,
+        "timezoneId": "Africa/Tripoli",
+        "name": "Eastern European Standard Time"
+    },
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": false
+}
+
+[2023-08-29 03:55:46] [24] [INFO] Asserting that GB country code returns EMEA region
+[2023-08-29 03:55:46] [24] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatUpdatingGBCountryCodeReturnsEMEARegion] PASSED at [03:55:46 2023-08-29]

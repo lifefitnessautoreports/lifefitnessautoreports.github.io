@@ -1,0 +1,199 @@
+{
+  "uid" : "9c8d0aaa22ed1b1a",
+  "name" : "Check that user can be updated with camel case email",
+  "fullName" : "com.lifefitness.qa.api.core.controllers.user.putuserdetails.PutUserDetailsTest.checkUpdatingUserWithCamelCaseEmail",
+  "historyId" : "7828f4412c401f2725917fb56f35f3e2",
+  "time" : {
+    "start" : 1693224362881,
+    "stop" : 1693224362955,
+    "duration" : 74
+  },
+  "status" : "broken",
+  "statusMessage" : "Unable to register user",
+  "statusTrace" : "java.lang.RuntimeException: Unable to register user\n\tat com.lifefitness.qa.api.corecontrollers.user.postregistration.PostRegistrationHelper.registerUser(PostRegistrationHelper.java:37)\n\tat com.lifefitness.qa.api.core.controllers.user.putuserdetails.PutUserDetailsTest.checkUpdatingUserWithCamelCaseEmail(PutUserDetailsTest.java:49)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\n\tat org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)\n\tat org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)\n\tat org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)\n\tat org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)\n\tat org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)\n\tat org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)\n\tat org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)\n\tat org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)\n\tat java.base/java.lang.Thread.run(Thread.java:833)\nCaused by: com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'Rate': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')\n at [Source: (String)\"Rate exceeded.\"; line: 1, column: 5]\n\tat com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2418)\n\tat com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:759)\n\tat com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:3038)\n\tat com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:2079)\n\tat com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:805)\n\tat com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4817)\n\tat com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4723)\n\tat com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3677)\n\tat com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3645)\n\tat com.lifefitness.qa.api.corecontrollers.user.postregistration.PostRegistrationHelper.registerUser(PostRegistrationHelper.java:35)\n\t... 16 more\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "executeBeforeTestSuite",
+    "time" : {
+      "start" : 1693223484508,
+      "stop" : 1693223484728,
+      "duration" : 220
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "addTestLog",
+    "time" : {
+      "start" : 1693224362956,
+      "stop" : 1693224362969,
+      "duration" : 13
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "d99bcd8f40b9005b",
+      "name" : "Test log",
+      "source" : "d99bcd8f40b9005b.html",
+      "type" : "text/html",
+      "size" : 5420
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  }, {
+    "name" : "onCarinaAfterMethod",
+    "time" : {
+      "start" : 1693224362969,
+      "stop" : 1693224362969,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "deleteAllEmails",
+    "time" : {
+      "start" : 1693224616637,
+      "stop" : 1693224617892,
+      "duration" : 1255
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.lifefitness.qa.api.core.controllers.user.putuserdetails.PutUserDetailsTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.lifefitness.qa.api.core.controllers.user.putuserdetails.PutUserDetailsTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "checkUpdatingUserWithCamelCaseEmail"
+  }, {
+    "name" : "parentSuite",
+    "value" : "LifeFitness Backend Auto Tests"
+  }, {
+    "name" : "suite",
+    "value" : "LifeFitness Backend Auto Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.lifefitness.qa.api.core.controllers.user.putuserdetails.PutUserDetailsTest"
+  }, {
+    "name" : "host",
+    "value" : "43db6e84-362a-48aa-87be-cf266c2d81a7-6z648"
+  }, {
+    "name" : "thread",
+    "value" : "301@43db6e84-362a-48aa-87be-cf266c2d81a7-6z648.TestNG-test=LifeFitness Backend Auto Tests-1(22)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "owner",
+    "value" : "Dmitry Parkhomenko"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "HPB-6930",
+    "url" : "https://lfagile.atlassian.net/browse/HPB-6930",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "owner" : "Dmitry Parkhomenko",
+    "retries" : [ {
+      "uid" : "21a04ed61c13764b",
+      "status" : "skipped",
+      "statusDetails" : "Unable to register user",
+      "time" : {
+        "start" : 1693224362815,
+        "stop" : 1693224362878,
+        "duration" : 63
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 2,
+        "skipped" : 0,
+        "passed" : 3,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "a6c361814e7dabc",
+        "status" : "broken",
+        "statusDetails" : "Unable to register user",
+        "time" : {
+          "start" : 1693209625335,
+          "stop" : 1693209625423,
+          "duration" : 88
+        }
+      }, {
+        "uid" : "5699b4c83a885c46",
+        "status" : "passed",
+        "time" : {
+          "start" : 1692976706002,
+          "stop" : 1692976710067,
+          "duration" : 4065
+        }
+      }, {
+        "uid" : "7d39a0e0e776bf53",
+        "status" : "passed",
+        "time" : {
+          "start" : 1692972659064,
+          "stop" : 1692972662435,
+          "duration" : 3371
+        }
+      }, {
+        "uid" : "a9290a71bd34e704",
+        "status" : "passed",
+        "time" : {
+          "start" : 1692970700255,
+          "stop" : 1692970704459,
+          "duration" : 4204
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "9c8d0aaa22ed1b1a.json",
+  "parameterValues" : [ ]
+}

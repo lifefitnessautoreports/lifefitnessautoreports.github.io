@@ -1,0 +1,74 @@
+[2023-08-29 03:58:52] [23] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-29 03:58:52] [23] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatRUCountryCodeIsEmbargoed] STARTED at [03:58:52 2023-08-29]
+[2023-08-29 03:58:52] [23] [INFO] Creating facility with RU country code expecting failure
+[2023-08-29 03:58:52] [23] [INFO] Setting default add facility body values
+[2023-08-29 03:58:52] [23] [INFO] Base properties loaded: api/core/controllers/user/postfacility/post_facility.properties
+[2023-08-29 03:58:52] [23] [INFO] Get country code except embargoed ones
+[2023-08-29 03:58:52] [23] [INFO] Creating facility expecting failure
+[2023-08-29 03:58:52] [23] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/facilities
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6ImM2MGI5ZGUwODBmZmFmYmZjMTgzMzllY2Q0NGFjNzdmN2ZhNGU4ZDMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MzI4MTMzMCwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkzMjgxMzMwLCJleHAiOjE2OTMyODQ5MzAsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.HGP_tQOP8AjoLQNMvtpP08fWRecy6mEbusXz7PFwxY9rTClBrp10BZJRoANvwtQFCNGhaqT-95mSoeYCsSM25PH--ZZqbsATaWy9lSednABbUa6x5yeXstS__hNhp8W-XTcN8oABUriJ0J2qBMZB4Wkg_Fn9jFwbrfOZRVFzc1fuJWg3jfckPnrmCQYBf0brtUI25Plc-FK785qyH5dOY4AvNRUVx5-0Dqb-BgvYAW2xcPGdKw4ErK3oeRjKY8F-f0E7BDVWzLAvrrb_DZGjySZc1e7yA1w6UeMm_2t211L8Y_u2DCS6PHLc2hLh8EbltQ1eJmSf4vRWgF9GfdBW4A
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "name": "Borer, Mertz and Cassin",
+    "facilityGroupId": 0,
+    "facilityTypeId": 0,
+    "address": {
+        "placeId": "3ec24719-ffbe-4883-8495-433c9a6afc02",
+        "primaryStreet": "86911 Flatley Plaza",
+        "secondaryStreet": "Suite 248",
+        "city": "North Jamison",
+        "state": "",
+        "countryCode": "RU",
+        "latitude": "30.6279",
+        "longitude": "22.7323",
+        "country": "string",
+        "formatAddress": "asd"
+    },
+    "contactNumber": "1603113673",
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": true,
+    "timezone": {
+        "id": 186,
+        "dstOffset": 0,
+        "rawOffset": 7200000,
+        "timezoneId": "Africa/Tripoli",
+        "name": "Eastern European Standard Time"
+    }
+}
+HTTP/1.1 400 Bad Request
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: 04e3123e3202160556fd2098037c0b28
+Date: Tue, 29 Aug 2023 03:58:52 GMT
+Server: Google Frontend
+Content-Length: 120
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "timestamp": "2023-08-29T03:58:52.435259141",
+    "errorCode": null,
+    "title": "Country is embargoed",
+    "details": null,
+    "path": null
+}
+
+[2023-08-29 03:58:52] [23] [INFO] Asserting that RU country is embargoed
+[2023-08-29 03:58:52] [23] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatRUCountryCodeIsEmbargoed] PASSED at [03:58:52 2023-08-29]

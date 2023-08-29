@@ -1,0 +1,193 @@
+{
+  "uid" : "4d27a64cdb6dafa6",
+  "name" : "Check that preferredUnit field is optional",
+  "fullName" : "com.lifefitness.qa.api.core.controllers.user.putusersprofile.PutUsersProfileTest.checkThatPreferredUnitFieldIsOptional",
+  "historyId" : "1ca0d8f6f121f88f6abb56f8cb01ee8e",
+  "time" : {
+    "start" : 1693209625848,
+    "stop" : 1693209625925,
+    "duration" : 77
+  },
+  "status" : "broken",
+  "statusMessage" : "Unable to register user",
+  "statusTrace" : "java.lang.RuntimeException: Unable to register user\n\tat com.lifefitness.qa.api.corecontrollers.user.postregistration.PostRegistrationHelper.registerUser(PostRegistrationHelper.java:37)\n\tat com.lifefitness.qa.api.corecontrollers.user.postregistration.PostRegistrationHelper.registerUserWithDefaultParameters(PostRegistrationHelper.java:24)\n\tat com.lifefitness.qa.api.core.controllers.user.putusersprofile.PutUsersProfileTest.checkThatPreferredUnitFieldIsOptional(PutUsersProfileTest.java:195)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\n\tat org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)\n\tat org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)\n\tat org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)\n\tat org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)\n\tat org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)\n\tat org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)\n\tat org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)\n\tat org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)\n\tat java.base/java.lang.Thread.run(Thread.java:833)\nCaused by: com.fasterxml.jackson.databind.exc.MismatchedInputException: No content to map due to end-of-input\n at [Source: (String)\"\"; line: 1, column: 0]\n\tat com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:59)\n\tat com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4821)\n\tat com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4723)\n\tat com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3677)\n\tat com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3645)\n\tat com.lifefitness.qa.api.corecontrollers.user.postregistration.PostRegistrationHelper.registerUser(PostRegistrationHelper.java:35)\n\t... 17 more\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "executeBeforeTestSuite",
+    "time" : {
+      "start" : 1693209607549,
+      "stop" : 1693209607788,
+      "duration" : 239
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "onCarinaAfterMethod",
+    "time" : {
+      "start" : 1693209625962,
+      "stop" : 1693209625962,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "addTestLog",
+    "time" : {
+      "start" : 1693209625927,
+      "stop" : 1693209625962,
+      "duration" : 35
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "50b4ef7885909df4",
+      "name" : "Test log",
+      "source" : "50b4ef7885909df4.txt",
+      "type" : "text/plain",
+      "size" : 6100
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  }, {
+    "name" : "deleteAllEmails",
+    "time" : {
+      "start" : 1693209641764,
+      "stop" : 1693209642335,
+      "duration" : 571
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.lifefitness.qa.api.core.controllers.user.putusersprofile.PutUsersProfileTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.lifefitness.qa.api.core.controllers.user.putusersprofile.PutUsersProfileTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "checkThatPreferredUnitFieldIsOptional"
+  }, {
+    "name" : "parentSuite",
+    "value" : "LifeFitness Backend Auto Tests"
+  }, {
+    "name" : "suite",
+    "value" : "LifeFitness Backend Auto Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.lifefitness.qa.api.core.controllers.user.putusersprofile.PutUsersProfileTest"
+  }, {
+    "name" : "host",
+    "value" : "16280b86-2a51-40db-be2f-5f1ea38aa14c-gjbhr"
+  }, {
+    "name" : "thread",
+    "value" : "299@16280b86-2a51-40db-be2f-5f1ea38aa14c-gjbhr.TestNG-test=LifeFitness Backend Auto Tests-1(22)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "owner",
+    "value" : "Valeria Sorokina"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "HPB-6876",
+    "url" : "https://lfagile.atlassian.net/browse/HPB-6876",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "owner" : "Valeria Sorokina",
+    "retries" : [ {
+      "uid" : "f6ecaefde738ec46",
+      "status" : "skipped",
+      "statusDetails" : "Unable to register user",
+      "time" : {
+        "start" : 1693209625785,
+        "stop" : 1693209625846,
+        "duration" : 61
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 3,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "64cbe94683a41833",
+        "status" : "failed",
+        "statusDetails" : "2 expectations failed.\nExpected status code <200> but was <400>.\n\nExpected status line a string containing \"OK\" doesn't match actual status line \"HTTP/1.1 400 Bad Request\".\n",
+        "time" : {
+          "start" : 1692976843663,
+          "stop" : 1692976984407,
+          "duration" : 140744
+        }
+      }, {
+        "uid" : "2f07a7ad284cd748",
+        "status" : "failed",
+        "statusDetails" : "2 expectations failed.\nExpected status code <200> but was <504>.\n\nExpected status line a string containing \"OK\" doesn't match actual status line \"HTTP/1.1 504 Gateway Timeout\".\n",
+        "time" : {
+          "start" : 1692972796577,
+          "stop" : 1692974038346,
+          "duration" : 1241769
+        }
+      }, {
+        "uid" : "5a0eee533d13382b",
+        "status" : "failed",
+        "statusDetails" : "2 expectations failed.\nExpected status code <200> but was <400>.\n\nExpected status line a string containing \"OK\" doesn't match actual status line \"HTTP/1.1 400 Bad Request\".\n",
+        "time" : {
+          "start" : 1692970774911,
+          "stop" : 1692970867545,
+          "duration" : 92634
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "4d27a64cdb6dafa6.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,56 @@
+[2023-08-29 04:10:34] [26] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-29 04:10:34] [26] [INFO] TEST [LifeFitness Backend Auto Tests - checkUpdatingPasswordWhenUserDoesNotExistsInIDP] STARTED at [04:10:34 2023-08-29]
+[2023-08-29 04:10:34] [26] [INFO] Base properties loaded: api/utils/controllers/password/postupdatepassword/rq_update_password.properties
+[2023-08-29 04:10:34] [26] [INFO] Update password expecting error response code
+[2023-08-29 04:10:34] [26] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-system-utils/api/v1/password/update
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=P3jxJislR3PNt1P1gQxXepwRY8RiHGTps+Yld/5Ot50=
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "email": "lifeFitnessPostman+56473368@gmail.com",
+    "token": "token",
+    "encodedPassword": "encodedPassword"
+}
+HTTP/1.1 404 Not Found
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: 146a3a65e4012a436e5ef096d6cf6dcd
+Date: Tue, 29 Aug 2023 04:10:34 GMT
+Server: Google Frontend
+Content-Length: 123
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "timestamp": [
+        2023,
+        8,
+        29,
+        4,
+        10,
+        34,
+        513155386
+    ],
+    "errorCode": 404,
+    "title": "NOT_FOUND",
+    "details": "User does not exist",
+    "path": null
+}
+
+[2023-08-29 04:10:34] [26] [INFO] Asserting error details are correct
+[2023-08-29 04:10:34] [26] [INFO] TEST [LifeFitness Backend Auto Tests - checkUpdatingPasswordWhenUserDoesNotExistsInIDP] PASSED at [04:10:34 2023-08-29]

@@ -1,0 +1,68 @@
+[2023-08-25 03:06:08] [23] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-25 03:06:08] [23] [INFO] TEST [LifeFitness Backend Auto Tests - checkPrimaryStreetWithMoreThanFiftyChars] STARTED at [15:06:08 2023-08-25]
+[2023-08-25 03:06:08] [23] [INFO] Creating facility with primary street with more than 50 chars expecting failure
+[2023-08-25 03:06:08] [23] [INFO] Setting default add facility body values
+[2023-08-25 03:06:08] [23] [INFO] Base properties loaded: api/core/controllers/user/postfacility/post_facility.properties
+[2023-08-25 03:06:08] [23] [INFO] Get country code except embargoed ones
+[2023-08-25 03:06:08] [23] [INFO] Creating facility expecting failure
+[2023-08-25 03:06:08] [23] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/facilities
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5Mjk3NTg1NCwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkyOTc1ODU0LCJleHAiOjE2OTI5Nzk0NTQsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.Gqtj0ogd7BgJHGeX6WS2MRW1IdXztSMfZFudP1sJ8ZeGNnMijiR0rB6dgSQ6kWb5bSr44jyL2YCnoI4pgxRfX44on3FMN3XTzJQyDDzySdqS3U1MDDmU6iZwBOIBnR11q-6AEC0dlmzZmmDqhL7khu-vytBjjFjqWZB4-DBiw5EcEu880HQH7OBpdI2Llc8PQd3njiHLiCobqDQwBiu4KQeJP_3QvM2zuetLgONKZxrOju04BIpFnXWi7B6GIMSniD9eeP2Roav6nD8iiyYibQS0FMcp3puyT7BrQkQ2oVK8DeDDJ6F5DTsoBYhg7ljrfznVKmL9jd5ezhMn9RBtRg
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "name": "Jones-Hagenes",
+    "facilityGroupId": 0,
+    "facilityTypeId": 0,
+    "address": {
+        "placeId": "9353a726-70ef-4d33-a5e8-c11d5932f5fd",
+        "primaryStreet": "17596 Pfeffer View25981554915214716136819880973023942926028016397762",
+        "secondaryStreet": "Suite 817",
+        "city": "North Leanfurt",
+        "state": "",
+        "countryCode": "VN",
+        "latitude": "30.6279",
+        "longitude": "22.7323",
+        "country": "string",
+        "formatAddress": "asd"
+    },
+    "contactNumber": "7325180928",
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": true,
+    "timezone": null
+}
+HTTP/1.1 400 Bad Request
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: 4108b5266255dee351750ca2bd7194c5
+Date: Fri, 25 Aug 2023 15:06:08 GMT
+Server: Google Frontend
+Content-Length: 144
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "timestamp": "2023-08-25T15:06:08.893449436",
+    "errorCode": null,
+    "title": "Street address maximum size is 50 characters",
+    "details": null,
+    "path": null
+}
+
+[2023-08-25 03:06:08] [23] [INFO] Assert that error response is correct
+[2023-08-25 03:06:08] [23] [INFO] TEST [LifeFitness Backend Auto Tests - checkPrimaryStreetWithMoreThanFiftyChars] PASSED at [15:06:08 2023-08-25]

@@ -1,0 +1,195 @@
+{
+  "uid" : "15f5957ac634bf45",
+  "name" : "Check that email can not be null",
+  "fullName" : "com.lifefitness.qa.api.core.controllers.serviceportal.putpassword.PutPasswordTest.checkThatEmailCanNotBeNull",
+  "historyId" : "5e3096cc55efe15e67dbc62a07f8926f",
+  "time" : {
+    "start" : 1693209613298,
+    "stop" : 1693209613373,
+    "duration" : 75
+  },
+  "status" : "broken",
+  "statusMessage" : "Unable to register user",
+  "statusTrace" : "java.lang.RuntimeException: Unable to register user\n\tat com.lifefitness.qa.api.corecontrollers.user.postregistration.PostRegistrationHelper.registerUser(PostRegistrationHelper.java:37)\n\tat com.lifefitness.qa.api.corecontrollers.user.postregistration.PostRegistrationHelper.registerUserWithDefaultParameters(PostRegistrationHelper.java:24)\n\tat com.lifefitness.qa.api.core.controllers.serviceportal.putpassword.PutPasswordTest.checkThatEmailCanNotBeNull(PutPasswordTest.java:245)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\n\tat org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)\n\tat org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)\n\tat org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)\n\tat org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)\n\tat org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)\n\tat org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)\n\tat org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)\n\tat org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)\n\tat java.base/java.lang.Thread.run(Thread.java:833)\nCaused by: com.fasterxml.jackson.databind.exc.MismatchedInputException: No content to map due to end-of-input\n at [Source: (String)\"\"; line: 1, column: 0]\n\tat com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:59)\n\tat com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4821)\n\tat com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4723)\n\tat com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3677)\n\tat com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3645)\n\tat com.lifefitness.qa.api.corecontrollers.user.postregistration.PostRegistrationHelper.registerUser(PostRegistrationHelper.java:35)\n\t... 17 more\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "executeBeforeTestSuite",
+    "time" : {
+      "start" : 1693209607549,
+      "stop" : 1693209607788,
+      "duration" : 239
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "addTestLog",
+    "time" : {
+      "start" : 1693209613375,
+      "stop" : 1693209613379,
+      "duration" : 4
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "b7c8c0a8bf6ccade",
+      "name" : "Test log",
+      "source" : "b7c8c0a8bf6ccade.txt",
+      "type" : "text/plain",
+      "size" : 6126
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  }, {
+    "name" : "onCarinaAfterMethod",
+    "time" : {
+      "start" : 1693209613380,
+      "stop" : 1693209613380,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "deleteAllEmails",
+    "time" : {
+      "start" : 1693209641764,
+      "stop" : 1693209642335,
+      "duration" : 571
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.lifefitness.qa.api.core.controllers.serviceportal.putpassword.PutPasswordTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.lifefitness.qa.api.core.controllers.serviceportal.putpassword.PutPasswordTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "checkThatEmailCanNotBeNull"
+  }, {
+    "name" : "parentSuite",
+    "value" : "LifeFitness Backend Auto Tests"
+  }, {
+    "name" : "suite",
+    "value" : "LifeFitness Backend Auto Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.lifefitness.qa.api.core.controllers.serviceportal.putpassword.PutPasswordTest"
+  }, {
+    "name" : "host",
+    "value" : "16280b86-2a51-40db-be2f-5f1ea38aa14c-gjbhr"
+  }, {
+    "name" : "thread",
+    "value" : "299@16280b86-2a51-40db-be2f-5f1ea38aa14c-gjbhr.TestNG-test=LifeFitness Backend Auto Tests-4(25)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "owner",
+    "value" : "Valeria Sorokina"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "HPB-7488",
+    "url" : "https://lfagile.atlassian.net/browse/HPB-7488",
+    "type" : "issue"
+  }, {
+    "name" : "HPB-7260",
+    "url" : "https://lfagile.atlassian.net/browse/HPB-7260",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "owner" : "Valeria Sorokina",
+    "retries" : [ {
+      "uid" : "823b02a73995b2d7",
+      "status" : "skipped",
+      "statusDetails" : "Unable to register user",
+      "time" : {
+        "start" : 1693209613209,
+        "stop" : 1693209613293,
+        "duration" : 84
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 1,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "aebdebbeb35436e3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1692975869528,
+          "stop" : 1692975875051,
+          "duration" : 5523
+        }
+      }, {
+        "uid" : "b9e4defb632b7254",
+        "status" : "failed",
+        "statusDetails" : "Status code is incorrect expected [400] but found [500]",
+        "time" : {
+          "start" : 1692972167325,
+          "stop" : 1692972169812,
+          "duration" : 2487
+        }
+      }, {
+        "uid" : "23b2d00ca1ffd05a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1692970319375,
+          "stop" : 1692970323257,
+          "duration" : 3882
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "15f5957ac634bf45.json",
+  "parameterValues" : [ ]
+}

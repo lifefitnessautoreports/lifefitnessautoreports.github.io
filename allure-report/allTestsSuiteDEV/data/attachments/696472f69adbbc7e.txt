@@ -1,0 +1,42 @@
+[2023-08-29 04:10:33] [26] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-29 04:10:33] [26] [INFO] TEST [LifeFitness Backend Auto Tests - checkResetPasswordWithoutQueryParam] STARTED at [04:10:33 2023-08-29]
+[2023-08-29 04:10:33] [26] [INFO] Getting Halo System Utils dev Api Key
+[2023-08-29 04:10:33] [26] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-system-utils/api/v1/password/reset
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=P3jxJislR3PNt1P1gQxXepwRY8RiHGTps+Yld/5Ot50=
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 400 Bad Request
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/problem+json
+X-Cloud-Trace-Context: 99cef0c93faa01c7b0624ac3029f6d03
+Date: Tue, 29 Aug 2023 04:10:33 GMT
+Server: Google Frontend
+Content-Length: 165
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "type": "about:blank",
+    "title": "Bad Request",
+    "status": 400,
+    "detail": "Required parameter 'email' is not present.",
+    "instance": "/halo-system-utils/api/v1/password/reset"
+}
+
+[2023-08-29 04:10:33] [26] [INFO] Assert that api call error status code is correct
+[2023-08-29 04:10:33] [26] [INFO] TEST [LifeFitness Backend Auto Tests - checkResetPasswordWithoutQueryParam] PASSED at [04:10:33 2023-08-29]

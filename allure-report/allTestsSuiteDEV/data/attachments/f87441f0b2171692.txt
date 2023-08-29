@@ -1,0 +1,186 @@
+[2023-08-29 03:56:01] [26] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-29 03:56:01] [26] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatAdminOfFacilityCanBeDeletedTest] STARTED at [03:56:01 2023-08-29]
+[2023-08-29 03:56:01] [26] [INFO] Setting default registration body values
+[2023-08-29 03:56:01] [26] [INFO] Base properties loaded: api/core/controllers/user/postregistration/registration.properties
+[2023-08-29 03:56:01] [26] [INFO] Get country code except embargoed ones
+[2023-08-29 03:56:01] [26] [INFO] Registering user with lifeFitnessPostman+53965593@gmail.com email
+[2023-08-29 03:56:02] [26] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/registration
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6ImM2MGI5ZGUwODBmZmFmYmZjMTgzMzllY2Q0NGFjNzdmN2ZhNGU4ZDMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MzI4MTMzMCwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkzMjgxMzMwLCJleHAiOjE2OTMyODQ5MzAsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.HGP_tQOP8AjoLQNMvtpP08fWRecy6mEbusXz7PFwxY9rTClBrp10BZJRoANvwtQFCNGhaqT-95mSoeYCsSM25PH--ZZqbsATaWy9lSednABbUa6x5yeXstS__hNhp8W-XTcN8oABUriJ0J2qBMZB4Wkg_Fn9jFwbrfOZRVFzc1fuJWg3jfckPnrmCQYBf0brtUI25Plc-FK785qyH5dOY4AvNRUVx5-0Dqb-BgvYAW2xcPGdKw4ErK3oeRjKY8F-f0E7BDVWzLAvrrb_DZGjySZc1e7yA1w6UeMm_2t211L8Y_u2DCS6PHLc2hLh8EbltQ1eJmSf4vRWgF9GfdBW4A
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "user": {
+        "id": 0,
+        "firstName": "Candie",
+        "lastName": "Mante",
+        "email": "lifeFitnessPostman+53965593@gmail.com",
+        "preferredUnit": "METRICS",
+        "preferredLanguageCode": "",
+        "phoneNumber": "",
+        "officePhoneNumber": "",
+        "imageUrl": "",
+        "imageKey": "",
+        "thumbnailUrl": "",
+        "thumbnailKey": "",
+        "isAllowedMarketingEmails": null,
+        "isAllowedFeedbackProviding": null,
+        "useTerms": null
+    },
+    "facility": {
+        "id": 0,
+        "legacyId": 0,
+        "ipAddress": "",
+        "facilityGroupId": 0,
+        "name": "Prohaska, Rohan and Konopelski",
+        "facilityTypeId": 0,
+        "address": {
+            "placeId": "1daf5bb2-bfbb-4a2e-8867-fb67bca6a886",
+            "primaryStreet": "36862 Leannon Port",
+            "secondaryStreet": "Suite 316",
+            "city": "North Shakia",
+            "region": "",
+            "zipCode": "223610",
+            "state": "",
+            "countryCode": "NE",
+            "latitude": "30.6279",
+            "longitude": "22.7323",
+            "country": "string",
+            "formatAddress": "string",
+            "rawData": "string"
+        },
+        "contactNumber": "8744746228",
+        "timezone": {
+            "id": 186,
+            "dstOffset": 0,
+            "rawOffset": 7200000,
+            "timezoneId": "Africa/Tripoli",
+            "name": "Eastern European Standard Time"
+        },
+        "openTime": "10:00 AM",
+        "closeTime": "6:00 PM",
+        "isOpen24Hours": true
+    }
+}
+HTTP/1.1 201 Created
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: f105d92aec1a065c21dddb73598b70d4
+Date: Tue, 29 Aug 2023 03:56:02 GMT
+Server: Google Frontend
+Content-Length: 1081
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "user": {
+        "id": 54957,
+        "firstName": "Candie",
+        "lastName": "Mante",
+        "email": "lifefitnesspostman+53965593@gmail.com",
+        "preferredUnit": "METRICS",
+        "preferredLanguageCode": "en-US",
+        "phoneNumber": "",
+        "officePhoneNumber": "",
+        "profilePicUrl": null,
+        "imageKey": "",
+        "isEnabled": true,
+        "isAllowedMarketingEmails": true,
+        "isAllowedFeedbackProviding": true,
+        "useTerms": true,
+        "encodedPassword": null,
+        "status": "ACTIVE",
+        "roleIds": [
+            2
+        ]
+    },
+    "facility": {
+        "id": 42413,
+        "legacyId": 0,
+        "ipAddress": "",
+        "facilityGroupId": null,
+        "name": "Prohaska, Rohan and Konopelski",
+        "facilityTypeId": null,
+        "address": {
+            "id": 42437,
+            "placeId": "1daf5bb2-bfbb-4a2e-8867-fb67bca6a886",
+            "primaryStreet": "36862 Leannon Port",
+            "secondaryStreet": "Suite 316",
+            "city": "North Shakia",
+            "region": "EMEA",
+            "zipCode": "223610",
+            "state": "",
+            "countryCode": "NE",
+            "latitude": 30.6279,
+            "longitude": 22.7323,
+            "country": "string",
+            "formatAddress": "string",
+            "rawData": "string"
+        },
+        "contactNumber": "8744746228",
+        "timezone": {
+            "id": 186,
+            "dstOffset": 0,
+            "rawOffset": 7200000,
+            "timezoneId": "Africa/Tripoli",
+            "name": "Eastern European Standard Time"
+        },
+        "openTime": "10:00 AM",
+        "closeTime": "6:00 PM",
+        "isOpen24Hours": true
+    }
+}
+
+[2023-08-29 03:56:02] [26] [INFO] Trying to delete user as per CCPA requirements
+[2023-08-29 03:56:02] [26] [INFO] Getting Halo Core dev base URL
+[2023-08-29 03:56:03] [26] [INFO] Request method:	DELETE
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/delete?email=lifefitnesspostman%2B53965593%40gmail.com
+Request params:	<none>
+Query params:	email=lifefitnesspostman+53965593@gmail.com
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6ImM2MGI5ZGUwODBmZmFmYmZjMTgzMzllY2Q0NGFjNzdmN2ZhNGU4ZDMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MzI4MTMyOSwidXNlcl9pZCI6Im52eWRlcTdCWlVWUlpDZ252WUo5cUNZRmZrOTMiLCJzdWIiOiJudnlkZXE3QlpVVlJaQ2dudllKOXFDWUZmazkzIiwiaWF0IjoxNjkzMjgxMzI5LCJleHAiOjE2OTMyODQ5MjksImVtYWlsIjoibGlmZWZpdG5lc3Nwb3N0bWFuKzIzMTI2OTM5QGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImxpZmVmaXRuZXNzcG9zdG1hbisyMzEyNjkzOUBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.WK7B7U1cT1XnW-VSJisS6R_MXQAM3NW5Q5HiAIkCmobViSpII-11yXdiZTExCyCO1aydCmBcJkVTfz0KrjpTATB2d9yzqhuDtVUXze6MYVfzhFnhvz1I-QJGCooS7ty_nH4n0GBgoMAUdGSM90XG2BVefjyUQCdgszk5gsnna4CC-8gMLCDNXeEEDXkjdhZ2LvsrdL08MECcX9hO66-IUlkGXu2SegZxtVeiq9vFDM3pAhBP9lXvz7ajIwCtbhqHLRxUjOSaysnwitzOENkUgu66gO_xYOOBNonwXhF-Q89cK20kbF_ayatsvcdf70Kx93cTi5PN7Alrfv16O6rpPg
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 204 No Content
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+X-Cloud-Trace-Context: a3b83d06ff7c918e808944e41de74f8b
+Date: Tue, 29 Aug 2023 03:56:03 GMT
+Content-Type: text/html
+Server: Google Frontend
+Content-Length: 0
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+
+
+[2023-08-29 03:56:03] [26] [INFO] Asserting that correct response code is returned after user was deleted
+[2023-08-29 03:56:03] [26] [INFO] ================================================================================================
+[2023-08-29 03:56:03] [26] [INFO] Admin user that was deleted
+[2023-08-29 03:56:03] [26] [INFO] lifefitnesspostman+53965593@gmail.com
+[2023-08-29 03:56:03] [26] [INFO] ================================================================================================
+[2023-08-29 03:56:03] [26] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatAdminOfFacilityCanBeDeletedTest] PASSED at [03:56:03 2023-08-29]

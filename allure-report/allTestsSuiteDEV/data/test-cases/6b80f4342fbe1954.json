@@ -1,0 +1,204 @@
+{
+  "uid" : "6b80f4342fbe1954",
+  "name" : "Check user gets email when another user registering to it's facility then denying it",
+  "fullName" : "com.lifefitness.qa.api.core.controllers.user.postregistration.PostRegistrationTest.checkUserGetsEmailWhenAnotherUserRegisteringToItsFacilityThenDenyingIt",
+  "historyId" : "be8f39c418b95593cd23a041383d6a90",
+  "time" : {
+    "start" : 1693224337031,
+    "stop" : 1693224337100,
+    "duration" : 69
+  },
+  "status" : "broken",
+  "statusMessage" : "Unable to register user",
+  "statusTrace" : "java.lang.RuntimeException: Unable to register user\n\tat com.lifefitness.qa.api.corecontrollers.user.postregistration.PostRegistrationHelper.registerUser(PostRegistrationHelper.java:37)\n\tat com.lifefitness.qa.api.corecontrollers.user.postregistration.PostRegistrationHelper.registerUserWithDefaultParameters(PostRegistrationHelper.java:24)\n\tat com.lifefitness.qa.api.core.controllers.user.postregistration.PostRegistrationTest.checkUserGetsEmailWhenAnotherUserRegisteringToItsFacilityThenDenyingIt(PostRegistrationTest.java:873)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\n\tat org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)\n\tat org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)\n\tat org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)\n\tat org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)\n\tat org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)\n\tat org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)\n\tat org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)\n\tat org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)\n\tat java.base/java.lang.Thread.run(Thread.java:833)\nCaused by: com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'Rate': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')\n at [Source: (String)\"Rate exceeded.\"; line: 1, column: 5]\n\tat com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2418)\n\tat com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:759)\n\tat com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:3038)\n\tat com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:2079)\n\tat com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:805)\n\tat com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4817)\n\tat com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4723)\n\tat com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3677)\n\tat com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3645)\n\tat com.lifefitness.qa.api.corecontrollers.user.postregistration.PostRegistrationHelper.registerUser(PostRegistrationHelper.java:35)\n\t... 17 more\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "executeBeforeTestSuite",
+    "time" : {
+      "start" : 1693223484508,
+      "stop" : 1693223484728,
+      "duration" : 220
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "addTestLog",
+    "time" : {
+      "start" : 1693224337102,
+      "stop" : 1693224337116,
+      "duration" : 14
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "3cc24cc1b96fb5da",
+      "name" : "Test log",
+      "source" : "3cc24cc1b96fb5da.html",
+      "type" : "text/html",
+      "size" : 5624
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  }, {
+    "name" : "onCarinaAfterMethod",
+    "time" : {
+      "start" : 1693224337116,
+      "stop" : 1693224337116,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "deleteAllEmails",
+    "time" : {
+      "start" : 1693224616637,
+      "stop" : 1693224617892,
+      "duration" : 1255
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.lifefitness.qa.api.core.controllers.user.postregistration.PostRegistrationTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.lifefitness.qa.api.core.controllers.user.postregistration.PostRegistrationTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "checkUserGetsEmailWhenAnotherUserRegisteringToItsFacilityThenDenyingIt"
+  }, {
+    "name" : "parentSuite",
+    "value" : "LifeFitness Backend Auto Tests"
+  }, {
+    "name" : "suite",
+    "value" : "LifeFitness Backend Auto Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.lifefitness.qa.api.core.controllers.user.postregistration.PostRegistrationTest"
+  }, {
+    "name" : "host",
+    "value" : "43db6e84-362a-48aa-87be-cf266c2d81a7-6z648"
+  }, {
+    "name" : "thread",
+    "value" : "301@43db6e84-362a-48aa-87be-cf266c2d81a7-6z648.TestNG-test=LifeFitness Backend Auto Tests-3(24)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "owner",
+    "value" : "Dmitry Parkhomenko"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "HPB-7154",
+    "url" : "https://lfagile.atlassian.net/browse/HPB-7154",
+    "type" : "issue"
+  }, {
+    "name" : "HPB-6334",
+    "url" : "https://lfagile.atlassian.net/browse/HPB-6334",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "owner" : "Dmitry Parkhomenko",
+    "retries" : [ {
+      "uid" : "b0cea1e0b9925abf",
+      "status" : "skipped",
+      "statusDetails" : "Unable to register user",
+      "time" : {
+        "start" : 1693224336961,
+        "stop" : 1693224337023,
+        "duration" : 62
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 3,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "edc4a824469de4c",
+        "status" : "broken",
+        "statusDetails" : "Unable to register user",
+        "time" : {
+          "start" : 1693209622755,
+          "stop" : 1693209622826,
+          "duration" : 71
+        }
+      }, {
+        "uid" : "4ff070c3b92991ce",
+        "status" : "broken",
+        "statusDetails" : "Could not get message.",
+        "time" : {
+          "start" : 1692976645286,
+          "stop" : 1692976703813,
+          "duration" : 58527
+        }
+      }, {
+        "uid" : "ea898428885940d1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1692972481790,
+          "stop" : 1692972616522,
+          "duration" : 134732
+        }
+      }, {
+        "uid" : "70d3b1945a9ca51b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1692970682101,
+          "stop" : 1692970696540,
+          "duration" : 14439
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "6b80f4342fbe1954.json",
+  "parameterValues" : [ ]
+}

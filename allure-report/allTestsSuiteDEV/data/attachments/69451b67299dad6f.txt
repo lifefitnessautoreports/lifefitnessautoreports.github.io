@@ -1,0 +1,561 @@
+[2023-08-29 03:58:34] [23] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-29 03:58:34] [23] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatSelectedFacilityCanBeChanged] STARTED at [03:58:34 2023-08-29]
+[2023-08-29 03:58:34] [23] [INFO] Registering new user
+[2023-08-29 03:58:34] [23] [INFO] Setting default registration body values
+[2023-08-29 03:58:34] [23] [INFO] Base properties loaded: api/core/controllers/user/postregistration/registration.properties
+[2023-08-29 03:58:34] [23] [INFO] Get country code except embargoed ones
+[2023-08-29 03:58:34] [23] [INFO] Registering user with lifeFitnessPostman+48690954@gmail.com email
+[2023-08-29 03:58:36] [23] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/registration
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6ImM2MGI5ZGUwODBmZmFmYmZjMTgzMzllY2Q0NGFjNzdmN2ZhNGU4ZDMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MzI4MTMzMCwidXNlcl9pZCI6ImVSaHlnYmJnemRnaEoyOWYycEhlaHV5WGNPTTIiLCJzdWIiOiJlUmh5Z2JiZ3pkZ2hKMjlmMnBIZWh1eVhjT00yIiwiaWF0IjoxNjkzMjgxMzMwLCJleHAiOjE2OTMyODQ5MzAsImVtYWlsIjoiYXV0b3Rlc3R1c2VyQGxpZmVmaXRuZXNzLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImF1dG90ZXN0dXNlckBsaWZlZml0bmVzcy5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.HGP_tQOP8AjoLQNMvtpP08fWRecy6mEbusXz7PFwxY9rTClBrp10BZJRoANvwtQFCNGhaqT-95mSoeYCsSM25PH--ZZqbsATaWy9lSednABbUa6x5yeXstS__hNhp8W-XTcN8oABUriJ0J2qBMZB4Wkg_Fn9jFwbrfOZRVFzc1fuJWg3jfckPnrmCQYBf0brtUI25Plc-FK785qyH5dOY4AvNRUVx5-0Dqb-BgvYAW2xcPGdKw4ErK3oeRjKY8F-f0E7BDVWzLAvrrb_DZGjySZc1e7yA1w6UeMm_2t211L8Y_u2DCS6PHLc2hLh8EbltQ1eJmSf4vRWgF9GfdBW4A
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "user": {
+        "id": 0,
+        "firstName": "Davis",
+        "lastName": "Dare",
+        "email": "lifeFitnessPostman+48690954@gmail.com",
+        "preferredUnit": "METRICS",
+        "preferredLanguageCode": "",
+        "phoneNumber": "",
+        "officePhoneNumber": "",
+        "imageUrl": "",
+        "imageKey": "",
+        "thumbnailUrl": "",
+        "thumbnailKey": "",
+        "isAllowedMarketingEmails": null,
+        "isAllowedFeedbackProviding": null,
+        "useTerms": null
+    },
+    "facility": {
+        "id": 0,
+        "legacyId": 0,
+        "ipAddress": "",
+        "facilityGroupId": 0,
+        "name": "Sawayn LLC",
+        "facilityTypeId": 0,
+        "address": {
+            "placeId": "f0399fc8-b0b4-4c5f-8d38-d8047b6e0e1f",
+            "primaryStreet": "799 Sherrell Divide",
+            "secondaryStreet": "Apt. 837",
+            "city": "East Carter",
+            "region": "",
+            "zipCode": "223610",
+            "state": "",
+            "countryCode": "BZ",
+            "latitude": "30.6279",
+            "longitude": "22.7323",
+            "country": "string",
+            "formatAddress": "string",
+            "rawData": "string"
+        },
+        "contactNumber": "0734049053",
+        "timezone": {
+            "id": 186,
+            "dstOffset": 0,
+            "rawOffset": 7200000,
+            "timezoneId": "Africa/Tripoli",
+            "name": "Eastern European Standard Time"
+        },
+        "openTime": "10:00 AM",
+        "closeTime": "6:00 PM",
+        "isOpen24Hours": true
+    }
+}
+HTTP/1.1 201 Created
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: 45c428dafa8ffe543cba792e3e15a75a
+Date: Tue, 29 Aug 2023 03:58:36 GMT
+Server: Google Frontend
+Content-Length: 1057
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "user": {
+        "id": 55056,
+        "firstName": "Davis",
+        "lastName": "Dare",
+        "email": "lifefitnesspostman+48690954@gmail.com",
+        "preferredUnit": "METRICS",
+        "preferredLanguageCode": "en-US",
+        "phoneNumber": "",
+        "officePhoneNumber": "",
+        "profilePicUrl": null,
+        "imageKey": "",
+        "isEnabled": true,
+        "isAllowedMarketingEmails": true,
+        "isAllowedFeedbackProviding": true,
+        "useTerms": true,
+        "encodedPassword": null,
+        "status": "ACTIVE",
+        "roleIds": [
+            2
+        ]
+    },
+    "facility": {
+        "id": 42480,
+        "legacyId": 0,
+        "ipAddress": "",
+        "facilityGroupId": null,
+        "name": "Sawayn LLC",
+        "facilityTypeId": null,
+        "address": {
+            "id": 42504,
+            "placeId": "f0399fc8-b0b4-4c5f-8d38-d8047b6e0e1f",
+            "primaryStreet": "799 Sherrell Divide",
+            "secondaryStreet": "Apt. 837",
+            "city": "East Carter",
+            "region": "NAM",
+            "zipCode": "223610",
+            "state": "",
+            "countryCode": "BZ",
+            "latitude": 30.6279,
+            "longitude": 22.7323,
+            "country": "string",
+            "formatAddress": "string",
+            "rawData": "string"
+        },
+        "contactNumber": "0734049053",
+        "timezone": {
+            "id": 186,
+            "dstOffset": 0,
+            "rawOffset": 7200000,
+            "timezoneId": "Africa/Tripoli",
+            "name": "Eastern European Standard Time"
+        },
+        "openTime": "10:00 AM",
+        "closeTime": "6:00 PM",
+        "isOpen24Hours": true
+    }
+}
+
+[2023-08-29 03:58:36] [23] [INFO] Getting token for registered user
+[2023-08-29 03:58:36] [23] [INFO] Setting default IDP method to call
+[2023-08-29 03:58:36] [23] [INFO] Setting up IDP method to SIGN_UP
+[2023-08-29 03:58:36] [23] [INFO] Base properties loaded: api/identityplatform/idp.properties
+[2023-08-29 03:58:36] [23] [INFO] Sending PostSignUp IDP method to get access token
+[2023-08-29 03:58:36] [23] [INFO] Request method:	POST
+Request URI:	https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyDuJaUYc3JtGHvbdX_7b-Nav25lXPmzuN0
+Request params:	<none>
+Query params:	key=AIzaSyDuJaUYc3JtGHvbdX_7b-Nav25lXPmzuN0
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "returnSecureToken": true,
+    "email": "lifefitnesspostman+48690954@gmail.com",
+    "password": "lifefitnesspostman+48690954@gmail.com"
+}
+HTTP/1.1 200 OK
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Date: Tue, 29 Aug 2023 03:58:36 GMT
+Content-Type: application/json; charset=UTF-8
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+Content-Encoding: gzip
+Server: ESF
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+{
+    "kind": "identitytoolkit#SignupNewUserResponse",
+    "idToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImM2MGI5ZGUwODBmZmFmYmZjMTgzMzllY2Q0NGFjNzdmN2ZhNGU4ZDMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MzI4MTUxNiwidXNlcl9pZCI6IkFPeVlYWkhsRm9lSGttWXF1b1hIbnFaVHlZZzEiLCJzdWIiOiJBT3lZWFpIbEZvZUhrbVlxdW9YSG5xWlR5WWcxIiwiaWF0IjoxNjkzMjgxNTE2LCJleHAiOjE2OTMyODUxMTYsImVtYWlsIjoibGlmZWZpdG5lc3Nwb3N0bWFuKzQ4NjkwOTU0QGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJsaWZlZml0bmVzc3Bvc3RtYW4rNDg2OTA5NTRAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.DcJGA2lMDcXdOinenEg39km2C7c_y2T5lxEGUTrEZaHLI8BdeJN3RgA6j9Oa01b881uQ0y4af1juFd8XQfz13-RFkxxJnHO0IODjjJZTYvlW_myOWgxQ3-vR-JwEtwT88VXGmKprKkvh0uJUWwQYblehYtZkTuN5Znew3OKZExsTzS5c2qWWKvyAeOUnB-NvPLPqlmT1l5FMrK9ArveSjLWWxwf66aqt7uX5TtDrTLDN1tufaqZ1l9E9-2xggJz_mnDj_p3xmHVbB1t4UA1s_-zCyFCAYTt28hfqBFeeJQFWUVdrxLHB5XHWWPJ3U6tPny0pC6r4E_7yjl0-FAd_yA",
+    "email": "lifefitnesspostman+48690954@gmail.com",
+    "refreshToken": "AMf-vBy5pJRK9ij0WiQPj71ENNvS5wTGsqvdAMhbqvwn36xk6_p4kKZGEZGG0gSy9EAgzN61svnNV_kj4sffXqZMawSDtE8ABD9ODo-hqBxXSpevviIXM2ESrjwp8ymGiZTdJ-Mp9Edx0zb00sv7hTSC5mLBDATnZv0ztIACUjxhN9Dw9o8VcNGdkoe4CJTUCc7rdmqEYC4V3Xt7aZE1jyjIA1wUEhY0vQ",
+    "expiresIn": "3600",
+    "localId": "AOyYXZHlFoeHkmYquoXHnqZTyYg1"
+}
+
+[2023-08-29 03:58:36] [23] [INFO] Trying to parse IDP response to access token model
+[2023-08-29 03:58:36] [23] [INFO] Setting default IDP method to call
+[2023-08-29 03:58:36] [23] [INFO] Setting up IDP method to SIGN_IN_WITH_PASSWORD
+[2023-08-29 03:58:36] [23] [INFO] Base properties loaded: api/identityplatform/idp.properties
+[2023-08-29 03:58:36] [23] [INFO] Sending PostSignInWithPassword IDP method to get access token
+[2023-08-29 03:58:36] [23] [INFO] Request method:	POST
+Request URI:	https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyDuJaUYc3JtGHvbdX_7b-Nav25lXPmzuN0
+Request params:	<none>
+Query params:	key=AIzaSyDuJaUYc3JtGHvbdX_7b-Nav25lXPmzuN0
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "returnSecureToken": true,
+    "email": "lifefitnesspostman+48690954@gmail.com",
+    "password": "lifefitnesspostman+48690954@gmail.com"
+}
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Date: Tue, 29 Aug 2023 03:58:36 GMT
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Content-Type: application/json; charset=UTF-8
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+Content-Encoding: gzip
+Server: ESF
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+{
+    "kind": "identitytoolkit#VerifyPasswordResponse",
+    "localId": "AOyYXZHlFoeHkmYquoXHnqZTyYg1",
+    "email": "lifefitnesspostman+48690954@gmail.com",
+    "displayName": "",
+    "idToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImM2MGI5ZGUwODBmZmFmYmZjMTgzMzllY2Q0NGFjNzdmN2ZhNGU4ZDMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MzI4MTUxNiwidXNlcl9pZCI6IkFPeVlYWkhsRm9lSGttWXF1b1hIbnFaVHlZZzEiLCJzdWIiOiJBT3lZWFpIbEZvZUhrbVlxdW9YSG5xWlR5WWcxIiwiaWF0IjoxNjkzMjgxNTE2LCJleHAiOjE2OTMyODUxMTYsImVtYWlsIjoibGlmZWZpdG5lc3Nwb3N0bWFuKzQ4NjkwOTU0QGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJsaWZlZml0bmVzc3Bvc3RtYW4rNDg2OTA5NTRAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.DcJGA2lMDcXdOinenEg39km2C7c_y2T5lxEGUTrEZaHLI8BdeJN3RgA6j9Oa01b881uQ0y4af1juFd8XQfz13-RFkxxJnHO0IODjjJZTYvlW_myOWgxQ3-vR-JwEtwT88VXGmKprKkvh0uJUWwQYblehYtZkTuN5Znew3OKZExsTzS5c2qWWKvyAeOUnB-NvPLPqlmT1l5FMrK9ArveSjLWWxwf66aqt7uX5TtDrTLDN1tufaqZ1l9E9-2xggJz_mnDj_p3xmHVbB1t4UA1s_-zCyFCAYTt28hfqBFeeJQFWUVdrxLHB5XHWWPJ3U6tPny0pC6r4E_7yjl0-FAd_yA",
+    "registered": true,
+    "refreshToken": "AMf-vBzs_KhzgMLGZSDTgEt-xLORJMCuMoZfRF7ygWbSy8bAT7qdvTFU5FWodqHw8gXBkb38jO_73fQhEQwfevPVpcab2BfhyhEpg_rYdSzz9XSEGHF6gQoECK_ugl1a-p8YaRxuSsoh4Sow3dNYOsnTEQ6fo32NhwRdBeqmX3_vyNKWBGBJD3B7rFmGU-ybxePRRV002rMRIY2lAhJuV0wNTLzxuLEPxQ",
+    "expiresIn": "3600"
+}
+
+[2023-08-29 03:58:36] [23] [INFO] Trying to parse IDP response to access token model
+[2023-08-29 03:58:36] [23] [INFO] Creating new facility
+[2023-08-29 03:58:36] [23] [INFO] Setting default add facility body values
+[2023-08-29 03:58:36] [23] [INFO] Base properties loaded: api/core/controllers/user/postfacility/post_facility.properties
+[2023-08-29 03:58:36] [23] [INFO] Get country code except embargoed ones
+[2023-08-29 03:58:36] [23] [INFO] Create facility expecting success
+[2023-08-29 03:58:37] [23] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/facilities
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6ImM2MGI5ZGUwODBmZmFmYmZjMTgzMzllY2Q0NGFjNzdmN2ZhNGU4ZDMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MzI4MTUxNiwidXNlcl9pZCI6IkFPeVlYWkhsRm9lSGttWXF1b1hIbnFaVHlZZzEiLCJzdWIiOiJBT3lZWFpIbEZvZUhrbVlxdW9YSG5xWlR5WWcxIiwiaWF0IjoxNjkzMjgxNTE2LCJleHAiOjE2OTMyODUxMTYsImVtYWlsIjoibGlmZWZpdG5lc3Nwb3N0bWFuKzQ4NjkwOTU0QGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJsaWZlZml0bmVzc3Bvc3RtYW4rNDg2OTA5NTRAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.DcJGA2lMDcXdOinenEg39km2C7c_y2T5lxEGUTrEZaHLI8BdeJN3RgA6j9Oa01b881uQ0y4af1juFd8XQfz13-RFkxxJnHO0IODjjJZTYvlW_myOWgxQ3-vR-JwEtwT88VXGmKprKkvh0uJUWwQYblehYtZkTuN5Znew3OKZExsTzS5c2qWWKvyAeOUnB-NvPLPqlmT1l5FMrK9ArveSjLWWxwf66aqt7uX5TtDrTLDN1tufaqZ1l9E9-2xggJz_mnDj_p3xmHVbB1t4UA1s_-zCyFCAYTt28hfqBFeeJQFWUVdrxLHB5XHWWPJ3U6tPny0pC6r4E_7yjl0-FAd_yA
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "name": "Funk, Vandervort and McGlynn",
+    "facilityGroupId": 0,
+    "facilityTypeId": 0,
+    "address": {
+        "placeId": "942d9049-fa3f-4c09-8087-d24093b56670",
+        "primaryStreet": "3550 Renata Lakes",
+        "secondaryStreet": "Suite 588",
+        "city": "North Ron",
+        "state": "",
+        "countryCode": "MN",
+        "latitude": "30.6279",
+        "longitude": "22.7323",
+        "country": "string",
+        "formatAddress": "asd"
+    },
+    "contactNumber": "8391777108",
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": true,
+    "timezone": {
+        "id": 186,
+        "dstOffset": 0,
+        "rawOffset": 7200000,
+        "timezoneId": "Africa/Tripoli",
+        "name": "Eastern European Standard Time"
+    }
+}
+HTTP/1.1 201 Created
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+X-Cloud-Trace-Context: 0fa4a4b3b47125e322e236e675b1a9d4
+Date: Tue, 29 Aug 2023 03:58:36 GMT
+Server: Google Frontend
+Content-Length: 662
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "id": 42483,
+    "legacyId": null,
+    "ipAddress": null,
+    "facilityGroupId": null,
+    "name": "Funk, Vandervort and McGlynn",
+    "facilityTypeId": null,
+    "address": {
+        "id": 42507,
+        "placeId": "942d9049-fa3f-4c09-8087-d24093b56670",
+        "primaryStreet": "3550 Renata Lakes",
+        "secondaryStreet": "Suite 588",
+        "city": "North Ron",
+        "region": "APAC",
+        "zipCode": null,
+        "state": "",
+        "countryCode": "MN",
+        "latitude": 30.6279,
+        "longitude": 22.7323,
+        "country": "string",
+        "formatAddress": "asd",
+        "rawData": null
+    },
+    "contactNumber": "8391777108",
+    "timezone": {
+        "id": 186,
+        "dstOffset": 0,
+        "rawOffset": 7200000,
+        "timezoneId": "Africa/Tripoli",
+        "name": "Eastern European Standard Time"
+    },
+    "openTime": "10:00 AM",
+    "closeTime": "6:00 PM",
+    "isOpen24Hours": false
+}
+
+[2023-08-29 03:58:37] [23] [INFO] Logging in to check selected facility
+[2023-08-29 03:58:37] [23] [INFO] Trying to login expecting success
+[2023-08-29 03:58:37] [23] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/auth/login
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6ImM2MGI5ZGUwODBmZmFmYmZjMTgzMzllY2Q0NGFjNzdmN2ZhNGU4ZDMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MzI4MTUxNiwidXNlcl9pZCI6IkFPeVlYWkhsRm9lSGttWXF1b1hIbnFaVHlZZzEiLCJzdWIiOiJBT3lZWFpIbEZvZUhrbVlxdW9YSG5xWlR5WWcxIiwiaWF0IjoxNjkzMjgxNTE2LCJleHAiOjE2OTMyODUxMTYsImVtYWlsIjoibGlmZWZpdG5lc3Nwb3N0bWFuKzQ4NjkwOTU0QGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJsaWZlZml0bmVzc3Bvc3RtYW4rNDg2OTA5NTRAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.DcJGA2lMDcXdOinenEg39km2C7c_y2T5lxEGUTrEZaHLI8BdeJN3RgA6j9Oa01b881uQ0y4af1juFd8XQfz13-RFkxxJnHO0IODjjJZTYvlW_myOWgxQ3-vR-JwEtwT88VXGmKprKkvh0uJUWwQYblehYtZkTuN5Znew3OKZExsTzS5c2qWWKvyAeOUnB-NvPLPqlmT1l5FMrK9ArveSjLWWxwf66aqt7uX5TtDrTLDN1tufaqZ1l9E9-2xggJz_mnDj_p3xmHVbB1t4UA1s_-zCyFCAYTt28hfqBFeeJQFWUVdrxLHB5XHWWPJ3U6tPny0pC6r4E_7yjl0-FAd_yA
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 200 OK
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+content-type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 29 Aug 2023 03:58:37 GMT
+Server: Google Frontend
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "userInfo": {
+        "id": 55056,
+        "firstName": "Davis",
+        "lastName": "Dare",
+        "email": "lifefitnesspostman+48690954@gmail.com",
+        "preferredUnit": "METRICS",
+        "preferredLanguageCode": "en-US",
+        "phoneNumber": "",
+        "officePhoneNumber": "",
+        "profilePicUrl": null,
+        "imageKey": "",
+        "isEnabled": true,
+        "isAllowedMarketingEmails": true,
+        "isAllowedFeedbackProviding": true,
+        "useTerms": true,
+        "encodedPassword": null,
+        "status": "ACTIVE",
+        "roleIds": [
+            2
+        ]
+    },
+    "roles": [
+        {
+            "id": 2,
+            "name": "Admin",
+            "permissions": [
+                {
+                    "id": 1,
+                    "name": "View Equipment Details",
+                    "category": "Manage Equipment"
+                },
+                {
+                    "id": 2,
+                    "name": "Manage Equipment",
+                    "category": "Manage Equipment"
+                },
+                {
+                    "id": 3,
+                    "name": "Perform Software Upgrades",
+                    "category": "Manage Equipment"
+                },
+                {
+                    "id": 4,
+                    "name": "Create & Publish Goal Workouts",
+                    "category": "Consoles"
+                },
+                {
+                    "id": 5,
+                    "name": "Publish Announcement",
+                    "category": "Consoles"
+                },
+                {
+                    "id": 6,
+                    "name": "Manage TV",
+                    "category": "Consoles"
+                },
+                {
+                    "id": 7,
+                    "name": "Manage Apps & Web",
+                    "category": "Consoles"
+                },
+                {
+                    "id": 8,
+                    "name": "Settings",
+                    "category": "Consoles"
+                },
+                {
+                    "id": 9,
+                    "name": "Publish Attract Screens",
+                    "category": "Content"
+                },
+                {
+                    "id": 10,
+                    "name": "Enable Content Libraries",
+                    "category": "Content"
+                },
+                {
+                    "id": 11,
+                    "name": "My Videos",
+                    "category": "Content"
+                },
+                {
+                    "id": 12,
+                    "name": "Branding & Metadata",
+                    "category": "Content"
+                },
+                {
+                    "id": 13,
+                    "name": "Create Service Tickets",
+                    "category": "Service"
+                }
+            ]
+        }
+    ],
+    "supplementaryPermissions": [
+        {
+            "id": 1,
+            "name": "Add/Edit Users"
+        },
+        {
+            "id": 3,
+            "name": "Premium"
+        },
+        {
+            "id": 4,
+            "name": "Feature Flags"
+        },
+        {
+            "id": 2,
+            "name": "Add/Edit Facilities"
+        }
+    ],
+    "selectedFacility": {
+        "id": 42480,
+        "legacyId": 0,
+        "ipAddress": "",
+        "facilityGroupId": null,
+        "name": "Sawayn LLC",
+        "facilityTypeId": null,
+        "address": {
+            "id": 42504,
+            "placeId": "f0399fc8-b0b4-4c5f-8d38-d8047b6e0e1f",
+            "primaryStreet": "799 Sherrell Divide",
+            "secondaryStreet": "Apt. 837",
+            "city": "East Carter",
+            "region": "NAM",
+            "zipCode": "223610",
+            "state": "",
+            "countryCode": "BZ",
+            "latitude": 30.6279,
+            "longitude": 22.7323,
+            "country": "string",
+            "formatAddress": "string",
+            "rawData": "string"
+        },
+        "contactNumber": "0734049053",
+        "timezone": {
+            "id": 186,
+            "dstOffset": 0,
+            "rawOffset": 7200000,
+            "timezoneId": "Africa/Tripoli",
+            "name": "Eastern European Standard Time"
+        },
+        "openTime": "10:00 AM",
+        "closeTime": "6:00 PM",
+        "isOpen24Hours": true
+    }
+}
+
+[2023-08-29 03:58:37] [23] [INFO] Assert that login happened and user is connected to selected facility
+[2023-08-29 03:58:37] [23] [INFO] Updating selected facility to login
+[2023-08-29 03:58:37] [23] [INFO] Request method:	PATCH
+Request URI:	https://dev-halo5api1.halo.fitness/halo-core-service/api/v1/users/selected-facility/42483
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	facilityId=42483
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6ImM2MGI5ZGUwODBmZmFmYmZjMTgzMzllY2Q0NGFjNzdmN2ZhNGU4ZDMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5MzI4MTUxNiwidXNlcl9pZCI6IkFPeVlYWkhsRm9lSGttWXF1b1hIbnFaVHlZZzEiLCJzdWIiOiJBT3lZWFpIbEZvZUhrbVlxdW9YSG5xWlR5WWcxIiwiaWF0IjoxNjkzMjgxNTE2LCJleHAiOjE2OTMyODUxMTYsImVtYWlsIjoibGlmZWZpdG5lc3Nwb3N0bWFuKzQ4NjkwOTU0QGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJsaWZlZml0bmVzc3Bvc3RtYW4rNDg2OTA5NTRAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.DcJGA2lMDcXdOinenEg39km2C7c_y2T5lxEGUTrEZaHLI8BdeJN3RgA6j9Oa01b881uQ0y4af1juFd8XQfz13-RFkxxJnHO0IODjjJZTYvlW_myOWgxQ3-vR-JwEtwT88VXGmKprKkvh0uJUWwQYblehYtZkTuN5Znew3OKZExsTzS5c2qWWKvyAeOUnB-NvPLPqlmT1l5FMrK9ArveSjLWWxwf66aqt7uX5TtDrTLDN1tufaqZ1l9E9-2xggJz_mnDj_p3xmHVbB1t4UA1s_-zCyFCAYTt28hfqBFeeJQFWUVdrxLHB5XHWWPJ3U6tPny0pC6r4E_7yjl0-FAd_yA
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 200 OK
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+X-Cloud-Trace-Context: 85ef98c94b3d6dad07490d49c2f7e4fc
+Date: Tue, 29 Aug 2023 03:58:37 GMT
+Content-Type: text/html
+Server: Google Frontend
+Content-Length: 0
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+
+
+[2023-08-29 03:58:37] [23] [INFO] Assert that response code is correct
+[2023-08-29 03:58:37] [23] [INFO] Login to check that facility has been changed
+[2023-08-29 03:58:37] [23] [INFO] Trying to login expecting success
+[2023-08-29 03:58:37] [23] [INFO] Assert that login happened and user is connected to selected facility
+[2023-08-29 03:58:37] [23] [INFO] TEST [LifeFitness Backend Auto Tests - checkThatSelectedFacilityCanBeChanged] PASSED at [03:58:37 2023-08-29]

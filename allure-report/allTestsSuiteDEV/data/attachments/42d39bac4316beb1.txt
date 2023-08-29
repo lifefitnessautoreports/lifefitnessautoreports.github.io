@@ -1,0 +1,88 @@
+[2023-08-25 03:22:18] [22] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-25 03:22:18] [22] [INFO] TEST [LifeFitness Backend Auto Tests - checkResetPasswordWithLowerCaseEmail] STARTED at [15:22:18 2023-08-25]
+[2023-08-25 03:22:18] [22] [INFO] Setting default IDP method to call
+[2023-08-25 03:22:18] [22] [INFO] Setting up IDP method to SIGN_UP
+[2023-08-25 03:22:18] [22] [INFO] Base properties loaded: api/identityplatform/idp.properties
+[2023-08-25 03:22:18] [22] [INFO] Sending PostSignUp IDP method to get access token
+[2023-08-25 03:22:18] [22] [INFO] Request method:	POST
+Request URI:	https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyDuJaUYc3JtGHvbdX_7b-Nav25lXPmzuN0
+Request params:	<none>
+Query params:	key=AIzaSyDuJaUYc3JtGHvbdX_7b-Nav25lXPmzuN0
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "returnSecureToken": true,
+    "email": "lifefitnesspostman+24032698@gmail.com",
+    "password": "z01zurh10xi77p"
+}
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Date: Fri, 25 Aug 2023 15:22:18 GMT
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Content-Type: application/json; charset=UTF-8
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+Content-Encoding: gzip
+Server: ESF
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+{
+    "kind": "identitytoolkit#SignupNewUserResponse",
+    "idToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzODBlZjEyZjk1ZjkxNmNhZDdhNGNlMzg4ZDJjMmMzYzIzMDJmZGUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbGZjby1kZXYiLCJhdWQiOiJsZmNvLWRldiIsImF1dGhfdGltZSI6MTY5Mjk3NjkzOCwidXNlcl9pZCI6IlBpSFp3NlgxSlRTYk51TUh6dGlkaEgyUVMxNTMiLCJzdWIiOiJQaUhadzZYMUpUU2JOdU1IenRpZGhIMlFTMTUzIiwiaWF0IjoxNjkyOTc2OTM4LCJleHAiOjE2OTI5ODA1MzgsImVtYWlsIjoibGlmZWZpdG5lc3Nwb3N0bWFuKzI0MDMyNjk4QGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJsaWZlZml0bmVzc3Bvc3RtYW4rMjQwMzI2OThAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.IeluU_KgcID9p7pPFwR2DBDoJOmMY3Pzsr7quLru6zoJSkaC1fgJOzgbry54QLb2ABp7eQ3TuRrlvv31y6ugf_CYdHP5o13vqCRF_8JAI66gv3eEnrB3mxrr1_NaP2SrKMnAAbOLNW0yT8-XvjFrMdZJZ1XHgUvzJqT4yyORDA3rMfYygWZ0cOGUl84HZkPBSgjPP62ftmLKmYv2mDjW6BFjNkLQiDsex2YfjUX2UyA6VBFF8tsKZFQzxIMABYG3QtIlq1AXhOGxq03q5ArJbv-ilHWkgcbCTQjtLfjlVuKGSalWQD-lkCkncTTKu7LkLPG5SpKi4UJ439MhxNzg1g",
+    "email": "lifefitnesspostman+24032698@gmail.com",
+    "refreshToken": "AMf-vBw9qyaRfyoIuN88WFpWU_V6ueX3wy8AHgwiWx-qAhpr_QHQbryGE_x1O4SoQKAGMwILkQQ60z7hNJghTIldD7TMxk2tqdIHMoHxvevceGRtlxxuVFLyF417h6nk3tiTbrDQhGilVa4Iv4kJX0Fk4ll2NpzWY6our9Xw6uHY9ra-7AumWRlSIPpmmSMuiPK8eeMtYn8uFdIL1atDwYZLeCGIwosRyA",
+    "expiresIn": "3600",
+    "localId": "PiHZw6X1JTSbNuMHztidhH2QS153"
+}
+
+[2023-08-25 03:22:18] [22] [INFO] Trying to parse IDP response to access token model
+[2023-08-25 03:22:19] [22] [INFO] Request method:	POST
+Request URI:	https://dev-halo5api1.halo.fitness/halo-system-utils/api/v1/password/reset?email=lifefitnesspostman%2B24032698%40gmail.com
+Request params:	<none>
+Query params:	email=lifefitnesspostman+24032698@gmail.com
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=P3jxJislR3PNt1P1gQxXepwRY8RiHGTps+Yld/5Ot50=
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 201 Created
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 0
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+X-Cloud-Trace-Context: 3e7e2aaeb73777acc01bbf2ab661b6eb
+Date: Fri, 25 Aug 2023 15:22:19 GMT
+Content-Type: text/html
+Server: Google Frontend
+Content-Length: 0
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+
+
+[2023-08-25 03:22:19] [22] [INFO] Assert that api call was successful
+[2023-08-25 03:22:19] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 03:22:20] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 03:22:21] [22] [INFO] Waiting for 0.5 sec till email comes
+[2023-08-25 03:22:21] [22] [INFO] Hi lifefitnesspostman+24032698@gmail.com, You requested a password reset for Halo Facility account. Please click the button below to reset password and this request will expire in 24 hours. Reset
+[2023-08-25 03:22:21] [22] [INFO] Asserting that email message is correct after registration
+[2023-08-25 03:22:21] [22] [INFO] Asserting that email button link is correct
+[2023-08-25 03:22:21] [22] [INFO] TEST [LifeFitness Backend Auto Tests - checkResetPasswordWithLowerCaseEmail] PASSED at [15:22:21 2023-08-25]
